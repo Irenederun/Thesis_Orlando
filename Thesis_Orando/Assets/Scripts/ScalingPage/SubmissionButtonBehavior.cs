@@ -8,5 +8,11 @@ public class SubmissionButtonBehavior : BasicBehavior
     {
         base.ClickedByMouse();
         ScalingManager.instance.ChipsSubmission();
+        GetComponent<SpriteRenderer>().color = Color.black;
+    }
+
+    public void ChangeColor()
+    {
+        GetComponent<SpriteRenderer>().color = Color.white;
     }
 }

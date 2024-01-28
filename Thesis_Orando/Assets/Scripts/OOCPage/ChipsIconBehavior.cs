@@ -4,12 +4,16 @@ using UnityEngine;
 
 public class ChipsIconBehavior : BasicBehavior
 {
-    public GameObject scalingPagePrefab;
+    //TODO: currently the icon is used as card submission button
 
     public override void ClickedByMouse()
     {
         base.ClickedByMouse();
-        GameObject scalingPage = Instantiate(scalingPagePrefab);
-        OOCManager.instance.SwitchInteractabilityForAll(false);
+
+        //these all needs to go to manager
+        if (OOCManager.instance.selectedCard != null)
+        {
+            OOCManager.instance.CardSubmittedOpenScaling();
+        }
     }
 }

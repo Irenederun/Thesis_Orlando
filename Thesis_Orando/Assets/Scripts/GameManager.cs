@@ -23,14 +23,12 @@ public class GameManager : MonoBehaviour
     [System.Serializable]
     public struct chipsInfo
     {
-        public Vector4 ChipColor;//will be sprite later
-        //public float ChipWorth;
+        public Vector4 ChipColor;//TODO: will be sprite later
         public string ChipCategory;
 
-        public chipsInfo(Vector4 color, /*float chipWorth,*/ string chipCategory)
+        public chipsInfo(Vector4 color, string chipCategory)
         {
             this.ChipColor = color;
-            //this.ChipWorth = chipWorth;
             this.ChipCategory = chipCategory;
         }
     }
@@ -52,8 +50,22 @@ public class GameManager : MonoBehaviour
 
     public List<chipWorthEachRound> chipWorthChart;
 
+    [System.Serializable]
+    public struct CardInventory
+    {
+        public string cardNameInvent;
+        public Vector4 cardColorInvent; //will be sprite later
+    }
+    public List<CardInventory> cardInventory = new List<CardInventory>();
+
+
     public void ChangeLevel()
     {
         currentLevel++;
     }
+
+    //Questions:
+    //should the card be added to inventory first, or checked out first? or instead of flipping, just open up UI? 
+    //the actual question is can you throw it away after winning it and bet on another one.
+    //also, are chips in inventory? can chips be check from inventory, or a separate thing? what should UI look like for opening up scaling?
 }

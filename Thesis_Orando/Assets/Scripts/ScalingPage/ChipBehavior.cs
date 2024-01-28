@@ -30,18 +30,14 @@ public class ChipBehavior : BasicBehavior
     private Vector3 velocity = Vector3.zero;
     private float smoothTime = 0.5f;
 
-    // Start is called before the first frame update
     void Start()
     {
-        base.Start();
         chipState = ChipState.Default;
         selectedEffect = transform.GetChild(0).gameObject;
     }
 
-    // Update is called once per frame
     void Update()
     {
-        base.Update();
         if (chipState == ChipState.Submitted)
         {
             if (chipDesPos != Vector3.zero)
@@ -79,7 +75,6 @@ public class ChipBehavior : BasicBehavior
     private void ChipSelected()
     {
         chipState = ChipState.Selected;
-        Debug.Log("Selected");
         selectedEffect.SetActive(true);
         ScalingManager.instance.selectedChips.Add(gameObject);
     }
@@ -134,7 +129,6 @@ public class ChipBehavior : BasicBehavior
 
     private IEnumerator ChipDeletion()
     {
-        print("coroutine");
         yield return new WaitForSeconds(2f);
         ChipDeleting();
     }
@@ -142,7 +136,9 @@ public class ChipBehavior : BasicBehavior
     private void ChipDeleting()
     {
         chipState = ChipState.DeleteFromInvent;
+        ScalingManager.instance.ScalingPageObjs.Remove(gameObject);
+        ScalingManager.instance.selectedChips.Remove(gameObject);
         GameManager.instance.myChips.Remove(thisChip);
-        //print("deleted " + thisChip.ChipCategory);
+        Destroy(gameObject);
     }
 }

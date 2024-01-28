@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ScalingManager : MonoBehaviour
+public class ScalingManager : ManagerBehavior
 {
     public static ScalingManager instance;
     public List<GameObject> ScalingPageObjs = new List<GameObject>();
@@ -13,7 +13,8 @@ public class ScalingManager : MonoBehaviour
     public float allChipsWorthThisTurn;
     public GameObject scale;
 
-    //one time use
+    public float currentCardWorth;
+
     private bool coroutineHasStarted = false;
 
     private void Awake()
@@ -28,11 +29,15 @@ public class ScalingManager : MonoBehaviour
         }
     }
        
-    // Start is called before the first frame update
     void Start()
     {
+        StartThisTurn();
+        currentCardWorth = OOCManager.instance.selectedCardInfo.cardWorth;
+    }
+
+    private void StartThisTurn()
+    {
         LoadAvailableChips();
-        //i think should be changing interactability of everything to true in here
     }
 
     public void LoadAvailableChips()
@@ -46,6 +51,8 @@ public class ScalingManager : MonoBehaviour
             thisChip.GetComponent<ChipBehavior>().chipCategory = GameManager.instance.myChips[i].ChipCategory;
             ScalingPageObjs.Add(thisChip);
         }
+
+        SwitchInteractabilityForAll(true);
     }
 
     public void ChipsSubmission()
@@ -58,14 +65,6 @@ public class ScalingManager : MonoBehaviour
             {
                 selectedChips[i].GetComponent<ChipBehavior>().ChipSubmission(i);    
             }
-        }
-    }
-
-    public void SwitchInteractabilityForAll(bool interactability)
-    {
-        foreach (GameObject obj in ScalingPageObjs)
-        {
-            obj.layer = LayerMask.NameToLayer("Default");
         }
     }
 
@@ -83,10 +82,79 @@ public class ScalingManager : MonoBehaviour
     {
         yield return new WaitForSeconds(0.5f);
         print(allChipsWorthThisTurn);
+
+        ComparisonWithCardValue(allChipsWorthThisTurn);
     }
 
-    public void DestroySelfOnClose()
+    public void ComparisonWithCardValue(float chipValue)
     {
+        if (chipValue >= currentCardWorth)
+        {
+            print("you won this card. " + "chip=" + chipValue + ", card= " + currentCardWorth);
+            CardWon();
+
+        }
+        else
+        {
+            print("you didnt win this card" + "chip=" + chipValue + ", card= " + currentCardWorth);
+            CardNotWon();
+        }
+    }
+
+    private void CardWon()
+    {
+        //delete the card from inventory
+        OOCManager.instance.RemoveCardFromListOnWinning();
+        IEnumerator coroutine = CardWonCoroutine();
+        StartCoroutine(coroutine);
+    }
+
+    IEnumerator CardWonCoroutine()
+    {
+        yield return new WaitForSeconds(3);
+        DestroySelfOnClose();
+        OOCManager.instance.selectedCard.GetComponent<CardBehavior>().CardGivenToPlayer();
+    }
+
+    private void CardNotWon()
+    {
+        IEnumerator coroutine = CardNotWonCoroutine();
+        StartCoroutine(coroutine);
+    }
+
+    IEnumerator CardNotWonCoroutine()
+    {
+        yield return new WaitForSeconds(3);
+        StartOver();
+    }
+
+    public void SwitchInteractabilityForAll(bool interactability)
+    {
+        foreach (GameObject obj in ScalingPageObjs)
+        {
+            if (!interactability)
+            {
+                obj.layer = LayerMask.NameToLayer("Default");
+            }
+            else
+            {
+                obj.layer = LayerMask.NameToLayer("Interactable");
+            }
+        }
+    }
+
+    public void StartOver()
+    {
+        print("starting over");
+        SwitchInteractabilityForAll(true);
+        ScalingPageObjs[0].GetComponent<SubmissionButtonBehavior>().ChangeColor();
+        coroutineHasStarted = false;
+    }
+
+    public override void DestroySelfOnClose()
+    {
+        base.DestroySelfOnClose();
+        OOCManager.instance.SwitchInteractabilityForAll(true);
         Destroy(gameObject);
     }
 }

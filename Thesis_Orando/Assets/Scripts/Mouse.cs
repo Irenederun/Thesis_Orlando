@@ -30,7 +30,7 @@ public class Mouse : MonoBehaviour
     
         if (Input.GetMouseButtonDown(0))
         {
-            if (hit != null && hit.collider != null)
+            if (/*hit != null &&*/ hit.collider != null)
             {
                 clickingObj = hit.collider.gameObject;
                 clickingObj.GetComponent<BasicBehavior>().ClickedByMouse();
