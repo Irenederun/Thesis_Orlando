@@ -47,7 +47,6 @@ public class GameManager : MonoBehaviour
         public string Category4;
         public float Value4;
      }
-
     public List<chipWorthEachRound> chipWorthChart;
 
     [System.Serializable]
@@ -57,7 +56,6 @@ public class GameManager : MonoBehaviour
         public Vector4 cardColorInvent; //will be sprite later
     }
     public List<CardInventory> cardInventory = new List<CardInventory>();
-
 
     public void ChangeLevel()
     {

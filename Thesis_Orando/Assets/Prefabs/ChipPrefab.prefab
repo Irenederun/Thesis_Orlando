@@ -72,7 +72,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 3
   m_Sprite: {fileID: -9095717837082945937, guid: 207ee8102dd4143d288186ef0be518ee, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -159,7 +159,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 3
+  m_SortingOrder: 4
   m_Sprite: {fileID: -9095717837082945937, guid: 207ee8102dd4143d288186ef0be518ee, type: 3}
   m_Color: {r: 0.78767633, g: 0.8018868, b: 0.44381154, a: 1}
   m_FlipX: 0
@@ -189,6 +189,10 @@ MonoBehaviour:
   - {x: -0.06000006, y: 0.5400001, z: 0}
   speed: 1
   chipWorth: 0
+  thisChip:
+    ChipColor: {x: 0, y: 0, z: 0, w: 0}
+    ChipCategory: 
+  chipCategory: 
   chipState: 0
   selectedEffect: {fileID: 0}
 --- !u!70 &3817920980787854645

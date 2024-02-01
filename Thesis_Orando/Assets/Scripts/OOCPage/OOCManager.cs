@@ -15,7 +15,10 @@ public class OOCManager : MonoBehaviour
     private bool cardAreDealt = false;
     public GameObject scalingPagePrefab;
 
+    private List<GameObject> current3Cards = new List<GameObject>();
+
     //TODO: add reshuffule after adding randomized card generation. remember to reset cardAreDealt.
+    //TODO: instead of reshuffling, change to other cards disappearing. 
 
     [System.Serializable]
     public struct CardInfo
@@ -23,6 +26,7 @@ public class OOCManager : MonoBehaviour
         public string cardName;
         public Vector4 cardColor; //will be sprite later
         public float cardWorth;
+        public GameObject minigamePrefab;
     }
     public List<CardInfo> listOfCards = new List<CardInfo>();
 
@@ -45,7 +49,22 @@ public class OOCManager : MonoBehaviour
             LoadAvailableCards();
             cardAreDealt = true;
         }
+        // else
+        // {
+        //     Reshuffle();//TODO: currently reshuffling on second click b/c it takes one click to set bool to false
+        // }
     }
+
+    // public void Reshuffle()
+    // {
+    //     foreach (GameObject card in current3Cards)
+    //     {
+    //         OOCInteractableObjects.Remove(card);
+    //         Destroy(card);
+    //         //LoadAvailableCards();
+    //     }
+    //     cardAreDealt = false;
+    // }
 
     public void LoadAvailableCards()
     {
@@ -69,13 +88,16 @@ public class OOCManager : MonoBehaviour
 
     private void GenerateCard(int i)
     {
-        GameObject thisCard = Instantiate(cardPrefab, cardPosInitial[i], Quaternion.identity);
+        GameObject thisCard = Instantiate(cardPrefab, OOCInteractableObjects[1].transform.position, Quaternion.identity);
         thisCard.transform.SetParent(cardParent.transform);
+        thisCard.GetComponent<CardBehavior>().cardInitialPos = cardPosInitial[i];
         thisCard.GetComponent<SpriteRenderer>().color = listOfCards[i].cardColor;
         thisCard.GetComponent<CardBehavior>().thisCard = listOfCards[i];
         thisCard.GetComponent<CardBehavior>().cardReqValue = listOfCards[i].cardWorth;
         thisCard.GetComponent<CardBehavior>().cardName = listOfCards[i].cardName;
+        thisCard.GetComponent<CardBehavior>().minigamePrefab = listOfCards[i].minigamePrefab;
         OOCInteractableObjects.Add(thisCard);
+        current3Cards.Add(thisCard);
     }
 
     public void CardSubmittedOpenScaling()
@@ -89,8 +111,8 @@ public class OOCManager : MonoBehaviour
     public void RemoveCardFromListOnWinning()
     {
         listOfCards.Remove(selectedCardInfo);
+        current3Cards.Remove(selectedCard);
         OOCInteractableObjects.Remove(selectedCard);
-        //selectedCard.GetComponent<CardBehavior>().CardGivenToPlayer();
     }
 
     public void SwitchInteractabilityForAll(bool interactability)
@@ -117,9 +139,11 @@ public class OOCManager : MonoBehaviour
         switch (interactability)
         {
             case true:
+                OOCInteractableObjects[1].layer = LayerMask.NameToLayer("Interactable");
                 OOCInteractableObjects[2].layer = LayerMask.NameToLayer("Interactable");
                 break;
             case false:
+                OOCInteractableObjects[1].layer = LayerMask.NameToLayer("Default");
                 OOCInteractableObjects[2].layer = LayerMask.NameToLayer("Default");
                 break;
         }

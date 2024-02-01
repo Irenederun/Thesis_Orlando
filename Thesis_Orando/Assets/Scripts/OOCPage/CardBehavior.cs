@@ -9,10 +9,12 @@ public class CardBehavior : BasicBehavior
     public OOCManager.CardInfo thisCard;
     private GameObject selectedEffect;
     private int clickTimes = 0;
+    public Vector3 cardInitialPos;
     public Transform cardTarget;
     private bool cardIsOwned = false;
+    public GameObject minigamePrefab;
 
-    //TODO: delete later
+    //TODO: cheng to ini sprite later
     private Color cardinicolor;
 
     [SerializeField]
@@ -29,26 +31,38 @@ public class CardBehavior : BasicBehavior
     private CardState cardState;
 
     private Vector3 velocity = Vector3.zero;
-    private float smoothTime = 0.5f;
+    private float smoothTimeDealing = 0.3f;
+    private float smoothTimeOwning = 0.5f;
     float speed = 90;
 
     void Start()
     {
-        cardinicolor = GetComponent<SpriteRenderer>().color;//TODO: change to getcompoennt sp.sprite later. 
-
-        cardState = CardState.Default;
+        cardinicolor = GetComponent<SpriteRenderer>().color;//TODO: change to getcompoent sp.sprite later. 
         selectedEffect = transform.GetChild(0).gameObject;
+
+        //cardState = CardState.Default;
+        cardState = CardState.Dealing;
+        IEnumerator coroutine = SwitchState();
+        StartCoroutine(coroutine);
     }
+
+    IEnumerator SwitchState()
+    {
+        yield return new WaitForSeconds(1);
+        cardState = CardState.Default;
+        GetComponent<Collider2D>().enabled = true;
+    }
+
 
     private void Update()
     {
         switch (cardState)
         {
             case CardState.Dealing:
-                print("cardmoving");
+                transform.position = Vector3.SmoothDamp(transform.position, cardInitialPos, ref velocity, smoothTimeDealing, Mathf.Infinity);
                 break;
             case CardState.GivenToPlayer:
-                transform.position = Vector3.SmoothDamp(transform.position, cardTarget.position, ref velocity, smoothTime, Mathf.Infinity);
+                transform.position = Vector3.SmoothDamp(transform.position, cardTarget.position, ref velocity, smoothTimeOwning, Mathf.Infinity);
                 var step = speed * Time.deltaTime;
                 transform.rotation = Quaternion.RotateTowards(transform.rotation, cardTarget.rotation, step);
                 break;
@@ -119,24 +133,24 @@ public class CardBehavior : BasicBehavior
         cardTarget = transform.parent.GetChild(0);
         cardState = CardState.GivenToPlayer;
         OOCManager.instance.SwitchInteractabilityForAll(false);
-        OOCManager.instance.KeepInteractabilityForUI(true);//this really should be made better in the future
+        OOCManager.instance.KeepInteractabilityForUI(true);//TODO: this really should be made better in the future
         IEnumerator coroutine = CardOwned();
         StartCoroutine(coroutine);
     }
 
     private IEnumerator CardOwned()
     {
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(3);
         cardState = CardState.Owned;
         cardIsOwned = true;
         clickTimes = 0;
         this.gameObject.layer = LayerMask.NameToLayer("Interactable");
-        CardAddToInventory();//need to decide when this happens exactly
+        CardAddToInventory();//TODO: need to decide when this happens exactly
     }
 
     private void CardAddToInventory()
     {
-        //needn to decide when this happen exactly
+        //TODO: need to decide when this happen exactly
         GameManager.CardInventory thisCard = new GameManager.CardInventory
         {
             cardNameInvent = cardName,
@@ -150,16 +164,25 @@ public class CardBehavior : BasicBehavior
         switch (side)
         {
             case "face":
-                print("flipped to face up");
+                //print("flipped to face up");
                 GetComponent<SpriteRenderer>().color = Color.magenta;//TODO: will be animation of flipping later
+                EnterMiniGame();
                 break;
             case "back":
-                print("fipped to face down");
+                //print("fipped to face down");
                 GetComponent<SpriteRenderer>().color = cardinicolor;//TODO: will be animation of flipping later
                 break;
         }
 
         //each card, due to its category, should have another script attached to it, containing the specific interaction of that card.
         //e.g., select words. that would be another UI overlay.
+    }
+    
+    public void EnterMiniGame()
+    {
+        GameObject minigame = Instantiate(minigamePrefab);
+        OOCManager.instance.SwitchInteractabilityForAll(false);
+        minigame.GetComponent<MiniGamePage>().cardObj = gameObject;
+        gameObject.layer = LayerMask.NameToLayer("Default");
     }
 }

@@ -4,14 +4,18 @@ using UnityEngine;
 
 public class ChipBehavior : BasicBehavior
 {
-    private int clickTimes;
-
     public List<Vector3> chipPos;
     private Vector3 chipDesPos = Vector3.zero;
     public float speed;
     public float chipWorth;
     public GameManager.chipsInfo thisChip;
     public string chipCategory;
+
+    private int clickTimes;
+    private SpriteRenderer sp;
+    private Vector4 chipStartColor;
+    private Vector3 velocity = Vector3.zero;
+    private float smoothTime = 0.5f;
 
     [SerializeField]
     private enum ChipState
@@ -27,13 +31,13 @@ public class ChipBehavior : BasicBehavior
     [SerializeField]
     private GameObject selectedEffect;
 
-    private Vector3 velocity = Vector3.zero;
-    private float smoothTime = 0.5f;
-
     void Start()
     {
         chipState = ChipState.Default;
         selectedEffect = transform.GetChild(0).gameObject;
+
+        sp = GetComponent<SpriteRenderer>();
+        chipStartColor = sp.color;
     }
 
     void Update()
@@ -130,15 +134,40 @@ public class ChipBehavior : BasicBehavior
     private IEnumerator ChipDeletion()
     {
         yield return new WaitForSeconds(2f);
+
+        Color endCol = new Vector4(chipStartColor.x, chipStartColor.y, chipStartColor.z, 0);
+        IEnumerator coroutin = DoAThingOverTime(chipStartColor, endCol, 0.5f);
+        StartCoroutine(coroutin);
         ChipDeleting();
+
+        yield return new WaitForSeconds(1f);
+        //ChipDeleting();
+        chipState = ChipState.DeleteFromInvent;
+        Destroy(gameObject);
+    }
+
+    //fade out
+    private IEnumerator DoAThingOverTime(Color start, Color end, float duration)
+    {
+        Color someColorValue;
+        for (float t = 0f; t < duration; t += Time.deltaTime)
+        {
+            float normalizedTime = t / duration;
+            //right here, you can now use normalizedTime as the third parameter in any Lerp from start to end
+            someColorValue = Color.Lerp(start, end, normalizedTime);
+            sp.color = someColorValue;
+            yield return null;
+        }
+        someColorValue = end; //without this, the value will end at something like 0.9992367
+        sp.color = someColorValue;
     }
 
     private void ChipDeleting()
     {
-        chipState = ChipState.DeleteFromInvent;
+        //chipState = ChipState.DeleteFromInvent;
         ScalingManager.instance.ScalingPageObjs.Remove(gameObject);
         ScalingManager.instance.selectedChips.Remove(gameObject);
         GameManager.instance.myChips.Remove(thisChip);
-        Destroy(gameObject);
+        //Destroy(gameObject);
     }
 }

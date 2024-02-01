@@ -6,16 +6,18 @@ public class ScalingManager : ManagerBehavior
 {
     public static ScalingManager instance;
     public List<GameObject> ScalingPageObjs = new List<GameObject>();
-    public List<GameObject> selectedChips = new List<GameObject>();
-    public List<Vector3> chipPosInitial = new List<Vector3>();
+    [HideInInspector] public List<GameObject> selectedChips = new List<GameObject>();
+    [SerializeField] private List<Vector3> chipPosInitial = new List<Vector3>();
     public GameObject chipPrefab;
-    public GameObject chipParent;
-    public float allChipsWorthThisTurn;
-    public GameObject scale;
-
-    public float currentCardWorth;
+    [HideInInspector] public GameObject chipParent;
+    [HideInInspector] public float allChipsWorthThisTurn;
+    public GameObject scalePagePrefab;
+    [HideInInspector] public float currentCardWorth;
 
     private bool coroutineHasStarted = false;
+
+    [SerializeField]
+    private float timeNeededForEnableButton = 2f;
 
     private void Awake()
     {
@@ -59,12 +61,19 @@ public class ScalingManager : ManagerBehavior
     {
         SwitchInteractabilityForAll(false);
 
-        for (int i = 0; i < selectedChips.Count; i++)
+        if (selectedChips.Count != 0)
         {
-            if (selectedChips[i] != null)
+            for (int i = 0; i < selectedChips.Count; i++)
             {
-                selectedChips[i].GetComponent<ChipBehavior>().ChipSubmission(i);    
+                if (selectedChips[i] != null)
+                {
+                    selectedChips[i].GetComponent<ChipBehavior>().ChipSubmission(i);    
+                }
             }
+        }
+        else
+        {
+            CardNotWon();
         }
     }
 
@@ -81,8 +90,6 @@ public class ScalingManager : ManagerBehavior
     IEnumerator WorthCalculated()
     {
         yield return new WaitForSeconds(0.5f);
-        print(allChipsWorthThisTurn);
-
         ComparisonWithCardValue(allChipsWorthThisTurn);
     }
 
@@ -91,7 +98,7 @@ public class ScalingManager : ManagerBehavior
         if (chipValue >= currentCardWorth)
         {
             print("you won this card. " + "chip=" + chipValue + ", card= " + currentCardWorth);
-            CardWon();
+            CardWon();//chips not removed
 
         }
         else
@@ -111,7 +118,8 @@ public class ScalingManager : ManagerBehavior
 
     IEnumerator CardWonCoroutine()
     {
-        yield return new WaitForSeconds(3);
+        DialogueManager.instance.TriggerDialogueOOC("CardWon");
+        yield return new WaitForSeconds(timeNeededForEnableButton);
         DestroySelfOnClose();
         OOCManager.instance.selectedCard.GetComponent<CardBehavior>().CardGivenToPlayer();
     }
@@ -124,7 +132,8 @@ public class ScalingManager : ManagerBehavior
 
     IEnumerator CardNotWonCoroutine()
     {
-        yield return new WaitForSeconds(3);
+        DialogueManager.instance.TriggerDialogueOOC("CardLost");
+        yield return new WaitForSeconds(timeNeededForEnableButton);
         StartOver();
     }
 
