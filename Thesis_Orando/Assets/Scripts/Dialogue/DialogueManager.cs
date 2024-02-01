@@ -38,6 +38,18 @@ public class DialogueManager : ManagerBehavior
         StartCoroutine(coroutine);
     }
 
+    private void Update()
+    {
+        if (myFlowchart.GetBooleanVariable("isTalking"))
+        {
+            //Time.timeScale = 0f;
+        }
+        else
+        {
+            //Time.timeScale = 1f;
+        }
+    }
+
     IEnumerator OnOOCSceneStart()
     {
         yield return new WaitForSeconds(1);
