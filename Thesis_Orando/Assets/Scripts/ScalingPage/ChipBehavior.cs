@@ -42,6 +42,14 @@ public class ChipBehavior : BasicBehavior
 
     void Update()
     {
+        if (DialogueManager.instance != null)
+        {
+            if (DialogueManager.instance.isTalking)
+            {
+                return;
+            }
+        }
+        
         if (chipState == ChipState.Submitted)
         {
             if (chipDesPos != Vector3.zero)

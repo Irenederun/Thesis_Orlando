@@ -9,6 +9,7 @@ public class DialogueManager : ManagerBehavior
 {
     public static DialogueManager instance;
     private Fungus.Flowchart myFlowchart;
+    public bool isTalking;
 
     //whichever dialogue manager (flowchart) gets turned on, the game is using that one.
     //should only be one of these in each scene. 
@@ -42,10 +43,12 @@ public class DialogueManager : ManagerBehavior
     {
         if (myFlowchart.GetBooleanVariable("isTalking"))
         {
+            isTalking = true;
             //Time.timeScale = 0f;
         }
         else
         {
+            isTalking = false;
             //Time.timeScale = 1f;
         }
     }

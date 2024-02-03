@@ -61,9 +61,4 @@ public class GameManager : MonoBehaviour
     {
         currentLevel++;
     }
-
-    //Questions:
-    //should the card be added to inventory first, or checked out first? or instead of flipping, just open up UI? 
-    //the actual question is can you throw it away after winning it and bet on another one.
-    //also, are chips in inventory? can chips be check from inventory, or a separate thing? what should UI look like for opening up scaling?
 }

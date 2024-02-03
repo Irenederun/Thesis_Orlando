@@ -56,6 +56,14 @@ public class CardBehavior : BasicBehavior
 
     private void Update()
     {
+        if (DialogueManager.instance != null)
+        {
+            if (DialogueManager.instance.isTalking)
+            {
+                return;
+            }
+        }
+        
         switch (cardState)
         {
             case CardState.Dealing:

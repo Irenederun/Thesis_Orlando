@@ -3,8 +3,16 @@
   <component name="ChangeListManager">
     <list default="true" id="9711d522-8fc0-494c-84b2-d15386118320" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Thesis_Orando/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Thesis_Orando/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/CardMiniGame.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/CardMiniGame.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Dialogue/DialogueManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Dialogue/DialogueManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MiniGamePage/MiniGamePage.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MiniGamePage/MiniGamePage.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Mouse.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Mouse.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/OOCPage/CardBehavior.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/OOCPage/CardBehavior.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ScalingPage/ChipBehavior.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ScalingPage/ChipBehavior.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ScalingPage/ScalingManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ScalingPage/ScalingManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,6 +96,7 @@
       <workItem from="1706390628873" duration="20000" />
       <workItem from="1706817478473" duration="28000" />
       <workItem from="1706817525701" duration="7953000" />
+      <workItem from="1706988018482" duration="6645000" />
     </task>
     <servers />
   </component>

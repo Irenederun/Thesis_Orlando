@@ -1,10 +1,18 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
+using UnityEngine.UI;
 
 public class MiniGamePage : ManagerBehavior
 {
     public GameObject cardObj;
+    public TextMeshPro textBlock;
+    public GameObject canvas;
+    private int wordsCollected = 0;
+    public GameObject cardSprite;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -12,16 +20,90 @@ public class MiniGamePage : ManagerBehavior
         StartCoroutine(coroutine);
     }
 
+    private void Update()
+    {
+        if (DialogueManager.instance.isTalking)
+        {
+            if (canvas.activeSelf)
+            {
+                canvas.SetActive(false);
+            }
+        }
+        else
+        {
+            if (!canvas.activeSelf)
+            {
+                canvas.SetActive(true);
+            }
+        }
+    }
+
+    public void Button_I(string buttonTag)
+    {
+        textBlock.text = textBlock.text.Replace("<color=#FF0000>I</color>", "I");
+        textBlock.text = textBlock.text.Replace("<color=#FF0000>me</color>", "me");
+        GameObject[] buttons = GameObject.FindGameObjectsWithTag(buttonTag);
+        foreach (GameObject b in buttons)
+        {
+            b.GetComponent<Button>().interactable = false;
+        }
+        CheckCollection();
+    }
+
+    public void Button_You(string buttonTag)
+    {
+        textBlock.text = textBlock.text.Replace("<color=#FF0000>you</color>", "you");
+        textBlock.text = textBlock.text.Replace("<color=#FF0000>You</color>", "You");
+        GameObject[] buttons = GameObject.FindGameObjectsWithTag(buttonTag);
+        foreach (GameObject b in buttons)
+        {
+            b.GetComponent<Button>().interactable = false;
+        }
+        CheckCollection();
+    }
+    
+    public void Button_Cruel(string buttonTag)
+    {
+        textBlock.text = textBlock.text.Replace("<color=#FF0000>cruel</color>", "cruel");
+        textBlock.text = textBlock.text.Replace("<color=#FF0000>cruelty</color>", "cruelty");
+        GameObject[] buttons = GameObject.FindGameObjectsWithTag(buttonTag);
+        foreach (GameObject b in buttons)
+        {
+            b.GetComponent<Button>().interactable = false;
+        }
+        CheckCollection();
+    }
+    
+    public void Button_Deceit(string buttonTag)
+    {
+        textBlock.text = textBlock.text.Replace("<color=#FF0000>deceit</color>", "deceit");
+        GameObject[] buttons = GameObject.FindGameObjectsWithTag(buttonTag);
+        foreach (GameObject b in buttons)
+        {
+            b.GetComponent<Button>().interactable = false;
+        }
+        CheckCollection();
+    }
+    
+    private void CheckCollection()
+    {
+        wordsCollected++;
+        if (wordsCollected == 4)
+        {
+            CardActivated();
+        }
+    }
+
     IEnumerator StartDialogue()
     {
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(0.5f);
         DialogueManager.instance.TriggerDialogueOOC("CardMiniGameStart");
     }
 
-    // Update is called once per frame
-    void Update()
+    private void CardActivated()
     {
-        
+        DialogueManager.instance.TriggerDialogueOOC("CardMiniGameWon");
+        cardSprite.GetComponent<SpriteRenderer>().color = Color.magenta;//will be sprite change - flipping?
     }
 
     public override void DestroySelfOnClose()

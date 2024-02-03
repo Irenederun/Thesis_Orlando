@@ -3,7 +3,11 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Button_I
+  - Button_You
+  - Button_Cruel
+  - Button_Deceit
   layers:
   - Default
   - TransparentFX

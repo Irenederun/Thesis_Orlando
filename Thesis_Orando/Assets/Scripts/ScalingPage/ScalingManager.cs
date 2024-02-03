@@ -118,8 +118,12 @@ public class ScalingManager : ManagerBehavior
 
     IEnumerator CardWonCoroutine()
     {
-        DialogueManager.instance.TriggerDialogueOOC("CardWon");
         yield return new WaitForSeconds(timeNeededForEnableButton);
+        DialogueManager.instance.TriggerDialogueOOC("CardWon");
+        while (DialogueManager.instance.isTalking)
+        {
+            yield return null;
+        }
         DestroySelfOnClose();
         OOCManager.instance.selectedCard.GetComponent<CardBehavior>().CardGivenToPlayer();
     }
@@ -132,8 +136,12 @@ public class ScalingManager : ManagerBehavior
 
     IEnumerator CardNotWonCoroutine()
     {
-        DialogueManager.instance.TriggerDialogueOOC("CardLost");
         yield return new WaitForSeconds(timeNeededForEnableButton);
+        DialogueManager.instance.TriggerDialogueOOC("CardLost");
+        while (DialogueManager.instance.isTalking)
+        {
+            yield return null;
+        }
         StartOver();
     }
 
