@@ -98,7 +98,7 @@ public class ScalingManager : ManagerBehavior
         if (chipValue >= currentCardWorth)
         {
             print("you won this card. " + "chip=" + chipValue + ", card= " + currentCardWorth);
-            CardWon();//chips not removed
+            CardWon();
 
         }
         else
@@ -110,7 +110,6 @@ public class ScalingManager : ManagerBehavior
 
     private void CardWon()
     {
-        //delete the card from inventory
         OOCManager.instance.RemoveCardFromListOnWinning();
         IEnumerator coroutine = CardWonCoroutine();
         StartCoroutine(coroutine);

@@ -6,7 +6,6 @@ public class ChipBehavior : BasicBehavior
 {
     public List<Vector3> chipPos;
     private Vector3 chipDesPos = Vector3.zero;
-    public float speed;
     public float chipWorth;
     public GameManager.chipsInfo thisChip;
     public string chipCategory;
@@ -20,7 +19,7 @@ public class ChipBehavior : BasicBehavior
     [SerializeField]
     private enum ChipState
     {
-        Default,//defualt = not selected
+        Default,
         Selected,
         Submitted,
         DeleteFromInvent,
@@ -149,12 +148,10 @@ public class ChipBehavior : BasicBehavior
         ChipDeleting();
 
         yield return new WaitForSeconds(1f);
-        //ChipDeleting();
         chipState = ChipState.DeleteFromInvent;
         Destroy(gameObject);
     }
 
-    //fade out
     private IEnumerator DoAThingOverTime(Color start, Color end, float duration)
     {
         Color someColorValue;
@@ -172,10 +169,8 @@ public class ChipBehavior : BasicBehavior
 
     private void ChipDeleting()
     {
-        //chipState = ChipState.DeleteFromInvent;
         ScalingManager.instance.ScalingPageObjs.Remove(gameObject);
         ScalingManager.instance.selectedChips.Remove(gameObject);
         GameManager.instance.myChips.Remove(thisChip);
-        //Destroy(gameObject);
     }
 }

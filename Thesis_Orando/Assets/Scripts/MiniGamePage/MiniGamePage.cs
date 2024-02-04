@@ -13,7 +13,6 @@ public class MiniGamePage : ManagerBehavior
     private int wordsCollected = 0;
     public GameObject cardSprite;
 
-    // Start is called before the first frame update
     void Start()
     {
         IEnumerator coroutine = StartDialogue();
@@ -103,8 +102,23 @@ public class MiniGamePage : ManagerBehavior
     private void CardActivated()
     {
         DialogueManager.instance.TriggerDialogueOOC("CardMiniGameWon");
-        cardSprite.GetComponent<SpriteRenderer>().color = Color.magenta;//will be sprite change - flipping?
+        cardSprite.GetComponent<SpriteRenderer>().color = Color.magenta;//TODO: will be sprite change - flipping?
+        StartCoroutine(TriggerEnding());
     }
+
+    IEnumerator TriggerEnding()
+    {
+        yield return new WaitForSeconds(1);
+        
+        while (DialogueManager.instance.isTalking)
+        {
+            yield return null;
+        }
+        
+        OOCManager.instance.CardActivated(cardObj);
+        DestroySelfOnClose();
+    }
+
 
     public override void DestroySelfOnClose()
     {

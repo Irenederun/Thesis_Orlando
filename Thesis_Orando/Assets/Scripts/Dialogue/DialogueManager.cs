@@ -31,7 +31,6 @@ public class DialogueManager : ManagerBehavior
         instance = null;
     }
 
-    // Start is called before the first frame update
     void Start()
     {
         myFlowchart = GetComponent<Flowchart>();

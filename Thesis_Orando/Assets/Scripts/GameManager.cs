@@ -53,7 +53,7 @@ public class GameManager : MonoBehaviour
     public struct CardInventory
     {
         public string cardNameInvent;
-        public Vector4 cardColorInvent; //will be sprite later
+        public Vector4 cardColorInvent; //TODO: will be sprite later
     }
     public List<CardInventory> cardInventory = new List<CardInventory>();
 

@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
 public class CardBehavior : BasicBehavior 
@@ -17,8 +18,7 @@ public class CardBehavior : BasicBehavior
     //TODO: cheng to ini sprite later
     private Color cardinicolor;
 
-    [SerializeField]
-    private enum CardState
+    [SerializeField] private enum CardState
     {
         Dealing,
         Default,
@@ -26,6 +26,7 @@ public class CardBehavior : BasicBehavior
         Submitted,
         GivenToPlayer,
         Owned,
+        Activated,
     }
     [SerializeField]
     private CardState cardState;
@@ -39,8 +40,7 @@ public class CardBehavior : BasicBehavior
     {
         cardinicolor = GetComponent<SpriteRenderer>().color;//TODO: change to getcompoent sp.sprite later. 
         selectedEffect = transform.GetChild(0).gameObject;
-
-        //cardState = CardState.Default;
+        
         cardState = CardState.Dealing;
         IEnumerator coroutine = SwitchState();
         StartCoroutine(coroutine);
@@ -131,7 +131,6 @@ public class CardBehavior : BasicBehavior
 
     public void CardSubmission()
     {
-        //CardUnselection();
         cardState = CardState.Submitted;
     }
 
@@ -181,9 +180,6 @@ public class CardBehavior : BasicBehavior
                 GetComponent<SpriteRenderer>().color = cardinicolor;//TODO: will be animation of flipping later
                 break;
         }
-
-        //each card, due to its category, should have another script attached to it, containing the specific interaction of that card.
-        //e.g., select words. that would be another UI overlay.
     }
     
     public void EnterMiniGame()
@@ -192,5 +188,32 @@ public class CardBehavior : BasicBehavior
         OOCManager.instance.SwitchInteractabilityForAll(false);
         minigame.GetComponent<MiniGamePage>().cardObj = gameObject;
         gameObject.layer = LayerMask.NameToLayer("Default");
+    }
+
+    public void CardActivatedFromMiniGame()
+    {
+        cardState = CardState.Activated;
+        GetComponent<Collider2D>().enabled = false;
+        Vector4 curCol = GetComponent<SpriteRenderer>().color;
+        Color endCol = new Vector4(curCol.x, curCol.y, curCol.z, 0);
+        IEnumerator coroutine = ChangeColor(curCol, endCol, 1f);
+        StartCoroutine(coroutine);
+    }
+
+    private IEnumerator ChangeColor(Color start, Color end, float duration)
+    {
+        Color someColorValue;
+        for (float t = 0f; t < duration; t += Time.deltaTime)
+        {
+            float normalizedTime = t / duration;
+            someColorValue = Color.Lerp(start, end, normalizedTime);
+            GetComponent<SpriteRenderer>().color = someColorValue;
+            yield return null;
+        }
+        someColorValue = end;
+        GetComponent<SpriteRenderer>().color = someColorValue;
+        
+        OOCManager.instance.EndingAnim();
+        Destroy(gameObject);
     }
 }
