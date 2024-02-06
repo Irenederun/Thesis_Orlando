@@ -362,7 +362,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -35.260277
     y: -42.479446
-    width: 174
+    width: 138.45526
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -392,21 +392,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 295.08334, y: 160.25456}
+  scrollPos: {x: 444.10898, y: 18.962997}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 400
-  zoom: 1
+  zoom: 0.8200002
   scrollViewRect:
     serializedVersion: 2
     x: -343
     y: -340
     width: 1114
     height: 859
-  selectedBlocks:
-  - {fileID: 166097090}
-  selectedCommands:
-  - {fileID: 166097094}
+  selectedBlocks: []
+  selectedCommands: []
   variables:
   - {fileID: 166097098}
   description: 
@@ -505,7 +503,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -30.817078
     y: 243.28049
-    width: 180
+    width: 144.95932
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -661,8 +659,8 @@ MonoBehaviour:
   nodeRect:
     serializedVersion: 2
     x: -26.666672
-    y: 67.79039
-    width: 153
+    y: 69.28293
+    width: 115.69103
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -691,7 +689,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -29.333344
     y: 17.74544
-    width: 147
+    width: 109.99998
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -751,7 +749,7 @@ MonoBehaviour:
   storyText: Maybe try to listen. If you just focus in on what the other person is
     saying, acting takes care of itself to quite a large extent.
   description: 
-  character: {fileID: 1974514406}
+  character: {fileID: 2004486563}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -776,10 +774,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 9
   indentLevel: 0
-  storyText: "It is not enough to discover the secret of a car, its thought and feelings\u2014the
-    actor must be able to convert them into living terms."
+  storyText: "It is not enough to discover the secret of a card, its thought and
+    feelings\u2014the actor must be able to convert them into living terms."
   description: 
-  character: {fileID: 1974514406}
+  character: {fileID: 2004486563}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -821,7 +819,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -31.302414
     y: 120.62372
-    width: 180
+    width: 143.33331
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -852,12 +850,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 12
   indentLevel: 0
-  storyText: 'FOR WORD CARD MINIGAME:
-
-    "A word does not start as a word: it is
-    an end product which begins as an impulse, stimulated by attitude and behaviour
-    which dictates the need for expression."'
-  description: 
+  storyText: 'A word does not start as a word: it is an end product which begins
+    as an impulse, stimulated by attitude and behaviour which dictates the need for
+    expression.'
+  description: WORD CARD MINIGAME
   character: {fileID: 2004486563}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
@@ -2587,7 +2583,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -24.133574
     y: -96.716446
-    width: 138
+    width: 101.05689
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2629,7 +2625,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -32.264694
     y: 174.59914
-    width: 180
+    width: 144.14632
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2660,7 +2656,7 @@ MonoBehaviour:
   storyText: '"Now you have the tool, but what to do with it? Everything can be reconceived,
     and it''s new conception bears the mark of the things around them."'
   description: 
-  character: {fileID: 1974514406}
+  character: {fileID: 2004486563}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -2991,7 +2987,7 @@ MonoBehaviour:
   indentLevel: 0
   storyText: '"The talent... is in your choice."'
   description: 
-  character: {fileID: 1974514406}
+  character: {fileID: 2004486563}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -3009,7 +3005,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 166097074}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
   m_Name: 
@@ -3040,7 +3036,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 166097074}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
   m_Name: 
@@ -3070,7 +3066,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 166097074}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
   m_Name: 
@@ -3101,7 +3097,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 166097074}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
   m_Name: 
@@ -3240,7 +3236,7 @@ Transform:
   m_Children:
   - {fileID: 1196960402}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &519420028
 GameObject:
@@ -3324,7 +3320,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &643200452
 GameObject:
@@ -3741,7 +3737,7 @@ Transform:
   - {fileID: 1555615164}
   - {fileID: 950768513}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &792408001
 BoxCollider2D:
@@ -3911,12 +3907,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 814225161}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.375, y: -3.1925, z: 0}
-  m_LocalScale: {x: 19.7301, y: 5.1538405, z: 1}
+  m_LocalPosition: {x: 0.375, y: -3.2055, z: 0}
+  m_LocalScale: {x: 19.7301, y: 5.1280713, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &814225164
 MonoBehaviour:
@@ -4050,7 +4046,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &836405568
 GameObject:
@@ -4266,7 +4262,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &925676564
 GameObject:
@@ -4353,7 +4349,7 @@ Transform:
   m_Children:
   - {fileID: 836405569}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &925676567
 BoxCollider2D:
@@ -4642,7 +4638,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &978434784
 GameObject:
@@ -4795,7 +4791,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1085567835
 GameObject:
@@ -4831,7 +4827,7 @@ Transform:
   - {fileID: 643200453}
   - {fileID: 1974514405}
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1196960400
 GameObject:
@@ -5118,6 +5114,90 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1257694502}
   m_CullTransparentMesh: 1
+--- !u!1 &1334945121
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1334945123}
+  - component: {fileID: 1334945122}
+  m_Layer: 0
+  m_Name: Orlando
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!212 &1334945122
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1334945121}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: -7
+  m_Sprite: {fileID: 21300000, guid: b48f033e0456f5043a81dc80956722c1, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 7.93, y: 8.89}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!4 &1334945123
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1334945121}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.19946578, y: 1.5660012, z: 0}
+  m_LocalScale: {x: 0.77000004, y: 0.77000004, z: 0.77000004}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 13
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1406424432
 GameObject:
   m_ObjectHideFlags: 0
@@ -5162,7 +5242,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1406424436
 MonoBehaviour:
@@ -6030,7 +6110,7 @@ Transform:
   m_Children:
   - {fileID: 722597029}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &2138932631
 BoxCollider2D:
@@ -6081,9 +6161,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: StartingFadeIn
       objectReference: {fileID: 0}
+    - target: {fileID: 6104520489672354947, guid: 6acb7358ebac893428ace8eac9781e50, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6104520489672354957, guid: 6acb7358ebac893428ace8eac9781e50, type: 3}
       propertyPath: m_RootOrder
-      value: 13
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 6104520489672354957, guid: 6acb7358ebac893428ace8eac9781e50, type: 3}
       propertyPath: m_LocalPosition.x

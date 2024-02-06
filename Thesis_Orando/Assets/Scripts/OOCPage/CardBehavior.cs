@@ -147,6 +147,10 @@ public class CardBehavior : BasicBehavior
 
     private IEnumerator CardOwned()
     {
+        while (DialogueManager.instance.isTalking)
+        {
+            yield return null;
+        }
         yield return new WaitForSeconds(3);
         cardState = CardState.Owned;
         cardIsOwned = true;
