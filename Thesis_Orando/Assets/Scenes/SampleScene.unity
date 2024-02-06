@@ -331,6 +331,14 @@ GameObject:
   - component: {fileID: 166097116}
   - component: {fileID: 166097117}
   - component: {fileID: 166097118}
+  - component: {fileID: 166097126}
+  - component: {fileID: 166097125}
+  - component: {fileID: 166097124}
+  - component: {fileID: 166097123}
+  - component: {fileID: 166097122}
+  - component: {fileID: 166097121}
+  - component: {fileID: 166097120}
+  - component: {fileID: 166097119}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -354,7 +362,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -35.260277
     y: -42.479446
-    width: 178.45526
+    width: 174
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -364,8 +372,11 @@ MonoBehaviour:
   eventHandler: {fileID: 166097086}
   commandList:
   - {fileID: 166097099}
-  - {fileID: 166097079}
   - {fileID: 166097080}
+  - {fileID: 166097079}
+  - {fileID: 166097126}
+  - {fileID: 166097125}
+  - {fileID: 166097124}
   - {fileID: 166097100}
   suppressAllAutoSelections: 0
 --- !u!114 &166097077
@@ -381,11 +392,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 377.71008, y: 105.1231}
+  scrollPos: {x: 295.08334, y: 160.25456}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 400
-  zoom: 0.8200002
+  zoom: 1
   scrollViewRect:
     serializedVersion: 2
     x: -343
@@ -393,8 +404,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 166097115}
-  selectedCommands: []
+  - {fileID: 166097090}
+  selectedCommands:
+  - {fileID: 166097094}
   variables:
   - {fileID: 166097098}
   description: 
@@ -436,10 +448,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 1
   indentLevel: 0
-  storyText: 'Ransacked the language as you might, words have failed you.
-
-    Indeed,
-    once one begins mouthing words aloud, how silly they sound.'
+  storyText: On stage, the words have failed you. Once one begins mouthing words
+    aloud, how silly they sound.
   description: 
   character: {fileID: 2004486563}
   portrait: {fileID: 0}
@@ -466,8 +476,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 2
   indentLevel: 0
-  storyText: "But the play is not in the words, it\u2019s in you! Theater is a verb
-    before it is a noun. An act before it is a place.\r"
+  storyText: "You aren't what I expected. \nI wish you were. It'd be so much easier."
   description: 
   character: {fileID: 2004486563}
   portrait: {fileID: 0}
@@ -496,7 +505,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -30.817078
     y: 243.28049
-    width: 184.95932
+    width: 180
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -653,7 +662,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -26.666672
     y: 67.79039
-    width: 155.69104
+    width: 153
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -681,8 +690,8 @@ MonoBehaviour:
   nodeRect:
     serializedVersion: 2
     x: -29.333344
-    y: 20.530928
-    width: 149.99997
+    y: 17.74544
+    width: 147
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -739,7 +748,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 8
   indentLevel: 0
-  storyText: Card Lost
+  storyText: Maybe try to listen. If you just focus in on what the other person is
+    saying, acting takes care of itself to quite a large extent.
   description: 
   character: {fileID: 1974514406}
   portrait: {fileID: 0}
@@ -766,7 +776,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 9
   indentLevel: 0
-  storyText: Card Won
+  storyText: "It is not enough to discover the secret of a car, its thought and feelings\u2014the
+    actor must be able to convert them into living terms."
   description: 
   character: {fileID: 1974514406}
   portrait: {fileID: 0}
@@ -810,7 +821,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -31.302414
     y: 120.62372
-    width: 183.33331
+    width: 180
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -821,6 +832,10 @@ MonoBehaviour:
   commandList:
   - {fileID: 166097107}
   - {fileID: 166097097}
+  - {fileID: 166097123}
+  - {fileID: 166097122}
+  - {fileID: 166097121}
+  - {fileID: 166097120}
   - {fileID: 166097104}
   suppressAllAutoSelections: 0
 --- !u!114 &166097097
@@ -837,7 +852,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 12
   indentLevel: 0
-  storyText: Now find a way to activate the card.
+  storyText: 'FOR WORD CARD MINIGAME:
+
+    "A word does not start as a word: it is
+    an end product which begins as an impulse, stimulated by attitude and behaviour
+    which dictates the need for expression."'
   description: 
   character: {fileID: 2004486563}
   portrait: {fileID: 0}
@@ -2568,7 +2587,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -24.133574
     y: -96.716446
-    width: 141.05688
+    width: 138
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2610,7 +2629,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -32.264694
     y: 174.59914
-    width: 184.14632
+    width: 180
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2621,6 +2640,7 @@ MonoBehaviour:
   commandList:
   - {fileID: 166097117}
   - {fileID: 166097116}
+  - {fileID: 166097119}
   - {fileID: 166097118}
   suppressAllAutoSelections: 0
 --- !u!114 &166097116
@@ -2637,7 +2657,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 28
   indentLevel: 0
-  storyText: Card Acivated
+  storyText: '"Now you have the tool, but what to do with it? Everything can be reconceived,
+    and it''s new conception bears the mark of the things around them."'
   description: 
   character: {fileID: 1974514406}
   portrait: {fileID: 0}
@@ -2652,7 +2673,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &166097117
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -2804,7 +2825,7 @@ MonoBehaviour:
     vector3Val: {x: 0, y: 0, z: 0}
 --- !u!114 &166097118
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -2954,6 +2975,241 @@ MonoBehaviour:
   vector3Data:
     vector3Ref: {fileID: 0}
     vector3Val: {x: 0, y: 0, z: 0}
+--- !u!114 &166097119
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 166097074}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 38
+  indentLevel: 0
+  storyText: '"The talent... is in your choice."'
+  description: 
+  character: {fileID: 1974514406}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &166097120
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 166097074}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 37
+  indentLevel: 0
+  storyText: 'FOR PROP CARD MINIGAME:
+
+    "We think to act is to be masked. But
+    we are actually masked three times: with the one we think we are, the one we
+    realy are, and the one we have in common."'
+  description: 
+  character: {fileID: 2004486563}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &166097121
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 166097074}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 36
+  indentLevel: 0
+  storyText: 'FOR SPACE CARD MINIGAME:
+
+    "A space in art has two rules. First,
+    anything can happen. Second, something must happen. '
+  description: 
+  character: {fileID: 2004486563}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &166097122
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 166097074}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 35
+  indentLevel: 0
+  storyText: 'FOR COSTUME CARD MINIGAME:
+
+    "Acting is in everything but the words.
+    It is in the body and its shapes and forms. The body knows things about which
+    the mind is ignorant."'
+  description: 
+  character: {fileID: 2004486563}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &166097123
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 166097074}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 34
+  indentLevel: 0
+  storyText: 'FOR LIGHT CARD MINIGAME:
+
+    "To choose art is a ripening, an evolution,
+    an uplifting which enables us to emerge from darkness into a blaze ... of light.'
+  description: 
+  character: {fileID: 2004486563}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &166097124
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 166097074}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 33
+  indentLevel: 0
+  storyText: 'But reality is a word with many meanings.
+
+    And you get to choose
+    yours.'
+  description: 
+  character: {fileID: 2004486563}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &166097125
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 166097074}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 32
+  indentLevel: 0
+  storyText: The human being who acts is the human being who lives. To act is to
+    make reality.
+  description: 
+  character: {fileID: 2004486563}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &166097126
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 166097074}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 31
+  indentLevel: 0
+  storyText: "But a play is not in the words, it\u2019s in you! Theater is a verb
+    before it is a noun. An act before it is a place.\r"
+  description: 
+  character: {fileID: 2004486563}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
 --- !u!1 &288974758
 GameObject:
   m_ObjectHideFlags: 0
@@ -2984,7 +3240,7 @@ Transform:
   m_Children:
   - {fileID: 1196960402}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &519420028
 GameObject:
@@ -3068,7 +3324,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &643200452
 GameObject:
@@ -3485,7 +3741,7 @@ Transform:
   - {fileID: 1555615164}
   - {fileID: 950768513}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &792408001
 BoxCollider2D:
@@ -3660,7 +3916,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &814225164
 MonoBehaviour:
@@ -3794,7 +4050,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &836405568
 GameObject:
@@ -4010,7 +4266,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &925676564
 GameObject:
@@ -4097,7 +4353,7 @@ Transform:
   m_Children:
   - {fileID: 836405569}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &925676567
 BoxCollider2D:
@@ -4372,7 +4628,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61dddfdc5e0e44ca298d8f46f7f5a915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedFlowchart: {fileID: 1406424436}
+  selectedFlowchart: {fileID: 166097077}
 --- !u!4 &977858090
 Transform:
   m_ObjectHideFlags: 1
@@ -4386,7 +4642,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &978434784
 GameObject:
@@ -4539,7 +4795,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1085567835
 GameObject:
@@ -4575,7 +4831,7 @@ Transform:
   - {fileID: 643200453}
   - {fileID: 1974514405}
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1196960400
 GameObject:
@@ -4906,7 +5162,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1406424436
 MonoBehaviour:
@@ -5774,7 +6030,7 @@ Transform:
   m_Children:
   - {fileID: 722597029}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &2138932631
 BoxCollider2D:
@@ -5827,7 +6083,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6104520489672354957, guid: 6acb7358ebac893428ace8eac9781e50, type: 3}
       propertyPath: m_RootOrder
-      value: 12
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 6104520489672354957, guid: 6acb7358ebac893428ace8eac9781e50, type: 3}
       propertyPath: m_LocalPosition.x
