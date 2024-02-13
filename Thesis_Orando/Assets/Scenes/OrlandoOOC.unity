@@ -362,7 +362,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -35.260277
     y: -42.479446
-    width: 138.45526
+    width: 178.45526
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -392,7 +392,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 444.10898, y: 18.962997}
+  scrollPos: {x: 358.74307, y: -37.134552}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 400
@@ -403,8 +403,10 @@ MonoBehaviour:
     y: -340
     width: 1114
     height: 859
-  selectedBlocks: []
-  selectedCommands: []
+  selectedBlocks:
+  - {fileID: 166097115}
+  selectedCommands:
+  - {fileID: 166097119}
   variables:
   - {fileID: 166097098}
   description: 
@@ -503,7 +505,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -30.817078
     y: 243.28049
-    width: 144.95932
+    width: 184.95932
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -660,7 +662,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -26.666672
     y: 69.28293
-    width: 115.69103
+    width: 155.69104
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -689,7 +691,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -29.333344
     y: 17.74544
-    width: 109.99998
+    width: 149.99997
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -819,7 +821,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -31.302414
     y: 120.62372
-    width: 143.33331
+    width: 183.33331
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2583,7 +2585,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -24.133574
     y: -96.716446
-    width: 101.05689
+    width: 141.05688
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2625,7 +2627,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -32.264694
     y: 174.59914
-    width: 144.14632
+    width: 184.14632
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2653,8 +2655,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 28
   indentLevel: 0
-  storyText: '"Now you have the tool, but what to do with it? Everything can be reconceived,
-    and it''s new conception bears the mark of the things around them."'
+  storyText: Now you have the tool, but what to do with it? Everything can be reconceived,
+    and it's new conception bears the mark of the things around them.
   description: 
   character: {fileID: 2004486563}
   portrait: {fileID: 0}
@@ -2985,7 +2987,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 38
   indentLevel: 0
-  storyText: '"The talent... is in your choice."'
+  storyText: The talent... is in your choice.
   description: 
   character: {fileID: 2004486563}
   portrait: {fileID: 0}

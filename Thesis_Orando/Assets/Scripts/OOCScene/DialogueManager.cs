@@ -10,6 +10,7 @@ public class DialogueManager : ManagerBehavior
     public static DialogueManager instance;
     private Fungus.Flowchart myFlowchart;
     public bool isTalking;
+    public bool dragCompleted;
 
     //whichever dialogue manager (flowchart) gets turned on, the game is using that one.
     //should only be one of these in each scene. 
@@ -34,25 +35,25 @@ public class DialogueManager : ManagerBehavior
     void Start()
     {
         myFlowchart = GetComponent<Flowchart>();
-        IEnumerator coroutine = OnOOCSceneStart();
+        IEnumerator coroutine = OnSceneStart();
         StartCoroutine(coroutine);
     }
 
     private void Update()
     {
-        if (myFlowchart.GetBooleanVariable("isTalking"))
+        if (myFlowchart.GetBooleanVariable("isTalking") && !isTalking)
         {
             isTalking = true;
             //Time.timeScale = 0f;
         }
-        else
+        else if (!myFlowchart.GetBooleanVariable("isTalking") && isTalking)
         {
             isTalking = false;
             //Time.timeScale = 1f;
         }
     }
 
-    IEnumerator OnOOCSceneStart()
+    IEnumerator OnSceneStart()
     {
         yield return new WaitForSeconds(1);
         myFlowchart.SendFungusMessage("OrlandoStarts");
