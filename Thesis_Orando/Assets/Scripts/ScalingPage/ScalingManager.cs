@@ -14,7 +14,9 @@ public class ScalingManager : ManagerBehavior
     public GameObject scalePagePrefab;
     [HideInInspector] public float currentCardWorth;
 
+    private float selectedChipWeight = 0;//combine w allchipworththisturn later.
     private bool coroutineHasStarted = false;
+    public GameObject scale;
 
     [SerializeField]
     private float timeNeededForEnableButton = 2f;
@@ -55,6 +57,31 @@ public class ScalingManager : ManagerBehavior
         }
 
         SwitchInteractabilityForAll(true);
+    }
+
+    public void TiltScale(float chipWeight)
+    {
+        selectedChipWeight += chipWeight;
+
+        if (selectedChipWeight < currentCardWorth)
+        {
+            if (selectedChips.Count != 0)
+            {
+                scale.transform.eulerAngles = new Vector3(0, 0, 5);
+            }
+            else
+            {
+                scale.transform.eulerAngles = new Vector3(0, 0, 10);
+            }
+        }
+        else if (selectedChipWeight == currentCardWorth)
+        {
+            scale.transform.eulerAngles = new Vector3(0, 0, 0);
+        }
+        else if (selectedChipWeight > currentCardWorth)
+        {
+            scale.transform.eulerAngles = new Vector3(0, 0, -10);
+        }
     }
 
     public void ChipsSubmission()

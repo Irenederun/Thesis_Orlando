@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class OOCManager : MonoBehaviour
 {
@@ -172,5 +173,13 @@ public class OOCManager : MonoBehaviour
     public void EndingAnim()
     {
         Instantiate(endPrefab);
+        IEnumerator coroutine = nextScene();
+        StartCoroutine(coroutine);
+    }
+
+    private IEnumerator nextScene()
+    {
+        yield return new WaitForSeconds(2);
+        SceneManager.LoadScene(1);
     }
 }

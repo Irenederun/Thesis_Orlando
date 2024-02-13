@@ -35,6 +35,7 @@ public class CardBehavior : BasicBehavior
     private float smoothTimeDealing = 0.3f;
     private float smoothTimeOwning = 0.5f;
     float speed = 90;
+    private bool cardHasArrived = false;
 
     void Start()
     {
@@ -73,6 +74,10 @@ public class CardBehavior : BasicBehavior
                 transform.position = Vector3.SmoothDamp(transform.position, cardTarget.position, ref velocity, smoothTimeOwning, Mathf.Infinity);
                 var step = speed * Time.deltaTime;
                 transform.rotation = Quaternion.RotateTowards(transform.rotation, cardTarget.rotation, step);
+                if (transform.position.x >= cardTarget.position.x - 0.5f && !cardHasArrived)
+                {
+                    cardHasArrived = true;
+                }
                 break;
         }
     }
@@ -147,11 +152,16 @@ public class CardBehavior : BasicBehavior
 
     private IEnumerator CardOwned()
     {
-        while (DialogueManager.instance.isTalking)
+        // while (DialogueManager.instance.isTalking)
+        // {
+        //     yield return null;
+        // }
+        while (!cardHasArrived)
         {
             yield return null;
         }
-        yield return new WaitForSeconds(3);
+        yield return new WaitForSeconds(1);
+        print("card interactable");
         cardState = CardState.Owned;
         cardIsOwned = true;
         clickTimes = 0;

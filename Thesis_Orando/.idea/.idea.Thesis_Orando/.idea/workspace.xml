@@ -3,8 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="9711d522-8fc0-494c-84b2-d15386118320" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Thesis_Orando/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Thesis_Orando/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/ScalingPage.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/ScalingPage.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/OOCPage/CardBehavior.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/OOCPage/CardBehavior.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ScalingPage/ChipBehavior.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ScalingPage/ChipBehavior.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ScalingPage/ScalingManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ScalingPage/ScalingManager.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -12,6 +14,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/3ea01e77be99618395f448b16bd7cc2bd4248bd9e5d8474964b2d97f39c5d74/System.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/FadeIn.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/MiniGamePage/MiniGamePage.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -91,7 +94,8 @@
       <workItem from="1706817478473" duration="28000" />
       <workItem from="1706817525701" duration="7953000" />
       <workItem from="1706988018482" duration="12169000" />
-      <workItem from="1707248238975" duration="1889000" />
+      <workItem from="1707248238975" duration="2485000" />
+      <workItem from="1707787505378" duration="1697000" />
     </task>
     <servers />
   </component>

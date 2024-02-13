@@ -88,6 +88,8 @@ public class ChipBehavior : BasicBehavior
         chipState = ChipState.Selected;
         selectedEffect.SetActive(true);
         ScalingManager.instance.selectedChips.Add(gameObject);
+        GetChipWorth();
+        ScalingManager.instance.TiltScale(chipWorth);
     }
 
     private void ChipUnselection()
@@ -101,6 +103,7 @@ public class ChipBehavior : BasicBehavior
         Debug.Log("Unselected");
         selectedEffect.SetActive(false);
         ScalingManager.instance.selectedChips.Remove(gameObject);
+        ScalingManager.instance.TiltScale(-chipWorth);
     }
 
     public void ChipSubmission(int chipNumber)
@@ -110,8 +113,19 @@ public class ChipBehavior : BasicBehavior
 
     private void ChipSubmitted(int chipNo)
     {
-        chipState= ChipState.Submitted;
+        chipState = ChipState.Submitted;
 
+        //GetChipWorth();
+
+        selectedEffect.SetActive(false);
+        chipDesPos = chipPos[chipNo];
+        ScalingManager.instance.CalculateWorth(chipWorth);
+        IEnumerator coroutine = ChipDeletion();
+        StartCoroutine(coroutine);
+    }
+
+    private void GetChipWorth()
+    {
         switch (chipCategory)
         {
             case "CAT1":
@@ -130,12 +144,6 @@ public class ChipBehavior : BasicBehavior
                 chipWorth = GameManager.instance.chipWorthChart[GameManager.instance.currentLevel].Value4;
                 break;
         }
-
-        selectedEffect.SetActive(false);
-        chipDesPos = chipPos[chipNo];
-        ScalingManager.instance.CalculateWorth(chipWorth);
-        IEnumerator coroutine = ChipDeletion();
-        StartCoroutine(coroutine);
     }
 
     private IEnumerator ChipDeletion()
