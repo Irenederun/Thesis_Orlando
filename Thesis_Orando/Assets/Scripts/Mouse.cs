@@ -1,8 +1,12 @@
+using System.Collections;
 using UnityEngine;
 
 public class Mouse : MonoBehaviour
 {   
     public static Mouse instance;
+    public float mouseClickPosX;
+    private bool CDOn = false;
+    public ActressController actressController;
     
     private void Awake()
     {
@@ -19,8 +23,7 @@ public class Mouse : MonoBehaviour
 
     private Vector2 mousePos;
     private GameObject clickingObj;
-
-    // Update is called once per frame
+    
     void Update()
     {
         if (DialogueManager.instance != null)
@@ -44,7 +47,30 @@ public class Mouse : MonoBehaviour
             else
             {
                 clickingObj = null;
+                if (actressController != null)
+                {
+                    if (!CDOn)
+                    {
+                        RecordPosition();
+                        CDOn = true;
+                        StartCoroutine(CDChangeState());
+                    }
+                    
+                }
             }
         }
+    }
+
+    IEnumerator CDChangeState()
+    {
+        yield return new WaitForSeconds(1);
+        CDOn = false;
+    }
+
+    void RecordPosition()
+    {
+        mouseClickPosX = mousePos.x;
+        //print(mouseClickPosX);
+        actressController.LerpToPos(mouseClickPosX);
     }
 }

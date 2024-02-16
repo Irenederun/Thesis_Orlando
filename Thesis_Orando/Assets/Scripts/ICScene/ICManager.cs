@@ -19,6 +19,8 @@ public class ICManager : MonoBehaviour
 
     public GameObject cardInventHandPrefab;
     public GameObject scriptPrefab;
+    public GameObject cam;
+    public GameObject actress;
 
     private void Awake()
     {
@@ -30,12 +32,6 @@ public class ICManager : MonoBehaviour
         {
             Destroy(this);
         }
-    }
-    
-    // Start is called before the first frame update
-    void Start()
-    {
-        
     }
 
     // Update is called once per frame
@@ -55,7 +51,8 @@ public class ICManager : MonoBehaviour
     {
         icState = ICState.CardUsed;
         DestroyCardInventPrefab();
-        TurnOnScript();
+        //TurnOnScript();
+        TurnOnOptions();//load the floating things 
     }
 
     void DestroyCardInventPrefab()
@@ -68,6 +65,11 @@ public class ICManager : MonoBehaviour
     {
         Instantiate(scriptPrefab);
         SwitchInteractabilityForICObjects(false);
+    }
+
+    void TurnOnOptions()
+    {
+        
     }
 
     public void TurnOnInventory()
@@ -93,5 +95,29 @@ public class ICManager : MonoBehaviour
                 }
                 break;
         }
+    }
+
+    public void CameraFollow()
+    {
+        IEnumerator coroutin = CamWait();
+        StartCoroutine(coroutin);
+    }
+
+    IEnumerator CamWait()
+    {
+        yield return new WaitForSeconds(1);
+        cam.GetComponent<CameraFollow>().CameraFollowing(actress.transform.position);
+    }
+
+    public void CameraStopFollow()
+    {
+        IEnumerator coroutin = CamStopWait();
+        StartCoroutine(coroutin);
+    }
+    
+    IEnumerator CamStopWait()
+    {
+        yield return new WaitForSeconds(1);
+        cam.GetComponent<CameraFollow>().CameraStopFollowing();
     }
 }
