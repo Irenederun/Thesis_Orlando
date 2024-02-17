@@ -12,12 +12,14 @@ public class ActressController : MonoBehaviour
     [SerializeField] private ActressState actressState;
     
     private Vector3 destinationPos;
-    private Vector3 velocity = Vector3.zero;
-    private float smoothTimeDealing = 1.2f;
-    private float arrivalOffset = 0.4f;
+    //private Vector3 velocity = Vector3.zero;
+    private float smoothTimeDealing = 0.6f;
+    private float arrivalOffset = 0.2f;
+    private float smoothDampOffset = 1.5f;
     private Animator anim;
     private SpriteRenderer sp;
     private bool animPlaying = false;
+    public float speed;
 
     void Start()
     {
@@ -31,22 +33,23 @@ public class ActressController : MonoBehaviour
     {
         if (actressState == ActressState.Idle)
         {
-            if (!animPlaying)
-            {
-                anim.SetTrigger("Idle");
-                ICManager.instance.CameraStopFollow();
-                animPlaying = true;
-            }
+            ActressStopping();
         }
         
         else if (actressState == ActressState.Walking)
         {
-            transform.position = Vector3.SmoothDamp
-                (transform.position, destinationPos, ref velocity, smoothTimeDealing, Mathf.Infinity);
-            
-            if (Vector3.Distance(transform.position, destinationPos) <= arrivalOffset)
+            if (Vector3.Distance(transform.position, destinationPos) > smoothDampOffset)
             {
-                actressState = ActressState.Idle;
+                ActressMovingTowards(speed);
+            }
+            else if (Vector3.Distance(transform.position, destinationPos) <= arrivalOffset)
+            {
+                StopActress();
+            }
+            else if (Vector3.Distance(transform.position, destinationPos) <= smoothDampOffset)
+            {
+                ActressMovingTowards(speed * 0.7f);
+                //ActressSmoothDamp(new Vector3(speed, 0,0));
             }
         }
     }
@@ -66,5 +69,32 @@ public class ActressController : MonoBehaviour
             sp.flipX = false;
         }
         destinationPos = new Vector3(desPos, transform.position.y, 0f);
+    }
+
+    private void ActressStopping()
+    {
+        if (!animPlaying)
+        {
+            anim.SetTrigger("Idle");
+            //ICManager.instance.CameraStopFollow();
+            animPlaying = true;
+            ICManager.instance.DestroyDesPosIcon();
+        }
+    }
+
+    private void ActressMovingTowards(float curSpeed)
+    {
+        transform.position = Vector3.MoveTowards(transform.position,destinationPos, curSpeed * Time.deltaTime);
+    }
+
+    private void ActressSmoothDamp(Vector3 vel)
+    {
+        transform.position = Vector3.SmoothDamp
+        (transform.position, destinationPos, ref vel, smoothTimeDealing, Mathf.Infinity);
+    }
+    
+    public void StopActress()
+    {
+        actressState = ActressState.Idle;
     }
 }

@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public class Mouse : MonoBehaviour
 {   
@@ -7,6 +8,8 @@ public class Mouse : MonoBehaviour
     public float mouseClickPosX;
     private bool CDOn = false;
     public ActressController actressController;
+    private bool stopMouse = false;
+    private GameObject dragObj;
     
     private void Awake()
     {
@@ -34,8 +37,14 @@ public class Mouse : MonoBehaviour
             }
         }
         
+        if (stopMouse)
+        {
+            return;
+        }
+        
         mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         RaycastHit2D hit = Physics2D.Raycast(mousePos, Vector2.zero, Mathf.Infinity, LayerMask.GetMask("Interactable"));
+        RaycastHit2D hitDrag = Physics2D.Raycast(mousePos, Vector2.zero, Mathf.Infinity, LayerMask.GetMask("Draggable"));
         
         if (Input.GetMouseButtonDown(0))
         {
@@ -47,30 +56,53 @@ public class Mouse : MonoBehaviour
             else
             {
                 clickingObj = null;
-                if (actressController != null)
+                if (mousePos.y < -2)
                 {
-                    if (!CDOn)
+                    if (actressController != null)
                     {
-                        RecordPosition();
-                        CDOn = true;
-                        StartCoroutine(CDChangeState());
+                        if (!CDOn)
+                        {
+                            MoveActress();
+                            CDOn = true;
+                            StartCoroutine(ChangeCDState());
+                        }
+                        
                     }
-                    
                 }
+            }
+            
+            if (hitDrag.collider != null)
+            {
+                dragObj = hitDrag.collider.gameObject;
+                dragObj.GetComponent<DragBehavior>().OnDragStarting();
+            }
+        }
+
+        if (Input.GetMouseButtonUp(0))
+        {
+            if (dragObj != null)
+            {
+                dragObj.GetComponent<DragBehavior>().OnDragExit();
+                dragObj = null;
             }
         }
     }
 
-    IEnumerator CDChangeState()
+    IEnumerator ChangeCDState()
     {
         yield return new WaitForSeconds(1);
         CDOn = false;
     }
 
-    void RecordPosition()
+    void MoveActress()
     {
         mouseClickPosX = mousePos.x;
-        //print(mouseClickPosX);
         actressController.LerpToPos(mouseClickPosX);
+        ICManager.instance.ActressWalkingMisc(mouseClickPosX);
+    }
+
+    public void ChangeMouseInteraction(bool condition)
+    {
+        stopMouse = condition;
     }
 }

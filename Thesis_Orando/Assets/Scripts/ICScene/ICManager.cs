@@ -21,6 +21,11 @@ public class ICManager : MonoBehaviour
     public GameObject scriptPrefab;
     public GameObject cam;
     public GameObject actress;
+    [HideInInspector] public GameObject itemWithInteractionButtons;
+
+    public GameObject desPosIconPrefab;
+    private GameObject desPosIcon;
+    public GameObject cardOptionsPrefab;
 
     private void Awake()
     {
@@ -49,16 +54,17 @@ public class ICManager : MonoBehaviour
 
     void CardUsed()
     {
+        //TurnOnScript();
         icState = ICState.CardUsed;
         DestroyCardInventPrefab();
-        //TurnOnScript();
-        TurnOnOptions();//load the floating things 
+        LoadCardOptions(); 
     }
 
     void DestroyCardInventPrefab()
     {
         //cardInventHandPrefab.GetComponent<CardInventManager>().DestroySelfOnClose(); //TODO: will change to this after drag is switched to non-Fungus
         cardInventHandPrefab.SetActive(false);
+        Mouse.instance.ChangeMouseInteraction(false);
     }
 
     void TurnOnScript()
@@ -67,15 +73,17 @@ public class ICManager : MonoBehaviour
         SwitchInteractabilityForICObjects(false);
     }
 
-    void TurnOnOptions()
+    void LoadCardOptions()
     {
-        
+        //load the floating things. I think I should load prefabs that carry the options?? canvas?
+        Instantiate(cardOptionsPrefab);
     }
 
     public void TurnOnInventory()
     {
         //Instantiate(cardInventHandPrefab); //TODO: will change to this after drag is switched to non-Fungus
         cardInventHandPrefab.SetActive(true);
+        Mouse.instance.ChangeMouseInteraction(true);
     }
 
     public void SwitchInteractabilityForICObjects(bool interactability)
@@ -99,8 +107,9 @@ public class ICManager : MonoBehaviour
 
     public void CameraFollow()
     {
-        IEnumerator coroutin = CamWait();
-        StartCoroutine(coroutin);
+        //IEnumerator coroutin = CamWait();
+        //StartCoroutine(coroutin);
+        cam.GetComponent<CameraFollow>().CameraFollowing(actress.transform.position);
     }
 
     IEnumerator CamWait()
@@ -111,13 +120,42 @@ public class ICManager : MonoBehaviour
 
     public void CameraStopFollow()
     {
-        IEnumerator coroutin = CamStopWait();
-        StartCoroutine(coroutin);
+        //IEnumerator coroutin = CamStopWait();
+        //StartCoroutine(coroutin);
+        cam.GetComponent<CameraFollow>().CameraStopFollowing();
     }
     
     IEnumerator CamStopWait()
     {
         yield return new WaitForSeconds(1);
         cam.GetComponent<CameraFollow>().CameraStopFollowing();
+    }
+
+    public void CamAndActressStop()
+    {
+        cam.GetComponent<CameraFollow>().CameraStopFollowing();
+        actress.GetComponent<ActressController>().StopActress();
+        DestroyDesPosIcon();
+    }
+
+    public void ActressWalkingMisc(float xPos)
+    {
+        if (itemWithInteractionButtons != null)
+        {
+            itemWithInteractionButtons.GetComponent<InteractiveItemsManager>().DeleteIcons();
+        }
+
+        if (desPosIcon != null)
+        {
+            DestroyDesPosIcon();
+        }
+
+        desPosIcon = Instantiate(desPosIconPrefab);
+        desPosIcon.transform.position = new Vector3(xPos, desPosIcon.transform.position.y, 0);
+    }
+
+    public void DestroyDesPosIcon()
+    {
+        Destroy(desPosIcon);
     }
 }

@@ -23,10 +23,10 @@ public class InteractiveItemsManager : BasicBehavior
                     previouslyClickedItem.GetComponent<InteractiveItemsManager>().DeleteIcons();
                 }
                 previouslyClickedItem = gameObject;
+                ICManager.instance.itemWithInteractionButtons = gameObject;
                 break;
             case 1:
                 DeleteIcons();
-                previouslyClickedItem = null;
                 break;
         }
     }
@@ -47,5 +47,7 @@ public class InteractiveItemsManager : BasicBehavior
         Destroy(gameObject.transform.GetChild(0).GetChild(0).gameObject);
         Destroy(gameObject.transform.GetChild(0).GetChild(1).gameObject);
         clickTimes = 0;
+        previouslyClickedItem = null;
+        ICManager.instance.itemWithInteractionButtons = null;
     }
 }

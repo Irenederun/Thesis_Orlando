@@ -3,12 +3,16 @@
   <component name="ChangeListManager">
     <list default="true" id="9711d522-8fc0-494c-84b2-d15386118320" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Thesis_Orando/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Thesis_Orando/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/IC/icons/lookIcon.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/IC/icons/lookIcon.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/IC/icons/talkIcon.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/IC/icons/talkIcon.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/IC/icons/useUIIcon.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/IC/icons/useUIIcon.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/OOC/CardMiniGame.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/OOC/CardMiniGame.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/OrlandoIC.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/OrlandoIC.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BasicClasses/BasicBehavior.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BasicClasses/BasicBehavior.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ICScene/ActressController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ICScene/ActressController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ICScene/CameraFollow.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ICScene/CameraFollow.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/ICScene/ICManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ICScene/ICManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ICScene/ICPage/CardInventManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ICScene/ICPage/CardInventManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ICScene/InteractiveItemsManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ICScene/InteractiveItemsManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Mouse.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Mouse.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +27,10 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ICScene/ICPage/CardInventManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ICScene/ICPage/IconBehaviors.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ICScene/InteractiveItemsManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/ICScene/ReloadBehavior.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/ICScene/SpeechCardManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/ICScene/SubmissionBehavior.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/ICScene/WordDragDetails.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/OOCScene/OOCManager.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -106,6 +114,7 @@
       <workItem from="1707787505378" duration="2088000" />
       <workItem from="1707852949257" duration="8149000" />
       <workItem from="1708027897452" duration="8865000" />
+      <workItem from="1708105365432" duration="19429000" />
     </task>
     <servers />
   </component>

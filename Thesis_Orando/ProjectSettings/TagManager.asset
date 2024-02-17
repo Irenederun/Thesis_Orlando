@@ -8,6 +8,8 @@ TagManager:
   - Button_You
   - Button_Cruel
   - Button_Deceit
+  - Draggable
+  - DragDes
   layers:
   - Default
   - TransparentFX
@@ -16,8 +18,8 @@ TagManager:
   - Water
   - UI
   - Interactable
-  - 
-  - 
+  - Draggable
+  - DragDestinations
   - 
   - 
   - 

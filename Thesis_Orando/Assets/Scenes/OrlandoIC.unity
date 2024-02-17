@@ -199,13 +199,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 276207293}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.0025, y: -4.2664, z: 0}
-  m_LocalScale: {x: 17.911339, y: 1.6019198, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -4.5546994, y: -4.2658005, z: 0}
+  m_LocalScale: {x: 17.911337, y: 1.6019199, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_Father: {fileID: 2113615489}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &332243965
 GameObject:
@@ -283,13 +283,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 332243965}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.5522, y: -0.0006, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1.4002122, y: 0.926089, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_Father: {fileID: 2113615489}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &346458929
 GameObject:
@@ -462,7 +462,7 @@ Transform:
   - {fileID: 1449586523}
   - {fileID: 1371040452}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &432005751
 MonoBehaviour:
@@ -630,6 +630,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   camState: 0
   actress: {fileID: 812596398}
+  smoothTimeDealing: 0.5
   leftBound: 0
   rightBound: 9.1
 --- !u!1 &806707442
@@ -685,7 +686,9 @@ MonoBehaviour:
     Value3: 10
     Category4: CAT4
     Value4: 5
-  cardInventory: []
+  cardInventory:
+  - cardNameInvent: CardA
+    cardColorInvent: {x: 1, y: 0, z: 0, w: 1}
 --- !u!4 &806707444
 Transform:
   m_ObjectHideFlags: 0
@@ -789,7 +792,7 @@ Transform:
   - {fileID: 443171109}
   - {fileID: 1887697178}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!70 &812596401
 CapsuleCollider2D:
@@ -838,6 +841,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   actressState: 0
+  speed: 3.5
 --- !u!95 &812596404
 Animator:
   serializedVersion: 5
@@ -1017,6 +1021,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 514ca8251d1a4de4293903097b10803d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cardInventPrefab: {fileID: 4872563983552462389, guid: 6fa8c5e531afaf24a96be0ee547f33dc, type: 3}
+  cardInventPositions:
+  - {fileID: 2114201917}
 --- !u!1 &932764552
 GameObject:
   m_ObjectHideFlags: 0
@@ -1052,7 +1059,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: -6
-    width: 68.064445
+    width: 69.0476
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1075,11 +1082,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 807.62665, y: 539.5334}
+  scrollPos: {x: 311.28262, y: 205.04724}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 400
-  zoom: 0.3100004
+  zoom: 0.7000002
   scrollViewRect:
     serializedVersion: 2
     x: 0
@@ -1126,7 +1133,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &944061569
 GameObject:
@@ -1249,6 +1256,9 @@ MonoBehaviour:
   scriptPrefab: {fileID: 3632372909122797512, guid: cc2a048c48added41937aef758c0532d, type: 3}
   cam: {fileID: 527888518}
   actress: {fileID: 812596398}
+  itemWithInteractionButtons: {fileID: 0}
+  desPosIconPrefab: {fileID: 962099042538411662, guid: 25b053b1d453aa741bb6b2f890766079, type: 3}
+  cardOptionsPrefab: {fileID: 2992172534819920481, guid: dafd26ca367ceaa4ebc9c717feaafc21, type: 3}
 --- !u!4 &1365350795
 Transform:
   m_ObjectHideFlags: 0
@@ -1262,7 +1272,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1371040450
 GameObject:
@@ -1342,7 +1352,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1371040450}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.0446, y: 0.0127, z: 0}
+  m_LocalPosition: {x: -0.04460023, y: 0.012700007, z: 0}
   m_LocalScale: {x: 2.7223163, y: 1.8113322, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1456,7 +1466,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1449586522
 GameObject:
@@ -1852,6 +1862,39 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &2113615488
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2113615489}
+  m_Layer: 0
+  m_Name: Background
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2113615489
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2113615488}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 4.5522, y: -0.0006, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 332243967}
+  - {fileID: 276207295}
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2114201912
 GameObject:
   m_ObjectHideFlags: 0
@@ -1866,7 +1909,7 @@ GameObject:
   - component: {fileID: 2114201914}
   - component: {fileID: 2114201913}
   m_Layer: 0
-  m_Name: DraggableSprite
+  m_Name: cardInventPosHolder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2032,11 +2075,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 13.404249, y: 17.808495}
+  scrollPos: {x: -0.57445383, y: 1.978723}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
-  blockViewHeight: 400
-  zoom: 0.94000006
+  blockViewHeight: 200
+  zoom: 1
   scrollViewRect:
     serializedVersion: 2
     x: -343
@@ -2261,9 +2304,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 110.55312
-    y: 120.99992
-    width: 108.15602
+    x: 230.55313
+    y: 82.99992
+    width: 69.33333
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2309,3 +2352,64 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dragCompleted: 0
+--- !u!1001 &2992172535742048657
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2992172534819920480, guid: dafd26ca367ceaa4ebc9c717feaafc21, type: 3}
+      propertyPath: m_RootOrder
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 2992172534819920480, guid: dafd26ca367ceaa4ebc9c717feaafc21, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.5622773
+      objectReference: {fileID: 0}
+    - target: {fileID: 2992172534819920480, guid: dafd26ca367ceaa4ebc9c717feaafc21, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.5804866
+      objectReference: {fileID: 0}
+    - target: {fileID: 2992172534819920480, guid: dafd26ca367ceaa4ebc9c717feaafc21, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.12687574
+      objectReference: {fileID: 0}
+    - target: {fileID: 2992172534819920480, guid: dafd26ca367ceaa4ebc9c717feaafc21, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2992172534819920480, guid: dafd26ca367ceaa4ebc9c717feaafc21, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2992172534819920480, guid: dafd26ca367ceaa4ebc9c717feaafc21, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2992172534819920480, guid: dafd26ca367ceaa4ebc9c717feaafc21, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2992172534819920480, guid: dafd26ca367ceaa4ebc9c717feaafc21, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2992172534819920480, guid: dafd26ca367ceaa4ebc9c717feaafc21, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2992172534819920480, guid: dafd26ca367ceaa4ebc9c717feaafc21, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2992172534819920481, guid: dafd26ca367ceaa4ebc9c717feaafc21, type: 3}
+      propertyPath: m_Name
+      value: WordDraggingPrefab
+      objectReference: {fileID: 0}
+    - target: {fileID: 2992172534819920481, guid: dafd26ca367ceaa4ebc9c717feaafc21, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: dafd26ca367ceaa4ebc9c717feaafc21, type: 3}
