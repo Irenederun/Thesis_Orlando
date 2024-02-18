@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9711d522-8fc0-494c-84b2-d15386118320" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ICScene/DragBehavior.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ICScene/DragBehavior.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ICScene/ICManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ICScene/ICManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MouseRayCast.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MouseRayCast.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/OOCScene/DialogueManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/OOCScene/DialogueManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Thesis_Orando/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Thesis_Orando/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,7 +105,7 @@
       <workItem from="1707852949257" duration="8149000" />
       <workItem from="1708027897452" duration="8865000" />
       <workItem from="1708105365432" duration="19832000" />
-      <workItem from="1708201558557" duration="14098000" />
+      <workItem from="1708201558557" duration="14594000" />
     </task>
     <servers />
   </component>
