@@ -10,7 +10,7 @@ public class DialogueManager : ManagerBehavior
     public static DialogueManager instance;
     private Fungus.Flowchart myFlowchart;
     public bool isTalking;
-    public bool dragCompleted;
+    //public bool dragCompleted;
 
     //whichever dialogue manager (flowchart) gets turned on, the game is using that one.
     //should only be one of these in each scene. 

@@ -77,7 +77,9 @@ public class WordDragDetails : MonoBehaviour
                 {
                     wordPosition = 1;
                 }
+                
                 SpeechCardManager.instance.AddToSentence(word, 3);
+                
                 break;
         }
         text.text = posCorConjugations[wordPosition];
@@ -101,7 +103,9 @@ public class WordDragDetails : MonoBehaviour
                 {
                     wordPosition = 1;
                 }
+                
                 SpeechCardManager.instance.AddToSentence(word, 3);
+                
                 break;
         }
         text.text = posCorConjugations[wordPosition];

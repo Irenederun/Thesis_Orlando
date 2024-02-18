@@ -25,14 +25,13 @@ public class CardInventManager : ManagerBehavior
         //     card.cardColor = GameManager.instance.cardInventory[i].cardColorInvent;
         //     cardInvent.Add(card);
         // }
-        
-        //LoadInventoryItems();//应该是这个but for the sake of my sanity先用fungus所以实际在用下面这行
-        GameObject cardObj = transform.GetChild(0).gameObject;
-        cardObj.GetComponent<SpriteRenderer>().color = GameManager.instance.cardInventory[0].cardColorInvent;
+        LoadInventoryItems();
+        //GameObject cardObj = transform.GetChild(0).gameObject;
+        //cardObj.GetComponent<SpriteRenderer>().color = GameManager.instance.cardInventory[0].cardColorInvent;
         //这个地方为什么他妈的不用我原来写的inventory的代码？？？？
     }
     
-    public void LoadInventoryItems()
+    private void LoadInventoryItems()
     {
         if (GameManager.instance.cardInventory.Count != 0)
         {
@@ -42,6 +41,7 @@ public class CardInventManager : ManagerBehavior
                 newCardInvent.GetComponent<SpriteRenderer>().color = GameManager.instance.cardInventory[i].cardColorInvent;
                 newCardInvent.name = GameManager.instance.cardInventory[i].cardNameInvent;
                 newCardInvent.transform.SetParent(gameObject.transform);
+                ICManager.instance.MakeCardDragDesAvailable(newCardInvent.name, newCardInvent);
             }
         }
     }

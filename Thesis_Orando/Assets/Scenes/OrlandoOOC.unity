@@ -646,6 +646,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isTalking: 0
+  dragCompleted: 0
 --- !u!114 &166097088
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -3947,23 +3948,23 @@ MonoBehaviour:
   endPrefab: {fileID: 8306466500503848820, guid: edb27d0c70a07cb4ab9a05b3dab9e5ba, type: 3}
   scalingPagePrefab: {fileID: 4476090429629457923, guid: c0a954a9a51c6c04a985f34d52bce43d, type: 3}
   listOfCards:
-  - cardName: A
+  - cardName: SpeechCard
     cardColor: {x: 1, y: 0, z: 0, w: 1}
     cardWorth: 20
     minigamePrefab: {fileID: 1875682081460486043, guid: 6c216aa24b739f849a708e4e20076d0a, type: 3}
-  - cardName: B
+  - cardName: SpeechCard
     cardColor: {x: 0, y: 1, z: 0, w: 1}
     cardWorth: 15
     minigamePrefab: {fileID: 1875682081460486043, guid: 6c216aa24b739f849a708e4e20076d0a, type: 3}
-  - cardName: C
+  - cardName: SpeechCard
     cardColor: {x: 0, y: 0, z: 1, w: 1}
     cardWorth: 25
     minigamePrefab: {fileID: 1875682081460486043, guid: 6c216aa24b739f849a708e4e20076d0a, type: 3}
-  - cardName: D
+  - cardName: SpeechCard
     cardColor: {x: 1, y: 1, z: 0, w: 1}
     cardWorth: 30
     minigamePrefab: {fileID: 1875682081460486043, guid: 6c216aa24b739f849a708e4e20076d0a, type: 3}
-  - cardName: E
+  - cardName: SpeechCard
     cardColor: {x: 0, y: 1, z: 1, w: 1}
     cardWorth: 35
     minigamePrefab: {fileID: 1875682081460486043, guid: 6c216aa24b739f849a708e4e20076d0a, type: 3}
@@ -5231,6 +5232,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1f8f9310210e4546a4faebc4a681d6a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mouseClickPosX: 0
+  actressController: {fileID: 0}
 --- !u!4 &1406424434
 Transform:
   m_ObjectHideFlags: 0
@@ -6165,7 +6168,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6104520489672354947, guid: 6acb7358ebac893428ace8eac9781e50, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6104520489672354957, guid: 6acb7358ebac893428ace8eac9781e50, type: 3}
       propertyPath: m_RootOrder

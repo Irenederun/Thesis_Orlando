@@ -180,6 +180,6 @@ public class OOCManager : MonoBehaviour
     private IEnumerator nextScene()
     {
         yield return new WaitForSeconds(2);
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(2);
     }
 }

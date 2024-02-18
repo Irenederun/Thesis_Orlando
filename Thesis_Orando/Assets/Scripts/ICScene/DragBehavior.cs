@@ -15,7 +15,7 @@ public class DragBehavior : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        originalPos = gameObject.transform.position;
+        originalPos = gameObject.transform.localPosition;
     }
 
     // Update is called once per frame
@@ -31,6 +31,10 @@ public class DragBehavior : MonoBehaviour
     public void OnDragStarting()
     {
         dragging = true;
+        if (ICManager.instance != null)
+        {
+            ICManager.instance.CamAndActressStop();
+        }   
     }
 
     public void OnDragExit()
@@ -45,6 +49,7 @@ public class DragBehavior : MonoBehaviour
         {
             if (availableDesPosHolders.Contains(hit.collider.gameObject))
             {
+                print(hit.collider.gameObject.name);
                 DragCompleted(hit.collider.gameObject);
                 hit.collider.gameObject.layer = LayerMask.NameToLayer("Default");
             }
@@ -63,37 +68,28 @@ public class DragBehavior : MonoBehaviour
     {
         gameObject.transform.position = destination.transform.position;
         gameObject.GetComponent<Collider2D>().enabled = false;
-        
+        print(destination.name);
         switch (type)
         {
             case "word":
                 gameObject.GetComponent<WordDragDetails>().DragComplete(gameObject.name, destination.name);
                 break;
             case "card":
+                ICManager.instance.CardUsed();
                 break;
         }
     }
 
     private void DragFailed()
     {
-        gameObject.transform.position = originalPos;
+        print("F");
+        gameObject.transform.localPosition = originalPos;
     }
 
     public void Reload()
     {
         gameObject.GetComponent<Collider2D>().enabled = true;
-        
-        foreach (GameObject obj in SpeechCardManager.instance.destinations)
-        {
-            obj.layer = LayerMask.NameToLayer("DragDestinations");
-        }
-        
         DragFailed();
         gameObject.GetComponent<WordDragDetails>().ResetWords();
-        
-        for (int i = 0; i < 4; i++)
-        {
-            SpeechCardManager.instance.sentence[i] = " ";
-        }
     }
 }

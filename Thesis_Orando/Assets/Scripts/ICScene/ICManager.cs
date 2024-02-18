@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.Serialization;
 
@@ -18,7 +19,6 @@ public class ICManager : MonoBehaviour
     public static ICManager instance;
 
     public GameObject cardInventHandPrefab;
-    public GameObject scriptPrefab;
     public GameObject cam;
     public GameObject actress;
     [HideInInspector] public GameObject itemWithInteractionButtons;
@@ -26,6 +26,13 @@ public class ICManager : MonoBehaviour
     public GameObject desPosIconPrefab;
     private GameObject desPosIcon;
     public GameObject cardOptionsPrefab;
+
+    public GameObject speechGamePosHolder;
+
+    [SerializeField]
+    private TextMeshPro completeSentenceHolder;
+
+    [SerializeField] private GameObject SpeechGameObj;
 
     private void Awake()
     {
@@ -37,53 +44,56 @@ public class ICManager : MonoBehaviour
         {
             Destroy(this);
         }
+
+        icState = ICState.Start;
     }
 
-    // Update is called once per frame
-    void Update()
+    public void MakeCardDragDesAvailable(string type, GameObject card)
     {
-        if (icState == ICState.Start)
+        switch (type)
         {
-            while (!DragManagerFungus.instance.dragCompleted)
-            {
-                return;
-            }
-            CardUsed();
+            case "SpeechCard":
+                SpeechGameObj.SetActive(true);
+                card.GetComponent<DragBehavior>().availableDesPosHolders.Add(SpeechGameObj.transform.GetChild(0).gameObject);
+                break;
         }
     }
 
-    void CardUsed()
+    public void CardUsed()
     {
-        //TurnOnScript();
         icState = ICState.CardUsed;
-        DestroyCardInventPrefab();
+        TurnOnSpeechGame();
+    }
+
+    void TurnOnSpeechGame()
+    {
         LoadCardOptions(); 
+        DestroyCardInventPrefab();
     }
 
     void DestroyCardInventPrefab()
     {
-        //cardInventHandPrefab.GetComponent<CardInventManager>().DestroySelfOnClose(); //TODO: will change to this after drag is switched to non-Fungus
-        cardInventHandPrefab.SetActive(false);
-        Mouse.instance.ChangeMouseInteraction(false);
-    }
-
-    void TurnOnScript()
-    {
-        Instantiate(scriptPrefab);
-        SwitchInteractabilityForICObjects(false);
+        cardInventHandPrefab.GetComponent<CardInventManager>().DestroySelfOnClose(); //TODO: will change to this after drag is switched to non-Fungus
+        //cardInventHandPrefab.SetActive(false);
+        //Mouse.instance.ChangeMouseInteraction(false);
     }
 
     void LoadCardOptions()
     {
-        //load the floating things. I think I should load prefabs that carry the options?? canvas?
-        Instantiate(cardOptionsPrefab);
+        GameObject speechObj = Instantiate(cardOptionsPrefab, speechGamePosHolder.transform.position, Quaternion.identity);
+        speechObj.transform.parent = speechGamePosHolder.transform;
     }
 
     public void TurnOnInventory()
     {
         //Instantiate(cardInventHandPrefab); //TODO: will change to this after drag is switched to non-Fungus
         cardInventHandPrefab.SetActive(true);
-        Mouse.instance.ChangeMouseInteraction(true);
+        //Mouse.instance.ChangeMouseInteraction(true);
+    }
+
+    public void LoadCompleteSentence(string sentence)
+    {
+        completeSentenceHolder.text = sentence;
     }
 
     public void SwitchInteractabilityForICObjects(bool interactability)

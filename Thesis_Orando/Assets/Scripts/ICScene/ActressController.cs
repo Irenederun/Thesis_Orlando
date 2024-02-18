@@ -21,9 +21,14 @@ public class ActressController : MonoBehaviour
     private bool animPlaying = false;
     public float speed;
 
+    [SerializeField]
+    private float leftBound;
+    [SerializeField]
+    private float rightBound;
+
     void Start()
     {
-        Mouse.instance.actressController = this;
+        MouseRayCast.instance.actressController = this;
         actressState = ActressState.Idle;
         sp = GetComponent<SpriteRenderer>();
         anim = GetComponent<Animator>();
@@ -54,12 +59,13 @@ public class ActressController : MonoBehaviour
         }
     }
 
-    public void LerpToPos(float desPos)
+    public void StartWalking(float desPos)
     {
         ICManager.instance.CameraFollow();
         actressState = ActressState.Walking;
         anim.SetTrigger("Walking");
         animPlaying = false;
+        
         if (desPos < transform.position.x)
         {
             sp.flipX = true;
@@ -68,6 +74,7 @@ public class ActressController : MonoBehaviour
         {
             sp.flipX = false;
         }
+        
         destinationPos = new Vector3(desPos, transform.position.y, 0f);
     }
 

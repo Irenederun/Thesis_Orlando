@@ -1,10 +1,9 @@
 using System.Collections;
 using UnityEngine;
-using UnityEngine.UIElements;
 
-public class Mouse : MonoBehaviour
+public class MouseRayCast : MonoBehaviour
 {   
-    public static Mouse instance;
+    public static MouseRayCast instance;
     public float mouseClickPosX;
     private bool CDOn = false;
     public ActressController actressController;
@@ -37,26 +36,32 @@ public class Mouse : MonoBehaviour
             }
         }
         
+        
         if (stopMouse)
         {
             return;
         }
         
         mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        RaycastHit2D hit = Physics2D.Raycast(mousePos, Vector2.zero, Mathf.Infinity, LayerMask.GetMask("Interactable"));
-        RaycastHit2D hitDrag = Physics2D.Raycast(mousePos, Vector2.zero, Mathf.Infinity, LayerMask.GetMask("Draggable"));
+        RaycastHit2D hitClick = Physics2D.Raycast
+            (mousePos, Vector2.zero, Mathf.Infinity, LayerMask.GetMask("Interactable"));
+        RaycastHit2D hitDrag = Physics2D.Raycast
+            (mousePos, Vector2.zero, Mathf.Infinity, LayerMask.GetMask("Draggable"));
+        RaycastHit2D hitCheckClick = Physics2D.Raycast
+            (mousePos, Vector2.zero, Mathf.Infinity, LayerMask.GetMask("ClickableAreaMoving"));
+        
         
         if (Input.GetMouseButtonDown(0))
         {
-            if (/*hit != null &&*/ hit.collider != null)
+            if (hitClick.collider != null)
             {
-                clickingObj = hit.collider.gameObject;
+                clickingObj = hitClick.collider.gameObject;
                 clickingObj.GetComponent<BasicBehavior>().ClickedByMouse();
             }
-            else
+            else /*if (hitClick.collider == null && hitDrag.collider == null)*/
             {
                 clickingObj = null;
-                if (mousePos.y < -2)
+                if (hitCheckClick.collider != null)
                 {
                     if (actressController != null)
                     {
@@ -75,6 +80,7 @@ public class Mouse : MonoBehaviour
             {
                 dragObj = hitDrag.collider.gameObject;
                 dragObj.GetComponent<DragBehavior>().OnDragStarting();
+                print("dragging" + hitDrag.collider.gameObject.name);
             }
         }
 
@@ -82,6 +88,7 @@ public class Mouse : MonoBehaviour
         {
             if (dragObj != null)
             {
+                print("RELEASING");
                 dragObj.GetComponent<DragBehavior>().OnDragExit();
                 dragObj = null;
             }
@@ -97,7 +104,7 @@ public class Mouse : MonoBehaviour
     void MoveActress()
     {
         mouseClickPosX = mousePos.x;
-        actressController.LerpToPos(mouseClickPosX);
+        actressController.StartWalking(mouseClickPosX);
         ICManager.instance.ActressWalkingMisc(mouseClickPosX);
     }
 

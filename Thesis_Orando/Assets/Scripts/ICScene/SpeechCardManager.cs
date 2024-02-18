@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class SpeechCardManager : ManagerBehavior
@@ -35,7 +36,7 @@ public class SpeechCardManager : ManagerBehavior
             reload.SetActive(true);
         }
 
-        if (!sentence.Contains(""))
+        if (!sentence.Contains(" "))
         {
             if (!submit.activeSelf)
             {
@@ -51,6 +52,31 @@ public class SpeechCardManager : ManagerBehavior
             finalSentence += sentence[i] + " ";
         }
         print(finalSentence);
+        CompleteSentence();
+    }
+    
+    private void CompleteSentence()
+    {
+        // switch (finalSentence)
+        // {
+        //     case "cruel me deceive you ":
+        //         //finalSentence = "Indeed, it was cruel of me to deceive you.";
+        //         DialogueManager.instance.TriggerDialogueOOC(finalSentence);
+        //         break;
+        //     case "cruel you deceive me ":
+        //         //finalSentence = "Indeed, it was cruel of you to deceive me.";
+        //         break;
+        //     case "deceive you cruel me ":
+        //         finalSentence = "Indeed, it was deceptive of you to be cruel to me.";
+        //         break;
+        //     case "deceive me cruel you ":
+        //         finalSentence = "Indeed, it was deceptive of me to be cruel to you.";
+        //         break;
+        // }
+        
+        DialogueManager.instance.TriggerDialogueOOC(finalSentence);
+        //ICManager.instance.LoadCompleteSentence(finalSentence);
+        DestroySelfOnClose();
     }
     
     public override void DestroySelfOnClose()
