@@ -36,7 +36,6 @@ public class MouseRayCast : MonoBehaviour
             }
         }
         
-        
         if (stopMouse)
         {
             return;
@@ -80,7 +79,7 @@ public class MouseRayCast : MonoBehaviour
             {
                 dragObj = hitDrag.collider.gameObject;
                 dragObj.GetComponent<DragBehavior>().OnDragStarting();
-                print("dragging" + hitDrag.collider.gameObject.name);
+                //print("dragging" + hitDrag.collider.gameObject.name);
             }
         }
 
@@ -88,7 +87,6 @@ public class MouseRayCast : MonoBehaviour
         {
             if (dragObj != null)
             {
-                print("RELEASING");
                 dragObj.GetComponent<DragBehavior>().OnDragExit();
                 dragObj = null;
             }

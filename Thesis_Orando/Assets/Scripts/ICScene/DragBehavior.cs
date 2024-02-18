@@ -11,14 +11,12 @@ public class DragBehavior : MonoBehaviour
     public List<GameObject> availableDesPosHolders;
     private Vector3 originalPos;
     public string type;
-
-    // Start is called before the first frame update
+    
     void Start()
     {
         originalPos = gameObject.transform.localPosition;
     }
-
-    // Update is called once per frame
+    
     void Update()
     {
         if (dragging)
@@ -49,7 +47,6 @@ public class DragBehavior : MonoBehaviour
         {
             if (availableDesPosHolders.Contains(hit.collider.gameObject))
             {
-                print(hit.collider.gameObject.name);
                 DragCompleted(hit.collider.gameObject);
                 hit.collider.gameObject.layer = LayerMask.NameToLayer("Default");
             }
@@ -68,7 +65,6 @@ public class DragBehavior : MonoBehaviour
     {
         gameObject.transform.position = destination.transform.position;
         gameObject.GetComponent<Collider2D>().enabled = false;
-        print(destination.name);
         switch (type)
         {
             case "word":
@@ -82,7 +78,6 @@ public class DragBehavior : MonoBehaviour
 
     private void DragFailed()
     {
-        print("F");
         gameObject.transform.localPosition = originalPos;
     }
 

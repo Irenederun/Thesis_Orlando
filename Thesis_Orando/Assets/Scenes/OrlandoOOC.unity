@@ -362,7 +362,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -35.260277
     y: -42.479446
-    width: 178.45526
+    width: 173.38304
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -392,11 +392,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 358.74307, y: -37.134552}
+  scrollPos: {x: 429.84854, y: 132.8311}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 400
-  zoom: 0.8200002
+  zoom: 0.67000026
   scrollViewRect:
     serializedVersion: 2
     x: -343
@@ -505,7 +505,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -30.817078
     y: 243.28049
-    width: 184.95932
+    width: 179.3532
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -646,7 +646,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isTalking: 0
-  dragCompleted: 0
 --- !u!114 &166097088
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -663,7 +662,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -26.666672
     y: 69.28293
-    width: 155.69104
+    width: 152.48752
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -692,7 +691,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -29.333344
     y: 17.74544
-    width: 149.99997
+    width: 146.51738
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -822,7 +821,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -31.302414
     y: 120.62372
-    width: 183.33331
+    width: 179.3532
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2586,7 +2585,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -24.133574
     y: -96.716446
-    width: 141.05688
+    width: 137.56216
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2628,7 +2627,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -32.264694
     y: 174.59914
-    width: 184.14632
+    width: 179.3532
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -6165,10 +6164,6 @@ PrefabInstance:
     - target: {fileID: 6104520489672354947, guid: 6acb7358ebac893428ace8eac9781e50, type: 3}
       propertyPath: m_Name
       value: StartingFadeIn
-      objectReference: {fileID: 0}
-    - target: {fileID: 6104520489672354947, guid: 6acb7358ebac893428ace8eac9781e50, type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6104520489672354957, guid: 6acb7358ebac893428ace8eac9781e50, type: 3}
       propertyPath: m_RootOrder
