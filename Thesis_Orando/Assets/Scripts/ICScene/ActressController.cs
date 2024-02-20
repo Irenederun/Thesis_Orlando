@@ -20,6 +20,7 @@ public class ActressController : MonoBehaviour
     private SpriteRenderer sp;
     private bool animPlaying = false;
     public float speed;
+    public bool isLeft;
 
     [SerializeField]
     private float leftBound;
@@ -36,6 +37,9 @@ public class ActressController : MonoBehaviour
 
     void Update()
     {
+        //issue: if player leave unity when actress is walking, she cannot walk anymore after returning to unity
+        //i think it is something about progress being force stopped and state changes messed up
+
         if (actressState == ActressState.Idle)
         {
             ActressStopping();
@@ -69,11 +73,17 @@ public class ActressController : MonoBehaviour
         if (desPos < transform.position.x)
         {
             sp.flipX = true;
+            isLeft = true;
+
         }
         else
         {
             sp.flipX = false;
+            isLeft = false;
         }
+        
+        //
+        ICManager.instance.ChangeParallex(true, isLeft);
         
         destinationPos = new Vector3(desPos, transform.position.y, 0f);
     }
@@ -103,5 +113,6 @@ public class ActressController : MonoBehaviour
     public void StopActress()
     {
         actressState = ActressState.Idle;
+        ICManager.instance.ChangeParallex(false,false);
     }
 }

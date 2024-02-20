@@ -55,5 +55,7 @@ public class CameraFollow : MonoBehaviour
     public void CameraStopFollowing()
     {
         camState = CameraSate.Idle;
+        //
+        ICManager.instance.ChangeParallex(false,false);
     }
 }

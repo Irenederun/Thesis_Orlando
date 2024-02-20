@@ -53,6 +53,7 @@ public class SpeechCardManager : ManagerBehavior
         }
         print(finalSentence);
         CompleteSentence();
+        ICManager.instance.CardGameSubmission();
     }
     
     private void CompleteSentence()

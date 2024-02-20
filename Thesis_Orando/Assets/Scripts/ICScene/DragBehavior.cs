@@ -48,7 +48,15 @@ public class DragBehavior : MonoBehaviour
             if (availableDesPosHolders.Contains(hit.collider.gameObject))
             {
                 DragCompleted(hit.collider.gameObject);
-                hit.collider.gameObject.layer = LayerMask.NameToLayer("Default");
+                switch (type)
+                {
+                    case "word":
+                        hit.collider.gameObject.layer = LayerMask.NameToLayer("Default");
+                        break;
+                    case "card":
+                        Destroy(hit.collider.gameObject);
+                        break;
+                }
             }
             else
             {

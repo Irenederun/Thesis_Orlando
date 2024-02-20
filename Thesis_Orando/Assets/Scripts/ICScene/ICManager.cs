@@ -1,17 +1,17 @@
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
+using UnityEditor.Build.Content;
 using UnityEngine;
 
 public class ICManager : MonoBehaviour
 {
-    [SerializeField] private enum ICState
+    public enum ICState
     {
         Start,
         CardUsed,
     }
-    [SerializeField]
-    private ICState icState;
+    public ICState icState;
 
     public List<GameObject> ICPageInteractableObjects;
 
@@ -32,6 +32,11 @@ public class ICManager : MonoBehaviour
     private TextMeshPro completeSentenceHolder;
 
     [SerializeField] private GameObject SpeechGameObj;
+    [SerializeField] private GameObject UIIcon;
+    [SerializeField] private List<GameObject> parallexObj;
+
+    public bool inventOn;
+    public bool cardGameOn;
 
     private void Awake()
     {
@@ -60,6 +65,7 @@ public class ICManager : MonoBehaviour
 
     public void CardUsed()
     {
+        ChangeUIActivation(false);
         icState = ICState.CardUsed;
         TurnOnSpeechGame();
     }
@@ -67,7 +73,8 @@ public class ICManager : MonoBehaviour
     void TurnOnSpeechGame()
     {
         LoadCardOptions(); 
-        DestroyCardInventPrefab();
+        //DestroyCardInventPrefab();
+        TurnOffInventory();
     }
 
     void DestroyCardInventPrefab()
@@ -79,6 +86,7 @@ public class ICManager : MonoBehaviour
 
     void LoadCardOptions()
     {
+        cardGameOn = true;
         GameObject speechObj = Instantiate(cardOptionsPrefab, speechGamePosHolder.transform.position, Quaternion.identity);
         speechObj.transform.parent = speechGamePosHolder.transform;
     }
@@ -87,12 +95,20 @@ public class ICManager : MonoBehaviour
     {
         //Instantiate(cardInventHandPrefab); //TODO: will change to this after drag is switched to non-Fungus
         cardInventHandPrefab.SetActive(true);
+        inventOn = true;
         //Mouse.instance.ChangeMouseInteraction(true);
     }
 
-    public void LoadCompleteSentence(string sentence)
+    public void TurnOffInventory()
     {
-        completeSentenceHolder.text = sentence;
+        cardInventHandPrefab.SetActive(false);
+        inventOn = false;
+    }
+
+    public void CardGameSubmission()
+    {
+        cardGameOn = false;
+        DialogueManager.instance.TriggerDialogueOOC("GameFinished");
     }
 
     public void SwitchInteractabilityForICObjects(bool interactability)
@@ -151,7 +167,7 @@ public class ICManager : MonoBehaviour
     {
         if (itemWithInteractionButtons != null)
         {
-            itemWithInteractionButtons.GetComponent<InteractiveItemsManager>().DeleteIcons();
+            itemWithInteractionButtons.GetComponent<InteractiveItemsManager>().DeleteIcons2();
         }
 
         if (desPosIcon != null)
@@ -166,5 +182,21 @@ public class ICManager : MonoBehaviour
     public void DestroyDesPosIcon()
     {
         Destroy(desPosIcon);
+    }
+
+    public void ChangeUIActivation(bool state)
+    {
+        if (icState != ICState.CardUsed)
+        {
+            UIIcon.GetComponent<IconBehaviors>().IconState(state);
+        }
+    }
+
+    public void ChangeParallex(bool moving, bool isLeft)
+    {
+        foreach (var obj in parallexObj)
+        {
+            obj.GetComponent<ParallexScrolling>().changeMovingBool(moving, isLeft);
+        }
     }
 }

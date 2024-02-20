@@ -1,32 +1,60 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class IconBehaviors : BasicBehavior
 {
-    
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [SerializeField] private GameObject actress;
+    [SerializeField] private List<Sprite> sprites;
+    private bool canInteract;
+    private int clickTimes = 0;
 
-    // Update is called once per frame
-    void Update()
+    private void Start()
     {
-        
+        if (!gameObject.name.Contains("UI"))
+        {
+            GetComponent<SpriteRenderer>().sprite = sprites[0];
+            canInteract = false;
+        }
+        else
+        {
+            canInteract = true;
+        }
     }
 
     public override void ClickedByMouse()
     {
-        base.ClickedByMouse();
-        if (gameObject.name.Contains("UI"))
+        
+        if (canInteract)
         {
-            OpenInventory();
-            TurnOffOtherIcons();
+            if (gameObject.name.Contains("UI"))
+            {
+                switch (clickTimes)
+                {
+                    case 0:
+                        OpenInventory();
+                        TurnOffOtherIcons();
+                        clickTimes++;
+                        break;
+                    case 1:
+                        CloseInventory();
+                        clickTimes--;
+                        break;
+                }
+            }
+            else if (gameObject.name.Contains("look"))
+            {
+                DialogueManager.instance.TriggerDialogueOOC("ArchdukeLook");
+            }
         }
     }
 
+    void CloseInventory()
+    {
+        ICManager.instance.TurnOffInventory();
+    }
     void OpenInventory()
     {
         ICManager.instance.TurnOnInventory();
@@ -34,6 +62,28 @@ public class IconBehaviors : BasicBehavior
 
     void TurnOffOtherIcons()
     {
-        gameObject.transform.parent.parent.GetComponent<InteractiveItemsManager>().DeleteIcons();
+        if (gameObject.name.Contains("UI"))
+        {
+            actress.GetComponent<InteractiveItemsManager>().DeleteExistingIcons();
+        }
+        else
+        {
+            gameObject.transform.parent.parent.GetComponent<InteractiveItemsManager>().DeleteIcons2();
+        }
+    }
+
+    public void IconState(bool state)
+    {
+        switch (state)
+        {
+            case true:
+                GetComponent<SpriteRenderer>().sprite = sprites[1];
+                canInteract = true;
+                break;
+            case false:
+                GetComponent<SpriteRenderer>().sprite = sprites[0];
+                canInteract = false;
+                break;
+        }
     }
 }

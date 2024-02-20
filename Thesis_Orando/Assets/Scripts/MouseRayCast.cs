@@ -9,6 +9,7 @@ public class MouseRayCast : MonoBehaviour
     public ActressController actressController;
     private bool stopMouse = false;
     private GameObject dragObj;
+    public bool hitCheckUI;
     
     private void Awake()
     {
@@ -23,7 +24,7 @@ public class MouseRayCast : MonoBehaviour
         }
     }
 
-    private Vector2 mousePos;
+    private Vector3 mousePos;
     private GameObject clickingObj;
     
     void Update()
@@ -43,15 +44,15 @@ public class MouseRayCast : MonoBehaviour
         
         mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         RaycastHit2D hitClick = Physics2D.Raycast
-            (mousePos, Vector2.zero, Mathf.Infinity, LayerMask.GetMask("Interactable"));
+            (mousePos, Vector3.back, Mathf.Infinity, LayerMask.GetMask("Interactable"));
         RaycastHit2D hitDrag = Physics2D.Raycast
-            (mousePos, Vector2.zero, Mathf.Infinity, LayerMask.GetMask("Draggable"));
+            (mousePos, Vector3.back, Mathf.Infinity, LayerMask.GetMask("Draggable"));
         RaycastHit2D hitCheckClick = Physics2D.Raycast
-            (mousePos, Vector2.zero, Mathf.Infinity, LayerMask.GetMask("ClickableAreaMoving"));
-        
+            (mousePos, Vector3.back, Mathf.Infinity, LayerMask.GetMask("ClickableAreaMoving"));
         
         if (Input.GetMouseButtonDown(0))
         {
+            //print(mousePos);
             if (hitClick.collider != null)
             {
                 clickingObj = hitClick.collider.gameObject;
@@ -62,6 +63,7 @@ public class MouseRayCast : MonoBehaviour
                 clickingObj = null;
                 if (hitCheckClick.collider != null)
                 {
+                    hitCheckUI = true;
                     if (actressController != null)
                     {
                         if (!CDOn)
@@ -90,6 +92,8 @@ public class MouseRayCast : MonoBehaviour
                 dragObj.GetComponent<DragBehavior>().OnDragExit();
                 dragObj = null;
             }
+
+            hitCheckUI = false;
         }
     }
 

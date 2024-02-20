@@ -1246,9 +1246,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 454
+    x: 456.3256
     y: 54
-    width: 113.565834
+    width: 73.565834
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1298,7 +1298,7 @@ MonoBehaviour:
   selectedBlocks:
   - {fileID: 468921886}
   selectedCommands:
-  - {fileID: 468921925}
+  - {fileID: 468921924}
   variables: []
   description: 
   stepPause: 0
@@ -1493,7 +1493,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 302
     y: 51
-    width: 119.76738
+    width: 79.76738
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1623,7 +1623,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 518
     y: 135
-    width: 101.16275
+    width: 61.162746
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1879,7 +1879,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 26
     y: 47
-    width: 121.317764
+    width: 81.317764
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1949,7 +1949,7 @@ MonoBehaviour:
   messageOLD: 
 --- !u!114 &468921917
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -1978,7 +1978,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 165
     y: 69
-    width: 121.317764
+    width: 81.317764
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1994,7 +1994,7 @@ MonoBehaviour:
   suppressAllAutoSelections: 0
 --- !u!114 &468921919
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -2021,7 +2021,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &468921920
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -2048,7 +2048,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &468921921
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -2075,7 +2075,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &468921922
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -2094,7 +2094,7 @@ MonoBehaviour:
   messageOLD: 
 --- !u!114 &468921923
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -2121,7 +2121,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &468921924
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -2148,7 +2148,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &468921925
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -4815,6 +4815,7 @@ MonoBehaviour:
   interactiveIconPos:
   - {fileID: 0}
   - {fileID: 0}
+  correspondingIcons: []
 --- !u!212 &1558365248
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5573,7 +5574,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1917524345}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.75, y: -2.83, z: 0.021226432}
+  m_LocalPosition: {x: 5.11, y: -2.83, z: 0.021226432}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
