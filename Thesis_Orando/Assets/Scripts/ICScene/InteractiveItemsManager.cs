@@ -7,7 +7,7 @@ public class InteractiveItemsManager : BasicBehavior
 {
     public List<GameObject> interactiveIcons;
     public List<Transform> interactiveIconPos;
-    private int clickTimes = 0; 
+    //private int clickTimes = 0; 
     static GameObject previouslyClickedItem;
 
     public List<GameObject> correspondingIcons;

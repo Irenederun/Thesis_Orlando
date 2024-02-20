@@ -50,20 +50,34 @@ public class MouseRayCast : MonoBehaviour
         RaycastHit2D hitCheckClick = Physics2D.Raycast
             (mousePos, Vector3.back, Mathf.Infinity, LayerMask.GetMask("ClickableAreaMoving"));
         
+        var screenPoint = Input.mousePosition;
+        screenPoint.z = 5.0f; //distance of the plane from the camera
+        mousePos = Camera.main.ScreenToWorldPoint(screenPoint);
+        // RaycastHit2D hitClick = 
+        //     Physics2D.GetRayIntersection(new Ray(mousePos, Vector3.forward),
+        //                 Mathf.Infinity, LayerMask.GetMask("Interactable"));
+        // RaycastHit2D hitDrag = 
+        //     Physics2D.GetRayIntersection(new Ray(mousePos, Vector3.forward),  
+        //                 LayerMask.GetMask("Draggable"));
+        // RaycastHit2D hitCheckClick = 
+        //     Physics2D.GetRayIntersection(new Ray(mousePos, Vector3.forward), 
+        //                 Mathf.Infinity, LayerMask.GetMask("ClickableAreaMoving"));
+        
         if (Input.GetMouseButtonDown(0))
         {
-            //print(mousePos);
             if (hitClick.collider != null)
             {
                 clickingObj = hitClick.collider.gameObject;
                 clickingObj.GetComponent<BasicBehavior>().ClickedByMouse();
             }
+            
             else /*if (hitClick.collider == null && hitDrag.collider == null)*/
             {
                 clickingObj = null;
                 if (hitCheckClick.collider != null)
                 {
                     hitCheckUI = true;
+                    print("hit check");
                     if (actressController != null)
                     {
                         if (!CDOn)
@@ -79,9 +93,9 @@ public class MouseRayCast : MonoBehaviour
             
             if (hitDrag.collider != null)
             {
+                //print("dragging" + hitDrag.collider.gameObject.name);
                 dragObj = hitDrag.collider.gameObject;
                 dragObj.GetComponent<DragBehavior>().OnDragStarting();
-                //print("dragging" + hitDrag.collider.gameObject.name);
             }
         }
 

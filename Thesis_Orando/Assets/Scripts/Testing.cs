@@ -23,17 +23,24 @@ public class Testing : MonoBehaviour
         //     Physics.Raycast(mousePos, Vector3.back, out RaycastHit,
         //         Mathf.Infinity, LayerMask.GetMask("ClickableAreaMoving"));
 
-        Ray ray = new Ray(mousePos, Vector3.forward);
-        RaycastHit hit;
+        //Ray ray = new Ray(mousePos, Vector3.forward);
+        //RaycastHit hit;
 
         if (Input.GetMouseButtonDown(0))
         {
-            bool returnHit = Physics.Raycast
-                (transform.position, transform.TransformDirection(Vector3.forward),
-                out hit, Mathf.Infinity, LayerMask.GetMask("ClickableAreaMoving"));
+            //bool returnHit = Physics.Raycast
+                //(mousePos, transform.TransformDirection(Vector3.forward),
+                //out hit, Mathf.Infinity, LayerMask.GetMask("ClickableAreaMoving"));
             
-            Debug.DrawRay(mousePos, Vector3.forward, Color.blue);
-            print(returnHit + " " + mousePos);
+            
+            //print(returnHit + " " + mousePos + " " + hit.point);
+            RaycastHit2D hit2 = Physics2D.GetRayIntersection(new Ray(mousePos, Vector3.forward), Mathf.Infinity, LayerMask.GetMask("ClickableAreaMoving"));
+         //   RaycastHit2D.GetRa
+          //  RaycastHit2D.GetRayIntersection()
+            print(hit2.collider.gameObject.name  + " " + hit2.point);   
+           // RaycastHit2D.GetRayIntersection(new Ray(mousePos, Vector3.forward), Mathf.Infinity, LayerMask.GetMask("ClickableAreaMoving"));
         }
+        Debug.DrawRay(mousePos, Vector3.forward * 10, Color.blue);
+        
     }
 }
