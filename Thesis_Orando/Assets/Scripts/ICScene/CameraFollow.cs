@@ -20,7 +20,8 @@ public class CameraFollow : MonoBehaviour
 
     public float leftBound;
     public float rightBound;
-
+    public ParallexScrolling parallex;
+    
     // Update is called once per frame
     void Update()
     {
@@ -33,11 +34,17 @@ public class CameraFollow : MonoBehaviour
             Vector3 targetPos = new Vector3(actress.transform.position.x, transform.position.y,
                     transform.position.z);
 
-            transform.position = Vector3.SmoothDamp
+            
+            Vector3 newPos = Vector3.SmoothDamp
                     (transform.position, targetPos, ref velocity, smoothTimeDealing, Mathf.Infinity);
                 
-            float newX = Mathf.Clamp(transform.position.x, leftBound, rightBound);
-            transform.position = new Vector3(newX, transform.position.y, transform.position.z);
+            float newX = Mathf.Clamp(newPos.x, leftBound, rightBound);
+            newPos.x = newX;
+
+            float movement = newPos.x - transform.position.x;
+            parallex.UpdatePositions(movement);
+
+            transform.position = newPos;
 
             //}
             //TODO: this is very problematic the cam stops after reaching right bound b/c cam moving too fast
@@ -56,6 +63,6 @@ public class CameraFollow : MonoBehaviour
     {
         camState = CameraSate.Idle;
         //
-        ICManager.instance.ChangeParallex(false,false);
+        //ICManager.instance.ChangeParallex(false,false);
     }
 }

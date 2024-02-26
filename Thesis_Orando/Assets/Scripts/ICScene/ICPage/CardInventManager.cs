@@ -1,4 +1,5 @@
 using System;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -41,6 +42,7 @@ public class CardInventManager : ManagerBehavior
                 newCardInvent.GetComponent<SpriteRenderer>().color = GameManager.instance.cardInventory[i].cardColorInvent;
                 newCardInvent.name = GameManager.instance.cardInventory[i].cardNameInvent;
                 newCardInvent.transform.SetParent(gameObject.transform);
+                newCardInvent.GetComponent<SpriteRenderer>().sortingOrder = 9;
                 ICManager.instance.MakeCardDragDesAvailable(newCardInvent.name, newCardInvent);
             }
         }

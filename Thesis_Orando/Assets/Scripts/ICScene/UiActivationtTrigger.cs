@@ -18,18 +18,18 @@ public class UiActivationtTrigger : MonoBehaviour
     }
     
     //only needed since trigger exit somehow happens when walking inside it 
-     private void OnTriggerStay2D(Collider2D other)
-    {
-        while (ICManager.instance.inventOn || ICManager.instance.cardGameOn)
-        {
-            return;
-        }
-        
-        if (MouseRayCast.instance.hitCheckUI)
-        {
-            transform.parent.gameObject.GetComponent<InteractiveItemsManager>().SwitchIconAvailability(true);
-        }
-    }
+    //  private void OnTriggerStay2D(Collider2D other)
+    // {
+    //     while (ICManager.instance.inventOn || ICManager.instance.cardGameOn)
+    //     {
+    //         return;
+    //     }
+    //     
+    //     if (MouseRayCast.instance.hitCheckUI)
+    //     {
+    //         transform.parent.gameObject.GetComponent<InteractiveItemsManager>().SwitchIconAvailability(true);
+    //     }
+    // }
 
     private void OnTriggerExit2D(Collider2D other)
     {

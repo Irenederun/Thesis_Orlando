@@ -46,7 +46,8 @@ public class IconBehaviors : BasicBehavior
             }
             else if (gameObject.name.Contains("look"))
             {
-                DialogueManager.instance.TriggerDialogueOOC("ArchdukeLook");
+                //DialogueManager.instance.TriggerDialogueOOC("ArchdukeLook");
+                ICManager.instance.StartExchange();
             }
         }
     }

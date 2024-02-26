@@ -14,7 +14,7 @@ public class ActressController : MonoBehaviour
     private Vector3 destinationPos;
     //private Vector3 velocity = Vector3.zero;
     private float smoothTimeDealing = 0.6f;
-    private float arrivalOffset = 0.2f;
+    private float arrivalOffset = 0.002f;
     private float smoothDampOffset = 1.5f;
     private Animator anim;
     private SpriteRenderer sp;
@@ -26,6 +26,9 @@ public class ActressController : MonoBehaviour
     private float leftBound;
     [SerializeField]
     private float rightBound;
+
+    private bool walkable = true;
+    private Transform destIcon;
 
     void Start()
     {
@@ -40,6 +43,11 @@ public class ActressController : MonoBehaviour
         //issue: if player leave unity when actress is walking, she cannot walk anymore after returning to unity
         //i think it is something about progress being force stopped and state changes messed up
 
+        if (!walkable)
+        {
+            return;
+        }
+        
         if (actressState == ActressState.Idle)
         {
             ActressStopping();
@@ -47,6 +55,21 @@ public class ActressController : MonoBehaviour
         
         else if (actressState == ActressState.Walking)
         {
+            float desPos = destIcon.position.x;
+            if (desPos < transform.position.x)
+            {
+                sp.flipX = true;
+                isLeft = true;
+
+            }
+            else
+            {
+                sp.flipX = false;
+                isLeft = false;
+            }
+        
+            destinationPos = new Vector3(desPos, transform.position.y, 0f);
+            
             if (Vector3.Distance(transform.position, destinationPos) > smoothDampOffset)
             {
                 ActressMovingTowards(speed);
@@ -63,29 +86,14 @@ public class ActressController : MonoBehaviour
         }
     }
 
-    public void StartWalking(float desPos)
+    public void StartWalking(Transform _destIcon)
     {
         ICManager.instance.CameraFollow();
         actressState = ActressState.Walking;
         anim.SetTrigger("Walking");
         animPlaying = false;
-        
-        if (desPos < transform.position.x)
-        {
-            sp.flipX = true;
-            isLeft = true;
 
-        }
-        else
-        {
-            sp.flipX = false;
-            isLeft = false;
-        }
-        
-        //
-        ICManager.instance.ChangeParallex(true, isLeft);
-        
-        destinationPos = new Vector3(desPos, transform.position.y, 0f);
+        destIcon = _destIcon;
     }
 
     private void ActressStopping()
@@ -113,6 +121,16 @@ public class ActressController : MonoBehaviour
     public void StopActress()
     {
         actressState = ActressState.Idle;
-        ICManager.instance.ChangeParallex(false,false);
+        //ICManager.instance.ChangeParallex(false,false);
+    }
+
+    public void DisableWalking()
+    {
+        walkable = false;
+    }
+
+    public void EnableWalking()
+    {
+        walkable = true;
     }
 }

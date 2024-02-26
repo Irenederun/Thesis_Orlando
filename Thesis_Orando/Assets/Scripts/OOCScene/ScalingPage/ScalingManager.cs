@@ -137,9 +137,16 @@ public class ScalingManager : ManagerBehavior
 
     private void CardWon()
     {
-        OOCManager.instance.RemoveCardFromListOnWinning();
-        IEnumerator coroutine = CardWonCoroutine();
-        StartCoroutine(coroutine);
+        if (OOCManager.instance != null)
+        {
+            OOCManager.instance.RemoveCardFromListOnWinning();
+            IEnumerator coroutine = CardWonCoroutine();
+            StartCoroutine(coroutine);
+        }
+        else if (ICManager.instance != null)
+        {
+            ICManager.instance.EndExchange();
+        }
     }
 
     IEnumerator CardWonCoroutine()
@@ -197,7 +204,10 @@ public class ScalingManager : ManagerBehavior
     public override void DestroySelfOnClose()
     {
         base.DestroySelfOnClose();
-        OOCManager.instance.SwitchInteractabilityForAll(true);
+        if (OOCManager.instance != null)
+        {
+            OOCManager.instance.SwitchInteractabilityForAll(true);
+        }
         Destroy(gameObject);
     }
 }

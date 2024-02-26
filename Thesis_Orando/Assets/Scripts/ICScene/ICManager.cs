@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEditor.Build.Content;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using Color = System.Drawing.Color;
 
 public class ICManager : MonoBehaviour
 {
@@ -33,10 +35,11 @@ public class ICManager : MonoBehaviour
 
     [SerializeField] private GameObject SpeechGameObj;
     [SerializeField] private GameObject UIIcon;
-    [SerializeField] private List<GameObject> parallexObj;
+    //[SerializeField] private List<GameObject> parallexObj;
 
     public bool inventOn;
     public bool cardGameOn;
+    public GameObject floor;
 
     private void Awake()
     {
@@ -163,11 +166,11 @@ public class ICManager : MonoBehaviour
         DestroyDesPosIcon();
     }
 
-    public void ActressWalkingMisc(float xPos)
+    public Transform ActressWalkingMisc(float xPos)
     {
         if (itemWithInteractionButtons != null)
         {
-            itemWithInteractionButtons.GetComponent<InteractiveItemsManager>().DeleteIcons2();
+            // itemWithInteractionButtons.GetComponent<InteractiveItemsManager>().DeleteIcons2();
         }
 
         if (desPosIcon != null)
@@ -177,6 +180,9 @@ public class ICManager : MonoBehaviour
 
         desPosIcon = Instantiate(desPosIconPrefab);
         desPosIcon.transform.position = new Vector3(xPos, desPosIcon.transform.position.y, 0);
+        desPosIcon.transform.parent = floor.transform;
+
+        return desPosIcon.transform;
     }
 
     public void DestroyDesPosIcon()
@@ -191,12 +197,36 @@ public class ICManager : MonoBehaviour
             UIIcon.GetComponent<IconBehaviors>().IconState(state);
         }
     }
-
-    public void ChangeParallex(bool moving, bool isLeft)
+    
+    //new starting from this
+    public void StartExchange()
     {
-        foreach (var obj in parallexObj)
-        {
-            obj.GetComponent<ParallexScrolling>().changeMovingBool(moving, isLeft);
-        }
+        CardUsed();
+        //shouldn't be walking
+        actress.GetComponent<ActressController>().DisableWalking();
     }
+
+    public void EndExchange()
+    {
+        StartCoroutine(EndXChange());
+        actress.GetComponent<ActressController>().EnableWalking();
+    }
+
+    IEnumerator EndXChange()
+    {
+        yield return new WaitForSeconds(2);
+        ScalingManager.instance.DestroySelfOnClose();
+        //adding the skill to game manager inventory later
+        GameManager.CardInventory newCard = new GameManager.CardInventory();
+        newCard.cardColorInvent = new Vector4(0,1,0,1);
+        newCard.cardNameInvent = "SpeechCard";
+        GameManager.instance.cardInventory.Add(newCard);
+        
+        //do the whole exchange body part animation thing
+        //add to inventory anim/visual cue
+        
+        yield return new WaitForSeconds(2);
+        SceneManager.LoadScene(2);
+    }
+    
 }
