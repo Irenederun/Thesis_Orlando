@@ -59,4 +59,11 @@ public class DialogueManager : ManagerBehavior
     {
         myFlowchart.SendFungusMessage(correspondingMessage);
     }
+
+    public void SetSentenceVariable(string saidSentence)
+    {
+        print(saidSentence);
+        myFlowchart.SetStringVariable("saidSentence", saidSentence);
+        
+    }
 }

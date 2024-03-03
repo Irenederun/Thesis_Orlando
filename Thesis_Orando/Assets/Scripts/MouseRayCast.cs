@@ -10,7 +10,7 @@ public class MouseRayCast : MonoBehaviour
     private bool stopMouse = false;
     private GameObject dragObj;
     public bool hitCheckUI;
-    
+
     private void Awake()
     {
         if (instance == null)
@@ -86,7 +86,6 @@ public class MouseRayCast : MonoBehaviour
                             CDOn = true;
                             StartCoroutine(ChangeCDState());
                         }
-                        
                     }
                 }
             }

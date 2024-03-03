@@ -23,7 +23,7 @@ TagManager:
   - ClickableAreaMoving
   - Trigger
   - Actress
-  - 
+  - UIInteract
   - 
   - 
   - 
@@ -46,4 +46,7 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: UIOverlay
+    uniqueID: 216514963
     locked: 0

@@ -1,5 +1,8 @@
+using System;
 using System.Collections.Generic;
+using Fungus;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class SpeechCardManager : ManagerBehavior
@@ -7,24 +10,41 @@ public class SpeechCardManager : ManagerBehavior
     public List<string> sentence;
     public static SpeechCardManager instance;
     
-    [HideInInspector]public GameObject you;
-    [HideInInspector]public GameObject me;
+    // [HideInInspector]public GameObject you;
+    // [HideInInspector]public GameObject me;
 
-    [HideInInspector]public List<GameObject> destinations;
-    [HideInInspector]public List<GameObject> words;
+    public List<GameObject> destinations;
+    public List<GameObject> words;
     public GameObject reload;
     public GameObject submit;
+    public List<TextMeshPro> wordList;
 
     private string finalSentence;
+
+    public List<string> play1PluralWords;
 
     private void Awake()
     {
         instance = this;
     }
 
+    private void Start()
+    {
+        LoadWords();
+    }
+
     private void OnDisable()
     {
         instance = null;
+    }
+
+    public void LoadWords()
+    {
+        for (int i = 0; i < GameManager.instance.wordBank.Count; i++)
+        {
+            wordList[i].text = GameManager.instance.wordBank[i].FirstCharacterToUpper();
+            wordList[i].transform.parent.gameObject.name = GameManager.instance.wordBank[i].FirstCharacterToUpper();
+        }
     }
 
     public void AddToSentence(string word, int position)
@@ -47,13 +67,12 @@ public class SpeechCardManager : ManagerBehavior
 
     public void Submission()
     {
-        for (int i = 0; i < 4; i++)
+        for (int i = 0; i < sentence.Count; i++)
         {
             finalSentence += sentence[i] + " ";
         }
-        print(finalSentence);
         CompleteSentence();
-        ICManager.instance.CardGameSubmission();
+        //ICManager.instance.CardGameSubmission();
     }
     
     private void CompleteSentence()
@@ -74,10 +93,15 @@ public class SpeechCardManager : ManagerBehavior
         //         finalSentence = "Indeed, it was deceptive of me to be cruel to you.";
         //         break;
         // }
-        
-        DialogueManager.instance.TriggerDialogueOOC(finalSentence);
         //ICManager.instance.LoadCompleteSentence(finalSentence);
+        DialogueManager.instance.SetSentenceVariable(finalSentence + ".");
+        DialogueManager.instance.TriggerDialogueOOC("printSentence");
         DestroySelfOnClose();
+    }
+
+    public void onPlay1Reload()
+    {
+        sentence[1] = "nothing to say to";
     }
     
     public override void DestroySelfOnClose()
