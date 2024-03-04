@@ -70,6 +70,7 @@ public class IconBehaviors : BasicBehavior
         else
         {
             gameObject.transform.parent.parent.GetComponent<InteractiveItemsManager>().DeleteIcons2();
+
         }
     }
 

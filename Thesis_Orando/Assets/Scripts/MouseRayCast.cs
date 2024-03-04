@@ -5,7 +5,6 @@ public class MouseRayCast : MonoBehaviour
 {   
     public static MouseRayCast instance;
     public float mouseClickPosX;
-    private bool CDOn = false;
     public ActressController actressController;
     private bool stopMouse = false;
     private GameObject dragObj;
@@ -80,12 +79,7 @@ public class MouseRayCast : MonoBehaviour
                     print("hit check");
                     if (actressController != null)
                     {
-                        if (!CDOn)
-                        {
-                            MoveActress();
-                            CDOn = true;
-                            StartCoroutine(ChangeCDState());
-                        }
+                        MoveActress();
                     }
                 }
             }
@@ -108,12 +102,6 @@ public class MouseRayCast : MonoBehaviour
 
             hitCheckUI = false;
         }
-    }
-
-    IEnumerator ChangeCDState()
-    {
-        yield return new WaitForSeconds(1);
-        CDOn = false;
     }
 
     void MoveActress()

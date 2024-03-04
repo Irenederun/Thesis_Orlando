@@ -6,8 +6,8 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
     public int currentLevel = 0;
-    public List<string> wordBank;
-    public List<string> limbBank;
+    public List<string> wordBank = new List<string>();
+    public List<string> limbBank = new List<string>();
     public LimbLibrary limbLibrary;
 
     public void Awake()

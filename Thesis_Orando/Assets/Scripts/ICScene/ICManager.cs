@@ -68,7 +68,7 @@ public class ICManager : MonoBehaviour
 
     public void CardUsed()
     {
-        ChangeUIActivation(false);
+        //ChangeUIActivation(false);
         icState = ICState.CardUsed;
         TurnOnSpeechGame();
     }
@@ -90,8 +90,9 @@ public class ICManager : MonoBehaviour
     void LoadCardOptions()
     {
         cardGameOn = true;
-        GameObject speechObj = Instantiate(cardOptionsPrefab, speechGamePosHolder.transform.position, Quaternion.identity);
-        speechObj.transform.parent = speechGamePosHolder.transform;
+        //GameObject speechObj = Instantiate(cardOptionsPrefab, speechGamePosHolder.transform.position, Quaternion.identity);
+        //speechObj.transform.parent = speechGamePosHolder.transform;
+        ExchangeGameManager.instance.StartExchangeGame(0);
     }
 
     public void TurnOnInventory()
@@ -203,7 +204,7 @@ public class ICManager : MonoBehaviour
     {
         CardUsed();
         //shouldn't be walking
-        actress.GetComponent<ActressController>().DisableWalking();
+        //actress.GetComponent<ActressController>().DisableWalking();
     }
 
     public void EndExchange()

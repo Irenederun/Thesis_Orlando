@@ -13,14 +13,14 @@ public class UIWordBehavior : BasicBehavior
     public UnityEvent buttonEvent;
     public UnityEvent resetEvent;
 
-    private ExchangeGameManager exchangeGameManager;
+    private ExchangeGame _exchangeGame;
     
     public override void ClickedByMouse()
     {
         base.ClickedByMouse();
         string word = "";
         if (text != null) word = text.text;
-        exchangeGameManager.ClickableTracker(group, this, word);
+        _exchangeGame.ClickableTracker(group, this, word);
     }
 
     public void CallButtonEvent()
@@ -33,8 +33,8 @@ public class UIWordBehavior : BasicBehavior
         resetEvent?.Invoke();
     }
 
-    public void SetExchangeGameManager(ExchangeGameManager egm)
+    public void SetExchangeGameManager(ExchangeGame egm)
     {
-        exchangeGameManager = egm;
+        _exchangeGame = egm;
     }
 }

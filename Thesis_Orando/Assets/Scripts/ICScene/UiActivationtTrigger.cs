@@ -8,11 +8,12 @@ public class UiActivationtTrigger : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D col)
     {
         //if inventory is on, don't do; if word game is on, don't do. 
+        /*
         while (ICManager.instance.inventOn || ICManager.instance.cardGameOn)
         {
             return;
         }
-        
+        */
         //ICManager.instance.ChangeUIActivation(true);
         transform.parent.gameObject.GetComponent<InteractiveItemsManager>().SwitchIconAvailability(true);
     }
@@ -34,6 +35,7 @@ public class UiActivationtTrigger : MonoBehaviour
     private void OnTriggerExit2D(Collider2D other)
     {
         //ICManager.instance.ChangeUIActivation(false);
+
         transform.parent.gameObject.GetComponent<InteractiveItemsManager>().SwitchIconAvailability(false);
         //why the fuck this is also happening when actress is walking inside the trigger???
     }

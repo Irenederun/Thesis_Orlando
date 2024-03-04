@@ -46,6 +46,7 @@ public class InteractiveItemsManager : BasicBehavior
             case true:
                 if (previouslyClickedItem != null)
                 {
+                    print("hi");
                     previouslyClickedItem.GetComponent<InteractiveItemsManager>().DeleteIcons2();
                 }
                 LoadIcons2();
@@ -61,7 +62,7 @@ public class InteractiveItemsManager : BasicBehavior
     public void DeleteIcons2()
     {
         //print(previouslyClickedItem.name + previouslyClickedItem.GetComponent<InteractiveItemsManager>().correspondingIcons.Count);
-        
+
         foreach (GameObject icon in correspondingIcons)
         {
             icon.GetComponent<IconBehaviors>().IconState(false);
