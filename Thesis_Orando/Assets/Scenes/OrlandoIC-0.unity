@@ -1542,7 +1542,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 457.8181
+    x: 459.31064
     y: 54
     width: 110.696495
     height: 40
@@ -1588,7 +1588,7 @@ MonoBehaviour:
   selectedBlocks:
   - {fileID: 468921933}
   selectedCommands:
-  - {fileID: 468921940}
+  - {fileID: 468921937}
   variables:
   - {fileID: 468921930}
   - {fileID: 468921936}
@@ -2183,8 +2183,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 318.46466
-    y: 219.9307
+    x: 494.5839
+    y: 122.91582
     width: 118.65669
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -2268,7 +2268,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 40
   indentLevel: 0
-  storyText: (to you, in low voice:) <i>...Excuse me, what?</i>
+  storyText: (to you, in low voice:) {i}...Excuse me, what?{/i}
   description: 
   character: {fileID: 1400675141}
   portrait: {fileID: 0}
@@ -2310,7 +2310,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &468921939
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -2329,7 +2329,7 @@ MonoBehaviour:
   sceneNameOLD: 
 --- !u!114 &468921940
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -6347,8 +6347,35 @@ MonoBehaviour:
   - Friends
   - Time
   - Sleep
-  myChips: []
-  chipWorthChart: []
+  limbBank:
+  - W1
+  - W2
+  - W3
+  - W4
+  limbLibrary: {fileID: 11400000, guid: 1f5e38748d9d6974d9599d68360700aa, type: 2}
+  myChips:
+  - ChipColor: {x: 1, y: 0, z: 0, w: 1}
+    ChipCategory: CAT1
+  - ChipColor: {x: 0, y: 1, z: 0, w: 1}
+    ChipCategory: CAT2
+  - ChipColor: {x: 0, y: 0, z: 1, w: 1}
+    ChipCategory: CAT3
+  - ChipColor: {x: 1, y: 1, z: 0, w: 1}
+    ChipCategory: CAT2
+  - ChipColor: {x: 1, y: 1, z: 1, w: 1}
+    ChipCategory: CAT4
+  - ChipColor: {x: 0, y: 1, z: 1, w: 1}
+    ChipCategory: CAT4
+  chipWorthChart:
+  - RoundName: WithOrlando
+    Category1: CAT1
+    Value1: 20
+    Category2: CAT2
+    Value2: 15
+    Category3: CAT3
+    Value3: 10
+    Category4: CAT4
+    Value4: 5
   cardInventory: []
 --- !u!4 &1538496898
 Transform:
