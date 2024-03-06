@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public class ExchangeGame : ManagerBehavior
 {
@@ -13,6 +14,7 @@ public class ExchangeGame : ManagerBehavior
     public GameObject myWordsHoder;
     public GameObject confirmPrompt;
     public LimbSync mainCharLimbSync;
+    public GameObject changeSceneButton;
 
     public enum state
     {
@@ -45,6 +47,9 @@ public class ExchangeGame : ManagerBehavior
             b.SetExchangeGameManager(this);
         }
         
+        //disable SwitchScene Button
+        changeSceneButton.SetActive(false);
+        
         // disable other mouse input
         mouseRayCast = MouseRayCast.instance.gameObject;
         mouseRayCast.SetActive(false);
@@ -59,6 +64,7 @@ public class ExchangeGame : ManagerBehavior
         clearSelfWords();
         
         mouseRayCast.SetActive(true);
+        changeSceneButton.SetActive(true);
         
         if (currentOtherWord != null)
         {
@@ -249,12 +255,13 @@ public class ExchangeGame : ManagerBehavior
         curState = state.selecting;
     }
 
-    public override void DestroySelfOnClose()
-    {
-        base.DestroySelfOnClose();
-        
-        mouseRayCast.SetActive(true);
-    }
+    // public override void DestroySelfOnClose()
+    // {
+    //     base.DestroySelfOnClose();
+    //     
+    //     mouseRayCast.SetActive(true);
+    //     changeSceneButton.SetActive(true);
+    // }
 
     private void keepCenter()
     {

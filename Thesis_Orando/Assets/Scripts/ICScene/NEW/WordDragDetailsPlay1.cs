@@ -12,14 +12,17 @@ public class WordDragDetailsPlay1 : WordDragDetails
         if (desNamee.Contains("subject"))
         {
             wordPosition = 0;
-            if (SpeechCardManager.instance.play1PluralWords.Contains(wordd))
-            {
-                posCorConjugations[0] = wordd.FirstCharacterToUpper() + " have";
-            }
-            else
-            {
-                posCorConjugations[0] = wordd.FirstCharacterToUpper() + " has";
-            }
+            
+            // if (SpeechCardManager.instance.play1PluralWords.Contains(wordd))
+            // {
+            //     posCorConjugations[0] = wordd.FirstCharacterToUpper() + " have";
+            // }
+            // else
+            // {
+            //     posCorConjugations[0] = wordd.FirstCharacterToUpper() + " has";
+            // }
+
+            posCorConjugations[0] = SpeechCardManager.instance.FindConjugation(wordd, "1A");
 
             text.text = posCorConjugations[0];
             RecordWords(wordPosition, posCorConjugations[0]);
@@ -27,7 +30,11 @@ public class WordDragDetailsPlay1 : WordDragDetails
         else if (desNamee.Contains("object"))
         {
             wordPosition = 2;
-            posCorConjugations[1] = wordd.ToLower();
+            
+            // posCorConjugations[1] = wordd.ToLower();
+
+            posCorConjugations[1] = SpeechCardManager.instance.FindConjugation(wordd, "1B");
+            
             text.text = posCorConjugations[1];
             RecordWords(wordPosition, posCorConjugations[1]);
         }

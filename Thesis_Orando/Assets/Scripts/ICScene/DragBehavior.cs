@@ -47,16 +47,21 @@ public class DragBehavior : MonoBehaviour
         {
             if (availableDesPosHolders.Contains(hit.collider.gameObject))
             {
-                DragCompleted(hit.collider.gameObject);
-                switch (type)
-                {
-                    case "word":
-                        hit.collider.gameObject.layer = LayerMask.NameToLayer("Default");
-                        break;
-                    case "card":
-                        Destroy(hit.collider.gameObject);
-                        break;
-                }
+                //DragCompleted(hit.collider.gameObject);
+                
+                gameObject.transform.position = hit.collider.gameObject.transform.position;
+                gameObject.GetComponent<Collider2D>().enabled = false;
+                gameObject.GetComponent<WordDragDetails>().DragComplete(gameObject.name, hit.collider.gameObject.name);
+                
+                // switch (type)
+                // {
+                //     case "word":
+                hit.collider.gameObject.layer = LayerMask.NameToLayer("Default");
+                //         break;
+                //     case "card":
+                //         Destroy(hit.collider.gameObject);
+                //         break;
+                // }
             }
             else
             {
@@ -73,15 +78,15 @@ public class DragBehavior : MonoBehaviour
     {
         gameObject.transform.position = destination.transform.position;
         gameObject.GetComponent<Collider2D>().enabled = false;
-        switch (type)
-        {
-            case "word":
-                gameObject.GetComponent<WordDragDetails>().DragComplete(gameObject.name, destination.name);
-                break;
-            case "card":
-                ICManager.instance.CardUsed();
-                break;
-        }
+        // switch (type)
+        // {
+        //     case "word":
+        gameObject.GetComponent<WordDragDetails>().DragComplete(gameObject.name, destination.name);
+        //         break;
+        //     case "card":
+        //         ICManager.instance.CardUsed();
+        //         break;
+        // }
     }
 
     private void DragFailed()

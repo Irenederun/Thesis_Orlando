@@ -21,7 +21,8 @@ public class SpeechCardManager : ManagerBehavior
 
     private string finalSentence;
 
-    public List<string> play1PluralWords;
+    //public List<string> play1PluralWords;
+    public Dictionary dictionary;
 
     private void Awake()
     {
@@ -102,6 +103,12 @@ public class SpeechCardManager : ManagerBehavior
     public void onPlay1Reload()
     {
         sentence[1] = "nothing to say to";
+    }
+
+    public string FindConjugation(string word, string position)
+    {
+        string conjugation = dictionary.Find(word, position);
+        return conjugation;
     }
     
     public override void DestroySelfOnClose()

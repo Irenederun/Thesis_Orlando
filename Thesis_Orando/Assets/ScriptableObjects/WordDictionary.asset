@@ -1,0 +1,63 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 700c2626c715ba343bd7172040e36c3d, type: 3}
+  m_Name: WordDictionary
+  m_EditorClassIdentifier: 
+  words:
+  - word: Time
+    rules:
+    - position: 1A
+      conjugation: Time has
+    - position: 1B
+      conjugation: time
+  - word: Rent
+    rules:
+    - position: 1A
+      conjugation: Rent has
+    - position: 1B
+      conjugation: rent
+  - word: Friends
+    rules:
+    - position: 1A
+      conjugation: Friends have
+    - position: 1B
+      conjugation: friends
+  - word: Sleep
+    rules:
+    - position: 1A
+      conjugation: Sleep has
+    - position: 1B
+      conjugation: sleep
+  - word: You
+    rules:
+    - position: 1A
+      conjugation: You have
+    - position: 1B
+      conjugation: you
+  - word: She
+    rules:
+    - position: 1A
+      conjugation: She has
+    - position: 1B
+      conjugation: her
+  - word: They
+    rules:
+    - position: 1A
+      conjugation: They have
+    - position: 1B
+      conjugation: them
+  - word: We
+    rules:
+    - position: 1A
+      conjugation: We have
+    - position: 1B
+      conjugation: us

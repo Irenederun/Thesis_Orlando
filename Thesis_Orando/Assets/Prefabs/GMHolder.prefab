@@ -1,0 +1,82 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7817812271064518207
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7817812271064518205}
+  - component: {fileID: 7817812271064518206}
+  m_Layer: 0
+  m_Name: GMHolder
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7817812271064518205
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7817812271064518207}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.24679406, y: 0.15353973, z: 0.045394752}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7817812271064518206
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7817812271064518207}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56ded43435960364f91de6f95c3715b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentLevel: 0
+  wordBank:
+  - Rent
+  - Friends
+  - Time
+  - Sleep
+  limbBank:
+  - W1
+  - W2
+  - W3
+  - W4
+  limbLibrary: {fileID: 11400000, guid: 1f5e38748d9d6974d9599d68360700aa, type: 2}
+  myChips:
+  - ChipColor: {x: 1, y: 0, z: 0, w: 1}
+    ChipCategory: CAT1
+  - ChipColor: {x: 0, y: 1, z: 0, w: 1}
+    ChipCategory: CAT2
+  - ChipColor: {x: 0, y: 0, z: 1, w: 1}
+    ChipCategory: CAT3
+  - ChipColor: {x: 1, y: 1, z: 0, w: 1}
+    ChipCategory: CAT2
+  - ChipColor: {x: 1, y: 1, z: 1, w: 1}
+    ChipCategory: CAT4
+  - ChipColor: {x: 0, y: 1, z: 1, w: 1}
+    ChipCategory: CAT4
+  chipWorthChart:
+  - RoundName: WithOrlando
+    Category1: CAT1
+    Value1: 20
+    Category2: CAT2
+    Value2: 15
+    Category3: CAT3
+    Value3: 10
+    Category4: CAT4
+    Value4: 5
+  cardInventory: []

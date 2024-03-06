@@ -857,8 +857,7 @@ MonoBehaviour:
   - {fileID: 1411777542193488966}
   - {fileID: 1411777541572420901}
   - {fileID: 1411777542644248651}
-  play1PluralWords:
-  - Friends
+  dictionary: {fileID: 11400000, guid: 966663a9ff9770647800735ddff566cf, type: 2}
 --- !u!1 &1411777541697867846
 GameObject:
   m_ObjectHideFlags: 0

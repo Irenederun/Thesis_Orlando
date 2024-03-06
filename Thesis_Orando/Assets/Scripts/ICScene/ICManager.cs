@@ -229,5 +229,9 @@ public class ICManager : MonoBehaviour
         yield return new WaitForSeconds(2);
         SceneManager.LoadScene(2);
     }
-    
+
+    public void ChangeScene(int sceneNum)
+    {
+        SceneManager.LoadScene(sceneNum);
+    }
 }
