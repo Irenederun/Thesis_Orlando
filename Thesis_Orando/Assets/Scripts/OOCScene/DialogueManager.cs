@@ -62,8 +62,13 @@ public class DialogueManager : ManagerBehavior
 
     public void SetSentenceVariable(string saidSentence)
     {
-        print(saidSentence);
+        //print(saidSentence);
         myFlowchart.SetStringVariable("saidSentence", saidSentence);
-        
     }
+
+    // public void SetResponseVariable(string corResponse)
+    // {
+    //     //print(corResponse);
+    //     myFlowchart.SetStringVariable("response", corResponse);
+    // }
 }

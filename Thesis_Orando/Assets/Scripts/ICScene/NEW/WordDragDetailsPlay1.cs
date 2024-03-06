@@ -22,10 +22,10 @@ public class WordDragDetailsPlay1 : WordDragDetails
             //     posCorConjugations[0] = wordd.FirstCharacterToUpper() + " has";
             // }
 
-            posCorConjugations[0] = SpeechCardManager.instance.FindConjugation(wordd, "1A");
+            string word1A = SpeechCardManager.instance.FindConjugation(wordd, "1A");
 
-            text.text = posCorConjugations[0];
-            RecordWords(wordPosition, posCorConjugations[0]);
+            text.text = word1A;
+            RecordWords(wordPosition, word1A);
         }
         else if (desNamee.Contains("object"))
         {
@@ -33,10 +33,12 @@ public class WordDragDetailsPlay1 : WordDragDetails
             
             // posCorConjugations[1] = wordd.ToLower();
 
-            posCorConjugations[1] = SpeechCardManager.instance.FindConjugation(wordd, "1B");
+            string word1B = SpeechCardManager.instance.FindConjugation(wordd, "1B");
             
-            text.text = posCorConjugations[1];
-            RecordWords(wordPosition, posCorConjugations[1]);
+            text.text = word1B;
+            RecordWords(wordPosition, word1B);
+            
+            SpeechCardManager.instance.DetermineResponse(wordd);
         }
     }
 

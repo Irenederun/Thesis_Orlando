@@ -41,23 +41,23 @@ public class ScalingManager : ManagerBehavior
 
     private void StartThisTurn()
     {
-        LoadAvailableChips();
+        //LoadAvailableChips();
     }
 
-    public void LoadAvailableChips()
-    {
-        for (int i = 0; i < GameManager.instance.myChips.Count; i++)
-        {
-            GameObject thisChip = Instantiate(chipPrefab, chipPosInitial[i], Quaternion.identity);
-            thisChip.transform.SetParent(chipParent.transform);
-            thisChip.GetComponent<SpriteRenderer>().color = GameManager.instance.myChips[i].ChipColor;
-            thisChip.GetComponent<ChipBehavior>().thisChip = GameManager.instance.myChips[i];
-            thisChip.GetComponent<ChipBehavior>().chipCategory = GameManager.instance.myChips[i].ChipCategory;
-            ScalingPageObjs.Add(thisChip);
-        }
-
-        SwitchInteractabilityForAll(true);
-    }
+    // public void LoadAvailableChips()
+    // {
+    //     for (int i = 0; i < GameManager.instance.myChips.Count; i++)
+    //     {
+    //         GameObject thisChip = Instantiate(chipPrefab, chipPosInitial[i], Quaternion.identity);
+    //         thisChip.transform.SetParent(chipParent.transform);
+    //         thisChip.GetComponent<SpriteRenderer>().color = GameManager.instance.myChips[i].ChipColor;
+    //         thisChip.GetComponent<ChipBehavior>().thisChip = GameManager.instance.myChips[i];
+    //         thisChip.GetComponent<ChipBehavior>().chipCategory = GameManager.instance.myChips[i].ChipCategory;
+    //         ScalingPageObjs.Add(thisChip);
+    //     }
+    //
+    //     SwitchInteractabilityForAll(true);
+    // }
 
     public void TiltScale(float chipWeight)
     {
@@ -84,25 +84,25 @@ public class ScalingManager : ManagerBehavior
         }
     }
 
-    public void ChipsSubmission()
-    {
-        SwitchInteractabilityForAll(false);
-
-        if (selectedChips.Count != 0)
-        {
-            for (int i = 0; i < selectedChips.Count; i++)
-            {
-                if (selectedChips[i] != null)
-                {
-                    selectedChips[i].GetComponent<ChipBehavior>().ChipSubmission(i);    
-                }
-            }
-        }
-        else
-        {
-            CardNotWon();
-        }
-    }
+    // public void ChipsSubmission()
+    // {
+    //     SwitchInteractabilityForAll(false);
+    //
+    //     if (selectedChips.Count != 0)
+    //     {
+    //         for (int i = 0; i < selectedChips.Count; i++)
+    //         {
+    //             if (selectedChips[i] != null)
+    //             {
+    //                 selectedChips[i].GetComponent<ChipBehavior>().ChipSubmission(i);    
+    //             }
+    //         }
+    //     }
+    //     else
+    //     {
+    //         CardNotWon();
+    //     }
+    // }
 
     public void CalculateWorth(float chipworth)
     {

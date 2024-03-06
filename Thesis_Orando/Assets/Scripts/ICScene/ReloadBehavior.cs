@@ -13,9 +13,10 @@ public class ReloadBehavior : BasicBehavior
         {
             SpeechCardManager.instance.sentence[i] = " ";
         }
+        SpeechCardManager.instance.OnPlay1Reload();
 
-        SpeechCardManager.instance.onPlay1Reload();
-        
+        SpeechCardManager.instance.responseDeterminant = "default";
+
         foreach (GameObject word in SpeechCardManager.instance.words)
         {
             word.GetComponent<DragBehavior>().Reload();

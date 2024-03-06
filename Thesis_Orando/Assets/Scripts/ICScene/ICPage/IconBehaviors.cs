@@ -6,10 +6,11 @@ using UnityEngine;
 
 public class IconBehaviors : BasicBehavior
 {
-    [SerializeField] private GameObject actress;
+    //[SerializeField] private GameObject actress;
     [SerializeField] private List<Sprite> sprites;
     private bool canInteract;
     private int clickTimes = 0;
+    public int associatedGameNo = 0;
 
     private void Start()
     {
@@ -31,48 +32,48 @@ public class IconBehaviors : BasicBehavior
         {
             if (gameObject.name.Contains("UI"))
             {
-                switch (clickTimes)
-                {
-                    case 0:
-                        OpenInventory();
-                        TurnOffOtherIcons();
-                        clickTimes++;
-                        break;
-                    case 1:
-                        CloseInventory();
-                        clickTimes--;
-                        break;
-                }
+                // switch (clickTimes)
+                // {
+                //     case 0:
+                //         OpenInventory();
+                //         TurnOffOtherIcons();
+                //         clickTimes++;
+                //         break;
+                //     case 1:
+                //         CloseInventory();
+                //         clickTimes--;
+                //         break;
+                // }
             }
-            else if (gameObject.name.Contains("look"))
+            else if (gameObject.name.Contains("Exchange"))
             {
                 //DialogueManager.instance.TriggerDialogueOOC("ArchdukeLook");
-                ICManager.instance.StartExchange();
+                ICManager.instance.StartWordExchange(associatedGameNo);
             }
         }
     }
 
-    void CloseInventory()
-    {
-        ICManager.instance.TurnOffInventory();
-    }
-    void OpenInventory()
-    {
-        ICManager.instance.TurnOnInventory();
-    }
+    // void CloseInventory()
+    // {
+    //     ICManager.instance.TurnOffInventory();
+    // }
+    // void OpenInventory()
+    // {
+    //     ICManager.instance.TurnOnInventory();
+    // }
 
-    void TurnOffOtherIcons()
-    {
-        if (gameObject.name.Contains("UI"))
-        {
-            actress.GetComponent<InteractiveItemsManager>().DeleteExistingIcons();
-        }
-        else
-        {
-            gameObject.transform.parent.parent.GetComponent<InteractiveItemsManager>().DeleteIcons2();
-
-        }
-    }
+    // void TurnOffOtherIcons()
+    // {
+    //     if (gameObject.name.Contains("UI"))
+    //     {
+    //         actress.GetComponent<InteractiveItemsManager>().DeleteExistingIcons();
+    //     }
+    //     else
+    //     {
+    //         gameObject.transform.parent.GetComponent<InteractiveItemsManager>().DeleteIcons2();
+    //
+    //     }
+    // }
 
     public void IconState(bool state)
     {

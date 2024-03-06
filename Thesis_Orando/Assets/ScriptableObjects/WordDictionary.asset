@@ -19,45 +19,93 @@ MonoBehaviour:
       conjugation: Time has
     - position: 1B
       conjugation: time
+    - position: 1C
+      conjugation: CAT1
   - word: Rent
     rules:
     - position: 1A
       conjugation: Rent has
     - position: 1B
       conjugation: rent
+    - position: 1C
+      conjugation: CAT1
   - word: Friends
     rules:
     - position: 1A
       conjugation: Friends have
     - position: 1B
       conjugation: friends
+    - position: 1C
+      conjugation: CAT1
   - word: Sleep
     rules:
     - position: 1A
       conjugation: Sleep has
     - position: 1B
       conjugation: sleep
+    - position: 1C
+      conjugation: CAT1
   - word: You
     rules:
     - position: 1A
       conjugation: You have
     - position: 1B
       conjugation: you
+    - position: 1C
+      conjugation: CAT2
   - word: She
     rules:
     - position: 1A
       conjugation: She has
     - position: 1B
       conjugation: her
+    - position: 1C
+      conjugation: CAT2
   - word: They
     rules:
     - position: 1A
       conjugation: They have
     - position: 1B
       conjugation: them
+    - position: 1C
+      conjugation: CAT2
   - word: We
     rules:
     - position: 1A
       conjugation: We have
     - position: 1B
       conjugation: us
+    - position: 1C
+      conjugation: CAT2
+  - word: I
+    rules:
+    - position: 1A
+      conjugation: I have
+    - position: 1B
+      conjugation: me
+    - position: 1C
+      conjugation: CAT2
+  - word: Absurdity
+    rules:
+    - position: 1A
+      conjugation: Absurdity has
+    - position: 1B
+      conjugation: absurdity
+    - position: 1C
+      conjugation: CAT3
+  - word: Cruelty
+    rules:
+    - position: 1A
+      conjugation: Cruelty has
+    - position: 1B
+      conjugation: cruelty
+    - position: 1C
+      conjugation: CAT3
+  - word: Violence
+    rules:
+    - position: 1A
+      conjugation: Violence has
+    - position: 1B
+      conjugation: violence
+    - position: 1C
+      conjugation: CAT3

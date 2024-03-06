@@ -23,6 +23,7 @@ public class SpeechCardManager : ManagerBehavior
 
     //public List<string> play1PluralWords;
     public Dictionary dictionary;
+    public string responseDeterminant = default;
 
     private void Awake()
     {
@@ -66,6 +67,11 @@ public class SpeechCardManager : ManagerBehavior
         }
     }
 
+    public void DetermineResponse(string word1B)
+    {
+        responseDeterminant = FindConjugation(word1B, "1C");
+    }
+
     public void Submission()
     {
         for (int i = 0; i < sentence.Count; i++)
@@ -97,10 +103,14 @@ public class SpeechCardManager : ManagerBehavior
         //ICManager.instance.LoadCompleteSentence(finalSentence);
         DialogueManager.instance.SetSentenceVariable(finalSentence + ".");
         DialogueManager.instance.TriggerDialogueOOC("printSentence");
+        DialogueManager.instance.TriggerDialogueOOC(responseDeterminant);
+        
+        //this should also be where we determine if the input is accepted. is there a case that we wouldn't let them pass?
+        
         DestroySelfOnClose();
     }
 
-    public void onPlay1Reload()
+    public void OnPlay1Reload()
     {
         sentence[1] = "nothing to say to";
     }

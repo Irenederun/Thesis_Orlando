@@ -171,13 +171,13 @@ public class CardBehavior : BasicBehavior
 
     private void CardAddToInventory()
     {
-        //TODO: need to decide when this happen exactly
-        GameManager.CardInventory thisCard = new GameManager.CardInventory
-        {
-            cardNameInvent = cardName,
-            cardColorInvent = cardinicolor,
-        };
-        GameManager.instance.cardInventory.Add(thisCard);
+        // //TODO: need to decide when this happen exactly
+        // GameManager.CardInventory thisCard = new GameManager.CardInventory
+        // {
+        //     cardNameInvent = cardName,
+        //     cardColorInvent = cardinicolor,
+        // };
+        // GameManager.instance.cardInventory.Add(thisCard);
     }
 
     private void CardFlip(string side)

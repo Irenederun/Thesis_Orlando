@@ -8,7 +8,7 @@ public class WordDragDetails : MonoBehaviour
 {
     public TextMeshPro text;
     public int wordPosition;
-    public List<string> posCorConjugations;
+    //public List<string> posCorConjugations;
 
     public virtual void DragComplete(string wordd, string desNamee)
     {

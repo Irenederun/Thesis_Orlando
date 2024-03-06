@@ -11,7 +11,7 @@ public class ICManager : MonoBehaviour
     public enum ICState
     {
         Start,
-        CardUsed,
+        ExchangeGameOpened,
     }
     public ICState icState;
 
@@ -37,8 +37,8 @@ public class ICManager : MonoBehaviour
     [SerializeField] private GameObject UIIcon;
     //[SerializeField] private List<GameObject> parallexObj;
 
-    public bool inventOn;
-    public bool cardGameOn;
+    // public bool inventOn;
+    // public bool cardGameOn;
     public GameObject floor;
 
     private void Awake()
@@ -66,73 +66,63 @@ public class ICManager : MonoBehaviour
         }
     }
 
-    public void CardUsed()
+    public void OpenExchangeGame(int gameNum)
     {
         //ChangeUIActivation(false);
-        icState = ICState.CardUsed;
-        TurnOnSpeechGame();
-    }
-
-    void TurnOnSpeechGame()
-    {
-        LoadCardOptions(); 
+        icState = ICState.ExchangeGameOpened;
         //DestroyCardInventPrefab();
-        TurnOffInventory();
-    }
-
-    void DestroyCardInventPrefab()
-    {
-        cardInventHandPrefab.GetComponent<CardInventManager>().DestroySelfOnClose(); //TODO: will change to this after drag is switched to non-Fungus
-        //cardInventHandPrefab.SetActive(false);
-        //Mouse.instance.ChangeMouseInteraction(false);
-    }
-
-    void LoadCardOptions()
-    {
-        cardGameOn = true;
         //GameObject speechObj = Instantiate(cardOptionsPrefab, speechGamePosHolder.transform.position, Quaternion.identity);
         //speechObj.transform.parent = speechGamePosHolder.transform;
-        ExchangeGameManager.instance.StartExchangeGame(0);
+        //cardGameOn = true;
+        ExchangeGameManager.instance.StartExchangeGame(gameNum);
+        //TurnOffInventory();
     }
 
-    public void TurnOnInventory()
-    {
-        //Instantiate(cardInventHandPrefab); //TODO: will change to this after drag is switched to non-Fungus
-        cardInventHandPrefab.SetActive(true);
-        inventOn = true;
-        //Mouse.instance.ChangeMouseInteraction(true);
-    }
+    // void DestroyCardInventPrefab()
+    // {
+    //     cardInventHandPrefab.GetComponent<CardInventManager>().DestroySelfOnClose(); //TODO: will change to this after drag is switched to non-Fungus
+    //     //cardInventHandPrefab.SetActive(false);
+    //     //Mouse.instance.ChangeMouseInteraction(false);
+    // }
+    
+    // public void TurnOnInventory()
+    // {
+    //     //Instantiate(cardInventHandPrefab); //TODO: will change to this after drag is switched to non-Fungus
+    //     //cardInventHandPrefab.SetActive(true);
+    //     //inventOn = true;
+    //     //Mouse.instance.ChangeMouseInteraction(true);
+    // }
 
-    public void TurnOffInventory()
-    {
-        cardInventHandPrefab.SetActive(false);
-        inventOn = false;
-    }
+    // public void TurnOffInventory()
+    // {
+    //     //cardInventHandPrefab.SetActive(false);
+    //     //inventOn = false;
+    // }
 
-    public void CardGameSubmission()
-    {
-        cardGameOn = false;
-        DialogueManager.instance.TriggerDialogueOOC("GameFinished");
-    }
+    // public void CardGameSubmission()
+    // {
+    //     cardGameOn = false;
+    //     DialogueManager.instance.TriggerDialogueOOC("GameFinished");
+    // }
 
-    public void SwitchInteractabilityForICObjects(bool interactability)
-    {
-        switch (interactability)
-        {
-            case true:
-                foreach (GameObject obj in ICPageInteractableObjects)
-                {
-                    obj.layer = LayerMask.NameToLayer("Interactable");
-                }
-                break;
-            case false:
-                foreach (GameObject obj in ICPageInteractableObjects)
-                {
-                    obj.layer = LayerMask.NameToLayer("Default");
-                }
-                break;
-        }
-    }
+    // public void SwitchInteractabilityForICObjects(bool interactability)
+    // {
+    //     switch (interactability)
+    //     {
+    //         case true:
+    //             foreach (GameObject obj in ICPageInteractableObjects)
+    //             {
+    //                 obj.layer = LayerMask.NameToLayer("Interactable");
+    //             }
+    //             break;
+    //         case false:
+    //             foreach (GameObject obj in ICPageInteractableObjects)
+    //             {
+    //                 obj.layer = LayerMask.NameToLayer("Default");
+    //             }
+    //             break;
+    //     }
+    // }
 
     public void CameraFollow()
     {
@@ -193,16 +183,16 @@ public class ICManager : MonoBehaviour
 
     public void ChangeUIActivation(bool state)
     {
-        if (icState != ICState.CardUsed)
+        if (icState != ICState.ExchangeGameOpened)
         {
             UIIcon.GetComponent<IconBehaviors>().IconState(state);
         }
     }
     
     //new starting from this
-    public void StartExchange()
+    public void StartWordExchange(int gameNum)
     {
-        CardUsed();
+        OpenExchangeGame(gameNum);
         //shouldn't be walking
         //actress.GetComponent<ActressController>().DisableWalking();
     }
@@ -218,10 +208,10 @@ public class ICManager : MonoBehaviour
         yield return new WaitForSeconds(2);
         ScalingManager.instance.DestroySelfOnClose();
         //adding the skill to game manager inventory later
-        GameManager.CardInventory newCard = new GameManager.CardInventory();
-        newCard.cardColorInvent = new Vector4(0,1,0,1);
-        newCard.cardNameInvent = "SpeechCard";
-        GameManager.instance.cardInventory.Add(newCard);
+        //GameManager.CardInventory newCard = new GameManager.CardInventory();
+        //newCard.cardColorInvent = new Vector4(0,1,0,1);
+        //newCard.cardNameInvent = "SpeechCard";
+        //GameManager.instance.cardInventory.Add(newCard);
         
         //do the whole exchange body part animation thing
         //add to inventory anim/visual cue

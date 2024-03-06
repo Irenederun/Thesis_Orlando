@@ -7,7 +7,7 @@ public class SubmissionButtonBehavior : BasicBehavior
     public override void ClickedByMouse()
     {
         base.ClickedByMouse();
-        ScalingManager.instance.ChipsSubmission();
+        //ScalingManager.instance.ChipsSubmission();
         GetComponent<SpriteRenderer>().color = Color.black;
     }
 
