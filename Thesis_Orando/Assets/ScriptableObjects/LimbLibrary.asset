@@ -13,14 +13,14 @@ MonoBehaviour:
   m_Name: LimbLibrary
   m_EditorClassIdentifier: 
   availableLimbs:
-  - name: W1
-    limbSprite: {fileID: 21300000, guid: cb56d6ab6b028ae4896451f3deb0f61b, type: 3}
-  - name: W2
-    limbSprite: {fileID: 21300000, guid: b4bd4713462f28545aa23f664a2aeb18, type: 3}
-  - name: W3
-    limbSprite: {fileID: 21300000, guid: f18119df80501d845a88f086335489e4, type: 3}
-  - name: W4
-    limbSprite: {fileID: 21300000, guid: 0bf8376022f74a74a96d386dd0d187de, type: 3}
+  - name: P1
+    limbSprite: {fileID: 721282071, guid: 299e2eb15e9044c1daf7c61d009e06eb, type: 3}
+  - name: P2
+    limbSprite: {fileID: 321040034, guid: 299e2eb15e9044c1daf7c61d009e06eb, type: 3}
+  - name: P3
+    limbSprite: {fileID: -1482619850, guid: 299e2eb15e9044c1daf7c61d009e06eb, type: 3}
+  - name: P4
+    limbSprite: {fileID: 1392655372, guid: 299e2eb15e9044c1daf7c61d009e06eb, type: 3}
   - name: G1
     limbSprite: {fileID: 21300000, guid: 5e299a3d9d3480440932baee3e6e7dd8, type: 3}
   - name: G2

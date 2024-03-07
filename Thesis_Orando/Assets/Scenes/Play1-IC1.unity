@@ -585,9 +585,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 169.20062
+    x: 171.0188
     y: 175.28468
-    width: 112.06893
+    width: 70.60602
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -618,11 +618,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 237.23535, y: 8.5269}
+  scrollPos: {x: 300.00803, y: 220.19246}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 269.66666
-  zoom: 0.58000034
+  zoom: 0.55000037
   scrollViewRect:
     serializedVersion: 2
     x: -343
@@ -630,9 +630,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 468921933}
+  - {fileID: 468921886}
   selectedCommands:
-  - {fileID: 468921937}
+  - {fileID: 468921931}
   variables:
   - {fileID: 468921930}
   - {fileID: 468921936}
@@ -721,7 +721,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 165.99998
     y: 120
-    width: 117.816055
+    width: 76.666626
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -859,7 +859,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 166.48706
     y: 9.848071
-    width: 118.96548
+    width: 77.878746
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -958,7 +958,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 164.49254
     y: 63.863632
-    width: 120.11491
+    width: 79.090866
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1182,10 +1182,10 @@ MonoBehaviour:
     transformVal: {fileID: 0}
   _spawnAtSelf:
     booleanRef: {fileID: 0}
-    booleanVal: 1
+    booleanVal: 0
   _spawnPosition:
     vector3Ref: {fileID: 0}
-    vector3Val: {x: 0, y: 0, z: 0}
+    vector3Val: {x: -0.11, y: 1.17, z: 0}
   _spawnRotation:
     vector3Ref: {fileID: 0}
     vector3Val: {x: 0, y: 0, z: 0}
@@ -1227,7 +1227,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 170.60796
     y: 230.16449
-    width: 120.11491
+    width: 79.090866
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1419,7 +1419,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 174.70236
     y: 285.70493
-    width: 118.96548
+    width: 77.878746
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2409,8 +2409,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1053311635}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 499.49997, y: 402.45114, z: -9719.998}
-  m_LocalScale: {x: 147.96, y: 68.63399, z: 108}
+  m_LocalPosition: {x: 490.84, y: 464.46, z: -9719.998}
+  m_LocalScale: {x: 146.48041, y: 37.748695, z: 108}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 898991569}
@@ -3867,7 +3867,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1932757925171001300, guid: 20d2aa1150937b94e8620414b8d314a6, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.81
+      value: -0.9
       objectReference: {fileID: 0}
     - target: {fileID: 1932757925171001300, guid: 20d2aa1150937b94e8620414b8d314a6, type: 3}
       propertyPath: m_LocalPosition.z
@@ -4124,7 +4124,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7154389427481790232, guid: 273ffa45d2200b64f9fc59b68d70d7f0, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.81
+      value: -0.9
       objectReference: {fileID: 0}
     - target: {fileID: 7154389427481790232, guid: 273ffa45d2200b64f9fc59b68d70d7f0, type: 3}
       propertyPath: m_LocalPosition.z
