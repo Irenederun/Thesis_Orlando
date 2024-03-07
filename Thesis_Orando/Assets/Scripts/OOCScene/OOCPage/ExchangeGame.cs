@@ -15,6 +15,9 @@ public class ExchangeGame : ManagerBehavior
     public GameObject confirmPrompt;
     public LimbSync mainCharLimbSync;
     public GameObject changeSceneButton;
+    public GameObject selfMaskWords;
+    public GameObject selfMaskLimbs;
+    public GameObject otherMask;
 
     public enum state
     {
@@ -56,6 +59,19 @@ public class ExchangeGame : ManagerBehavior
 
         // refresh the limbs
         mainCharLimbSync.Sync();
+
+        //tutorial
+        if (ExchangeGameManager.instance.isTutorial)
+        {
+            SwitchMask( selfMaskWords, selfMaskLimbs, otherMask);
+            DialogueManager.instance.TriggerDialogueOOC("ExchangeStarted");
+        }
+        else
+        {
+            selfMaskWords.SetActive(false);
+            selfMaskLimbs.SetActive(false);
+            otherMask.SetActive(false);
+        }
     }
 
     public void End()
@@ -133,47 +149,69 @@ public class ExchangeGame : ManagerBehavior
         switch (group)
         {
             case "targetObj":
-                if (currentOtherWord != null) currentOtherWord.CallResetEvent();
-                if (currentOtherWord == script)
+                
+                if (currentOtherWord != null) currentOtherWord.CallResetEvent();//if another word is selected before, reset
+                if (currentOtherWord == script)//if clicking the same word
                 {
                     currentOtherWord = null;
                     currentOtherWordText = "";
                 }
-                else
+                else//if first time clicking, or if clicking a different word
                 {
+                    //if tutorial
+                    if (ExchangeGameManager.instance.isTutorial && currentOtherWord == null)
+                    {
+                        SwitchMask(otherMask, selfMaskLimbs, selfMaskWords);
+                        DialogueManager.instance.TriggerDialogueOOC("TargetChosen");
+                    }
+                    //
+                    
                     currentOtherWord = script;
                     currentOtherWordText = text;
                     script.CallButtonEvent();
                 }
 
+
                 break;
             case "myWord":
-                if (currentMyWord != null)
+                if (currentMyWord != null)//if selected a word before
                 {
-                    currentMyWord.CallResetEvent();
-                    if (currentMyLimb != null)
+                    currentMyWord.CallResetEvent();//reset
+                    if (currentMyLimb != null)//if selected a limb
                     {
-                        currentMyLimb.CallResetEvent();
+                        currentMyLimb.CallResetEvent();//reset associated limb
                         currentMyLimb = null;
                     }
                 }
 
-                if (currentMyWord == script)
+                if (currentMyWord == script)//if selecting the same word
                 {
                     currentMyWord = null;
                     currentMyWordText = "";
-                    if (currentMyLimb != null)
+                    if (currentMyLimb != null)//if already associated a limb
                     {
                         currentMyLimb.CallResetEvent();
                         currentMyLimb = null;
                     }
                 }
-                else
+                else //if first time selecting, or if selecting a new word 
                 {
-                    currentMyWord = script;
-                    currentMyWordText = text;
-                    script.CallButtonEvent();
+                    if (currentOtherWord != null) // only when a target word has been selected
+                    {
+                        //if tutorial
+                        if (ExchangeGameManager.instance.isTutorial && currentMyWord == null)
+                        {
+                            SwitchMask(otherMask, selfMaskWords, selfMaskLimbs);
+                            DialogueManager.instance.TriggerDialogueOOC("MyWordChosen");
+                        }
+                        //
+                        
+                        currentMyWord = script;
+                        currentMyWordText = text;
+                        script.CallButtonEvent();
+                    }
                 }
+                
 
                 break;
             case "myLimb":
@@ -191,6 +229,14 @@ public class ExchangeGame : ManagerBehavior
                 {
                     if (currentMyWord != null)
                     {
+                        //if tutorial
+                        if (ExchangeGameManager.instance.isTutorial && currentMyLimb == null)
+                        {
+                            SwitchMask( selfMaskLimbs, null, null);
+                            DialogueManager.instance.TriggerDialogueOOC("MyLimbChosen");
+                        }
+                        //
+                        
                         // connect selected myword and this limb
                         currentMyLimb = script;
                         MyWord myWord = currentMyWord.myUIBehavior as MyWord;
@@ -199,7 +245,7 @@ public class ExchangeGame : ManagerBehavior
                         script.CallButtonEvent();
                     }
                 }
-
+                
                 break;
         }
     }
@@ -207,6 +253,15 @@ public class ExchangeGame : ManagerBehavior
     // importanto big function that handles limb exchange and notifies everybodei
     public void Exchange()
     {
+        if (ExchangeGameManager.instance.isTutorial)
+        {
+            ExchangeGameManager.instance.TutorialOver();
+            DialogueManager.instance.TriggerDialogueOOC("ExchangeClicked");
+            selfMaskWords.SetActive(false);
+            selfMaskLimbs.SetActive(false);
+            otherMask.SetActive(false);
+        }
+        
         curState = state.exchanging;
         confirmPrompt.SetActive(false);
         
@@ -221,7 +276,6 @@ public class ExchangeGame : ManagerBehavior
         
         //**TODO: play the exchange animation
         StartCoroutine(exchangeWordsAndLimbs());
-        
         
         
     }
@@ -270,5 +324,11 @@ public class ExchangeGame : ManagerBehavior
         pos.z = 0f;
         transform.position = pos;
     }
-    
+
+    private void SwitchMask(GameObject unclickable1, GameObject unclickable2, GameObject clickable)
+    {
+        if (unclickable1 != null) unclickable1.SetActive(true);
+        if (unclickable2 != null) unclickable2.SetActive(true);
+        if (clickable != null) clickable.SetActive(false);
+    }
 }

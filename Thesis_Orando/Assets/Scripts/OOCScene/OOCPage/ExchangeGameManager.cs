@@ -8,13 +8,14 @@ public class ExchangeGameManager : MonoBehaviour
     public static ExchangeGameManager instance;
     public LimbSync oocMainCharLimbSync;
     public List<ExchangeGame> exchangeGames = new List<ExchangeGame>();
+    public bool isTutorial = true;
 
     public void Awake()
     {
         if (instance == null)
         {
             instance = this;
-            DontDestroyOnLoad(gameObject);
+            //DontDestroyOnLoad(gameObject);
         }
         else
         {
@@ -51,5 +52,12 @@ public class ExchangeGameManager : MonoBehaviour
                 break;
             }
         }
+        
+        DialogueManager.instance.TriggerDialogueOOC("ExitExchange");
+    }
+
+    public void TutorialOver()
+    {
+        isTutorial = false;
     }
 }

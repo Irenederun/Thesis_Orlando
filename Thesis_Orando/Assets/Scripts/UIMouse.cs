@@ -11,6 +11,11 @@ public class UIMouse : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (DialogueManager.instance.isTalking)
+        {
+            return;
+        }
+        
         mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         RaycastHit2D hitClick = Physics2D.Raycast
             (mousePos, Vector3.back, Mathf.Infinity, LayerMask.GetMask("UIInteract"));
