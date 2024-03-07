@@ -618,7 +618,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 221.71812, y: 222.31984}
+  scrollPos: {x: 237.23535, y: 8.5269}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 269.66666
@@ -630,9 +630,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 468921886}
+  - {fileID: 468921933}
   selectedCommands:
-  - {fileID: 468921928}
+  - {fileID: 468921937}
   variables:
   - {fileID: 468921930}
   - {fileID: 468921936}
@@ -1319,7 +1319,7 @@ MonoBehaviour:
   showAlways: 1
   showCount: 1
   extendPrevious: 0
-  fadeWhenDone: 1
+  fadeWhenDone: 0
   waitForClick: 1
   stopVoiceover: 1
   waitForVO: 0
@@ -4097,6 +4097,10 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 1752129170}
+    - target: {fileID: 6990208787716420074, guid: aa9435444602d944191c8389986926c4, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 40.899994
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aa9435444602d944191c8389986926c4, type: 3}
 --- !u!1001 &7154389427541980192
