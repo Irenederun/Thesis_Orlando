@@ -654,6 +654,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7154389427481790232}
+  - component: {fileID: 784958831}
   m_Layer: 0
   m_Name: VLADIMIRA
   m_TagString: Untagged
@@ -678,6 +679,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &784958831
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7154389427481790231}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 664e11d32f6cb434790e4e21602bd41d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  leftArm: {fileID: 7154389425978527997}
+  rightArm: {fileID: 7154389426036166222}
+  leftLeg: {fileID: 7154389426008104428}
+  rightLeg: {fileID: 7154389427884959078}
 --- !u!1 &7154389427884959076
 GameObject:
   m_ObjectHideFlags: 0

@@ -2,9 +2,13 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class UiActivationtTrigger : MonoBehaviour
 {
+    public UnityEvent triggerActivation;
+    public UnityEvent triggerDeactivation;
+
     private void OnTriggerEnter2D(Collider2D col)
     {
         //if inventory is on, don't do; if word game is on, don't do. 
@@ -15,7 +19,9 @@ public class UiActivationtTrigger : MonoBehaviour
         }
         */
         //ICManager.instance.ChangeUIActivation(true);
-        transform.parent.gameObject.GetComponent<InteractiveItemsManager>().SwitchIconAvailability(true);
+        //transform.parent.gameObject.GetComponent<InteractiveItemsManager>().SwitchIconAvailability(true);
+        
+        triggerActivation?.Invoke();
     }
     
     //only needed since trigger exit somehow happens when walking inside it 
@@ -36,7 +42,8 @@ public class UiActivationtTrigger : MonoBehaviour
     {
         //ICManager.instance.ChangeUIActivation(false);
 
-        transform.parent.gameObject.GetComponent<InteractiveItemsManager>().SwitchIconAvailability(false);
+        //transform.parent.gameObject.GetComponent<InteractiveItemsManager>().SwitchIconAvailability(false);
         //why the fuck this is also happening when actress is walking inside the trigger???
+        triggerDeactivation?.Invoke();
     }
 }

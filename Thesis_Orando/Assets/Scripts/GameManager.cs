@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -10,6 +11,8 @@ public class GameManager : MonoBehaviour
     public List<string> wordBank = new List<string>();
     public List<string> limbBank = new List<string>();
     public LimbLibrary limbLibrary;
+    public bool isTutorial = true;
+    public Action tutorialEnded;
 
 
     public void Awake()
@@ -105,5 +108,11 @@ public class GameManager : MonoBehaviour
         }
 
         return limbs;
+    }
+    
+    public void TutorialOver()
+    {
+        isTutorial = false;
+        tutorialEnded();
     }
 }

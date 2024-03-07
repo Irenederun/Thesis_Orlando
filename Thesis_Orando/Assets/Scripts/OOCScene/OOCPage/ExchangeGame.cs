@@ -61,10 +61,11 @@ public class ExchangeGame : ManagerBehavior
         mainCharLimbSync.Sync();
 
         //tutorial
-        if (ExchangeGameManager.instance.isTutorial)
+        if (GameManager.instance.isTutorial)
         {
             SwitchMask( selfMaskWords, selfMaskLimbs, otherMask);
             DialogueManager.instance.TriggerDialogueOOC("ExchangeStarted");
+            print("started");
         }
         else
         {
@@ -99,6 +100,10 @@ public class ExchangeGame : ManagerBehavior
             currentMyLimb.CallResetEvent();
             currentMyLimb = null;
         }
+        
+        selfMaskWords.SetActive(false);
+        selfMaskLimbs.SetActive(false);
+        otherMask.SetActive(false);
     }
 
     private void Update()
@@ -159,7 +164,7 @@ public class ExchangeGame : ManagerBehavior
                 else//if first time clicking, or if clicking a different word
                 {
                     //if tutorial
-                    if (ExchangeGameManager.instance.isTutorial && currentOtherWord == null)
+                    if (GameManager.instance.isTutorial && currentOtherWord == null)
                     {
                         SwitchMask(otherMask, selfMaskLimbs, selfMaskWords);
                         DialogueManager.instance.TriggerDialogueOOC("TargetChosen");
@@ -199,7 +204,7 @@ public class ExchangeGame : ManagerBehavior
                     if (currentOtherWord != null) // only when a target word has been selected
                     {
                         //if tutorial
-                        if (ExchangeGameManager.instance.isTutorial && currentMyWord == null)
+                        if (GameManager.instance.isTutorial && currentMyWord == null)
                         {
                             SwitchMask(otherMask, selfMaskWords, selfMaskLimbs);
                             DialogueManager.instance.TriggerDialogueOOC("MyWordChosen");
@@ -230,7 +235,7 @@ public class ExchangeGame : ManagerBehavior
                     if (currentMyWord != null)
                     {
                         //if tutorial
-                        if (ExchangeGameManager.instance.isTutorial && currentMyLimb == null)
+                        if (GameManager.instance.isTutorial && currentMyLimb == null)
                         {
                             SwitchMask( selfMaskLimbs, null, null);
                             DialogueManager.instance.TriggerDialogueOOC("MyLimbChosen");
@@ -253,9 +258,9 @@ public class ExchangeGame : ManagerBehavior
     // importanto big function that handles limb exchange and notifies everybodei
     public void Exchange()
     {
-        if (ExchangeGameManager.instance.isTutorial)
+        if (GameManager.instance.isTutorial)
         {
-            ExchangeGameManager.instance.TutorialOver();
+            GameManager.instance.TutorialOver();
             DialogueManager.instance.TriggerDialogueOOC("ExchangeClicked");
             selfMaskWords.SetActive(false);
             selfMaskLimbs.SetActive(false);

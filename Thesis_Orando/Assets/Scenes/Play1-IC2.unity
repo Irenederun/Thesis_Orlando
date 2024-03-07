@@ -372,7 +372,7 @@ MonoBehaviour:
     transformVal: {fileID: 0}
   _spawnAtSelf:
     booleanRef: {fileID: 0}
-    booleanVal: 1
+    booleanVal: 0
   _spawnPosition:
     vector3Ref: {fileID: 0}
     vector3Val: {x: -0.11, y: 1.17, z: 0}
@@ -2418,47 +2418,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 273ffa45d2200b64f9fc59b68d70d7f0, type: 3}
---- !u!1 &784958826 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7154389427481790231, guid: 273ffa45d2200b64f9fc59b68d70d7f0, type: 3}
-  m_PrefabInstance: {fileID: 784958825}
-  m_PrefabAsset: {fileID: 0}
---- !u!212 &784958827 stripped
-SpriteRenderer:
-  m_CorrespondingSourceObject: {fileID: 7154389427884959078, guid: 273ffa45d2200b64f9fc59b68d70d7f0, type: 3}
-  m_PrefabInstance: {fileID: 784958825}
-  m_PrefabAsset: {fileID: 0}
---- !u!212 &784958828 stripped
-SpriteRenderer:
-  m_CorrespondingSourceObject: {fileID: 7154389426008104428, guid: 273ffa45d2200b64f9fc59b68d70d7f0, type: 3}
-  m_PrefabInstance: {fileID: 784958825}
-  m_PrefabAsset: {fileID: 0}
---- !u!212 &784958829 stripped
-SpriteRenderer:
-  m_CorrespondingSourceObject: {fileID: 7154389426036166222, guid: 273ffa45d2200b64f9fc59b68d70d7f0, type: 3}
-  m_PrefabInstance: {fileID: 784958825}
-  m_PrefabAsset: {fileID: 0}
---- !u!212 &784958830 stripped
-SpriteRenderer:
-  m_CorrespondingSourceObject: {fileID: 7154389425978527997, guid: 273ffa45d2200b64f9fc59b68d70d7f0, type: 3}
-  m_PrefabInstance: {fileID: 784958825}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &784958831
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 784958826}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 664e11d32f6cb434790e4e21602bd41d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  leftArm: {fileID: 784958830}
-  rightArm: {fileID: 784958829}
-  leftLeg: {fileID: 784958828}
-  rightLeg: {fileID: 784958827}
 --- !u!1 &792565048
 GameObject:
   m_ObjectHideFlags: 0

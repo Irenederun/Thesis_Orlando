@@ -3,26 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="9711d522-8fc0-494c-84b2-d15386118320" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Thesis_Orando/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Thesis_Orando/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/CharacterN'Dialogue/VLADIMIRA.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/CharacterN'Dialogue/VLADIMIRA.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/GMHolder.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/GMHolder.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/IC/WordDragPlay1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/IC/WordDragPlay1.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/CharacterN'Dialogue/NarratorFungus.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/CharacterN'Dialogue/NarratorFungus.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Play1-IC1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Play1-IC1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Play1-IC2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Play1-IC2.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Play1-OOC.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Play1-OOC.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/LimbLibrary.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptableObjects/LimbLibrary.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Character/character-splited.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Character/character-splited.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Character/character-splited.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Character/character-splited.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/CharacterPieces/B1.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/CharacterPieces/B1.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/CharacterPieces/B2.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/CharacterPieces/B2.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/CharacterPieces/B3.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/CharacterPieces/B3.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/CharacterPieces/B4.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/CharacterPieces/B4.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/CharacterPieces/G1.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/CharacterPieces/G1.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/CharacterPieces/G2.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/CharacterPieces/G2.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/CharacterPieces/G3.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/CharacterPieces/G3.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/CharacterPieces/G4.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/CharacterPieces/G4.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../thesis/art/character-default.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../thesis/art/character-splited.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../thesis/art/character-splited.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ICScene/ICManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ICScene/ICManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ICScene/UiActivationtTrigger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ICScene/UiActivationtTrigger.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/OOCScene/OOCPage/ExchangeGame.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/OOCScene/OOCPage/ExchangeGame.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/OOCScene/OOCPage/ExchangeGameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/OOCScene/OOCPage/ExchangeGameManager.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -151,7 +139,8 @@
       <workItem from="1709769815735" duration="9977000" />
       <workItem from="1709841801724" duration="4000" />
       <workItem from="1709841827603" duration="59000" />
-      <workItem from="1709843677764" duration="602000" />
+      <workItem from="1709843677764" duration="1196000" />
+      <workItem from="1709848208491" duration="1811000" />
     </task>
     <servers />
   </component>

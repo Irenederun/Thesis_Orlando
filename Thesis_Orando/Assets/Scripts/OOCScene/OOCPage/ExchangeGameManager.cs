@@ -8,7 +8,7 @@ public class ExchangeGameManager : MonoBehaviour
     public static ExchangeGameManager instance;
     public LimbSync oocMainCharLimbSync;
     public List<ExchangeGame> exchangeGames = new List<ExchangeGame>();
-    public bool isTutorial = true;
+    //public bool isTutorial = true;
 
     public void Awake()
     {
@@ -56,8 +56,5 @@ public class ExchangeGameManager : MonoBehaviour
         DialogueManager.instance.TriggerDialogueOOC("ExitExchange");
     }
 
-    public void TutorialOver()
-    {
-        isTutorial = false;
-    }
+    
 }

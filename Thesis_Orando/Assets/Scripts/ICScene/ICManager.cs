@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -40,6 +41,8 @@ public class ICManager : MonoBehaviour
     // public bool inventOn;
     // public bool cardGameOn;
     public GameObject floor;
+    public GameObject switchButton;
+    public GameObject switchTrigger;
 
     private void Awake()
     {
@@ -64,6 +67,25 @@ public class ICManager : MonoBehaviour
                 card.GetComponent<DragBehavior>().availableDesPosHolders.Add(SpeechGameObj.transform.GetChild(0).gameObject);
                 break;
         }
+    }
+
+    private void Start()
+    {
+        if (GameManager.instance.isTutorial)
+        {
+            switchTrigger.SetActive(false);
+            MakeSwitchUnavailble();
+        }
+    }
+
+    private void OnEnable()
+    {
+        GameManager.instance.tutorialEnded += MakeTriggerAvailable;
+    }
+
+    private void OnDisable()
+    {
+        GameManager.instance.tutorialEnded -= MakeTriggerAvailable;
     }
 
     public void OpenExchangeGame(int gameNum)
@@ -224,4 +246,20 @@ public class ICManager : MonoBehaviour
     {
         SceneManager.LoadScene(sceneNum);
     }
+
+    public void MakeTriggerAvailable()
+    {
+        switchTrigger.SetActive(true);
+    }
+
+    public void MakeSwitchAvailable()
+    {
+        if (!switchButton.activeSelf) switchButton.SetActive(true);
+    }
+
+    public void MakeSwitchUnavailble()
+    {
+        if (switchButton.activeSelf) switchButton.SetActive(false);
+    }
+    
 }
