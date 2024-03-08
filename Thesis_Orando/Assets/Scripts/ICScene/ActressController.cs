@@ -36,6 +36,8 @@ public class ActressController : MonoBehaviour
         actressState = ActressState.Idle;
         sp = GetComponent<SpriteRenderer>();
         anim = GetComponent<Animator>();
+        
+        if (ExchangeGameManager.instance != null) ExchangeGameManager.instance.oocMainCharLimbSync = gameObject.GetComponent<LimbSync>();
     }
 
     void Update()

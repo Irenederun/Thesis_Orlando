@@ -4,6 +4,9 @@ using System.Collections.Generic;
 using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.AI;
+using UnityEngine.Events;
+using UnityEngine.SceneManagement;
 using UnityEngine.UIElements;
 
 public class ExchangeGame : ManagerBehavior
@@ -32,17 +35,35 @@ public class ExchangeGame : ManagerBehavior
     private string currentMyWordText;
     private UIWordBehavior currentMyLimb;
 
+    public int positionInList;
+
     // Start is called before the first frame update
     void Start()
     {
         //init();
     }
 
+    // private void OnEnable()
+    // {
+    //     SceneManager.sceneLoaded += Init2;
+    // }
+    //
+    // private void OnDisable()
+    // {
+    //     SceneManager.sceneLoaded -= Init2;
+    // }
+    //
+    // void Init2(Scene scene, LoadSceneMode mode)
+    // {
+    //     ExchangeGameManager.instance.exchangeGames[positionInList] = this;
+    //     print("vjdhbafkslfksbhalisolkmn,j");
+    // }
+
     public void Init()
     {
         // load current words
         LoadSelfWords();
-        
+
         // tell all UIWordBehavior who their exchangeGameManager is to avoid singleton
         UIWordBehavior[] buttons = GetComponentsInChildren<UIWordBehavior>(true);
         foreach (UIWordBehavior b in buttons)

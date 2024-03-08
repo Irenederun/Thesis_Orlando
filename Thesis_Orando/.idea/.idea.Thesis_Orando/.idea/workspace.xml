@@ -3,12 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="9711d522-8fc0-494c-84b2-d15386118320" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Thesis_Orando/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Thesis_Orando/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/CharacterN'Dialogue/NarratorFungus.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/CharacterN'Dialogue/NarratorFungus.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Play1-IC1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Play1-IC1.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Play1-OOC.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Play1-OOC.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ICScene/ICManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ICScene/ICManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ICScene/UiActivationtTrigger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ICScene/UiActivationtTrigger.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ICScene/ActressController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ICScene/ActressController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ICScene/ICPage/IconBehaviors.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ICScene/ICPage/IconBehaviors.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MouseRayCast.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MouseRayCast.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/OOCScene/OOCPage/ExchangeGame.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/OOCScene/OOCPage/ExchangeGame.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/OOCScene/OOCPage/ExchangeGameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/OOCScene/OOCPage/ExchangeGameManager.cs" afterDir="false" />
     </list>
@@ -140,7 +138,8 @@
       <workItem from="1709841801724" duration="4000" />
       <workItem from="1709841827603" duration="59000" />
       <workItem from="1709843677764" duration="1196000" />
-      <workItem from="1709848208491" duration="1811000" />
+      <workItem from="1709848208491" duration="3928000" />
+      <workItem from="1709852268343" duration="1247000" />
     </task>
     <servers />
   </component>

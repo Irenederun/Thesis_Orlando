@@ -9,7 +9,7 @@ public class IconBehaviors : BasicBehavior
     //[SerializeField] private GameObject actress;
     [SerializeField] private List<Sprite> sprites;
     private bool canInteract;
-    private int clickTimes = 0;
+    //private int clickTimes = 0;
     public int associatedGameNo = 0;
 
     private void Start()

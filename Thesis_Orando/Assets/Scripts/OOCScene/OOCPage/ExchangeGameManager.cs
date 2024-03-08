@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ExchangeGameManager : MonoBehaviour
 {
@@ -10,12 +11,22 @@ public class ExchangeGameManager : MonoBehaviour
     public List<ExchangeGame> exchangeGames = new List<ExchangeGame>();
     //public bool isTutorial = true;
 
+    private void OnEnable()
+    {
+        SceneManager.sceneLoaded += Init;
+    }
+
+    private void OnDisable()
+    {
+        SceneManager.sceneLoaded -= Init;
+    }
+
     public void Awake()
     {
         if (instance == null)
         {
             instance = this;
-            //DontDestroyOnLoad(gameObject);
+            DontDestroyOnLoad(gameObject);
         }
         else
         {
@@ -23,11 +34,29 @@ public class ExchangeGameManager : MonoBehaviour
         }
     }
     
-    private void Start()
+    // private void Start()
+    // {
+    //     foreach (ExchangeGame xGame in exchangeGames)
+    //     {
+    //         xGame.gameObject.SetActive(false);
+    //     }
+    // }
+
+    void Init(Scene scene, LoadSceneMode mode)
     {
-        foreach (ExchangeGame xGame in exchangeGames)
+        if (scene.name.Contains("OOC"))
         {
-            xGame.gameObject.SetActive(false);
+            for (int i = 0; i < exchangeGames.Count; i++)
+            {
+                if (exchangeGames[i] == null)
+                {
+                    exchangeGames[i] = GameObject.Find("ExchangeGame" + i).GetComponent<ExchangeGame>();
+                }
+            }
+            foreach (ExchangeGame xGame in exchangeGames)
+            {
+                xGame.gameObject.SetActive(false);
+            }
         }
     }
 

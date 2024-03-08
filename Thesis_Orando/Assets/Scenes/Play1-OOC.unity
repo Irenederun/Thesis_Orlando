@@ -1106,7 +1106,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &100329748
 Transform:
   m_ObjectHideFlags: 0
@@ -1158,6 +1158,7 @@ MonoBehaviour:
   selfMaskLimbs: {fileID: 1459044075}
   otherMask: {fileID: 657160982}
   curState: 0
+  positionInList: 0
 --- !u!114 &100329750
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3055,8 +3056,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 289180747}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -3.3655, z: 0}
-  m_LocalScale: {x: 27.083733, y: 2.3840759, z: 1}
+  m_LocalPosition: {x: 0, y: -3.2603, z: 0}
+  m_LocalScale: {x: 27.083733, y: 2.962591, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1264125984}
@@ -4140,8 +4141,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   oocMainCharLimbSync: {fileID: 2073928842}
   exchangeGames:
-  - {fileID: 100329749}
-  - {fileID: 1429434900}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!4 &461119174
 Transform:
   m_ObjectHideFlags: 0
@@ -12329,6 +12330,7 @@ MonoBehaviour:
   selfMaskLimbs: {fileID: 794867577}
   otherMask: {fileID: 978826857}
   curState: 0
+  positionInList: 1
 --- !u!4 &1429434901
 Transform:
   m_ObjectHideFlags: 0

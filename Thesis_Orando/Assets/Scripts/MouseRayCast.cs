@@ -76,7 +76,7 @@ public class MouseRayCast : MonoBehaviour
                 if (hitCheckClick.collider != null)
                 {
                     hitCheckUI = true;
-                    print("hit check");
+                    //print("hit check");
                     if (actressController != null)
                     {
                         MoveActress();
