@@ -31,7 +31,7 @@ public class CameraFollow : MonoBehaviour
             //{
                 // transform.position =  
                 //     new Vector3(actress.transform.position.x + offset, transform.position.y, transform.position.z);
-            Vector3 targetPos = new Vector3(actress.transform.position.x, transform.position.y,
+            Vector3 targetPos = new Vector3(actress.transform.position.x + 2.5f, transform.position.y,
                     transform.position.z);
 
             

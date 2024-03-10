@@ -80,6 +80,14 @@ public class InteractiveItemsManager : BasicBehavior
         }
     }
 
+    public void SetIcon(bool state)
+    {
+        foreach (GameObject icon in correspondingIcons)
+        {
+            icon.GetComponent<IconBehaviors>().IconState(state);
+        }
+    }
+
     // public void LoadIcons()
     // {
     //     for (int i = 0; i < interactiveIcons.Count; i++)

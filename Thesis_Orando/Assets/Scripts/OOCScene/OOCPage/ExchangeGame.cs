@@ -7,7 +7,8 @@ using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.Events;
 using UnityEngine.SceneManagement;
-using UnityEngine.UIElements;
+//using UnityEngine.UIElements;
+using UnityEngine.UI;
 
 public class ExchangeGame : ManagerBehavior
 {
@@ -22,6 +23,8 @@ public class ExchangeGame : ManagerBehavior
     public GameObject selfMaskLimbs;
     public GameObject otherMask;
 
+    public bool dontCenter;
+    
     public enum state
     {
         selecting, exchanging
@@ -36,11 +39,14 @@ public class ExchangeGame : ManagerBehavior
     private UIWordBehavior currentMyLimb;
 
     public int positionInList;
+    [SerializeField]public Button closeButton;
 
     // Start is called before the first frame update
     void Start()
     {
         //init();
+        //closeButton.clicked += ExchangeGameManager.instance.EndExchangeGame;
+        closeButton.onClick.AddListener(ExchangeGameManager.instance.EndExchangeGame);
     }
 
     // private void OnEnable()
@@ -65,8 +71,13 @@ public class ExchangeGame : ManagerBehavior
         LoadSelfWords();
 
         // tell all UIWordBehavior who their exchangeGameManager is to avoid singleton
-        UIWordBehavior[] buttons = GetComponentsInChildren<UIWordBehavior>(true);
-        foreach (UIWordBehavior b in buttons)
+        UIWordBehavior[] buttons1 = GetComponentsInChildren<UIWordBehavior>(true);
+        UIWordBehavior[] buttons2 = mainCharLimbSync.gameObject.GetComponentsInChildren<UIWordBehavior>(true);
+        foreach (UIWordBehavior b in buttons1)
+        {
+            b.SetExchangeGameManager(this);
+        } 
+        foreach (UIWordBehavior b in buttons2)
         {
             b.SetExchangeGameManager(this);
         }
@@ -129,7 +140,7 @@ public class ExchangeGame : ManagerBehavior
 
     private void Update()
     {
-        keepCenter();
+        if (!dontCenter) keepCenter();
         
         if (curState == state.selecting)
         {

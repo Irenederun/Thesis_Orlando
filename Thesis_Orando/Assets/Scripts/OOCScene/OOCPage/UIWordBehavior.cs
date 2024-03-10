@@ -13,7 +13,7 @@ public class UIWordBehavior : BasicBehavior
     public UnityEvent buttonEvent;
     public UnityEvent resetEvent;
 
-    private ExchangeGame _exchangeGame;
+    [SerializeField]private ExchangeGame _exchangeGame;
     
     public override void ClickedByMouse()
     {
