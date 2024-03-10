@@ -254,6 +254,7 @@ GameObject:
   - component: {fileID: 24616078}
   - component: {fileID: 24616077}
   - component: {fileID: 24616076}
+  - component: {fileID: 24616079}
   m_Layer: 0
   m_Name: Play1-IC Flowchart
   m_TagString: Untagged
@@ -311,7 +312,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 470.50055
     y: 37.779995
-    width: 89.310356
+    width: 129.31036
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -417,7 +418,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 116.44126
     y: 39.495224
-    width: 72.06897
+    width: 112.06897
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -454,9 +455,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 24616046}
+  - {fileID: 24616052}
   selectedCommands:
-  - {fileID: 24616023}
+  - {fileID: 24616079}
   variables:
   - {fileID: 24616024}
   - {fileID: 24616018}
@@ -559,7 +560,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 117.32695
     y: 85.520744
-    width: 77.8161
+    width: 117.8161
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -568,6 +569,7 @@ MonoBehaviour:
   description: 
   eventHandler: {fileID: 24616051}
   commandList:
+  - {fileID: 24616079}
   - {fileID: 24616053}
   - {fileID: 24616055}
   - {fileID: 24616073}
@@ -904,7 +906,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 299.68524
     y: 24.268887
-    width: 69.77013
+    width: 109.77013
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1250,7 +1252,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 300.802
     y: 79.52663
-    width: 70.91955
+    width: 110.91955
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1576,7 +1578,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 302.24545
     y: 140.35141
-    width: 72.06897
+    width: 112.06897
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1587,6 +1589,27 @@ MonoBehaviour:
   commandList:
   - {fileID: 24616077}
   suppressAllAutoSelections: 0
+--- !u!114 &24616079
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 24616010}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbd8c931f22994b9d90e2037fffaa770, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 76
+  indentLevel: 0
+  _targetGameObject:
+    gameObjectRef: {fileID: 0}
+    gameObjectVal: {fileID: 898534828}
+  activeState:
+    booleanRef: {fileID: 0}
+    booleanVal: 0
+  targetGameObjectOLD: {fileID: 0}
 --- !u!1 &47158474
 GameObject:
   m_ObjectHideFlags: 0
