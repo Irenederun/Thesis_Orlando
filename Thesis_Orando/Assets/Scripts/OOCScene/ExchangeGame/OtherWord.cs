@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Security.Cryptography;
 using UnityEngine;
 using TMPro;
 using UnityEngine.U2D.IK;
@@ -17,10 +18,17 @@ public class OtherWord : UIBehavior
     private Color originalColor;
     private Gradient originalLineColor;
 
+    public string level;
+    public string posInWordList;
+    private List<string> outputList;
+
     private void Start()
     {
         originalColor = wordText.color;
         originalLineColor = lr.colorGradient;
+        //wordText.text = GetComponent<UIWordBehavior>()._exchangeGame.otherWords[posInWordList];
+        outputList = OtherWordLibrary.instance.Find(level, posInWordList);
+        wordText.text = outputList[0];
     }
 
     private void Update()
@@ -55,5 +63,17 @@ public class OtherWord : UIBehavior
         {
             lr.SetPosition(i, Vector3.Lerp(startPos, endPos, i / (float)(vertCount-1)));
         }
+    }
+
+    public void UpdatePos()
+    {
+        outputList = OtherWordLibrary.instance.Find(level, posInWordList);
+    }
+
+    public void ChangeWordText()
+    {
+        int i = int.Parse(outputList[1]);
+        int j = int.Parse(outputList[2]);
+        OtherWordLibrary.instance.Modify(i,j,wordText.text);
     }
 }

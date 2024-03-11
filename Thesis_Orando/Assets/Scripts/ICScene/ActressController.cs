@@ -60,13 +60,15 @@ public class ActressController : MonoBehaviour
             float desPos = destIcon.position.x;
             if (desPos < transform.position.x)
             {
-                sp.flipX = true;
+                //sp.flipX = true;
+                transform.localScale = new Vector3(-1,1,1);
                 isLeft = true;
 
             }
             else
             {
-                sp.flipX = false;
+                //sp.flipX = false;
+                transform.localScale = new Vector3(1, 1, 1);
                 isLeft = false;
             }
         

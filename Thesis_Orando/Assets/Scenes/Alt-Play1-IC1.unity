@@ -587,7 +587,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 171.0188
     y: 175.28468
-    width: 110.60602
+    width: 113.33333
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -618,11 +618,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 300.00803, y: 220.19246}
+  scrollPos: {x: 80.93316, y: 150.51747}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 269.66666
-  zoom: 0.55000037
+  zoom: 1
   scrollViewRect:
     serializedVersion: 2
     x: -343
@@ -721,7 +721,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 165.99998
     y: 120
-    width: 116.666626
+    width: 119.333336
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -858,8 +858,8 @@ MonoBehaviour:
   nodeRect:
     serializedVersion: 2
     x: 166.48706
-    y: 9.848071
-    width: 117.878746
+    y: 8.817143
+    width: 120.666664
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -958,7 +958,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 164.49254
     y: 63.863632
-    width: 119.090866
+    width: 121.333336
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1227,7 +1227,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 170.60796
     y: 230.16449
-    width: 119.090866
+    width: 121.333336
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1385,7 +1385,7 @@ MonoBehaviour:
   indentLevel: 0
   _sceneName:
     stringRef: {fileID: 0}
-    stringVal: Play1-OOC
+    stringVal: Alt-Play1-OOC
   loadingImage: {fileID: 0}
   sceneNameOLD: 
 --- !u!114 &468921943
@@ -1419,7 +1419,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 174.70236
     y: 285.70493
-    width: 117.878746
+    width: 120.666664
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2942,11 +2942,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &1377260340 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7154389426232387348, guid: 273ffa45d2200b64f9fc59b68d70d7f0, type: 3}
-  m_PrefabInstance: {fileID: 7154389427541980192}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1400675141 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2107791553208669313, guid: 94e9b21fda908904290cd45b3705db19, type: 3}
@@ -3168,7 +3163,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1752129168}
-  - component: {fileID: 1752129171}
   - component: {fileID: 1752129170}
   - component: {fileID: 1752129169}
   m_Layer: 0
@@ -3186,7 +3180,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1752129167}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalPosition: {x: 4.55, y: 0, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -3211,7 +3205,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.4056604, g: 0.4056604, b: 0.4056604, a: 0}
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -3228,7 +3222,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 7.4
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -3244,24 +3238,6 @@ Camera:
   m_OcclusionCulling: 0
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
---- !u!114 &1752129171
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1752129167}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0fa9046af205ad144a0a592163b0e635, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  camState: 0
-  actress: {fileID: 1377260340}
-  smoothTimeDealing: 0.5
-  leftBound: 0
-  rightBound: 9.1
-  parallex: {fileID: 0}
 --- !u!4 &1917524346 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4492259075389390252, guid: 20981af1494039248b72b659858b3073, type: 3}
@@ -4049,6 +4025,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: NarratorFungus
       objectReference: {fileID: 0}
+    - target: {fileID: 1407504806094733079, guid: aa9435444602d944191c8389986926c4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4882995002658858082, guid: aa9435444602d944191c8389986926c4, type: 3}
       propertyPath: m_RootOrder
       value: 10
@@ -4093,10 +4073,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6990208787450429645, guid: aa9435444602d944191c8389986926c4, type: 3}
-      propertyPath: m_Camera
-      value: 
-      objectReference: {fileID: 1752129170}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aa9435444602d944191c8389986926c4, type: 3}
 --- !u!1001 &7154389427541980192
@@ -4109,10 +4085,6 @@ PrefabInstance:
     - target: {fileID: 7154389427481790231, guid: 273ffa45d2200b64f9fc59b68d70d7f0, type: 3}
       propertyPath: m_Name
       value: VLADIMIRA
-      objectReference: {fileID: 0}
-    - target: {fileID: 7154389427481790231, guid: 273ffa45d2200b64f9fc59b68d70d7f0, type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7154389427481790232, guid: 273ffa45d2200b64f9fc59b68d70d7f0, type: 3}
       propertyPath: m_RootOrder

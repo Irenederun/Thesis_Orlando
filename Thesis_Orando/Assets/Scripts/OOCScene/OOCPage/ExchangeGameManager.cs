@@ -10,6 +10,7 @@ public class ExchangeGameManager : MonoBehaviour
     public LimbSync oocMainCharLimbSync;
     public List<ExchangeGame> exchangeGames = new List<ExchangeGame>();
     //public bool isTutorial = true;
+    public OtherWordLibrary otherWordDictionary;
 
     private void OnEnable()
     {

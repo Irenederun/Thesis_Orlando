@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37ca72a74081d4d44811ec5476a78575, type: 3}
+  m_Name: OtherWordDictionary
+  m_EditorClassIdentifier: 
+  output:
+  - 
+  - 
+  - 
+  otherDictionary:
+  - level: Play1
+    otherWords:
+    - otherWordPos: 0-1
+      otherWordText: They
+    - otherWordPos: 0-2
+      otherWordText: You
+    - otherWordPos: 0-3
+      otherWordText: She
+    - otherWordPos: 0-4
+      otherWordText: We
+    - otherWordPos: 1-1
+      otherWordText: Absurdity
+    - otherWordPos: 1-2
+      otherWordText: I
+    - otherWordPos: 1-3
+      otherWordText: Cruelty
+    - otherWordPos: 1-4
+      otherWordText: Violence

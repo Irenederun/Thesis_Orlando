@@ -323,6 +323,7 @@ public class ExchangeGame : ManagerBehavior
         // simple text swap
         currentMyWord.text.text = currentOtherWordText;
         currentOtherWord.text.text = currentMyWordText;
+        currentOtherWord.ChangeWordText();
         // simple limb swap
         string myLimb = currentMyLimb.GetComponent<SpriteRenderer>().sprite.name;
         SpriteRenderer otherWordLimb =

@@ -13,11 +13,12 @@ public class UIWordBehavior : BasicBehavior
     public UnityEvent buttonEvent;
     public UnityEvent resetEvent;
 
-    [SerializeField]private ExchangeGame _exchangeGame;
+    public ExchangeGame _exchangeGame;
     
     public override void ClickedByMouse()
     {
         base.ClickedByMouse();
+        if (group.Contains("target")) GetComponent<OtherWord>().UpdatePos();
         string word = "";
         if (text != null) word = text.text;
         _exchangeGame.ClickableTracker(group, this, word);
@@ -36,5 +37,10 @@ public class UIWordBehavior : BasicBehavior
     public void SetExchangeGameManager(ExchangeGame egm)
     {
         _exchangeGame = egm;
+    }
+    
+    public void ChangeWordText()
+    {
+        GetComponent<OtherWord>().ChangeWordText();
     }
 }

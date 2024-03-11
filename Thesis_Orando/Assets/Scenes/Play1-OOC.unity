@@ -1332,7 +1332,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Absurdity
+  m_text: They
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: 79459efec17a4d00a321bdcc27bbc385, type: 2}
@@ -2979,6 +2979,8 @@ MonoBehaviour:
   lr: {fileID: 1438174225}
   limb: {fileID: 777945601}
   connectionPos: {fileID: 196223992}
+  level: Play1
+  posInWordList: 0-2
 --- !u!114 &188341639
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5941,7 +5943,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: I
+  m_text: You
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: 79459efec17a4d00a321bdcc27bbc385, type: 2}
@@ -6590,7 +6592,7 @@ Transform:
   - {fileID: 1361777512}
   - {fileID: 1226930497}
   m_Father: {fileID: 0}
-  m_RootOrder: 19
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &461119172
 GameObject:
@@ -6625,6 +6627,7 @@ MonoBehaviour:
   exchangeGames:
   - {fileID: 0}
   - {fileID: 0}
+  otherWordDictionary: {fileID: 0}
 --- !u!4 &461119174
 Transform:
   m_ObjectHideFlags: 0
@@ -7491,6 +7494,8 @@ MonoBehaviour:
   lr: {fileID: 4894387}
   limb: {fileID: 1825203151}
   connectionPos: {fileID: 220446440}
+  level: Play1
+  posInWordList: 0-4
 --- !u!114 &516248859
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10698,6 +10703,8 @@ MonoBehaviour:
   lr: {fileID: 1362584650}
   limb: {fileID: 273378463}
   connectionPos: {fileID: 121346775}
+  level: Play1
+  posInWordList: 0-2
 --- !u!1 &794867577
 GameObject:
   m_ObjectHideFlags: 0
@@ -10813,7 +10820,7 @@ Transform:
   - {fileID: 1802387125}
   - {fileID: 414050901}
   m_Father: {fileID: 0}
-  m_RootOrder: 17
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &802585046
 GameObject:
@@ -10960,6 +10967,8 @@ MonoBehaviour:
   lr: {fileID: 5046267}
   limb: {fileID: 1088806317}
   connectionPos: {fileID: 2051853372}
+  level: Play1
+  posInWordList: 1-4
 --- !u!114 &813688549
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11657,6 +11666,8 @@ MonoBehaviour:
   lr: {fileID: 243336355}
   limb: {fileID: 14406127}
   connectionPos: {fileID: 829084333}
+  level: Play1
+  posInWordList: 0-3
 --- !u!114 &849381192
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11839,7 +11850,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Cruelty
+  m_text: She
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: 79459efec17a4d00a321bdcc27bbc385, type: 2}
@@ -12610,6 +12621,8 @@ MonoBehaviour:
   lr: {fileID: 1517781642}
   limb: {fileID: 675079424}
   connectionPos: {fileID: 1566489533}
+  level: Play1
+  posInWordList: 1-2
 --- !u!114 &935642124
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13871,6 +13884,8 @@ MonoBehaviour:
   lr: {fileID: 289396749}
   limb: {fileID: 1756955409}
   connectionPos: {fileID: 1645590780}
+  level: Play1
+  posInWordList: 0-4
 --- !u!1 &1131622441
 GameObject:
   m_ObjectHideFlags: 0
@@ -15479,7 +15494,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Violence
+  m_text: We
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: 79459efec17a4d00a321bdcc27bbc385, type: 2}
@@ -15783,6 +15798,73 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1301919632
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1301919634}
+  - component: {fileID: 1301919633}
+  m_Layer: 0
+  m_Name: OtherWordManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1301919633
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1301919632}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37ca72a74081d4d44811ec5476a78575, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  output:
+  - 
+  - 
+  - 
+  otherDictionary:
+  - level: Play1
+    otherWords:
+    - otherWordPos: 0-1
+      otherWordText: They
+    - otherWordPos: 0-2
+      otherWordText: You
+    - otherWordPos: 0-3
+      otherWordText: She
+    - otherWordPos: 0-4
+      otherWordText: We
+    - otherWordPos: 1-1
+      otherWordText: Absurdity
+    - otherWordPos: 1-2
+      otherWordText: I
+    - otherWordPos: 1-3
+      otherWordText: Cruelty
+    - otherWordPos: 1-4
+      otherWordText: Violence
+--- !u!4 &1301919634
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1301919632}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 3.3964136, y: 0.32495916, z: 92.165474}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 20
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1304965088
 GameObject:
   m_ObjectHideFlags: 0
@@ -17602,7 +17684,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 18
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1401176249
 GameObject:
@@ -18040,7 +18122,7 @@ Transform:
   - {fileID: 1518371256}
   - {fileID: 1293681601}
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1430014404
 GameObject:
@@ -19589,6 +19671,8 @@ MonoBehaviour:
   lr: {fileID: 743360964}
   limb: {fileID: 1313422583}
   connectionPos: {fileID: 1109944667}
+  level: Play1
+  posInWordList: 1-3
 --- !u!114 &1536447004
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20189,6 +20273,8 @@ MonoBehaviour:
   lr: {fileID: 168177296}
   limb: {fileID: 1710429593}
   connectionPos: {fileID: 537440282}
+  level: Play1
+  posInWordList: 0-1
 --- !u!1 &1613287742
 GameObject:
   m_ObjectHideFlags: 0
@@ -21209,6 +21295,8 @@ MonoBehaviour:
   lr: {fileID: 294578833}
   limb: {fileID: 1190454469}
   connectionPos: {fileID: 1260004413}
+  level: Play1
+  posInWordList: 0-1
 --- !u!114 &1700305925
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23839,6 +23927,8 @@ MonoBehaviour:
   lr: {fileID: 1164754014}
   limb: {fileID: 902180479}
   connectionPos: {fileID: 1117605066}
+  level: Play1
+  posInWordList: 0-3
 --- !u!1 &1884248264
 GameObject:
   m_ObjectHideFlags: 0
@@ -25751,6 +25841,8 @@ MonoBehaviour:
   lr: {fileID: 535763480}
   limb: {fileID: 173742548}
   connectionPos: {fileID: 1354436105}
+  level: Play1
+  posInWordList: 1-1
 --- !u!114 &2088167127
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -14,4 +14,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Play1-IC2.unity
     guid: dc1fa9c534c8a7c4eb2b71fcca460cdb
+  - enabled: 1
+    path: Assets/Scenes/Alt-Play1-IC1.unity
+    guid: 5c75b6b6473614449a602c1d361622c5
+  - enabled: 1
+    path: Assets/Scenes/Alt-Play1-OOC.unity
+    guid: 35a5c500f9776b148ab04be60c158aaf
+  - enabled: 1
+    path: Assets/Scenes/Alt-Play1-IC2.unity
+    guid: 01fc3db24c82dbd42bc9719a5aeece54
   m_configObjects: {}
