@@ -455,9 +455,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 24616014}
+  - {fileID: 24616046}
   selectedCommands:
-  - {fileID: 24616012}
+  - {fileID: 24616049}
   variables:
   - {fileID: 24616024}
   - {fileID: 24616018}
@@ -501,7 +501,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 48
   indentLevel: 0
-  storyText: (to you, in low voice:) {i}...Excuse me, what?{/i}
+  storyText: '{i}...Excuse me, what?{/i}'
   description: 
   character: {fileID: 874136164}
   portrait: {fileID: 0}
@@ -559,7 +559,7 @@ MonoBehaviour:
   nodeRect:
     serializedVersion: 2
     x: 117.32695
-    y: 85.520744
+    y: 83.79661
     width: 117.8161
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -2397,7 +2397,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 973262c9bd4144c8eb70b71f79f568f3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -3763,6 +3763,14 @@ PrefabInstance:
     - target: {fileID: 2107791553600592265, guid: 94e9b21fda908904290cd45b3705db19, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9036191116381175820, guid: 94e9b21fda908904290cd45b3705db19, type: 3}
+      propertyPath: nameText
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 9036191116934109579, guid: 94e9b21fda908904290cd45b3705db19, type: 3}
+      propertyPath: nameText
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 94e9b21fda908904290cd45b3705db19, type: 3}
