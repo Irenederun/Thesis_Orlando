@@ -679,7 +679,7 @@ MonoBehaviour:
 
 '
   description: 
-  character: {fileID: 1919517378}
+  character: {fileID: 0}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -1078,7 +1078,7 @@ MonoBehaviour:
   indentLevel: 0
   storyText: "You had something to say to me?\r"
   description: 
-  character: {fileID: 1919517378}
+  character: {fileID: 0}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -1134,7 +1134,7 @@ MonoBehaviour:
 
 '
   description: 
-  character: {fileID: 1919517378}
+  character: {fileID: 0}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -1313,7 +1313,7 @@ MonoBehaviour:
   indentLevel: 0
   storyText: (to you, in low voice:) {i}...Excuse me, what?{/i}
   description: 
-  character: {fileID: 1400675141}
+  character: {fileID: 0}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -1506,7 +1506,7 @@ MonoBehaviour:
   indentLevel: 0
   storyText: ...
   description: 
-  character: {fileID: 1919517378}
+  character: {fileID: 0}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -2947,17 +2947,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 7154389426232387348, guid: 273ffa45d2200b64f9fc59b68d70d7f0, type: 3}
   m_PrefabInstance: {fileID: 7154389427541980192}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1400675141 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2107791553208669313, guid: 94e9b21fda908904290cd45b3705db19, type: 3}
-  m_PrefabInstance: {fileID: 2107791554573684676}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 25fb867d2049d41f597aefdd6b19f598, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1434686995
 GameObject:
   m_ObjectHideFlags: 0
@@ -3267,17 +3256,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4492259075389390252, guid: 20981af1494039248b72b659858b3073, type: 3}
   m_PrefabInstance: {fileID: 4492259073480254678}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1919517378 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2107791553728040198, guid: 94e9b21fda908904290cd45b3705db19, type: 3}
-  m_PrefabInstance: {fileID: 2107791554573684676}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 25fb867d2049d41f597aefdd6b19f598, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1987115298
 GameObject:
   m_ObjectHideFlags: 0

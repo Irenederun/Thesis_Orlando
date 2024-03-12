@@ -6,13 +6,13 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Play1-IC1.unity
+    path: Assets/Scenes/Old/Play1-IC1.unity
     guid: 2392f06212c9d2b48a2557b7cf454248
   - enabled: 1
-    path: Assets/Scenes/Play1-OOC.unity
+    path: Assets/Scenes/Old/Play1-OOC.unity
     guid: e2a566f3ece607d4d876b90d5bcac755
   - enabled: 1
-    path: Assets/Scenes/Play1-IC2.unity
+    path: Assets/Scenes/Old/Play1-IC2.unity
     guid: dc1fa9c534c8a7c4eb2b71fcca460cdb
   - enabled: 1
     path: Assets/Scenes/Alt-Play1-IC1.unity

@@ -10868,6 +10868,7 @@ MonoBehaviour:
   floor: {fileID: 57202257}
   switchButton: {fileID: 1141383400}
   switchTrigger: {fileID: 1394753842}
+  camFollow: 1
 --- !u!4 &802585048
 Transform:
   m_ObjectHideFlags: 0
