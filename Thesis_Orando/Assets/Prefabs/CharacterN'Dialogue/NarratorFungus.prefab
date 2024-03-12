@@ -198,7 +198,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25fb867d2049d41f597aefdd6b19f598, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nameText: Narrator
+  nameText: ' '
   nameColor: {r: 1, g: 1, b: 1, a: 1}
   soundEffect: {fileID: 0}
   portraits: []
@@ -248,8 +248,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: -4.9599996, y: 0}
-  m_SizeDelta: {x: 2133.3335, y: 1200}
+  m_AnchoredPosition: {x: -4.989, y: 0}
+  m_SizeDelta: {x: 3166.48, y: 1200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!223 &6990208787450429645
 Canvas:

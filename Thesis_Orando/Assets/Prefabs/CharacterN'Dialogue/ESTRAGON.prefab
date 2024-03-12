@@ -171,7 +171,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9036191115166564977, guid: e03f5370b8b3af249aafe8877b74f82e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -0.16
       objectReference: {fileID: 0}
     - target: {fileID: 9036191115166564977, guid: e03f5370b8b3af249aafe8877b74f82e, type: 3}
       propertyPath: m_LocalPosition.z
@@ -208,6 +208,14 @@ PrefabInstance:
     - target: {fileID: 9036191115166564978, guid: e03f5370b8b3af249aafe8877b74f82e, type: 3}
       propertyPath: m_Name
       value: EstragonFungus
+      objectReference: {fileID: 0}
+    - target: {fileID: 9036191115389782113, guid: e03f5370b8b3af249aafe8877b74f82e, type: 3}
+      propertyPath: nameText
+      value: ' '
+      objectReference: {fileID: 0}
+    - target: {fileID: 9036191115909026278, guid: e03f5370b8b3af249aafe8877b74f82e, type: 3}
+      propertyPath: nameText
+      value: ' '
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e03f5370b8b3af249aafe8877b74f82e, type: 3}
