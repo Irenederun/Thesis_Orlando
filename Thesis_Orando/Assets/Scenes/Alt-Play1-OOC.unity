@@ -224,6 +224,7 @@ MonoBehaviour:
   smoothTime: 0.4
   moveDistance: 0.4
   parallex: {fileID: 1264125985}
+  actress: {fileID: 2073928834}
 --- !u!1 &5046265
 GameObject:
   m_ObjectHideFlags: 0
@@ -7309,6 +7310,7 @@ MonoBehaviour:
   floor: {fileID: 57202257}
   switchButton: {fileID: 1141383400}
   switchTrigger: {fileID: 1394753842}
+  camFollow: 0
 --- !u!4 &802585048
 Transform:
   m_ObjectHideFlags: 0

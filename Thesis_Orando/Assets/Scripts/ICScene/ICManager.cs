@@ -44,6 +44,8 @@ public class ICManager : MonoBehaviour
     public GameObject switchButton;
     public GameObject switchTrigger;
 
+    public bool camFollow;
+
     private void Awake()
     {
         if (instance == null)
@@ -150,7 +152,7 @@ public class ICManager : MonoBehaviour
     {
         //IEnumerator coroutin = CamWait();
         //StartCoroutine(coroutin);
-        cam.GetComponent<CameraFollow>().CameraFollowing(actress.transform.position);
+        if (camFollow) cam.GetComponent<CameraFollow>().CameraFollowing(actress.transform.position);
     }
 
     IEnumerator CamWait()

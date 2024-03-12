@@ -12,6 +12,7 @@ public class CameraFollowMouse : MonoBehaviour
     private Vector3 velocity;
     public ParallexScrolling parallex;
     private float oldx;
+    public GameObject actress;
 
     // Start is called before the first frame update
     void Start()
@@ -24,6 +25,7 @@ public class CameraFollowMouse : MonoBehaviour
     void Update()
     {
         mousepPosX = Input.mousePosition.x;
+        //mousepPosX = actress.transform.position.x;
         mousepPosX /= Screen.width;
         mousepPosX = mousepPosX * 2 - 1;//on the scale of -1 to 1
 
