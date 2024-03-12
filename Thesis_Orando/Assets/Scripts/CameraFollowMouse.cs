@@ -13,17 +13,31 @@ public class CameraFollowMouse : MonoBehaviour
     public ParallexScrolling parallex;
     private float oldx;
     public GameObject actress;
+    public float cutSceneTime = 2;
+    private bool startParallex = false;
 
     // Start is called before the first frame update
     void Start()
     {
         startPos = transform.position;
         oldx = startPos.x;
+        StartCoroutine(WaitForCutscene());
+    }
+    
+    private IEnumerator WaitForCutscene()
+    { 
+        yield return new WaitForSeconds(cutSceneTime);
+        startParallex = true;
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (!startParallex)
+        {
+            return;
+        }
+        
         mousepPosX = Input.mousePosition.x;
         //mousepPosX = actress.transform.position.x;
         mousepPosX /= Screen.width;

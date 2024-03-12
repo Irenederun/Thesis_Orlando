@@ -3,9 +3,16 @@
   <component name="ChangeListManager">
     <list default="true" id="9711d522-8fc0-494c-84b2-d15386118320" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Thesis_Orando/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Thesis_Orando/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/CharacterN'Dialogue/ESTRAGON.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/CharacterN'Dialogue/ESTRAGON.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/CharacterN'Dialogue/NarratorFungus.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/CharacterN'Dialogue/NarratorFungus.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/CharacterN'Dialogue/VLADIMIRA.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/CharacterN'Dialogue/VLADIMIRA.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/CharacterN'Dialogue/VladimiraFungus.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/CharacterN'Dialogue/VladimiraFungus.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/IC/WordDragPlay1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/IC/WordDragPlay1.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Alt-Play1-IC1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Alt-Play1-IC1.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Alt-Play1-IC2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Alt-Play1-IC2.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Alt-Play1-OOC.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Alt-Play1-OOC.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/CameraFollowMouse.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CameraFollowMouse.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ICScene/ICManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ICScene/ICManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ICScene/SpeechCardManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ICScene/SpeechCardManager.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -143,7 +150,9 @@
       <workItem from="1710097616874" duration="8295000" />
       <workItem from="1710186686311" duration="2294000" />
       <workItem from="1710192879470" duration="7979000" />
-      <workItem from="1710269476214" duration="794000" />
+      <workItem from="1710269476214" duration="1853000" />
+      <workItem from="1710279365377" duration="11000" />
+      <workItem from="1710280920080" duration="707000" />
     </task>
     <servers />
   </component>

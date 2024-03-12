@@ -74,10 +74,14 @@ public class SpeechCardManager : ManagerBehavior
 
     public void Submission()
     {
-        for (int i = 0; i < sentence.Count; i++)
+        int senCount = sentence.Count - 1;
+        for (int i = 0; i < senCount; i++)
         {
             finalSentence += sentence[i] + " ";
         }
+        
+        finalSentence += sentence[senCount];
+        
         CompleteSentence();
         //ICManager.instance.CardGameSubmission();
     }
