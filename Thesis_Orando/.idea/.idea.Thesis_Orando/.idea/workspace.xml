@@ -2,11 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9711d522-8fc0-494c-84b2-d15386118320" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Fonts/Courier_Prime/CourierPrime-Regular SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Fonts/Courier_Prime/CourierPrime-Regular SDF.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/CharacterN'Dialogue/VLADIMIRA.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/CharacterN'Dialogue/VLADIMIRA.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/IC/AssetNew.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/IC/AssetNew.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Thesis_Orando/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Thesis_Orando/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/IC/WordDragPlay1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/IC/WordDragPlay1.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Alt-Play1-IC1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Alt-Play1-IC1.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Alt-Play1-IC2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Alt-Play1-IC2.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Alt-Play1-OOC.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Alt-Play1-OOC.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ICScene/ICManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ICScene/ICManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ICScene/WordDragDetails.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ICScene/WordDragDetails.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/OOCScene/OOCPage/CardBehavior.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/OOCScene/OOCPage/CardBehavior.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,6 +74,14 @@
   }
 }</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+    <configuration name="Standalone Player" type="RunUnityExe" factoryName="Unity Executable">
+      <option name="EXE_PATH" value="$PROJECT_DIR$/../../../BUuild\Thesis_Orando.exe" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="C:\Users\Irene\Desktop\MFA\BUuild" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <method v="2" />
+    </configuration>
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2021.3.16f1\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-projectPath C:\Users\Irene\Desktop\MFA\Thesis\Thesis_Orlando\Thesis_Orando -debugCodeOptimization" />
@@ -147,7 +159,8 @@
       <workItem from="1710269476214" duration="1853000" />
       <workItem from="1710279365377" duration="11000" />
       <workItem from="1710280920080" duration="707000" />
-      <workItem from="1710445389342" duration="312000" />
+      <workItem from="1710445389342" duration="749000" />
+      <workItem from="1710446265749" duration="667000" />
     </task>
     <servers />
   </component>
