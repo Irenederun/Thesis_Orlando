@@ -3,17 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="9711d522-8fc0-494c-84b2-d15386118320" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Thesis_Orando/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Thesis_Orando/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Alt-Play1-IC1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Alt-Play1-IC1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Alt-Play1-IC2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Alt-Play1-IC2.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Fonts/Courier_Prime/CourierPrime-Regular SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Fonts/Courier_Prime/CourierPrime-Regular SDF.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Alt-Play1-OOC.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Alt-Play1-OOC.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/LimbLibrary.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptableObjects/LimbLibrary.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BasicClasses/BasicBehavior.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BasicClasses/BasicBehavior.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ICScene/ICManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ICScene/ICManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ICScene/ICPage/IconBehaviors.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ICScene/ICPage/IconBehaviors.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ICScene/SpeechCardManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ICScene/SpeechCardManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/OOCScene/OOCPage/ExchangeGameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/OOCScene/OOCPage/ExchangeGameManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/OOCScene/OOCPage/UIWordBehavior.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/OOCScene/OOCPage/UIWordBehavior.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Character/npcspritessheet.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Character/npcspritessheet.png.meta" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -167,6 +158,7 @@
       <workItem from="1710280920080" duration="707000" />
       <workItem from="1710445389342" duration="749000" />
       <workItem from="1710446265749" duration="4909000" />
+      <workItem from="1710453836932" duration="632000" />
     </task>
     <servers />
   </component>
