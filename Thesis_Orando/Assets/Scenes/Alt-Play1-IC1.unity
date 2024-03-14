@@ -3111,12 +3111,12 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\u201CNever lose yourself of stage. To break that rule is the equivalent
-    of killing the person you are portraying.\u201D\r\n                                                 
-    \n- KONSTANTIN STANISLAVSKI\r"
+  m_text: "\u201C Never lose yourself on stage. To break that rule is the \n  equivalent
+    of killing the person you are portraying.\u201D\r\n\n\n                                          
+    - KONSTANTIN STANISLAVSKI\r"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: ef5c728e40253a34798558adb393ae4e, type: 2}
-  m_sharedMaterial: {fileID: 2347242993957662882, guid: ef5c728e40253a34798558adb393ae4e, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: d857813ee9172415d96c60de1f299ec6, type: 2}
+  m_sharedMaterial: {fileID: -4267865657853803023, guid: d857813ee9172415d96c60de1f299ec6, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -3140,19 +3140,19 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 5.34
-  m_fontSizeBase: 5.34
+  m_fontSize: 5
+  m_fontSizeBase: 5
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
-  m_HorizontalAlignment: 2
+  m_fontStyle: 33
+  m_HorizontalAlignment: 1
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
-  m_lineSpacing: 0
+  m_lineSpacing: 61.9
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
@@ -3176,7 +3176,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: 0, z: -3.3384995, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   _SortingLayer: 0
@@ -3205,7 +3205,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2347242993957662882, guid: ef5c728e40253a34798558adb393ae4e, type: 2}
+  - {fileID: -4267865657853803023, guid: d857813ee9172415d96c60de1f299ec6, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3244,8 +3244,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 22.8, y: 5}
+  m_AnchoredPosition: {x: -0.015, y: -0.022}
+  m_SizeDelta: {x: 15.20301, y: 5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1214830743
 GameObject:
