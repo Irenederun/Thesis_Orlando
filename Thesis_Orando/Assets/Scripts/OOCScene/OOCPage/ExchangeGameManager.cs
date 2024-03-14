@@ -2,7 +2,9 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.SceneManagement;
+using UnityEngine.Serialization;
 
 public class ExchangeGameManager : MonoBehaviour
 {
@@ -11,7 +13,9 @@ public class ExchangeGameManager : MonoBehaviour
     public List<ExchangeGame> exchangeGames = new List<ExchangeGame>();
     //public bool isTutorial = true;
     public OtherWordLibrary otherWordDictionary;
-
+    // public UnityEvent endGameAction;
+    // public UnityEvent startGameAction;
+    
     private void OnEnable()
     {
         SceneManager.sceneLoaded += Init;
@@ -65,6 +69,7 @@ public class ExchangeGameManager : MonoBehaviour
     {
         exchangeGames[number].gameObject.SetActive(true);
         exchangeGames[number].Init();
+       // startGameAction.Invoke();
     }
 
     public void EndExchangeGame()
@@ -82,8 +87,8 @@ public class ExchangeGameManager : MonoBehaviour
                 break;
             }
         }
-        
         DialogueManager.instance.TriggerDialogueOOC("ExitExchange");
+        //endGameAction.Invoke();
     }
 
     

@@ -14,43 +14,43 @@ public class IconBehaviors : BasicBehavior
 
     private void Start()
     {
-        if (!gameObject.name.Contains("UI"))
-        {
-            GetComponent<SpriteRenderer>().sprite = sprites[0];
-            canInteract = false;
-        }
-        else
-        {
-            canInteract = true;
-        }
+        // if (!gameObject.name.Contains("UI"))
+        // {
+        //     GetComponent<SpriteRenderer>().sprite = sprites[0];
+        //     canInteract = false;
+        // }
+        // else
+        // {
+        //     canInteract = true;
+        // }
     }
 
     public override void ClickedByMouse()
     {
         
-        if (canInteract)
-        {
-            if (gameObject.name.Contains("UI"))
-            {
-                // switch (clickTimes)
-                // {
-                //     case 0:
-                //         OpenInventory();
-                //         TurnOffOtherIcons();
-                //         clickTimes++;
-                //         break;
-                //     case 1:
-                //         CloseInventory();
-                //         clickTimes--;
-                //         break;
-                // }
-            }
-            else if (gameObject.name.Contains("Exchange"))
-            {
+        // if (canInteract)
+        // {
+        //     if (gameObject.name.Contains("UI"))
+        //     {
+        //         // switch (clickTimes)
+        //         // {
+        //         //     case 0:
+        //         //         OpenInventory();
+        //         //         TurnOffOtherIcons();
+        //         //         clickTimes++;
+        //         //         break;
+        //         //     case 1:
+        //         //         CloseInventory();
+        //         //         clickTimes--;
+        //         //         break;
+        //         // }
+        //     }
+        //     else if (gameObject.name.Contains("Exchange"))
+        //     {
                 //DialogueManager.instance.TriggerDialogueOOC("ArchdukeLook");
                 ICManager.instance.StartWordExchange(associatedGameNo);
-            }
-        }
+        //     }
+        // }
     }
 
     // void CloseInventory()
@@ -79,14 +79,14 @@ public class IconBehaviors : BasicBehavior
     {
         switch (state)
         {
-            case true:
-                GetComponent<SpriteRenderer>().sprite = sprites[1];
-                canInteract = true;
-                break;
-            case false:
-                GetComponent<SpriteRenderer>().sprite = sprites[0];
-                canInteract = false;
-                break;
+            // case true:
+            //     GetComponent<SpriteRenderer>().sprite = sprites[1];
+            //     canInteract = true;
+            //     break;
+            // case false:
+            //     GetComponent<SpriteRenderer>().sprite = sprites[0];
+            //     canInteract = false;
+            //     break;
         }
     }
 }

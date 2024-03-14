@@ -3,14 +3,17 @@
   <component name="ChangeListManager">
     <list default="true" id="9711d522-8fc0-494c-84b2-d15386118320" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Thesis_Orando/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Thesis_Orando/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/IC/WordDragPlay1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/IC/WordDragPlay1.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Alt-Play1-IC1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Alt-Play1-IC1.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Alt-Play1-IC2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Alt-Play1-IC2.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Alt-Play1-OOC.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Alt-Play1-OOC.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/LimbLibrary.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptableObjects/LimbLibrary.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BasicClasses/BasicBehavior.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BasicClasses/BasicBehavior.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/ICScene/ICManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ICScene/ICManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ICScene/WordDragDetails.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ICScene/WordDragDetails.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/OOCScene/OOCPage/CardBehavior.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/OOCScene/OOCPage/CardBehavior.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ICScene/ICPage/IconBehaviors.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ICScene/ICPage/IconBehaviors.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ICScene/SpeechCardManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ICScene/SpeechCardManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/OOCScene/OOCPage/ExchangeGameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/OOCScene/OOCPage/ExchangeGameManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/OOCScene/OOCPage/UIWordBehavior.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/OOCScene/OOCPage/UIWordBehavior.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Character/npcspritessheet.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Character/npcspritessheet.png.meta" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,6 +21,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4746c126b0b54f3b834845974d1a9190159000/92/158e669e/SceneManager.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4746c126b0b54f3b834845974d1a9190159000/99/dcfb33b7/GameObject.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/3ea01e77be99618395f448b16bd7cc2bd4248bd9e5d8474964b2d97f39c5d74/System.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/CameraFollowMouse.cs" root0="FORCE_HIGHLIGHTING" />
@@ -39,8 +43,10 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/OOCScene/ExchangeGame/OtherWord.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/OOCScene/ExchangeGame/UIBehavior.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/OOCScene/OOCManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/OOCScene/OOCPage/EventManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/OOCScene/OOCPage/ExchangeGame.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/OOCScene/OOCPage/ExchangeGameManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/OOCScene/OOCPage/LimbOpenClose.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/OOCScene/OOCPage/UIWordBehavior.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/OtherLimbPos.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/OtherWordLibrary.cs" root0="FORCE_HIGHLIGHTING" />
@@ -160,7 +166,7 @@
       <workItem from="1710279365377" duration="11000" />
       <workItem from="1710280920080" duration="707000" />
       <workItem from="1710445389342" duration="749000" />
-      <workItem from="1710446265749" duration="667000" />
+      <workItem from="1710446265749" duration="4909000" />
     </task>
     <servers />
   </component>

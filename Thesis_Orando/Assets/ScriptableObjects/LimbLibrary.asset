@@ -22,13 +22,13 @@ MonoBehaviour:
   - name: P4
     limbSprite: {fileID: -275700496, guid: 9abc8595dcdcd9a4d8ee15b4fb9f2d7f, type: 3}
   - name: G1
-    limbSprite: {fileID: 21300000, guid: 5e299a3d9d3480440932baee3e6e7dd8, type: 3}
+    limbSprite: {fileID: -1378711646, guid: 939869661ea0d4869964cb6545d1b7b5, type: 3}
   - name: G2
-    limbSprite: {fileID: 21300000, guid: 5575b063f8c987b4c85e1435e084f393, type: 3}
+    limbSprite: {fileID: 1642785523, guid: 939869661ea0d4869964cb6545d1b7b5, type: 3}
   - name: G3
-    limbSprite: {fileID: 21300000, guid: 4fb03d8e7f8a2e040aa794adc7f104a5, type: 3}
+    limbSprite: {fileID: -1933384304, guid: 939869661ea0d4869964cb6545d1b7b5, type: 3}
   - name: G4
-    limbSprite: {fileID: 21300000, guid: 2d7e5573d0424b943a56fafa6e217ec3, type: 3}
+    limbSprite: {fileID: -727842698, guid: 939869661ea0d4869964cb6545d1b7b5, type: 3}
   - name: B1
     limbSprite: {fileID: 21300000, guid: ef8740ef5f64a8545a83de9762eadc68, type: 3}
   - name: B2

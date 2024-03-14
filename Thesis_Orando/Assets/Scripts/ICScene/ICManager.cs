@@ -202,13 +202,13 @@ public class ICManager : MonoBehaviour
         Destroy(desPosIcon);
     }
 
-    public void ChangeUIActivation(bool state)
-    {
-        if (icState != ICState.ExchangeGameOpened)
-        {
-            UIIcon.GetComponent<IconBehaviors>().IconState(state);
-        }
-    }
+    // public void ChangeUIActivation(bool state)
+    // {
+    //     if (icState != ICState.ExchangeGameOpened)
+    //     {
+    //         UIIcon.GetComponent<IconBehaviors>().IconState(state);
+    //     }
+    // }
     
     //new starting from this
     public void StartWordExchange(int gameNum)
