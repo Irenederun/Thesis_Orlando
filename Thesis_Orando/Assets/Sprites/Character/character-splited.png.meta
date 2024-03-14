@@ -201,7 +201,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: P1
+      name: P1_0
       rect:
         serializedVersion: 2
         x: 0
@@ -222,7 +222,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: P2
+      name: P2_0
       rect:
         serializedVersion: 2
         x: 137
@@ -243,7 +243,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: P3
+      name: P3_0
       rect:
         serializedVersion: 2
         x: 274
@@ -264,7 +264,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: P4
+      name: P4_0
       rect:
         serializedVersion: 2
         x: 411
@@ -317,17 +317,17 @@ TextureImporter:
     secondaryTextures: []
     nameFileIdTable:
       character-splited_3: 383667148
-      P4: 1392655372
       character-splited_1: -1272147172
+      P2_0: 321040034
       character-splited_11: 1374042642
       character-splited_12: 1180510831
-      P3: -1482619850
-      P2: 321040034
-      P1: 721282071
       character-splited_9: 439560792
       character-splited_13: 1333560441
       character-splited_0: 545396304
       character-splited_4: -1350748110
+      P1_0: 721282071
+      P3_0: -1482619850
+      P4_0: 1392655372
       character-splited_10: -1398047778
       character-splited_2: 1740615300
   spritePackingTag: 

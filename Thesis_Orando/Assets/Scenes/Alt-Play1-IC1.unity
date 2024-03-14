@@ -690,6 +690,7 @@ GameObject:
   - component: {fileID: 468921947}
   - component: {fileID: 468921948}
   - component: {fileID: 468921949}
+  - component: {fileID: 468921950}
   m_Layer: 0
   m_Name: IC-0 Flowchart
   m_TagString: Untagged
@@ -713,7 +714,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 171.0188
     y: 175.28468
-    width: 70.606064
+    width: 110.606064
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -744,7 +745,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 266.37967, y: -51.625362}
+  scrollPos: {x: 153.8797, y: -87.98899}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 269.66666
@@ -758,7 +759,7 @@ MonoBehaviour:
   selectedBlocks:
   - {fileID: 468921944}
   selectedCommands:
-  - {fileID: 468921948}
+  - {fileID: 468921950}
   variables:
   - {fileID: 468921930}
   - {fileID: 468921936}
@@ -847,7 +848,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 165.99998
     y: 120
-    width: 76.666664
+    width: 116.666664
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -985,7 +986,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 166.48706
     y: 8.817143
-    width: 77.42424
+    width: 117.42424
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1084,7 +1085,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 163.17674
     y: 63.863632
-    width: 78.93939
+    width: 118.93939
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1353,7 +1354,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 171.63889
     y: 230.16449
-    width: 78.93939
+    width: 118.93939
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1545,7 +1546,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 174.70236
     y: 285.70493
-    width: 77.42424
+    width: 117.42424
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1555,6 +1556,7 @@ MonoBehaviour:
   eventHandler: {fileID: 468921943}
   commandList:
   - {fileID: 468921949}
+  - {fileID: 468921950}
   - {fileID: 468921948}
   - {fileID: 468921942}
   suppressAllAutoSelections: 0
@@ -1689,6 +1691,27 @@ MonoBehaviour:
   time:
     floatRef: {fileID: 0}
     floatVal: 0
+--- !u!114 &468921950
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 468921884}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbd8c931f22994b9d90e2037fffaa770, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 52
+  indentLevel: 0
+  _targetGameObject:
+    gameObjectRef: {fileID: 0}
+    gameObjectVal: {fileID: 1481486022}
+  activeState:
+    booleanRef: {fileID: 0}
+    booleanVal: 0
+  targetGameObjectOLD: {fileID: 0}
 --- !u!1 &477653529
 GameObject:
   m_ObjectHideFlags: 0
