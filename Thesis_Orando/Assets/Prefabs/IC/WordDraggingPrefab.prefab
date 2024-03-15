@@ -143,9 +143,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   text: {fileID: 2992172534094483281}
-  posCorConjugations:
-  - you
-  - to you
+  wordPosition: 0
 --- !u!1 &2992172534016492337
 GameObject:
   m_ObjectHideFlags: 0
@@ -746,9 +744,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   text: {fileID: 2992172535351777262}
-  posCorConjugations:
-  - me
-  - to me
+  wordPosition: 0
 --- !u!1 &2992172534819920481
 GameObject:
   m_ObjectHideFlags: 0
@@ -808,8 +804,6 @@ MonoBehaviour:
   - ' '
   - ' '
   - ' '
-  you: {fileID: 0}
-  me: {fileID: 0}
   destinations:
   - {fileID: 2992172535942833189}
   - {fileID: 2992172535058741295}
@@ -822,6 +816,9 @@ MonoBehaviour:
   - {fileID: 2992172534855967726}
   reload: {fileID: 2992172535004209783}
   submit: {fileID: 2992172535131992609}
+  wordList: []
+  dictionary: {fileID: 0}
+  responseDeterminant: 
 --- !u!1 &2992172534855967726
 GameObject:
   m_ObjectHideFlags: 0
@@ -965,9 +962,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   text: {fileID: 2992172536070702051}
-  posCorConjugations:
-  - deceptive
-  - deceive
+  wordPosition: 0
 --- !u!1 &2992172534999275147
 GameObject:
   m_ObjectHideFlags: 0
@@ -1217,7 +1212,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 6
-  m_Sprite: {fileID: 21300000, guid: 59571f82a0dc1a14da606dc0df6f8ea7, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 28b83e7acf1334e3397a7b9546addbfa, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1942,9 +1937,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   text: {fileID: 2992172534999275149}
-  posCorConjugations:
-  - cruel
-  - be cruel
+  wordPosition: 0
 --- !u!1 &2992172535527850984
 GameObject:
   m_ObjectHideFlags: 0

@@ -1693,7 +1693,7 @@ MonoBehaviour:
     floatVal: 0
 --- !u!114 &468921950
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -2003,6 +2003,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7154389426962948373, guid: 273ffa45d2200b64f9fc59b68d70d7f0, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7154389427481790231, guid: 273ffa45d2200b64f9fc59b68d70d7f0, type: 3}
       propertyPath: m_Name
       value: VLADIMIRA
@@ -3617,7 +3621,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 5081521faa1f24a7baf3c5684514a3a6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ceda834524eb24cce8f9563ccad57a7e, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3813,6 +3817,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9036191117151051540, guid: 94e9b21fda908904290cd45b3705db19, type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 001167147f1f3ab48b63c5d97153ab18, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 94e9b21fda908904290cd45b3705db19, type: 3}
 --- !u!114 &1585182548 stripped
@@ -4121,6 +4129,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: VladimiraFungus
       objectReference: {fileID: 0}
+    - target: {fileID: 1932757925171001299, guid: 20d2aa1150937b94e8620414b8d314a6, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1932757925171001300, guid: 20d2aa1150937b94e8620414b8d314a6, type: 3}
       propertyPath: m_RootOrder
       value: 12
@@ -4165,6 +4177,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1932757925319084152, guid: 20d2aa1150937b94e8620414b8d314a6, type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 2bf6c4d03e5de432fb14edff81d41eca, type: 3}
+    - target: {fileID: 1932757925487374131, guid: 20d2aa1150937b94e8620414b8d314a6, type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 2bf6c4d03e5de432fb14edff81d41eca, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 20d2aa1150937b94e8620414b8d314a6, type: 3}
 --- !u!114 &2005082777 stripped
@@ -4516,6 +4536,10 @@ PrefabInstance:
     - target: {fileID: 7817812271064518207, guid: 6750c7bc414fc72458996440a4b8555f, type: 3}
       propertyPath: m_Name
       value: GMHolder
+      objectReference: {fileID: 0}
+    - target: {fileID: 7817812271064518207, guid: 6750c7bc414fc72458996440a4b8555f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6750c7bc414fc72458996440a4b8555f, type: 3}
