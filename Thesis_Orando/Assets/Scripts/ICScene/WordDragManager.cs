@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public class WordDragManager : ManagerBehavior
 {
@@ -18,6 +19,9 @@ public class WordDragManager : ManagerBehavior
     
     public Dictionary dictionary;
     public string responseDeterminant = default;
+    public bool doNotLoadFromGM;
+    private List<string> initSentence = new List<string>();
+    public string interstitialAddedText;
 
     private void Awake()
     {
@@ -26,7 +30,11 @@ public class WordDragManager : ManagerBehavior
 
     private void Start()
     {
-        LoadWords();
+        if (!doNotLoadFromGM) LoadWords();
+        for (int i = 0; i < sentence.Count; i++)
+        {
+            initSentence.Add(sentence[i]);
+        }
     }
 
     private void OnDisable()
@@ -61,9 +69,10 @@ public class WordDragManager : ManagerBehavior
         }
     }
 
-    public void DetermineResponse(string word1B)
+    public void DetermineResponse(string word, string wordConjugated, string position)
     {
-        responseDeterminant = FindConjugation(word1B, "1C");
+        responseDeterminant = FindConjugation(word, position);
+        DialogueManager.instance.SetResponseVariable(wordConjugated);
     }
 
     public void Submission()
@@ -76,21 +85,32 @@ public class WordDragManager : ManagerBehavior
         
         finalSentence += sentence[senCount];
         
+                
+        if (!doNotLoadFromGM)
+        {
+            GameManager.instance.wordBank.Add(interstitialAddedText);
+        }
+        
         CompleteSentence();
     }
-    
+
     private void CompleteSentence()
     {
         DialogueManager.instance.SetSentenceVariable(finalSentence + ".");
-        DialogueManager.instance.TriggerDialogueOOC("printSentence");
+        DialogueManager.instance.TriggerDialogueOOC("printSentence" + DialogueManager.instance.submitTimes);
         DialogueManager.instance.TriggerDialogueOOC(responseDeterminant);
 
         DestroySelfOnClose();
     }
 
-    public void OnPlay1Reload()
+    public void OnReload()
     {
-        sentence[1] = "nothing to say to";
+        for (int i = 0; i < sentence.Count; i++)
+        {
+            sentence[i] = initSentence[i];
+        }
+
+        interstitialAddedText = "";
     }
 
     public string FindConjugation(string word, string position)

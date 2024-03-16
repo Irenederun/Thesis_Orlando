@@ -10,6 +10,7 @@ public class DialogueManager : ManagerBehavior
     public static DialogueManager instance;
     private Fungus.Flowchart myFlowchart;
     public bool isTalking;
+    public int submitTimes;
 
     private void Awake()
     {
@@ -58,12 +59,19 @@ public class DialogueManager : ManagerBehavior
     public void TriggerDialogueOOC(string correspondingMessage)
     {
         myFlowchart.SendFungusMessage(correspondingMessage);
+
+        if (correspondingMessage.Contains("printSentence")) submitTimes++;
     }
 
     public void SetSentenceVariable(string saidSentence)
     {
         //print(saidSentence);
         myFlowchart.SetStringVariable("saidSentence", saidSentence);
+    }
+
+    public void SetResponseVariable(string secondWord)
+    {
+        myFlowchart.SetStringVariable("secondWord", secondWord);
     }
 
     // public void SetResponseVariable(string corResponse)

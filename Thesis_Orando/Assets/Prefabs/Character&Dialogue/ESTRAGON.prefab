@@ -10,9 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 2107791553283755001}
   - component: {fileID: 2107791553283754884}
-  - component: {fileID: 2107791553283755003}
   - component: {fileID: 2107791553283755002}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: ESTRAGONSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -86,25 +85,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &2107791553283755003
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2107791553283755000}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 609e5c96586c2cc49a751b5b7870e91b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  interactiveIcons:
-  - {fileID: 6458045781669494494, guid: 06acfec74df083149a24c61984b658a7, type: 3}
-  - {fileID: 7562626583047022811, guid: 7d1b691d3c9eb2948ac46bc1c17f6499, type: 3}
-  interactiveIconPos:
-  - {fileID: 0}
-  - {fileID: 0}
-  correspondingIcons: []
 --- !u!70 &2107791553283755002
 CapsuleCollider2D:
   m_ObjectHideFlags: 0

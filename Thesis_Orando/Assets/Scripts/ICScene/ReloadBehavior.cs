@@ -5,15 +5,26 @@ using UnityEngine;
 
 public class ReloadBehavior : BasicBehavior
 {
+    public string currentLevel;
     public override void ClickedByMouse()
     {
         base.ClickedByMouse();
                 
-        for (int i = 0; i < WordDragManager.instance.sentence.Count; i++)
-        {
-            WordDragManager.instance.sentence[i] = " ";
-        }
-        WordDragManager.instance.OnPlay1Reload();
+        // for (int i = 0; i < WordDragManager.instance.sentence.Count; i++)
+        // {
+        //     WordDragManager.instance.sentence[i] = " ";
+        // }
+
+        // switch (currentLevel)
+        // {
+        //     case "play1":
+        //         WordDragManager.instance.OnPlay1Reload();
+        //         break;
+        //     case "play1-interstitial_1":
+        //         break;
+        // }
+
+        WordDragManager.instance.OnReload();
 
         WordDragManager.instance.responseDeterminant = "default";
 
@@ -23,6 +34,7 @@ public class ReloadBehavior : BasicBehavior
         }
         
         gameObject.SetActive(false);
+        
         WordDragManager.instance.submit.SetActive(false);
 
         foreach (GameObject obj in WordDragManager.instance.destinations)

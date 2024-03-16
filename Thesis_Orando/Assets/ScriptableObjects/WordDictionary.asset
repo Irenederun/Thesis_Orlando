@@ -21,6 +21,10 @@ MonoBehaviour:
       conjugation: nervosity
     - position: 1C
       conjugation: CAT1
+    - position: 1D
+      conjugation: nervous
+    - position: 1E
+      conjugation: CAT1
   - word: Questions
     rules:
     - position: 1A
@@ -29,6 +33,10 @@ MonoBehaviour:
       conjugation: questions
     - position: 1C
       conjugation: CAT1
+    - position: 1D
+      conjugation: questions
+    - position: 1E
+      conjugation: CAT2
   - word: I
     rules:
     - position: 1A
@@ -37,6 +45,10 @@ MonoBehaviour:
       conjugation: me
     - position: 1C
       conjugation: CAT1
+    - position: 1D
+      conjugation: myself
+    - position: 1E
+      conjugation: CAT2
   - word: Vulnerable
     rules:
     - position: 1A
@@ -44,6 +56,10 @@ MonoBehaviour:
     - position: 1B
       conjugation: vulnerablity
     - position: 1C
+      conjugation: CAT1
+    - position: 1D
+      conjugation: vulnerable
+    - position: 1E
       conjugation: CAT1
   - word: You
     rules:
@@ -53,6 +69,10 @@ MonoBehaviour:
       conjugation: you
     - position: 1C
       conjugation: CAT2
+    - position: 1D
+      conjugation: you
+    - position: 1E
+      conjugation: CAT2
   - word: Cruelty
     rules:
     - position: 1A
@@ -61,6 +81,10 @@ MonoBehaviour:
       conjugation: cruelty
     - position: 1C
       conjugation: CAT2
+    - position: 1D
+      conjugation: cruel
+    - position: 1E
+      conjugation: CAT3
   - word: Love
     rules:
     - position: 1A
@@ -69,6 +93,10 @@ MonoBehaviour:
       conjugation: love
     - position: 1C
       conjugation: CAT2
+    - position: 1D
+      conjugation: love
+    - position: 1E
+      conjugation: CAT3
   - word: Eternal
     rules:
     - position: 1A
@@ -77,6 +105,10 @@ MonoBehaviour:
       conjugation: eternality
     - position: 1C
       conjugation: CAT2
+    - position: 1D
+      conjugation: eternal
+    - position: 1E
+      conjugation: CAT3
   - word: Worry
     rules:
     - position: 1A
@@ -85,6 +117,10 @@ MonoBehaviour:
       conjugation: worry
     - position: 1C
       conjugation: CAT2
+    - position: 1D
+      conjugation: worried
+    - position: 1E
+      conjugation: CAT1
   - word: Crazy
     rules:
     - position: 1A
@@ -92,6 +128,10 @@ MonoBehaviour:
     - position: 1B
       conjugation: craziness
     - position: 1C
+      conjugation: CAT3
+    - position: 1D
+      conjugation: crazy
+    - position: 1E
       conjugation: CAT3
   - word: Death
     rules:
@@ -101,6 +141,10 @@ MonoBehaviour:
       conjugation: death
     - position: 1C
       conjugation: CAT3
+    - position: 1D
+      conjugation: dead
+    - position: 1E
+      conjugation: CAT1
   - word: He
     rules:
     - position: 1A
@@ -109,3 +153,55 @@ MonoBehaviour:
       conjugation: him
     - position: 1C
       conjugation: CAT3
+    - position: 1D
+      conjugation: him
+    - position: 1E
+      conjugation: CAT2
+  - word: Broken
+    rules:
+    - position: 1A
+      conjugation: shoudnothave
+    - position: 1B
+      conjugation: shoudnothave
+    - position: 1C
+      conjugation: shoudnothave
+    - position: 1D
+      conjugation: broken
+    - position: 1E
+      conjugation: CAT1
+  - word: God
+    rules:
+    - position: 1A
+      conjugation: shoudnothave
+    - position: 1B
+      conjugation: shoudnothave
+    - position: 1C
+      conjugation: shoudnothave
+    - position: 1D
+      conjugation: god
+    - position: 1E
+      conjugation: CAT3
+  - word: Cold
+    rules:
+    - position: 1A
+      conjugation: shoudnothave
+    - position: 1B
+      conjugation: shoudnothave
+    - position: 1C
+      conjugation: shoudnothave
+    - position: 1D
+      conjugation: cold
+    - position: 1E
+      conjugation: CAT1
+  - word: Courage
+    rules:
+    - position: 1A
+      conjugation: shoudnothave
+    - position: 1B
+      conjugation: shoudnothave
+    - position: 1C
+      conjugation: shoudnothave
+    - position: 1D
+      conjugation: courageous
+    - position: 1E
+      conjugation: CAT2
