@@ -714,7 +714,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 171.0188
     y: 175.28468
-    width: 113.33333
+    width: 73.33333
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -848,7 +848,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 167.13635
     y: 120
-    width: 119.333336
+    width: 79.333336
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -953,7 +953,7 @@ MonoBehaviour:
   indentLevel: 0
   _duration:
     floatRef: {fileID: 0}
-    floatVal: 7
+    floatVal: 1
   durationOLD: 0
 --- !u!114 &468921912
 MonoBehaviour:
@@ -986,7 +986,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 166.48706
     y: 8.817143
-    width: 120.666664
+    width: 80.666664
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1085,7 +1085,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 163.17674
     y: 63.863632
-    width: 121.333336
+    width: 81.333336
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1354,7 +1354,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 171.63889
     y: 230.16449
-    width: 121.333336
+    width: 81.333336
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1546,7 +1546,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 174.70236
     y: 285.70493
-    width: 120.666664
+    width: 80.666664
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -4131,7 +4131,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1932757925171001300, guid: 20d2aa1150937b94e8620414b8d314a6, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.19
+      value: -0.91
       objectReference: {fileID: 0}
     - target: {fileID: 1932757925171001300, guid: 20d2aa1150937b94e8620414b8d314a6, type: 3}
       propertyPath: m_LocalPosition.z

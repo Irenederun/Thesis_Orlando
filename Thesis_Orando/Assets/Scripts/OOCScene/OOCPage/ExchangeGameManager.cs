@@ -13,8 +13,13 @@ public class ExchangeGameManager : MonoBehaviour
     public List<ExchangeGame> exchangeGames = new List<ExchangeGame>();
     //public bool isTutorial = true;
     public OtherWordLibrary otherWordDictionary;
-    // public UnityEvent endGameAction;
-    // public UnityEvent startGameAction;
+    public UnityEvent endGameAction;
+    public UnityEvent startGameAction;
+
+    public delegate void namenotimportanto(int gameID);
+
+    public event namenotimportanto endGameEvent;
+    public event namenotimportanto startGameEvent;
     
     private void OnEnable()
     {
@@ -69,7 +74,8 @@ public class ExchangeGameManager : MonoBehaviour
     {
         exchangeGames[number].gameObject.SetActive(true);
         exchangeGames[number].Init();
-       // startGameAction.Invoke();
+        //startGameAction.Invoke();
+        startGameEvent?.Invoke(number);
     }
 
     public void EndExchangeGame()
@@ -84,6 +90,7 @@ public class ExchangeGameManager : MonoBehaviour
                 oocMainCharLimbSync.Sync();
                 oocMainCharLimbSync.gameObject.GetComponent<ActressController>().EnableWalking();
                 MouseRayCast.instance.gameObject.SetActive(true);
+                endGameEvent?.Invoke(i);
                 break;
             }
         }

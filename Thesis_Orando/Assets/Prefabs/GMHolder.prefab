@@ -45,10 +45,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   wordBank:
-  - Rent
-  - Friends
-  - Time
-  - Sleep
+  - Nervous
+  - Questions
+  - I
+  - Vulnerable
   limbBank:
   - P1
   - P2

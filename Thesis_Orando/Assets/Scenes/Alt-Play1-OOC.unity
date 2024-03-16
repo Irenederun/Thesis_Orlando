@@ -1851,21 +1851,21 @@ MonoBehaviour:
   - level: Play1
     otherWords:
     - otherWordPos: 0-1
-      otherWordText: They
-    - otherWordPos: 0-2
       otherWordText: You
-    - otherWordPos: 0-3
-      otherWordText: She
-    - otherWordPos: 0-4
-      otherWordText: We
-    - otherWordPos: 1-1
-      otherWordText: Absurdity
-    - otherWordPos: 1-2
-      otherWordText: I
-    - otherWordPos: 1-3
+    - otherWordPos: 0-2
       otherWordText: Cruelty
+    - otherWordPos: 0-3
+      otherWordText: Love
+    - otherWordPos: 0-4
+      otherWordText: Eternal
+    - otherWordPos: 1-1
+      otherWordText: Worry
+    - otherWordPos: 1-2
+      otherWordText: Crazy
+    - otherWordPos: 1-3
+      otherWordText: Death
     - otherWordPos: 1-4
-      otherWordText: Violence
+      otherWordText: He
 --- !u!1 &227304586
 GameObject:
   m_ObjectHideFlags: 0
@@ -2980,19 +2980,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 288940495}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 461119173}
-        m_TargetAssemblyTypeName: ExchangeGameManager, Assembly-CSharp
-        m_MethodName: EndExchangeGame
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &288940495
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4818,6 +4806,12 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   otherWordDictionary: {fileID: 215867988}
+  endGameAction:
+    m_PersistentCalls:
+      m_Calls: []
+  startGameAction:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!4 &461119174
 Transform:
   m_ObjectHideFlags: 0
@@ -9509,7 +9503,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5edaafafad08c8f42976c48050028232, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sprites: []
+  sprs: []
   associatedGameNo: 1
 --- !u!61 &1095660408
 BoxCollider2D:
@@ -10054,9 +10048,9 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1142718743}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 90}
+  m_LocalScale: {x: 0.013703704, y: 0.013703704, z: 0.013703704}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 828534238}
@@ -10066,9 +10060,9 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -6.7499995, y: 0.8527001}
+  m_SizeDelta: {x: 1920, y: 1080}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1142718745
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10108,7 +10102,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 0
+  m_PresetInfoIsWorld: 1
 --- !u!223 &1142718747
 Canvas:
   m_ObjectHideFlags: 0
@@ -10118,7 +10112,7 @@ Canvas:
   m_GameObject: {fileID: 1142718743}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 1
+  m_RenderMode: 2
   m_Camera: {fileID: 4259570}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
@@ -15180,7 +15174,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5edaafafad08c8f42976c48050028232, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sprites: []
+  sprs:
+  - {fileID: 1890664396}
+  - {fileID: 1507721961}
+  - {fileID: 381396879}
+  - {fileID: 508751426}
+  - {fileID: 351123109}
+  - {fileID: 1756955408}
+  - {fileID: 902180478}
+  - {fileID: 273378462}
+  - {fileID: 1710429592}
   associatedGameNo: 0
 --- !u!1 &1549377792
 GameObject:
@@ -17217,8 +17220,8 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1801308196}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 90}
+  m_LocalScale: {x: 0.013703704, y: 0.013703704, z: 0.013703704}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1549377793}
@@ -17228,9 +17231,9 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0.6000004, y: 0.8427001}
+  m_SizeDelta: {x: 1920, y: 1080}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1801308198
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17270,7 +17273,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 0
+  m_PresetInfoIsWorld: 1
 --- !u!223 &1801308200
 Canvas:
   m_ObjectHideFlags: 0
@@ -17280,7 +17283,7 @@ Canvas:
   m_GameObject: {fileID: 1801308196}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 1
+  m_RenderMode: 2
   m_Camera: {fileID: 4259570}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
@@ -17882,6 +17885,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1890664395}
   - component: {fileID: 1890664396}
+  - component: {fileID: 1890664397}
   m_Layer: 6
   m_Name: UpperBody
   m_TagString: Untagged
@@ -17942,8 +17946,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 216514963
-  m_SortingLayer: 1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: 2
   m_Sprite: {fileID: -1335577725, guid: 939869661ea0d4869964cb6545d1b7b5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -17956,6 +17960,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1890664397
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1890664394}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4b85e4e309da1e4c897932b7289c9d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1892157824
 GameObject:
   m_ObjectHideFlags: 0

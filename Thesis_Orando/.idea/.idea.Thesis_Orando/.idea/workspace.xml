@@ -3,8 +3,16 @@
   <component name="ChangeListManager">
     <list default="true" id="9711d522-8fc0-494c-84b2-d15386118320" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Thesis_Orando/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Thesis_Orando/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Fonts/Courier_Prime/CourierPrime-Regular SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Fonts/Courier_Prime/CourierPrime-Regular SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/GMHolder.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/GMHolder.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/IC/WordDragPlay1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/IC/WordDragPlay1.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Alt-Play1-IC1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Alt-Play1-IC1.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Alt-Play1-OOC.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Alt-Play1-OOC.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/OtherWordDictionary.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/OtherWordDictionary.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/WordDictionary.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptableObjects/WordDictionary.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ICScene/ICPage/IconBehaviors.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ICScene/ICPage/IconBehaviors.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/OOCScene/OOCPage/ExchangeGameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/OOCScene/OOCPage/ExchangeGameManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/OOCScene/OOCPage/LimbOpenClose.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/OOCScene/OOCPage/LimbOpenClose.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -159,6 +167,7 @@
       <workItem from="1710445389342" duration="749000" />
       <workItem from="1710446265749" duration="4909000" />
       <workItem from="1710453836932" duration="632000" />
+      <workItem from="1710614910910" duration="1401000" />
     </task>
     <servers />
   </component>
