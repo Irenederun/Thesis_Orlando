@@ -466,8 +466,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 24616065}
-  selectedCommands: []
+  - {fileID: 24616052}
+  selectedCommands:
+  - {fileID: 24616056}
   variables:
   - {fileID: 24616024}
   - {fileID: 24616018}
@@ -569,7 +570,7 @@ MonoBehaviour:
   nodeRect:
     serializedVersion: 2
     x: 117.32695
-    y: 83.79661
+    y: 82.07247
     width: 117.8161
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -679,7 +680,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 54
   indentLevel: 0
-  storyText: "Forgive me.\t"
+  storyText: Forgive me.
   description: 
   character: {fileID: 874136165}
   portrait: {fileID: 0}
@@ -791,7 +792,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 55
   indentLevel: 0
-  storyText: "What do we do know?\r"
+  storyText: "What do we do now?\r"
   description: 
   character: {fileID: 1558266623}
   portrait: {fileID: 0}
@@ -2104,7 +2105,7 @@ SpriteRenderer:
   m_Size: {x: 19.2, y: 1.67}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &538467827
@@ -2724,7 +2725,7 @@ SpriteRenderer:
   m_Size: {x: 19.2, y: 9.48}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!114 &874136164 stripped
@@ -3218,7 +3219,7 @@ SpriteRenderer:
   m_Size: {x: 15.85, y: 3.73}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &1171478409
@@ -4434,7 +4435,7 @@ SpriteRenderer:
   m_Size: {x: 19.2, y: 10.8}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &1845165587

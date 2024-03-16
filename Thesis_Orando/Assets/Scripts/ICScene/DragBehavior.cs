@@ -1,17 +1,12 @@
-using System.Collections;
 using System.Collections.Generic;
-using System.Data.Common;
-using TMPro;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class DragBehavior : MonoBehaviour
 {
     private bool dragging = false;
     public List<GameObject> availableDesPosHolders;
     private Vector3 originalPos;
-    public string type;
-    
+
     void Start()
     {
         originalPos = gameObject.transform.localPosition;
@@ -29,10 +24,6 @@ public class DragBehavior : MonoBehaviour
     public void OnDragStarting()
     {
         dragging = true;
-        if (ICManager.instance != null)
-        {
-            ICManager.instance.CamAndActressStop();
-        }   
     }
 
     public void OnDragExit()
@@ -47,21 +38,11 @@ public class DragBehavior : MonoBehaviour
         {
             if (availableDesPosHolders.Contains(hit.collider.gameObject))
             {
-                //DragCompleted(hit.collider.gameObject);
-                
                 gameObject.transform.position = hit.collider.gameObject.transform.position;
                 gameObject.GetComponent<Collider2D>().enabled = false;
                 gameObject.GetComponent<WordDragDetails>().DragComplete(gameObject.name, hit.collider.gameObject.name);
                 
-                // switch (type)
-                // {
-                //     case "word":
                 hit.collider.gameObject.layer = LayerMask.NameToLayer("Default");
-                //         break;
-                //     case "card":
-                //         Destroy(hit.collider.gameObject);
-                //         break;
-                // }
             }
             else
             {
@@ -72,21 +53,6 @@ public class DragBehavior : MonoBehaviour
         {
             DragFailed();
         }
-    }
-
-    private void DragCompleted(GameObject destination)
-    {
-        gameObject.transform.position = destination.transform.position;
-        gameObject.GetComponent<Collider2D>().enabled = false;
-        // switch (type)
-        // {
-        //     case "word":
-        gameObject.GetComponent<WordDragDetails>().DragComplete(gameObject.name, destination.name);
-        //         break;
-        //     case "card":
-        //         ICManager.instance.CardUsed();
-        //         break;
-        // }
     }
 
     private void DragFailed()

@@ -8,7 +8,7 @@ public class SubmissionBehavior : BasicBehavior
     {
         base.ClickedByMouse();
         gameObject.SetActive(false);
-        SpeechCardManager.instance.reload.SetActive(false);
-        SpeechCardManager.instance.Submission();
+        WordDragManager.instance.reload.SetActive(false);
+        WordDragManager.instance.Submission();
     }
 }

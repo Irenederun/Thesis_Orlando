@@ -4,11 +4,10 @@ using UnityEngine;
 public class MouseRayCast : MonoBehaviour
 {   
     public static MouseRayCast instance;
-    public float mouseClickPosX;
-    public ActressController actressController;
-    private bool stopMouse = false;
+    //public float mouseClickPosX;
+    //public ActressController actressController;
     private GameObject dragObj;
-    public bool hitCheckUI;
+    //public bool hitCheckUI;
 
     private void Awake()
     {
@@ -35,33 +34,15 @@ public class MouseRayCast : MonoBehaviour
                 return;
             }
         }
-        
-        if (stopMouse)
-        {
-            return;
-        }
-        
+
         mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         RaycastHit2D hitClick = Physics2D.Raycast
             (mousePos, Vector3.back, Mathf.Infinity, LayerMask.GetMask("Interactable"));
         RaycastHit2D hitDrag = Physics2D.Raycast
             (mousePos, Vector3.back, Mathf.Infinity, LayerMask.GetMask("Draggable"));
-        RaycastHit2D hitCheckClick = Physics2D.Raycast
-            (mousePos, Vector3.back, Mathf.Infinity, LayerMask.GetMask("ClickableAreaMoving"));
-        //
-        // var screenPoint = Input.mousePosition;
-        // screenPoint.z = 5.0f; /*distance of the plane from the camera*/
-        // mousePos = Camera.main.ScreenToWorldPoint(screenPoint);
-        // RaycastHit2D hitClick = 
-        //     Physics2D.GetRayIntersection(new Ray(mousePos, Vector3.forward),
-        //                 Mathf.Infinity, LayerMask.GetMask("Interactable"));
-        // RaycastHit2D hitDrag = 
-        //     Physics2D.GetRayIntersection(new Ray(mousePos, Vector3.forward), Mathf.Infinity, 
-        //                 LayerMask.GetMask("Draggable"));
-        // RaycastHit2D hitCheckClick = 
-        //     Physics2D.GetRayIntersection(new Ray(mousePos, Vector3.forward), 
-        //                 Mathf.Infinity, LayerMask.GetMask("ClickableAreaMoving"));
-        
+        //RaycastHit2D hitCheckClick = Physics2D.Raycast
+            //(mousePos, Vector3.back, Mathf.Infinity, LayerMask.GetMask("ClickableAreaMoving"));
+
         if (Input.GetMouseButtonDown(0))
         {
             if (hitClick.collider != null)
@@ -70,19 +51,19 @@ public class MouseRayCast : MonoBehaviour
                 clickingObj.GetComponent<BasicBehavior>().ClickedByMouse();
             }
             
-            else /*if (hitClick.collider == null && hitDrag.collider == null)*/
-            {
-                clickingObj = null;
-                if (hitCheckClick.collider != null)
-                {
-                    hitCheckUI = true;
-                    //print("hit check");
-                    if (actressController != null)
-                    {
-                        MoveActress();
-                    }
-                }
-            }
+            // else /*if (hitClick.collider == null && hitDrag.collider == null)*/
+            // {
+            //     clickingObj = null;
+            //     if (hitCheckClick.collider != null)
+            //     {
+            //         hitCheckUI = true;
+            //         print("hit check");
+            //         if (actressController != null)
+            //         {
+            //              MoveActress();
+            //         }
+            //     }
+            // }
             
             if (hitDrag.collider != null)
             {
@@ -100,19 +81,14 @@ public class MouseRayCast : MonoBehaviour
                 dragObj = null;
             }
 
-            hitCheckUI = false;
+            //hitCheckUI = false;
         }
     }
 
     void MoveActress()
     {
-        mouseClickPosX = mousePos.x;
-        Transform dest = ICManager.instance.ActressWalkingMisc(mouseClickPosX);
-        actressController.StartWalking(dest);
-    }
-
-    public void ChangeMouseInteraction(bool condition)
-    {
-        stopMouse = condition;
+        // mouseClickPosX = mousePos.x;
+        // Transform dest = ICManager.instance.ActressWalkingMisc(mouseClickPosX);
+        // actressController.StartWalking(dest);
     }
 }

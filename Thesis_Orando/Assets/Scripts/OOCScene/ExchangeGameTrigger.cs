@@ -4,21 +4,16 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class IconBehaviors : BasicBehavior
+public class ExchangeGameTrigger : BasicBehavior
 {
     [SerializeField] private List<SpriteRenderer> sprs;
     public int associatedGameNo = 0;
 
     public override void ClickedByMouse()
     {
-        ICManager.instance.StartWordExchange(associatedGameNo);
+        OOCManager.instance.StartWordExchange(associatedGameNo);
     }
-    
-    public void IconState(bool state)
-    {
-        print("whomst???");
-    }
-    
+
     private void Start()
     {
         ExchangeGameManager.instance.endGameEvent += LayerMoveDown;

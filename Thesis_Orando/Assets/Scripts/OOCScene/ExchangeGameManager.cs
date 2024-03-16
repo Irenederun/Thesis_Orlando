@@ -75,7 +75,7 @@ public class ExchangeGameManager : MonoBehaviour
                 exchangeGames[i].End();
                 exchangeGames[i].gameObject.SetActive(false);
                 oocMainCharLimbSync.Sync();
-                oocMainCharLimbSync.gameObject.GetComponent<ActressController>().EnableWalking();
+                //oocMainCharLimbSync.gameObject.GetComponent<ActressController>().EnableWalking();
                 MouseRayCast.instance.gameObject.SetActive(true);
                 endGameEvent?.Invoke(i);
                 break;

@@ -9,23 +9,23 @@ public class ReloadBehavior : BasicBehavior
     {
         base.ClickedByMouse();
                 
-        for (int i = 0; i < SpeechCardManager.instance.sentence.Count; i++)
+        for (int i = 0; i < WordDragManager.instance.sentence.Count; i++)
         {
-            SpeechCardManager.instance.sentence[i] = " ";
+            WordDragManager.instance.sentence[i] = " ";
         }
-        SpeechCardManager.instance.OnPlay1Reload();
+        WordDragManager.instance.OnPlay1Reload();
 
-        SpeechCardManager.instance.responseDeterminant = "default";
+        WordDragManager.instance.responseDeterminant = "default";
 
-        foreach (GameObject word in SpeechCardManager.instance.words)
+        foreach (GameObject word in WordDragManager.instance.words)
         {
             word.GetComponent<DragBehavior>().Reload();
         }
         
         gameObject.SetActive(false);
-        SpeechCardManager.instance.submit.SetActive(false);
+        WordDragManager.instance.submit.SetActive(false);
 
-        foreach (GameObject obj in SpeechCardManager.instance.destinations)
+        foreach (GameObject obj in WordDragManager.instance.destinations)
         {
             obj.layer = LayerMask.NameToLayer("DragDestinations");
         }
