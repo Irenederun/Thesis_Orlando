@@ -6,10 +6,7 @@ using UnityEngine;
 
 public class IconBehaviors : BasicBehavior
 {
-    //[SerializeField] private GameObject actress;
     [SerializeField] private List<SpriteRenderer> sprs;
-    //private bool canInteract;
-    //private int clickTimes = 0;
     public int associatedGameNo = 0;
 
     public override void ClickedByMouse()
@@ -26,8 +23,6 @@ public class IconBehaviors : BasicBehavior
     {
         ExchangeGameManager.instance.endGameEvent += LayerMoveDown;
         ExchangeGameManager.instance.startGameEvent += LayerMoveUp;
-        //ExchangeGameManager.instance.endGameAction.AddListener(TurnOn);
-        //ExchangeGameManager.instance.startGameAction.AddListener( TurnOff);
     }
     
     private void OnDisable()
@@ -44,8 +39,6 @@ public class IconBehaviors : BasicBehavior
         {
             sp.sortingLayerName = "Default";
         }
-        //gameObject.GetComponent<SpriteRenderer>().sortingLayerName = "Default";
-        print("gfjsdkjhgsfkdghkd");
     }
     
     private void LayerMoveUp(int gameID)
@@ -55,7 +48,5 @@ public class IconBehaviors : BasicBehavior
         {
             sp.sortingLayerName = "UIOverlay";
         }
-        //gameObject.GetComponent<SpriteRenderer>().sortingLayerName = "UIOverlay";
-        print("1245435678438");
     }
 }

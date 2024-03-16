@@ -13,11 +13,7 @@ public class ExchangeGameManager : MonoBehaviour
     public List<ExchangeGame> exchangeGames = new List<ExchangeGame>();
     //public bool isTutorial = true;
     public OtherWordLibrary otherWordDictionary;
-    public UnityEvent endGameAction;
-    public UnityEvent startGameAction;
-
     public delegate void namenotimportanto(int gameID);
-
     public event namenotimportanto endGameEvent;
     public event namenotimportanto startGameEvent;
     
@@ -43,14 +39,6 @@ public class ExchangeGameManager : MonoBehaviour
             Destroy(gameObject);
         }
     }
-    
-    // private void Start()
-    // {
-    //     foreach (ExchangeGame xGame in exchangeGames)
-    //     {
-    //         xGame.gameObject.SetActive(false);
-    //     }
-    // }
 
     void Init(Scene scene, LoadSceneMode mode)
     {
@@ -74,7 +62,6 @@ public class ExchangeGameManager : MonoBehaviour
     {
         exchangeGames[number].gameObject.SetActive(true);
         exchangeGames[number].Init();
-        //startGameAction.Invoke();
         startGameEvent?.Invoke(number);
     }
 
@@ -95,8 +82,5 @@ public class ExchangeGameManager : MonoBehaviour
             }
         }
         DialogueManager.instance.TriggerDialogueOOC("ExitExchange");
-        //endGameAction.Invoke();
     }
-
-    
 }
