@@ -86,7 +86,7 @@ public class WordDragManager : ManagerBehavior
         finalSentence += sentence[senCount];
         
                 
-        if (!doNotLoadFromGM)
+        if (doNotLoadFromGM)
         {
             GameManager.instance.wordBank.Add(interstitialAddedText);
         }
