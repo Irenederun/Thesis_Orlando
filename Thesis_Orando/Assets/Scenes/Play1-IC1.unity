@@ -711,7 +711,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 171.0188
     y: 175.28468
-    width: 69.64911
+    width: 109.64911
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -754,9 +754,8 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 468921944}
-  selectedCommands:
-  - {fileID: 468921942}
+  - {fileID: 468921933}
+  selectedCommands: []
   variables:
   - {fileID: 468921930}
   - {fileID: 468921936}
@@ -845,7 +844,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 167.13635
     y: 120
-    width: 75.78946
+    width: 115.78946
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -983,7 +982,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 166.48706
     y: 8.817143
-    width: 76.66666
+    width: 116.66666
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1082,7 +1081,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 163.17674
     y: 63.863632
-    width: 77.543846
+    width: 117.543846
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1334,7 +1333,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   parentBlock: {fileID: 468921933}
   suppressBlockAutoSelect: 0
-  message: printSentence
+  message: printSentence0
 --- !u!114 &468921933
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -1349,9 +1348,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 171.63889
+    x: 170.32309
     y: 230.16449
-    width: 77.543846
+    width: 117.543846
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1406,6 +1405,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isTalking: 0
+  submitTimes: 0
 --- !u!114 &468921936
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -1543,7 +1543,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 174.70236
     y: 285.70493
-    width: 76.66666
+    width: 116.66666
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
