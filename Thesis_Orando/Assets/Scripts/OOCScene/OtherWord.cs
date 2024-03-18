@@ -28,11 +28,6 @@ public class OtherWord : UIBehavior
         Init();
     }
 
-    private void Start()
-    {
-        //Init();
-    }
-
     private void Init()
     {
         originalColor = wordText.color;

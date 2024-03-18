@@ -325,7 +325,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 469.8753
     y: 37.779995
-    width: 129.0378
+    width: 133.33334
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -435,7 +435,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 117.47219
     y: 39.495224
-    width: 110.481094
+    width: 113.33333
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -460,21 +460,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: -149.1977, y: -19.716618}
+  scrollPos: {x: -107.05336, y: 38.757607}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 333.66666
-  zoom: 0.97
+  zoom: 1
   scrollViewRect:
     serializedVersion: 2
     x: -343
     y: -340
     width: 1114
     height: 859
-  selectedBlocks:
-  - {fileID: 24616052}
-  selectedCommands:
-  - {fileID: 24616091}
+  selectedBlocks: []
+  selectedCommands: []
   variables:
   - {fileID: 24616024}
   - {fileID: 24616018}
@@ -578,7 +576,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 118.32695
     y: 80.97357
-    width: 116.666664
+    width: 119.333336
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -928,7 +926,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 303.13354
     y: 22.268887
-    width: 111.16838
+    width: 112.66667
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1274,7 +1272,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 300.802
     y: 79.52663
-    width: 111.85567
+    width: 114
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1600,7 +1598,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 302.24545
     y: 140.35141
-    width: 113.23024
+    width: 114.666664
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1733,7 +1731,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 477.53854
     y: 167.76016
-    width: 117.35395
+    width: 120.666664
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
