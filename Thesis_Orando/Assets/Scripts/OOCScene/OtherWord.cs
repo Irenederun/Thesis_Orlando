@@ -1,10 +1,7 @@
 using System;
-using System.Collections;
 using System.Collections.Generic;
-using System.Security.Cryptography;
 using UnityEngine;
 using TMPro;
-using UnityEngine.U2D.IK;
 
 public class OtherWord : UIBehavior
 {
@@ -22,8 +19,8 @@ public class OtherWord : UIBehavior
     public string posInWordList;
     private List<string> outputList;
     public string limbName;
-
-    private void Awake()
+    
+    private void Start()
     {
         Init();
     }

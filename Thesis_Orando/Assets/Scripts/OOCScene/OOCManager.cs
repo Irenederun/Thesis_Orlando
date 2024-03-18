@@ -1,8 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
-using TMPro;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class OOCManager : MonoBehaviour
 {
@@ -32,10 +28,6 @@ public class OOCManager : MonoBehaviour
         {
             MakeSwitchAvailable();
         }
-    }
-
-    private void OnEnable()
-    {
         GameManager.instance.tutorialEnded += MakeTriggerAvailable;
     }
 

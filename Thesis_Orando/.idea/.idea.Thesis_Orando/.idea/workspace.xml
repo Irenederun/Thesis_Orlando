@@ -3,9 +3,19 @@
   <component name="ChangeListManager">
     <list default="true" id="9711d522-8fc0-494c-84b2-d15386118320" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Thesis_Orando/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Thesis_Orando/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Play1-IC1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Play1-IC1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Play1-Interstitial.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Play1-Interstitial.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Play1-OOC.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Play1-OOC.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ICScene/WordDragManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ICScene/WordDragManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LimbLibrary.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/LimbLibrary.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LimbSync.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/LimbSync.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/OOCScene/ExchangeGame.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/OOCScene/ExchangeGame.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/OOCScene/ExchangeGameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/OOCScene/ExchangeGameManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/OOCScene/OOCManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/OOCScene/OOCManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/OOCScene/OtherWord.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/OOCScene/OtherWord.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/OtherWordLibrary.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/OtherWordLibrary.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Character/npc2-body.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Character/npc2-body.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Character/npc2.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Character/npc2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -145,7 +155,8 @@
       <workItem from="1710624300574" duration="5382000" />
       <workItem from="1710638104392" duration="623000" />
       <workItem from="1710728338350" duration="2619000" />
-      <workItem from="1710777965359" duration="5089000" />
+      <workItem from="1710777965359" duration="5584000" />
+      <workItem from="1710789704843" duration="1477000" />
     </task>
     <servers />
   </component>

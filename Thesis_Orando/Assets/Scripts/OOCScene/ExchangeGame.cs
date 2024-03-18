@@ -1,13 +1,7 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
-using Unity.VisualScripting;
 using UnityEngine;
-using UnityEngine.AI;
-using UnityEngine.Events;
-using UnityEngine.SceneManagement;
-//using UnityEngine.UIElements;
 using UnityEngine.UI;
 
 public class ExchangeGame : ManagerBehavior
@@ -48,22 +42,6 @@ public class ExchangeGame : ManagerBehavior
         //closeButton.clicked += ExchangeGameManager.instance.EndExchangeGame;
         closeButton.onClick.AddListener(ExchangeGameManager.instance.EndExchangeGame);
     }
-
-    // private void OnEnable()
-    // {
-    //     SceneManager.sceneLoaded += Init2;
-    // }
-    //
-    // private void OnDisable()
-    // {
-    //     SceneManager.sceneLoaded -= Init2;
-    // }
-    //
-    // void Init2(Scene scene, LoadSceneMode mode)
-    // {
-    //     ExchangeGameManager.instance.exchangeGames[positionInList] = this;
-    //     print("vjdhbafkslfksbhalisolkmn,j");
-    // }
 
     public void Init()
     {
