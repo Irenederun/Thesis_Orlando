@@ -41,6 +41,7 @@ public class ExchangeGame : ManagerBehavior
         //init();
         //closeButton.clicked += ExchangeGameManager.instance.EndExchangeGame;
         closeButton.onClick.AddListener(ExchangeGameManager.instance.EndExchangeGame);
+        gameObject.SetActive(false);
     }
 
     public void Init()

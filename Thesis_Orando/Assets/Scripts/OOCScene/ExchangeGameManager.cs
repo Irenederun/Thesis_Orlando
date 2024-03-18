@@ -38,6 +38,7 @@ public class ExchangeGameManager : MonoBehaviour
 
     void Init(Scene scene, LoadSceneMode mode)
     {
+        
         if (scene.name.Contains("OOC"))
         {
             for (int i = 0; i < exchangeGames.Count; i++)
@@ -47,11 +48,14 @@ public class ExchangeGameManager : MonoBehaviour
                     exchangeGames[i] = GameObject.Find("ExchangeGame" + i).GetComponent<ExchangeGame>();
                 }
             }
+            /*
             foreach (ExchangeGame xGame in exchangeGames)
             {
                 xGame.gameObject.SetActive(false);
             }
+            */
         }
+        
     }
 
     public void StartExchangeGame(int number)
