@@ -386,6 +386,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: NarratorFungus
       objectReference: {fileID: 0}
+    - target: {fileID: 1407504806094733079, guid: aa9435444602d944191c8389986926c4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4882995002658858082, guid: aa9435444602d944191c8389986926c4, type: 3}
       propertyPath: m_RootOrder
       value: 9
@@ -429,6 +433,42 @@ PrefabInstance:
     - target: {fileID: 4882995002658858082, guid: aa9435444602d944191c8389986926c4, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6990208787269234352, guid: aa9435444602d944191c8389986926c4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6990208787269234353, guid: aa9435444602d944191c8389986926c4, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -35
+      objectReference: {fileID: 0}
+    - target: {fileID: 6990208787269234353, guid: aa9435444602d944191c8389986926c4, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -160
+      objectReference: {fileID: 0}
+    - target: {fileID: 6990208787450429641, guid: aa9435444602d944191c8389986926c4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6990208787716420055, guid: aa9435444602d944191c8389986926c4, type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: ebb2e1caf3d864adf949d1f8c616edc7, type: 3}
+    - target: {fileID: 6990208787716420055, guid: aa9435444602d944191c8389986926c4, type: 3}
+      propertyPath: m_FontData.m_MinSize
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6990208787716420055, guid: aa9435444602d944191c8389986926c4, type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 38
+      objectReference: {fileID: 0}
+    - target: {fileID: 6990208787716420055, guid: aa9435444602d944191c8389986926c4, type: 3}
+      propertyPath: m_FontData.m_Alignment
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6990208787716420055, guid: aa9435444602d944191c8389986926c4, type: 3}
+      propertyPath: m_FontData.m_LineSpacing
+      value: 1.15
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aa9435444602d944191c8389986926c4, type: 3}
@@ -580,6 +620,10 @@ PrefabInstance:
     - target: {fileID: 4492259074025763546, guid: 20981af1494039248b72b659858b3073, type: 3}
       propertyPath: m_Name
       value: EstragonDesPoses
+      objectReference: {fileID: 0}
+    - target: {fileID: 4492259074025763546, guid: 20981af1494039248b72b659858b3073, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4492259074025763547, guid: 20981af1494039248b72b659858b3073, type: 3}
       propertyPath: m_RootOrder
@@ -2005,6 +2049,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: VLADIMIRA
       objectReference: {fileID: 0}
+    - target: {fileID: 7154389427481790231, guid: 273ffa45d2200b64f9fc59b68d70d7f0, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7154389427481790232, guid: 273ffa45d2200b64f9fc59b68d70d7f0, type: 3}
       propertyPath: m_RootOrder
       value: 10
@@ -2897,7 +2945,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &1188723956
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3025,11 +3073,11 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "\u201C Never lose yourself on stage. To break that rule is the \n  equivalent
-    of killing the person you are portraying.\u201D\r\n\n\n                                          
+    of killing the person you are portraying.\u201D\r\n\n\n                               
     - KONSTANTIN STANISLAVSKI\r"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: d857813ee9172415d96c60de1f299ec6, type: 2}
-  m_sharedMaterial: {fileID: -4267865657853803023, guid: d857813ee9172415d96c60de1f299ec6, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: f572394e9703d41949e004cfe98eed78, type: 2}
+  m_sharedMaterial: {fileID: 4777212735377390835, guid: f572394e9703d41949e004cfe98eed78, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -3053,19 +3101,19 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 5
-  m_fontSizeBase: 5
+  m_fontSize: 5.5
+  m_fontSizeBase: 5.5
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 33
+  m_fontStyle: 1
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
-  m_lineSpacing: 61.9
+  m_lineSpacing: 53.1
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
@@ -3118,7 +3166,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -4267865657853803023, guid: d857813ee9172415d96c60de1f299ec6, type: 2}
+  - {fileID: 4777212735377390835, guid: f572394e9703d41949e004cfe98eed78, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3157,7 +3205,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.015, y: -0.022}
+  m_AnchoredPosition: {x: -0.039, y: -0.02}
   m_SizeDelta: {x: 15.20301, y: 5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1214830743
@@ -3454,7 +3502,7 @@ RectTransform:
   m_GameObject: {fileID: 1481486022}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.9, y: 0.9, z: 0.9}
+  m_LocalScale: {x: 0.85, y: 0.85, z: 0.85}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 791267881}
@@ -3463,7 +3511,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -878.79, y: 456.94}
+  m_AnchoredPosition: {x: -860, y: 445}
   m_SizeDelta: {x: 96.66, y: 90.73}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1481486024
@@ -3725,6 +3773,42 @@ PrefabInstance:
     - target: {fileID: 2107791553600592265, guid: 94e9b21fda908904290cd45b3705db19, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9036191115904297045, guid: 94e9b21fda908904290cd45b3705db19, type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: ebb2e1caf3d864adf949d1f8c616edc7, type: 3}
+    - target: {fileID: 9036191115904297045, guid: 94e9b21fda908904290cd45b3705db19, type: 3}
+      propertyPath: m_FontData.m_MinSize
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 9036191115904297045, guid: 94e9b21fda908904290cd45b3705db19, type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 38
+      objectReference: {fileID: 0}
+    - target: {fileID: 9036191115904297045, guid: 94e9b21fda908904290cd45b3705db19, type: 3}
+      propertyPath: m_FontData.m_LineSpacing
+      value: 1.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 9036191116117232770, guid: 94e9b21fda908904290cd45b3705db19, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 140
+      objectReference: {fileID: 0}
+    - target: {fileID: 9036191117151051540, guid: 94e9b21fda908904290cd45b3705db19, type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: ebb2e1caf3d864adf949d1f8c616edc7, type: 3}
+    - target: {fileID: 9036191117151051540, guid: 94e9b21fda908904290cd45b3705db19, type: 3}
+      propertyPath: m_FontData.m_MinSize
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9036191117151051540, guid: 94e9b21fda908904290cd45b3705db19, type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 38
+      objectReference: {fileID: 0}
+    - target: {fileID: 9036191117151051540, guid: 94e9b21fda908904290cd45b3705db19, type: 3}
+      propertyPath: m_FontData.m_LineSpacing
+      value: 1.15
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 94e9b21fda908904290cd45b3705db19, type: 3}
@@ -4030,9 +4114,29 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1932757925147197450, guid: 20d2aa1150937b94e8620414b8d314a6, type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: ebb2e1caf3d864adf949d1f8c616edc7, type: 3}
+    - target: {fileID: 1932757925147197450, guid: 20d2aa1150937b94e8620414b8d314a6, type: 3}
+      propertyPath: m_FontData.m_MinSize
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1932757925147197450, guid: 20d2aa1150937b94e8620414b8d314a6, type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 38
+      objectReference: {fileID: 0}
+    - target: {fileID: 1932757925147197450, guid: 20d2aa1150937b94e8620414b8d314a6, type: 3}
+      propertyPath: m_FontData.m_LineSpacing
+      value: 1.15
+      objectReference: {fileID: 0}
     - target: {fileID: 1932757925171001299, guid: 20d2aa1150937b94e8620414b8d314a6, type: 3}
       propertyPath: m_Name
       value: VladimiraFungus
+      objectReference: {fileID: 0}
+    - target: {fileID: 1932757925171001299, guid: 20d2aa1150937b94e8620414b8d314a6, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1932757925171001300, guid: 20d2aa1150937b94e8620414b8d314a6, type: 3}
       propertyPath: m_RootOrder
@@ -4077,6 +4181,42 @@ PrefabInstance:
     - target: {fileID: 1932757925171001300, guid: 20d2aa1150937b94e8620414b8d314a6, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1932757925487374131, guid: 20d2aa1150937b94e8620414b8d314a6, type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: ebb2e1caf3d864adf949d1f8c616edc7, type: 3}
+    - target: {fileID: 1932757925487374131, guid: 20d2aa1150937b94e8620414b8d314a6, type: 3}
+      propertyPath: m_FontData.m_MinSize
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1932757925487374131, guid: 20d2aa1150937b94e8620414b8d314a6, type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 38
+      objectReference: {fileID: 0}
+    - target: {fileID: 1932757925487374131, guid: 20d2aa1150937b94e8620414b8d314a6, type: 3}
+      propertyPath: m_FontData.m_LineSpacing
+      value: 1.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 1932757925512877435, guid: 20d2aa1150937b94e8620414b8d314a6, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1932757925761981827, guid: 20d2aa1150937b94e8620414b8d314a6, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1932757925761981880, guid: 20d2aa1150937b94e8620414b8d314a6, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -585
+      objectReference: {fileID: 0}
+    - target: {fileID: 1932757926032197080, guid: 20d2aa1150937b94e8620414b8d314a6, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1932757926172530772, guid: 20d2aa1150937b94e8620414b8d314a6, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -590
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 20d2aa1150937b94e8620414b8d314a6, type: 3}
