@@ -199,18 +199,18 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 001167147f1f3ab48b63c5d97153ab18, type: 3}
-    m_FontSize: 45
+    m_Font: {fileID: 12800000, guid: ebb2e1caf3d864adf949d1f8c616edc7, type: 3}
+    m_FontSize: 42
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 4
+    m_MinSize: 3
     m_MaxSize: 50
     m_Alignment: 1
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
-    m_LineSpacing: 1
+    m_LineSpacing: 1.15
   m_Text: Friends have nothing to say to sleep.
 --- !u!114 &1932757925147197449
 MonoBehaviour:
@@ -631,7 +631,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 2bf6c4d03e5de432fb14edff81d41eca, type: 3}
-    m_FontSize: 45
+    m_FontSize: 42
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 4
@@ -641,7 +641,7 @@ MonoBehaviour:
     m_RichText: 1
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 0
-    m_LineSpacing: 1
+    m_LineSpacing: 1.1
   m_Text: Character Name
 --- !u!1 &1932757925487374128
 GameObject:
@@ -711,18 +711,18 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 2bf6c4d03e5de432fb14edff81d41eca, type: 3}
-    m_FontSize: 45
+    m_Font: {fileID: 12800000, guid: ebb2e1caf3d864adf949d1f8c616edc7, type: 3}
+    m_FontSize: 42
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 4
+    m_MinSize: 3
     m_MaxSize: 50
     m_Alignment: 1
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
-    m_LineSpacing: 1
+    m_LineSpacing: 1.15
   m_Text: Story text
 --- !u!114 &1932757925487374130
 MonoBehaviour:
@@ -834,7 +834,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: -612.12, y: 378}
+  m_AnchoredPosition: {x: -585, y: 383}
   m_SizeDelta: {x: 1012.74, y: 335}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1932757925761981831
@@ -1251,7 +1251,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: -624, y: 378}
+  m_AnchoredPosition: {x: -590, y: 378}
   m_SizeDelta: {x: 1012.74, y: 335}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1932757926172530760

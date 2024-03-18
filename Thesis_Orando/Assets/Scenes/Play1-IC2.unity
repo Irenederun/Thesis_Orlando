@@ -2137,18 +2137,6 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 682966547}
-    - target: {fileID: 6990208787716420055, guid: aa9435444602d944191c8389986926c4, type: 3}
-      propertyPath: m_FontData.m_Font
-      value: 
-      objectReference: {fileID: 12800000, guid: ebb2e1caf3d864adf949d1f8c616edc7, type: 3}
-    - target: {fileID: 6990208787716420055, guid: aa9435444602d944191c8389986926c4, type: 3}
-      propertyPath: m_FontData.m_FontSize
-      value: 42
-      objectReference: {fileID: 0}
-    - target: {fileID: 6990208787716420055, guid: aa9435444602d944191c8389986926c4, type: 3}
-      propertyPath: m_FontData.m_LineSpacing
-      value: 1.15
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aa9435444602d944191c8389986926c4, type: 3}
 --- !u!1 &453913257
@@ -2852,7 +2840,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7154389427481790232, guid: 273ffa45d2200b64f9fc59b68d70d7f0, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.74
+      value: -3.48
       objectReference: {fileID: 0}
     - target: {fileID: 7154389427481790232, guid: 273ffa45d2200b64f9fc59b68d70d7f0, type: 3}
       propertyPath: m_LocalPosition.y
@@ -3752,18 +3740,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 9036191115904297045, guid: 94e9b21fda908904290cd45b3705db19, type: 3}
-      propertyPath: m_FontData.m_Font
-      value: 
-      objectReference: {fileID: 12800000, guid: ebb2e1caf3d864adf949d1f8c616edc7, type: 3}
-    - target: {fileID: 9036191115904297045, guid: 94e9b21fda908904290cd45b3705db19, type: 3}
-      propertyPath: m_FontData.m_FontSize
-      value: 42
-      objectReference: {fileID: 0}
-    - target: {fileID: 9036191115904297045, guid: 94e9b21fda908904290cd45b3705db19, type: 3}
-      propertyPath: m_FontData.m_LineSpacing
-      value: 1.15
-      objectReference: {fileID: 0}
     - target: {fileID: 9036191117051506569, guid: 94e9b21fda908904290cd45b3705db19, type: 3}
       propertyPath: m_Camera
       value: 
@@ -3772,18 +3748,6 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 682966547}
-    - target: {fileID: 9036191117151051540, guid: 94e9b21fda908904290cd45b3705db19, type: 3}
-      propertyPath: m_FontData.m_Font
-      value: 
-      objectReference: {fileID: 12800000, guid: ebb2e1caf3d864adf949d1f8c616edc7, type: 3}
-    - target: {fileID: 9036191117151051540, guid: 94e9b21fda908904290cd45b3705db19, type: 3}
-      propertyPath: m_FontData.m_FontSize
-      value: 42
-      objectReference: {fileID: 0}
-    - target: {fileID: 9036191117151051540, guid: 94e9b21fda908904290cd45b3705db19, type: 3}
-      propertyPath: m_FontData.m_LineSpacing
-      value: 1.15
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 94e9b21fda908904290cd45b3705db19, type: 3}
 --- !u!1 &1210504074 stripped
@@ -4172,18 +4136,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1932757925147197450, guid: 20d2aa1150937b94e8620414b8d314a6, type: 3}
-      propertyPath: m_FontData.m_Font
-      value: 
-      objectReference: {fileID: 12800000, guid: ebb2e1caf3d864adf949d1f8c616edc7, type: 3}
-    - target: {fileID: 1932757925147197450, guid: 20d2aa1150937b94e8620414b8d314a6, type: 3}
-      propertyPath: m_FontData.m_FontSize
-      value: 42
-      objectReference: {fileID: 0}
-    - target: {fileID: 1932757925147197450, guid: 20d2aa1150937b94e8620414b8d314a6, type: 3}
-      propertyPath: m_FontData.m_LineSpacing
-      value: 1.15
-      objectReference: {fileID: 0}
     - target: {fileID: 1932757925171001299, guid: 20d2aa1150937b94e8620414b8d314a6, type: 3}
       propertyPath: m_Name
       value: VladimiraFungus
@@ -4198,7 +4150,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1932757925171001300, guid: 20d2aa1150937b94e8620414b8d314a6, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.19
+      value: -0.91
       objectReference: {fileID: 0}
     - target: {fileID: 1932757925171001300, guid: 20d2aa1150937b94e8620414b8d314a6, type: 3}
       propertyPath: m_LocalPosition.z
@@ -4231,22 +4183,6 @@ PrefabInstance:
     - target: {fileID: 1932757925171001300, guid: 20d2aa1150937b94e8620414b8d314a6, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1932757925319084152, guid: 20d2aa1150937b94e8620414b8d314a6, type: 3}
-      propertyPath: m_FontData.m_FontSize
-      value: 42
-      objectReference: {fileID: 0}
-    - target: {fileID: 1932757925319084152, guid: 20d2aa1150937b94e8620414b8d314a6, type: 3}
-      propertyPath: m_FontData.m_LineSpacing
-      value: 1.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1932757925487374131, guid: 20d2aa1150937b94e8620414b8d314a6, type: 3}
-      propertyPath: m_FontData.m_FontSize
-      value: 42
-      objectReference: {fileID: 0}
-    - target: {fileID: 1932757925487374131, guid: 20d2aa1150937b94e8620414b8d314a6, type: 3}
-      propertyPath: m_FontData.m_LineSpacing
-      value: 1.15
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 20d2aa1150937b94e8620414b8d314a6, type: 3}
