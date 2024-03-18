@@ -30,10 +30,10 @@ MonoBehaviour:
   - name: G4
     limbSprite: {fileID: -727842698, guid: 939869661ea0d4869964cb6545d1b7b5, type: 3}
   - name: B1
-    limbSprite: {fileID: 21300000, guid: ef8740ef5f64a8545a83de9762eadc68, type: 3}
+    limbSprite: {fileID: -1977678457, guid: 41b52c34628b6434ab687cf9d17656b5, type: 3}
   - name: B2
-    limbSprite: {fileID: 21300000, guid: 19255aa4e67f681459936bc8d42af017, type: 3}
+    limbSprite: {fileID: 1717912461, guid: 41b52c34628b6434ab687cf9d17656b5, type: 3}
   - name: B3
-    limbSprite: {fileID: 21300000, guid: 2d0e8ed14b7d9874db1d2eb018f8cdc4, type: 3}
+    limbSprite: {fileID: 1190849233, guid: 41b52c34628b6434ab687cf9d17656b5, type: 3}
   - name: B4
-    limbSprite: {fileID: 21300000, guid: 03219829162d0b94e8cef13dac083df8, type: 3}
+    limbSprite: {fileID: -889463796, guid: 41b52c34628b6434ab687cf9d17656b5, type: 3}

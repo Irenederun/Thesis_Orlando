@@ -21,14 +21,27 @@ public class OtherWord : UIBehavior
     public string level;
     public string posInWordList;
     private List<string> outputList;
+    public string limbName;
+
+    private void Awake()
+    {
+        Init();
+    }
 
     private void Start()
+    {
+        //Init();
+    }
+
+    private void Init()
     {
         originalColor = wordText.color;
         originalLineColor = lr.colorGradient;
         //wordText.text = GetComponent<UIWordBehavior>()._exchangeGame.otherWords[posInWordList];
         outputList = OtherWordLibrary.instance.Find(level, posInWordList);
         wordText.text = outputList[0];
+        limbName = outputList[3];
+        limb.gameObject.GetComponent<SpriteRenderer>().sprite = GameManager.instance.GetLimb(limbName);
     }
 
     private void Update()
@@ -74,6 +87,6 @@ public class OtherWord : UIBehavior
     {
         int i = int.Parse(outputList[1]);
         int j = int.Parse(outputList[2]);
-        OtherWordLibrary.instance.Modify(i,j,wordText.text);
+        OtherWordLibrary.instance.Modify(i,j,wordText.text, limbName);
     }
 }

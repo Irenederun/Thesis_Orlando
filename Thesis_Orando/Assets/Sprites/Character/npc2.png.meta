@@ -117,7 +117,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: B
+      name: leftarm
       rect:
         serializedVersion: 2
         x: 0
@@ -138,7 +138,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: npc2_1
+      name: rightarm
       rect:
         serializedVersion: 2
         x: 600
@@ -255,9 +255,9 @@ TextureImporter:
     nameFileIdTable:
       B1: -1977678457
       B3: 1190849233
-      B: 653547636
-      npc2_1: 1343428418
       B2: 1717912461
+      rightarm: 1343428418
+      leftarm: 653547636
       B4: -889463796
   spritePackingTag: 
   pSDRemoveMatte: 0

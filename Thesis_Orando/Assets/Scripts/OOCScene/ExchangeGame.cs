@@ -323,13 +323,14 @@ public class ExchangeGame : ManagerBehavior
         // simple text swap
         currentMyWord.text.text = currentOtherWordText;
         currentOtherWord.text.text = currentMyWordText;
-        currentOtherWord.ChangeWordText();
         // simple limb swap
         string myLimb = currentMyLimb.GetComponent<SpriteRenderer>().sprite.name;
         SpriteRenderer otherWordLimb =
             currentOtherWord.GetComponent<OtherWord>().limb.GetComponent<SpriteRenderer>();
         currentMyLimb.GetComponent<SpriteRenderer>().sprite = otherWordLimb.sprite;
         otherWordLimb.sprite = GameManager.instance.GetLimb(myLimb);
+        currentOtherWord.GetComponent<OtherWord>().limbName = myLimb;
+        currentOtherWord.ChangeWordText();
         yield return null;
 
         // cleanup variables
