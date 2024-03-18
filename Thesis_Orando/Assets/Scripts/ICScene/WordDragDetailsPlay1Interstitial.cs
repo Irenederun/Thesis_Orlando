@@ -15,7 +15,6 @@ public class WordDragDetailsPlay1Interstitial : WordDragDetails
             RecordWords(wordPosition, wordd.ToLower());
             WordDragManager.instance.interstitialAddedText = wordd;
         }
-        
         else if (desNamee.Contains("IAm"))
         {
             wordPosition = 1;
@@ -26,6 +25,13 @@ public class WordDragDetailsPlay1Interstitial : WordDragDetails
             RecordWords(wordPosition, word1D);
             
             WordDragManager.instance.DetermineResponse(wordd, word1D, "1E");
+        }
+        else if (desNamee.Contains("INeed") || desNamee.Contains("IHear") || desNamee.Contains("WaitIm"))
+        {
+            wordPosition = 1;
+            //string word1F_1 = WordDragManager.instance.FindConjugation(wordd, "1F_1");
+            text.text = wordd.ToLower();
+            RecordWords(wordPosition, wordd.ToLower());
         }
     }
 

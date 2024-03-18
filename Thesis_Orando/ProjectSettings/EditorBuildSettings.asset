@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Play1-IC2.unity
     guid: 01fc3db24c82dbd42bc9719a5aeece54
+  - enabled: 1
+    path: Assets/Scenes/Play1-Interstitial.unity
+    guid: 694ba91b353465845a6b7604c43ed3be
   m_configObjects: {}
