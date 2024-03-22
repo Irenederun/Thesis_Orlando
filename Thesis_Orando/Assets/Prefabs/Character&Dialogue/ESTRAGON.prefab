@@ -26,7 +26,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2107791553283755000}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.74, z: 0}
   m_LocalScale: {x: 0.85, y: 0.85, z: 0.85}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -74,7 +74,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: 21300000, guid: 3caef067bf539c04990443c9e071f196, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 49cb50847cddf46ff97bb334534d1f32, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -237,10 +237,18 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.x
       value: 140
       objectReference: {fileID: 0}
+    - target: {fileID: 9036191116181495144, guid: e03f5370b8b3af249aafe8877b74f82e, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 447
+      objectReference: {fileID: 0}
     - target: {fileID: 9036191116255327335, guid: e03f5370b8b3af249aafe8877b74f82e, type: 3}
       propertyPath: m_FontData.m_Font
       value: 
       objectReference: {fileID: 12800000, guid: 001167147f1f3ab48b63c5d97153ab18, type: 3}
+    - target: {fileID: 9036191116356351214, guid: e03f5370b8b3af249aafe8877b74f82e, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 447
+      objectReference: {fileID: 0}
     - target: {fileID: 9036191116377504191, guid: e03f5370b8b3af249aafe8877b74f82e, type: 3}
       propertyPath: m_FontData.m_Font
       value: 
