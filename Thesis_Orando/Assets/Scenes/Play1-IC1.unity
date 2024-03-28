@@ -711,7 +711,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 172.14203
     y: 175.28468
-    width: 109.75609
+    width: 109.6833
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -742,18 +742,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 359.85037, y: 72.59649}
+  scrollPos: {x: 359.13284, y: 71.96664}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 269.66666
-  zoom: 0.8200002
+  zoom: 0.8210002
   scrollViewRect:
     serializedVersion: 2
     x: -343
     y: -340
     width: 1114
     height: 859
-  selectedBlocks: []
+  selectedBlocks:
+  - {fileID: 468921944}
   selectedCommands: []
   variables:
   - {fileID: 468921930}
@@ -843,7 +844,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 167.13635
     y: 120
-    width: 115.853645
+    width: 115.77343
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -981,7 +982,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 166.48706
     y: 7.6807804
-    width: 116.4634
+    width: 116.38245
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1080,7 +1081,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 163.17674
     y: 63.863632
-    width: 117.682915
+    width: 117.60047
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1349,7 +1350,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 170.32309
     y: 230.16449
-    width: 117.682915
+    width: 117.60047
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1542,7 +1543,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 174.70236
     y: 285.70493
-    width: 116.4634
+    width: 116.38245
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -4370,6 +4371,10 @@ PrefabInstance:
     - target: {fileID: 5171347643634914177, guid: 29b42e1ec0461f94aab97f7919308300, type: 3}
       propertyPath: m_Name
       value: AssetNew
+      objectReference: {fileID: 0}
+    - target: {fileID: 5171347643789946335, guid: 29b42e1ec0461f94aab97f7919308300, type: 3}
+      propertyPath: m_SortingOrder
+      value: -12
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29b42e1ec0461f94aab97f7919308300, type: 3}

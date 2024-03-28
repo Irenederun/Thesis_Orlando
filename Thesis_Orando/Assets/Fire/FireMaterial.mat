@@ -40,7 +40,7 @@ Material:
     m_Ints: []
     m_Floats:
     - _DistortionStrength: 0.02
-    - _QueueControl: -1
+    - _QueueControl: 0
     - _QueueOffset: 0
     - _ScrollSpeed: 0.5
     - _TwirlStrength: 0
