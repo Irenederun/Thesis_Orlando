@@ -1,3 +1,4 @@
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -77,15 +78,40 @@ public class DragBehavior : MonoBehaviour
 
     private void DragFailed()
     {
-        gameObject.transform.localPosition = originalPos;
+        Reload();
     }
 
     public void Reload()
     {
+        gameObject.transform.localPosition = originalPos;
         gameObject.layer = LayerMask.NameToLayer("Draggable");
-        //gameObject.GetComponent<Collider2D>().enabled = true;
         gameObject.GetComponent<BoxCollider2D>().size = originalSize;
-        DragFailed();
         gameObject.GetComponent<WordDragDetails>().ResetWords();
+    }
+    
+    // private IEnumerator MoveTowards()
+    // {
+        // Vector3 startPos = transform.localPosition;
+        // float t = 0;
+        // float duration = 0.6f;
+        // while (gameObject.transform.localPosition != originalPos)
+        // {
+        //     t += 0.02f / duration;
+        //     float curvedT = cubicHermiteSpline(t);
+        //     transform.localPosition = Vector3.Lerp(startPos, originalPos, curvedT);
+        //     //transform.localPosition = 
+        //         //Vector3.MoveTowards(transform.localPosition,originalPos, 10 * Time.deltaTime);
+        //     yield return new WaitForSeconds(0.02f);
+        // }
+    //}
+
+    public void ResetToDraggable()
+    {
+        gameObject.layer = LayerMask.NameToLayer("Draggable");
+    }
+
+    private float cubicHermiteSpline(float t)
+    {
+        return 1 - (2 * t * t * t - 3 * t * t + 1);
     }
 }

@@ -42,6 +42,8 @@ public class MouseRayCast : MonoBehaviour
             (mousePos, Vector3.back, Mathf.Infinity, LayerMask.GetMask("Draggable"));
         //RaycastHit2D hitCheckClick = Physics2D.Raycast
             //(mousePos, Vector3.back, Mathf.Infinity, LayerMask.GetMask("ClickableAreaMoving"));
+        RaycastHit2D hitDragged = Physics2D.Raycast
+            (mousePos, Vector3.back, Mathf.Infinity, LayerMask.GetMask("Dragged"));
 
         if (Input.GetMouseButtonDown(0))
         {
@@ -64,6 +66,11 @@ public class MouseRayCast : MonoBehaviour
             //         }
             //     }
             // }
+            if (hitDragged.collider != null)
+            {
+                hitDragged.collider.gameObject.GetComponent<DragBehavior>().ResetToDraggable();
+                hitDrag = hitDragged;
+            }
             
             if (hitDrag.collider != null)
             {
@@ -71,6 +78,7 @@ public class MouseRayCast : MonoBehaviour
                 dragObj = hitDrag.collider.gameObject;
                 dragObj.GetComponent<DragBehavior>().OnDragStarting();
             }
+
         }
 
         if (Input.GetMouseButtonUp(0))
@@ -80,6 +88,7 @@ public class MouseRayCast : MonoBehaviour
                 dragObj.GetComponent<DragBehavior>().OnDragExit();
                 dragObj = null;
             }
+
 
             //hitCheckUI = false;
         }
