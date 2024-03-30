@@ -13,31 +13,7 @@ MonoBehaviour:
   m_Name: WordDictionary
   m_EditorClassIdentifier: 
   words:
-  - word: Nervous
-    rules:
-    - position: 1A
-      conjugation: Nervosity has
-    - position: 1B
-      conjugation: nervosity
-    - position: 1C
-      conjugation: CAT1
-    - position: 1D
-      conjugation: nervous
-    - position: 1E
-      conjugation: CAT1
-  - word: Questions
-    rules:
-    - position: 1A
-      conjugation: Questions have
-    - position: 1B
-      conjugation: questions
-    - position: 1C
-      conjugation: CAT1
-    - position: 1D
-      conjugation: questions
-    - position: 1E
-      conjugation: CAT2
-  - word: I
+  - word: Myself
     rules:
     - position: 1A
       conjugation: I have
@@ -48,19 +24,43 @@ MonoBehaviour:
     - position: 1D
       conjugation: myself
     - position: 1E
-      conjugation: CAT2
-  - word: Vulnerable
+      conjugation: CAT1
+  - word: Stage
     rules:
     - position: 1A
-      conjugation: Vulnerablity has
+      conjugation: Stage has
     - position: 1B
-      conjugation: vulnerablity
+      conjugation: stage
     - position: 1C
       conjugation: CAT1
     - position: 1D
-      conjugation: vulnerable
+      conjugation: stage
     - position: 1E
+      conjugation: CAT2
+  - word: Rule
+    rules:
+    - position: 1A
+      conjugation: Rule has
+    - position: 1B
+      conjugation: rule
+    - position: 1C
       conjugation: CAT1
+    - position: 1D
+      conjugation: rule
+    - position: 1E
+      conjugation: CAT3
+  - word: Portray
+    rules:
+    - position: 1A
+      conjugation: Portrayal has
+    - position: 1B
+      conjugation: portrayal
+    - position: 1C
+      conjugation: CAT1
+    - position: 1D
+      conjugation: portrayal
+    - position: 1E
+      conjugation: CAT2
   - word: You
     rules:
     - position: 1A

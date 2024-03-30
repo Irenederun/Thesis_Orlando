@@ -45,10 +45,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   wordBank:
-  - Nervous
-  - Questions
-  - I
-  - Vulnerable
+  - Myself
+  - Stage
+  - Rule
+  - Portray
   limbBank:
   - P1
   - P2

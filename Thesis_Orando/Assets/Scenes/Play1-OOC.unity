@@ -1888,10 +1888,10 @@ MonoBehaviour:
   - level: Play1
     otherWords:
     - otherWordPos: 0-1
-      otherWordText: You
+      otherWordText: Cruelty
       otherWordLimb: G2
     - otherWordPos: 0-2
-      otherWordText: Cruelty
+      otherWordText: You
       otherWordLimb: G1
     - otherWordPos: 0-3
       otherWordText: Love
