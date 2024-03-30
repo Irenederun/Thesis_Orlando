@@ -15,4 +15,9 @@ public class WordDragDetails : MonoBehaviour
     {
         text.text = gameObject.name;
     }
+
+    public virtual void ReloadWord()
+    {
+        WordDragManager.instance.OnSlotReload(wordPosition);
+    }
 }

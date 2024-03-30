@@ -54,10 +54,10 @@ public class WordDragManager : ManagerBehavior
     {
         sentence[position] = word;
         
-        if (!reload.activeSelf)
-        {
-            reload.SetActive(true);
-        }
+        // if (!reload.activeSelf)
+        // {
+        //     reload.SetActive(true);
+        // }
 
         if (!sentence.Contains(" "))
         {
@@ -104,12 +104,17 @@ public class WordDragManager : ManagerBehavior
 
     public void OnReload()
     {
-        for (int i = 0; i < sentence.Count; i++)
-        {
-            sentence[i] = initSentence[i];
-        }
+        // for (int i = 0; i < sentence.Count; i++)
+        // {
+        //     sentence[i] = initSentence[i];
+        // }
+        //
+        // interstitialAddedText = "";
+    }
 
-        interstitialAddedText = "";
+    public void OnSlotReload(int slotNo)
+    {
+        sentence[slotNo] = initSentence[slotNo];
     }
 
     public string FindConjugation(string word, string position)

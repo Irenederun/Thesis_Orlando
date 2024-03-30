@@ -24,20 +24,20 @@ public class ReloadBehavior : BasicBehavior
         //         break;
         // }
 
-        WordDragManager.instance.OnReload();
+        WordDragManager.instance.OnReload(); //change to reload by slot 
 
-        WordDragManager.instance.responseDeterminant = "default";
+        WordDragManager.instance.responseDeterminant = "default"; //only for determining slot
 
-        foreach (GameObject word in WordDragManager.instance.words)
+        foreach (GameObject word in WordDragManager.instance.words) //reload the word on the slot
         {
             word.GetComponent<DragBehavior>().Reload();
         }
         
-        gameObject.SetActive(false);
+        gameObject.SetActive(false); //no need
         
-        WordDragManager.instance.submit.SetActive(false);
+        WordDragManager.instance.submit.SetActive(false); //no need
 
-        foreach (GameObject obj in WordDragManager.instance.destinations)
+        foreach (GameObject obj in WordDragManager.instance.destinations) //no need
         {
             obj.layer = LayerMask.NameToLayer("DragDestinations");
         }
