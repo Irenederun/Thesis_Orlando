@@ -233,7 +233,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1824683670626003795, guid: 1c1c8851e8d094de5b32992c99dd766e, type: 3}
       propertyPath: m_Name
-      value: Fire (1)
+      value: Fire
       objectReference: {fileID: 0}
     - target: {fileID: 5372885871445469000, guid: 1c1c8851e8d094de5b32992c99dd766e, type: 3}
       propertyPath: m_RootOrder
