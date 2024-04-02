@@ -711,7 +711,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 172.14203
     y: 175.28468
-    width: 72.52536
+    width: 112.52536
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -753,8 +753,10 @@ MonoBehaviour:
     y: -340
     width: 1114
     height: 859
-  selectedBlocks: []
-  selectedCommands: []
+  selectedBlocks:
+  - {fileID: 468921913}
+  selectedCommands:
+  - {fileID: 468921911}
   variables:
   - {fileID: 468921930}
   - {fileID: 468921936}
@@ -843,7 +845,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 167.13635
     y: 120
-    width: 78.20948
+    width: 118.20948
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -948,7 +950,7 @@ MonoBehaviour:
   indentLevel: 0
   _duration:
     floatRef: {fileID: 0}
-    floatVal: 11
+    floatVal: 18
   durationOLD: 0
 --- !u!114 &468921912
 MonoBehaviour:
@@ -981,7 +983,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 168.92313
     y: 4.0267005
-    width: 79.83351
+    width: 119.83351
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1080,7 +1082,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 163.17674
     y: 63.863632
-    width: 80.64553
+    width: 120.64553
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1349,7 +1351,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 170.32309
     y: 230.16449
-    width: 80.64553
+    width: 120.64553
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1542,7 +1544,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 174.70236
     y: 285.70493
-    width: 79.83351
+    width: 119.83351
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -3037,7 +3039,7 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 33554431
+    rgba: 16777215
   m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
