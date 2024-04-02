@@ -325,7 +325,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 469.8753
     y: 37.779995
-    width: 130
+    width: 133.33334
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -435,7 +435,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 117.47219
     y: 39.495224
-    width: 111
+    width: 113.33333
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -472,9 +472,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 24616052}
+  - {fileID: 24616065}
   selectedCommands:
-  - {fileID: 24616091}
+  - {fileID: 24616066}
   variables:
   - {fileID: 24616024}
   - {fileID: 24616018}
@@ -578,7 +578,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 118.32695
     y: 79.97357
-    width: 117
+    width: 119.333336
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -664,7 +664,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 53
   indentLevel: 0
-  storyText: You're {$response}?
+  storyText: '{$response}'
   description: 
   character: {fileID: 874136165}
   portrait: {fileID: 0}
@@ -928,7 +928,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 303.13354
     y: 22.268887
-    width: 111
+    width: 112.66667
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1025,7 +1025,7 @@ MonoBehaviour:
         spriteVal: {fileID: 0}
       stringData:
         stringRef: {fileID: 0}
-        stringVal: crazy
+        stringVal: You're crazy?
       textureData:
         textureRef: {fileID: 0}
         textureVal: {fileID: 0}
@@ -1274,7 +1274,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 300.802
     y: 79.52663
-    width: 112
+    width: 114
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1600,7 +1600,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 302.24545
     y: 140.35141
-    width: 113
+    width: 114.666664
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1733,7 +1733,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 477.53854
     y: 167.76016
-    width: 118
+    width: 120.666664
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1820,7 +1820,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 84
   indentLevel: 0
-  storyText: '"Nothing to say to {$secondWord}"?'
+  storyText: Nothing to say to {$secondWord}?
   description: 
   character: {fileID: 874136165}
   portrait: {fileID: 0}

@@ -72,7 +72,18 @@ public class WordDragManager : ManagerBehavior
     public void DetermineResponse(string word, string wordConjugated, string position)
     {
         responseDeterminant = FindConjugation(word, position);
-        DialogueManager.instance.SetResponseVariable(wordConjugated);
+        if (wordConjugated.Contains("me") )
+        {
+            DialogueManager.instance.SetResponseVariable("you");
+        }
+        else if (wordConjugated.Contains("you"))
+        {
+            DialogueManager.instance.SetResponseVariable("me");
+        }
+        else
+        {
+            DialogueManager.instance.SetResponseVariable(wordConjugated);
+        }
     }
 
     public void Submission()
