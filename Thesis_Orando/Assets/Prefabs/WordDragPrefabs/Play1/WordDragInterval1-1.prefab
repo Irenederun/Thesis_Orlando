@@ -399,7 +399,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: <b>I feel</b>                            <b>...</b>
+  m_text: <b>I feel</b>                                <b>...</b>
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2d547a05887e1402a9f6be68683d8f36, type: 2}
   m_sharedMaterial: {fileID: 4775169337844555031, guid: 2d547a05887e1402a9f6be68683d8f36, type: 2}
@@ -835,7 +835,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &497476094219214399
 Transform:
   m_ObjectHideFlags: 0
@@ -2200,7 +2200,7 @@ Transform:
   m_GameObject: {fileID: 7438932664076481727}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.06, y: 0.02, z: 0.12687574}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.24, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 497476094366530574}
