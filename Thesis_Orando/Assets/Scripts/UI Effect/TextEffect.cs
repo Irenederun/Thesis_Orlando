@@ -10,6 +10,15 @@ public class TextEffect : MonoBehaviour
     public float floatRange = 0.1f; // range
     public float floatSpeed = 1.0f; // speed
 
+    void Start()
+    {
+        if (randomize)
+        {
+            floatRange = Random.Range(0.05f, 0.12f);
+            floatSpeed = Random.Range(1f, 1.5f);
+        }
+    }
+
     void Update()
     {
         textComponent.ForceMeshUpdate(); //force update info of texts
@@ -26,11 +35,6 @@ public class TextEffect : MonoBehaviour
 
             var verts = textInfo.meshInfo[charInfo.materialReferenceIndex].vertices;
 
-            if (randomize)
-            {
-                floatRange = Random.Range(0.05f, 0.15f);
-                floatSpeed = Random.Range(0.8f, 1.5f);
-            }
             
             for (int j = 0; j < 4; ++j){
                 var orig = verts[charInfo.vertexIndex + j]; // get the original vert
