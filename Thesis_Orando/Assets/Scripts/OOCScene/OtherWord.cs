@@ -44,14 +44,14 @@ public class OtherWord : UIBehavior
     public void Select()
     {
         wordText.color = selectionColor;
-        wordText.fontStyle = FontStyles.Underline;
+        //wordText.fontStyle = FontStyles.Underline;
         lr.colorGradient = selectionLineColor;
     }
 
     public void Reset()
     {
         wordText.color = originalColor;
-        wordText.fontStyle = FontStyles.Normal;
+        //wordText.fontStyle = FontStyles.Normal;
         lr.colorGradient = originalLineColor;
     }
 

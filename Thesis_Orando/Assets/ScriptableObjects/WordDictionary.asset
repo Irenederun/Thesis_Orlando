@@ -32,7 +32,7 @@ MonoBehaviour:
     - position: 1B
       conjugation: stage
     - position: 1C
-      conjugation: CAT1
+      conjugation: CAT4
     - position: 1D
       conjugation: stage
     - position: 1E
@@ -44,7 +44,7 @@ MonoBehaviour:
     - position: 1B
       conjugation: rule
     - position: 1C
-      conjugation: CAT1
+      conjugation: CAT4
     - position: 1D
       conjugation: rule
     - position: 1E
@@ -56,7 +56,7 @@ MonoBehaviour:
     - position: 1B
       conjugation: portrayal
     - position: 1C
-      conjugation: CAT1
+      conjugation: CAT4
     - position: 1D
       conjugation: portrayal
     - position: 1E
@@ -80,7 +80,7 @@ MonoBehaviour:
     - position: 1B
       conjugation: cruelty
     - position: 1C
-      conjugation: CAT2
+      conjugation: CAT3
     - position: 1D
       conjugation: cruel
     - position: 1E
@@ -104,7 +104,7 @@ MonoBehaviour:
     - position: 1B
       conjugation: eternality
     - position: 1C
-      conjugation: CAT2
+      conjugation: CAT5
     - position: 1D
       conjugation: eternal
     - position: 1E
@@ -116,7 +116,7 @@ MonoBehaviour:
     - position: 1B
       conjugation: worry
     - position: 1C
-      conjugation: CAT2
+      conjugation: CAT3
     - position: 1D
       conjugation: worried
     - position: 1E
@@ -140,7 +140,7 @@ MonoBehaviour:
     - position: 1B
       conjugation: death
     - position: 1C
-      conjugation: CAT3
+      conjugation: CAT5
     - position: 1D
       conjugation: dead
     - position: 1E
@@ -152,7 +152,7 @@ MonoBehaviour:
     - position: 1B
       conjugation: him
     - position: 1C
-      conjugation: CAT3
+      conjugation: CAT6
     - position: 1D
       conjugation: him
     - position: 1E

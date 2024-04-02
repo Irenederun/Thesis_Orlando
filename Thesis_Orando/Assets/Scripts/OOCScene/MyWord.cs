@@ -44,7 +44,7 @@ public class MyWord : UIBehavior
     {
         curState = state.selected;
         wordText.color = selectionColor;
-        wordText.fontStyle = FontStyles.Underline;
+        //wordText.fontStyle = FontStyles.Underline;
         lr.gameObject.SetActive(false);
     }
 
@@ -59,7 +59,7 @@ public class MyWord : UIBehavior
     {
         curState = state.idle;
         wordText.color = originalColor;
-        wordText.fontStyle = FontStyles.Normal;
+        //wordText.fontStyle = FontStyles.Normal;
         lr.gameObject.SetActive(false);
     }
 
