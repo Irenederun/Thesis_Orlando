@@ -18,6 +18,6 @@ public class WordDragDetails : MonoBehaviour
 
     public virtual void ReloadWord()
     {
-        WordDragManager.instance.OnSlotReload(wordPosition);
+        WordDragManager.instance.OnSlotReload(text.text, wordPosition);
     }
 }

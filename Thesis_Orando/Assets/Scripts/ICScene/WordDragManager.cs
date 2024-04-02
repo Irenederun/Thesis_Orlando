@@ -124,9 +124,11 @@ public class WordDragManager : ManagerBehavior
         // interstitialAddedText = "";
     }
 
-    public void OnSlotReload(int slotNo)
+    public void OnSlotReload(string word, int slotNo)
     {
-        sentence[slotNo] = initSentence[slotNo];
+        print(word + sentence[slotNo]);
+        if (word == sentence[slotNo]) sentence[slotNo] = initSentence[slotNo]; 
+        //this also needs to happen if word has changed dest drag box
         
         if (sentence.Contains(" "))
         {

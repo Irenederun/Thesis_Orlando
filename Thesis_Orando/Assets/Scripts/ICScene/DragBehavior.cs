@@ -45,9 +45,11 @@ public class DragBehavior : MonoBehaviour
             {
                 if (hitReload.collider != null)
                 {
-                     hitReload.collider.gameObject.GetComponent<DragBehavior>().Reload();
                      hitReload.collider.gameObject.GetComponent<WordDragDetails>().ReloadWord();
-                     print(hitReload.collider.gameObject);
+                     hitReload.collider.gameObject.GetComponent<DragBehavior>().Reload();
+                     //print(hitReload.collider.gameObject);
+                     GetComponent<WordDragDetails>().ReloadWord();
+                     GetComponent<DragBehavior>().Reload();
                 }
 
                 gameObject.layer = LayerMask.NameToLayer("Dragged");
@@ -86,8 +88,8 @@ public class DragBehavior : MonoBehaviour
         gameObject.transform.localPosition = originalPos;
         gameObject.layer = LayerMask.NameToLayer("Draggable");
         gameObject.GetComponent<BoxCollider2D>().size = originalSize;
-        gameObject.GetComponent<WordDragDetails>().ResetWords();
         gameObject.GetComponent<WordDragDetails>().ReloadWord();
+        gameObject.GetComponent<WordDragDetails>().ResetWords();
     }
     
     // private IEnumerator MoveTowards()
