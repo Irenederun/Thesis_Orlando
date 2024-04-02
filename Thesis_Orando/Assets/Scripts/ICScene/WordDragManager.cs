@@ -29,6 +29,7 @@ public class WordDragManager : ManagerBehavior
 
     private void Start()
     {
+        if (submit.activeSelf) submit.SetActive(false);
         if (!doNotLoadFromGM) LoadWords();
         for (int i = 0; i < sentence.Count; i++)
         {
