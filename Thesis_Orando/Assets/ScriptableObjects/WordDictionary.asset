@@ -165,6 +165,8 @@ MonoBehaviour:
       conjugation: shoudnothave
     - position: 1C
       conjugation: shoudnothave
+    - position: 1D_0
+      conjugation: broken
     - position: 1D
       conjugation: broken
     - position: 1E
@@ -177,6 +179,8 @@ MonoBehaviour:
       conjugation: shoudnothave
     - position: 1C
       conjugation: shoudnothave
+    - position: 1D_0
+      conjugation: godly
     - position: 1D
       conjugation: god
     - position: 1E
@@ -189,6 +193,8 @@ MonoBehaviour:
       conjugation: shoudnothave
     - position: 1C
       conjugation: shoudnothave
+    - position: 1D_0
+      conjugation: cold
     - position: 1D
       conjugation: cold
     - position: 1E
@@ -201,6 +207,8 @@ MonoBehaviour:
       conjugation: shoudnothave
     - position: 1C
       conjugation: shoudnothave
+    - position: 1D_0
+      conjugation: courageous
     - position: 1D
       conjugation: courageous
     - position: 1E

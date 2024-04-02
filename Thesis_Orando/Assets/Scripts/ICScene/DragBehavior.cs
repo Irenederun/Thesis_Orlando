@@ -87,6 +87,7 @@ public class DragBehavior : MonoBehaviour
         gameObject.layer = LayerMask.NameToLayer("Draggable");
         gameObject.GetComponent<BoxCollider2D>().size = originalSize;
         gameObject.GetComponent<WordDragDetails>().ResetWords();
+        gameObject.GetComponent<WordDragDetails>().ReloadWord();
     }
     
     // private IEnumerator MoveTowards()

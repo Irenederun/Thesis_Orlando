@@ -115,6 +115,14 @@ public class WordDragManager : ManagerBehavior
     public void OnSlotReload(int slotNo)
     {
         sentence[slotNo] = initSentence[slotNo];
+        
+        if (sentence.Contains(" "))
+        {
+            if (submit.activeSelf)
+            {
+                submit.SetActive(false);
+            }
+        }
     }
 
     public string FindConjugation(string word, string position)

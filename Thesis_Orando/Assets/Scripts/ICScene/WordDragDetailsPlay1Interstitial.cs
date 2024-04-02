@@ -11,8 +11,13 @@ public class WordDragDetailsPlay1Interstitial : WordDragDetails
         if (desNamee.Contains("Feel"))
         {
             wordPosition = 1;
-            text.text = wordd.ToLower();
-            RecordWords(wordPosition, wordd.ToLower());
+            //text.text = wordd.ToLower();
+
+            string word1D_0 = WordDragManager.instance.FindConjugation(wordd, "1D_0");
+            
+            //RecordWords(wordPosition, wordd.ToLower());
+            text.text = word1D_0;
+            RecordWords(wordPosition, word1D_0);
             WordDragManager.instance.interstitialAddedText = wordd;
         }
         else if (desNamee.Contains("IAm"))
