@@ -1,17 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9711d522-8fc0-494c-84b2-d15386118320" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Thesis_Orando/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Thesis_Orando/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Anim/InterstitialFadingIn.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Anim/InterstitialFadingIn.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Anim/InterstitialFadingOut.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Anim/InterstitialFadingOut.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Play1-IC2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Play1-IC2.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Play1-Interstitial.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Play1-Interstitial.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Play1-OOC.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Play1-OOC.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Play2-Interstitial.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Play2-Interstitial.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AudioManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AudioManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayAudio.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayAudio.cs" afterDir="false" />
-    </list>
+    <list default="true" id="9711d522-8fc0-494c-84b2-d15386118320" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -156,7 +146,7 @@
       <workItem from="1710789704843" duration="1477000" />
       <workItem from="1710793815026" duration="1150000" />
       <workItem from="1711833474497" duration="8951000" />
-      <workItem from="1712179073905" duration="5233000" />
+      <workItem from="1712179073905" duration="5648000" />
     </task>
     <servers />
   </component>

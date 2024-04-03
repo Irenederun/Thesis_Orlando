@@ -310,7 +310,7 @@ AnimationClip:
     intParameter: 0
     messageOptions: 0
   - time: 11.1
-    functionName: GoMakeSomeSound
+    functionName: GoMakeSomeLoopingSound
     data: CarBurning
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
