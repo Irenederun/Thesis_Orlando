@@ -9,4 +9,9 @@ public class PlayAudio : MonoBehaviour
     {
         AudioManager.instance.PlayAudio(audioName, GetComponent<AudioSource>());
     }
+
+    public void GoMakeSomeLoopingSound(string audioName)
+    {
+        AudioManager.instance.PlayAudioLoop(audioName, GetComponent<AudioSource>());
+    }
 }

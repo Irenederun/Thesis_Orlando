@@ -46,4 +46,24 @@ public class AudioManager : MonoBehaviour
             if (backupNo == backupAudioSource.Count) backupNo = 0;
         }
     }
+    
+    public void PlayAudioLoop(string audioName, AudioSource aSource)
+    {
+        if (!aSource.isPlaying)
+        {
+            aSource.clip = GetAudio(audioName);
+            aSource.volume = GetVolume(audioName);
+            aSource.loop = true;
+            aSource.Play();
+        }
+        else
+        {
+            backupAudioSource[backupNo].clip = GetAudio(audioName);
+            backupAudioSource[backupNo].volume = GetVolume(audioName);
+            backupAudioSource[backupNo].loop = true;
+            backupAudioSource[backupNo].Play();
+            backupNo++;
+            if (backupNo == backupAudioSource.Count) backupNo = 0;
+        }
+    }
 }

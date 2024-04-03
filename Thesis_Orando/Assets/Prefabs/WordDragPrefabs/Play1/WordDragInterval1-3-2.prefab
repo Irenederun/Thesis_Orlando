@@ -613,6 +613,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09dad0926f33c4d6e8ae223d75f73841, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  randomize: 0
   textComponent: {fileID: 2152389830532982782}
   floatRange: 0.17
   floatSpeed: 0.8
@@ -716,7 +717,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: <b>I hear</b>                                  <b>...<b>
+  m_text: <b>I hear</b> _________________ <b>...<b>
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2d547a05887e1402a9f6be68683d8f36, type: 2}
   m_sharedMaterial: {fileID: 4775169337844555031, guid: 2d547a05887e1402a9f6be68683d8f36, type: 2}
@@ -973,6 +974,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09dad0926f33c4d6e8ae223d75f73841, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  randomize: 0
   textComponent: {fileID: 2152389830683658990}
   floatRange: 0.02
   floatSpeed: 1.2
@@ -1272,6 +1274,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09dad0926f33c4d6e8ae223d75f73841, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  randomize: 0
   textComponent: {fileID: 2152389830969503644}
   floatRange: 0.12
   floatSpeed: 0.5
@@ -1826,6 +1829,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09dad0926f33c4d6e8ae223d75f73841, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  randomize: 0
   textComponent: {fileID: 2152389831422930964}
   floatRange: 0.06
   floatSpeed: 0.7
@@ -2014,6 +2018,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09dad0926f33c4d6e8ae223d75f73841, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  randomize: 0
   textComponent: {fileID: 2152389831448085838}
   floatRange: 0.03
   floatSpeed: 1.5
@@ -2291,7 +2296,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &4008191768610716672
 Transform:
   m_ObjectHideFlags: 0
