@@ -2906,8 +2906,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.00012207031, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchoredPosition: {x: -0.00012207031, y: -108}
+  m_SizeDelta: {x: 230.9, y: 791.22}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &288940494
 MonoBehaviour:
@@ -2966,7 +2966,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.43137255}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -5748,8 +5748,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.00012207031, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchoredPosition: {x: -0.00012207031, y: -108}
+  m_SizeDelta: {x: 230.9, y: 791.22}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &609132085
 MonoBehaviour:
@@ -5808,7 +5808,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.43137255}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -6587,8 +6587,8 @@ MonoBehaviour:
   - {fileID: 1809023466}
   - {fileID: 965798060}
   m_Bounds:
-    m_Center: {x: 4.6639447, y: 0.7454457, z: 0}
-    m_Extent: {x: 9.02332, y: 4.8095083, z: 0}
+    m_Center: {x: 4.663944, y: 0.7454448, z: 0}
+    m_Extent: {x: 9.023319, y: 4.8095074, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
   m_AutoRebind: 0
@@ -8052,7 +8052,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 835.18, y: 450.00003}
+  m_AnchoredPosition: {x: 366, y: 10}
   m_SizeDelta: {x: 100, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &902180477
@@ -11934,8 +11934,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 1357418056}
-  selectedCommands: []
+  - {fileID: 1357418044}
+  selectedCommands:
+  - {fileID: 1357418045}
   variables:
   - {fileID: 1357418027}
   - {fileID: 1357418025}
@@ -12020,7 +12021,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 1
   indentLevel: 0
-  storyText: Choose the word you would like to acquire.
+  storyText: Choose the word you would like to {i}acquire{/i}.
   description: 
   character: {fileID: 6990208787463258289}
   portrait: {fileID: 0}
@@ -12062,7 +12063,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 3
   indentLevel: 0
-  storyText: Now choose the word you would like to be rid of.
+  storyText: Now choose the word you would like to {i}be rid of{/i}.
   description: 
   character: {fileID: 1708286987}
   portrait: {fileID: 0}
@@ -12132,7 +12133,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 6
   indentLevel: 0
-  storyText: Now choose the limb you deem worthy as a sacrifce.
+  storyText: Now choose the limb you deem worthy as a {i}sacrifce{/i}.
   description: 
   character: {fileID: 1708286987}
   portrait: {fileID: 0}
@@ -12228,7 +12229,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 12
   indentLevel: 0
-  storyText: You may proceed to {i}Exchange{/i}.
+  storyText: You may proceed to {i}exchange{/i}.
   description: 
   character: {fileID: 1708286987}
   portrait: {fileID: 0}
@@ -12298,7 +12299,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 14
   indentLevel: 0
-  storyText: You may now leave, or continue to exchange more words.
+  storyText: You may continue to exchange more words, or leave at will.
   description: 
   character: {fileID: 2143834108}
   portrait: {fileID: 0}
@@ -18392,7 +18393,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 834, y: 450}
+  m_AnchoredPosition: {x: 125, y: 10}
   m_SizeDelta: {x: 100, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &2034983099
