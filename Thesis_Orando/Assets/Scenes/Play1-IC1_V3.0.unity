@@ -539,7 +539,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6336839712941143641, guid: ef4a01fb6692a3c4ebf27fca6d250ac8, type: 3}
       propertyPath: m_RootOrder
-      value: 17
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 6336839712941143641, guid: ef4a01fb6692a3c4ebf27fca6d250ac8, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2186,75 +2186,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2030409776, guid: 273ffa45d2200b64f9fc59b68d70d7f0, type: 3}
   m_PrefabInstance: {fileID: 720268666}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &747275755
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: -8653719598885068355, guid: d4157aee70e5844deac2da6205ab1421, type: 3}
-      propertyPath: m_Name
-      value: characterNPC
-      objectReference: {fileID: 0}
-    - target: {fileID: -7552582706839291426, guid: d4157aee70e5844deac2da6205ab1421, type: 3}
-      propertyPath: m_RootOrder
-      value: 15
-      objectReference: {fileID: 0}
-    - target: {fileID: -7552582706839291426, guid: d4157aee70e5844deac2da6205ab1421, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.8974681
-      objectReference: {fileID: 0}
-    - target: {fileID: -7552582706839291426, guid: d4157aee70e5844deac2da6205ab1421, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.8974681
-      objectReference: {fileID: 0}
-    - target: {fileID: -7552582706839291426, guid: d4157aee70e5844deac2da6205ab1421, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.8974681
-      objectReference: {fileID: 0}
-    - target: {fileID: -7552582706839291426, guid: d4157aee70e5844deac2da6205ab1421, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 21.677
-      objectReference: {fileID: 0}
-    - target: {fileID: -7552582706839291426, guid: d4157aee70e5844deac2da6205ab1421, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -3.6695
-      objectReference: {fileID: 0}
-    - target: {fileID: -7552582706839291426, guid: d4157aee70e5844deac2da6205ab1421, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -7552582706839291426, guid: d4157aee70e5844deac2da6205ab1421, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -7552582706839291426, guid: d4157aee70e5844deac2da6205ab1421, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -7552582706839291426, guid: d4157aee70e5844deac2da6205ab1421, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -7552582706839291426, guid: d4157aee70e5844deac2da6205ab1421, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -7552582706839291426, guid: d4157aee70e5844deac2da6205ab1421, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -7552582706839291426, guid: d4157aee70e5844deac2da6205ab1421, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -7552582706839291426, guid: d4157aee70e5844deac2da6205ab1421, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 4843985084834002234, guid: d4157aee70e5844deac2da6205ab1421, type: 3}
 --- !u!1 &747627582
 GameObject:
   m_ObjectHideFlags: 0
@@ -3338,7 +3269,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "\u201CNever lose your      on        . To break that       is the \n 
-    equivalent of killing the person you are           ing.\u201D\r\n\n\n                               
+    equivalent of killing the person you are           ing.\u201D\r\n\n\n                             
     - KONSTANTIN STANISLAVSKI\r"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f572394e9703d41949e004cfe98eed78, type: 2}
@@ -5370,7 +5301,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 416818790572238350, guid: dabb36e04f9f46c4eab0846cd14e9f97, type: 3}
       propertyPath: m_RootOrder
-      value: 16
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 416818790572238350, guid: dabb36e04f9f46c4eab0846cd14e9f97, type: 3}
       propertyPath: m_LocalPosition.x
