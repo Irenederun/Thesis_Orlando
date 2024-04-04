@@ -66,4 +66,12 @@ public class AudioManager : MonoBehaviour
             if (backupNo == backupAudioSource.Count) backupNo = 0;
         }
     }
+
+    public void StopAudio()
+    {
+        foreach (AudioSource aS in backupAudioSource)
+        {
+            if (aS.isPlaying) aS.Stop();
+        }
+    }
 }

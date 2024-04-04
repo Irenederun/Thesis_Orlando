@@ -4996,10 +4996,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1932757925147197448, guid: 20d2aa1150937b94e8620414b8d314a6, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 628.73
-      objectReference: {fileID: 0}
     - target: {fileID: 1932757925171001299, guid: 20d2aa1150937b94e8620414b8d314a6, type: 3}
       propertyPath: m_Name
       value: VladimiraFungus

@@ -14,4 +14,10 @@ public class PlayAudio : MonoBehaviour
     {
         AudioManager.instance.PlayAudioLoop(audioName, GetComponent<AudioSource>());
     }
+
+    public void GoStopTheSound()
+    {
+        if (GetComponent<AudioSource>().isPlaying) GetComponent<AudioSource>().Stop();
+        AudioManager.instance.StopAudio();
+    }
 }
