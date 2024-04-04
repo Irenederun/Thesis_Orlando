@@ -1448,14 +1448,6 @@ MonoBehaviour:
   sentence:
   - I need
   - ' '
-  destinations:
-  - {fileID: 414329008328003517}
-  words:
-  - {fileID: 414329008160474533}
-  - {fileID: 414329007882079902}
-  - {fileID: 414329009489239396}
-  - {fileID: 414329008837603729}
-  - {fileID: 414329007641271483}
   reload: {fileID: 414329009478067593}
   submit: {fileID: 414329008452769137}
   wordList:
@@ -1468,6 +1460,9 @@ MonoBehaviour:
   responseDeterminant: 
   doNotLoadFromGM: 0
   interstitialAddedText: 
+  isInterstitial: 1
+  listOfSentence: []
+  sentenceNo: 0
 --- !u!1 &414329008837603729
 GameObject:
   m_ObjectHideFlags: 0

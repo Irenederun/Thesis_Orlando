@@ -10,7 +10,7 @@ public class GameManager : MonoBehaviour
     public LimbLibrary limbLibrary;
     public bool isTutorial = true;
     public Action tutorialEnded;
-
+    public int currentSentenceNo;
 
     public void Awake()
     {
@@ -69,5 +69,12 @@ public class GameManager : MonoBehaviour
     {
         isTutorial = false;
         tutorialEnded();
+    }
+
+    public void IncrementCurrentSentence()
+    {
+        if (isTutorial) return;
+
+        currentSentenceNo++;
     }
 }

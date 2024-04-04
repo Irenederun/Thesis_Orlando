@@ -1027,14 +1027,6 @@ MonoBehaviour:
   - ' '
   - nothing to say to
   - ' '
-  destinations:
-  - {fileID: 1411777542784735117}
-  - {fileID: 1411777542034590599}
-  words:
-  - {fileID: 1411777540849830043}
-  - {fileID: 1411777540807612421}
-  - {fileID: 1411777542225536708}
-  - {fileID: 1411777541697867846}
   reload: {fileID: 1411777541577413087}
   submit: {fileID: 1411777541973950857}
   wordList:
@@ -1046,6 +1038,9 @@ MonoBehaviour:
   responseDeterminant: 
   doNotLoadFromGM: 0
   interstitialAddedText: 
+  isInterstitial: 1
+  listOfSentence: []
+  sentenceNo: 0
 --- !u!1 &1411777541697867846
 GameObject:
   m_ObjectHideFlags: 0

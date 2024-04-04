@@ -75,7 +75,7 @@ public class ExchangeGame : ManagerBehavior
         if (GameManager.instance.isTutorial)
         {
             SwitchMask( selfMaskWords, selfMaskLimbs, otherMask);
-            DialogueManager.instance.TriggerDialogueOOC("ExchangeStarted");
+            DialogueManager.instance.TriggerDialogue("ExchangeStarted");
             print("started");
         }
         else
@@ -178,7 +178,7 @@ public class ExchangeGame : ManagerBehavior
                     if (GameManager.instance.isTutorial && currentOtherWord == null)
                     {
                         SwitchMask(otherMask, selfMaskLimbs, selfMaskWords);
-                        DialogueManager.instance.TriggerDialogueOOC("TargetChosen");
+                        DialogueManager.instance.TriggerDialogue("TargetChosen");
                     }
                     //
                     
@@ -218,7 +218,7 @@ public class ExchangeGame : ManagerBehavior
                         if (GameManager.instance.isTutorial && currentMyWord == null)
                         {
                             SwitchMask(otherMask, selfMaskWords, selfMaskLimbs);
-                            DialogueManager.instance.TriggerDialogueOOC("MyWordChosen");
+                            DialogueManager.instance.TriggerDialogue("MyWordChosen");
                         }
                         //
                         
@@ -249,7 +249,7 @@ public class ExchangeGame : ManagerBehavior
                         if (GameManager.instance.isTutorial && currentMyLimb == null)
                         {
                             SwitchMask( selfMaskLimbs, null, null);
-                            DialogueManager.instance.TriggerDialogueOOC("MyLimbChosen");
+                            DialogueManager.instance.TriggerDialogue("MyLimbChosen");
                         }
                         //
                         
@@ -272,7 +272,7 @@ public class ExchangeGame : ManagerBehavior
         if (GameManager.instance.isTutorial)
         {
             GameManager.instance.TutorialOver();
-            DialogueManager.instance.TriggerDialogueOOC("ExchangeClicked");
+            DialogueManager.instance.TriggerDialogue("ExchangeClicked");
             selfMaskWords.SetActive(false);
             selfMaskLimbs.SetActive(false);
             otherMask.SetActive(false);

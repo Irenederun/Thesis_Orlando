@@ -8,8 +8,8 @@ public class WordDragManager : ManagerBehavior
     public List<string> sentence;
     public static WordDragManager instance;
 
-    public List<GameObject> destinations;
-    public List<GameObject> words;
+    //public List<GameObject> destinations;
+    //public List<GameObject> words;
     public GameObject reload;
     public GameObject submit;
     public List<TextMeshPro> wordList;
@@ -21,6 +21,10 @@ public class WordDragManager : ManagerBehavior
     public bool doNotLoadFromGM;
     private List<string> initSentence = new List<string>();
     public string interstitialAddedText;
+    public bool isInterstitial;
+
+    public List<GameObject> listOfSentence;
+    public int sentenceNo;
 
     private void Awake()
     {
@@ -34,6 +38,15 @@ public class WordDragManager : ManagerBehavior
         for (int i = 0; i < sentence.Count; i++)
         {
             initSentence.Add(sentence[i]);
+        }
+
+        if (!isInterstitial)
+        {
+            foreach (GameObject s in listOfSentence)
+            {
+                s.SetActive(false);
+            }
+            listOfSentence[sentenceNo].SetActive(true);
         }
     }
 
@@ -91,9 +104,8 @@ public class WordDragManager : ManagerBehavior
         int senCount = sentence.Count - 1;
         for (int i = 0; i < senCount; i++)
         {
-            finalSentence += sentence[i] + " ";
+            finalSentence += sentence[i];
         }
-        
         finalSentence += sentence[senCount];
         
                 
@@ -107,9 +119,16 @@ public class WordDragManager : ManagerBehavior
 
     private void CompleteSentence()
     {
-        DialogueManager.instance.SetSentenceVariable(finalSentence + ".");
-        DialogueManager.instance.TriggerDialogueOOC("printSentence" + DialogueManager.instance.submitTimes);
-        DialogueManager.instance.TriggerDialogueOOC(responseDeterminant);
+        DialogueManager.instance.SetSentenceVariable(finalSentence);
+        if (isInterstitial)
+        {
+            DialogueManager.instance.TriggerDialogue("printSentence" + DialogueManager.instance.submitTimes);
+        }
+        else
+        {
+            DialogueManager.instance.TriggerDialogue("printSentence" + GameManager.instance.currentSentenceNo);
+        }
+        DialogueManager.instance.TriggerDialogue(responseDeterminant);
 
         DestroySelfOnClose();
     }

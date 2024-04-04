@@ -870,7 +870,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 172.27538
     y: 36.831894
-    width: 90.43713
+    width: 85.15149
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -900,11 +900,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 196.517, y: 115.740524}
+  scrollPos: {x: 461.02213, y: 177.08173}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 400
-  zoom: 0.6100004
+  zoom: 0.5500004
   scrollViewRect:
     serializedVersion: 2
     x: -343
@@ -912,9 +912,8 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 950951648}
-  selectedCommands:
-  - {fileID: 950951675}
+  - {fileID: 950951627}
+  selectedCommands: []
   variables:
   - {fileID: 950951620}
   - {fileID: 950951649}
@@ -1095,7 +1094,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 173.29672
     y: 118.13123
-    width: 82.786865
+    width: 76.66664
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1207,7 +1206,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 283.0328
     y: 119.35799
-    width: 111.20215
+    width: 115.45449
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1254,7 +1253,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 285.56412
     y: 175.97993
-    width: 112.295044
+    width: 116.66662
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1301,7 +1300,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 286.15305
     y: 233.0574
-    width: 113.38794
+    width: 117.87874
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1726,7 +1725,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 446.647
     y: 170.09003
-    width: 139.61743
+    width: 143.33325
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -9319,10 +9318,6 @@ PrefabInstance:
     - target: {fileID: 497476094543836798, guid: 344f9c4c1843b0b4793fbb66da94af71, type: 3}
       propertyPath: m_Name
       value: WordDragInterval1-1
-      objectReference: {fileID: 0}
-    - target: {fileID: 497476094543836798, guid: 344f9c4c1843b0b4793fbb66da94af71, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 497476094543836799, guid: 344f9c4c1843b0b4793fbb66da94af71, type: 3}
       propertyPath: m_RootOrder

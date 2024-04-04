@@ -81,6 +81,6 @@ public class ExchangeGameManager : MonoBehaviour
                 break;
             }
         }
-        DialogueManager.instance.TriggerDialogueOOC("ExitExchange");
+        DialogueManager.instance.TriggerDialogue("ExitExchange");
     }
 }

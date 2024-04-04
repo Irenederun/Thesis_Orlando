@@ -35,6 +35,7 @@ public class DialogueManager : ManagerBehavior
         myFlowchart = GetComponent<Flowchart>();
         IEnumerator coroutine = OnSceneStart();
         StartCoroutine(coroutine);
+        SetCurrentSentenceVariable();
     }
 
     private void Update()
@@ -46,7 +47,6 @@ public class DialogueManager : ManagerBehavior
         else if (!myFlowchart.GetBooleanVariable("isTalking") && isTalking)
         {
             isTalking = false;
-            //Time.timeScale = 1f;
         }
     }
 
@@ -56,7 +56,7 @@ public class DialogueManager : ManagerBehavior
         myFlowchart.SendFungusMessage("OrlandoStarts");
     }
 
-    public void TriggerDialogueOOC(string correspondingMessage)
+    public void TriggerDialogue(string correspondingMessage)
     {
         myFlowchart.SendFungusMessage(correspondingMessage);
 
@@ -72,6 +72,11 @@ public class DialogueManager : ManagerBehavior
     public void SetResponseVariable(string secondWord)
     {
         myFlowchart.SetStringVariable("secondWord", secondWord);
+    }
+
+    public void SetCurrentSentenceVariable()
+    {
+        myFlowchart.SetIntegerVariable("currentSentence", GameManager.instance.currentSentenceNo);
     }
 
     // public void SetResponseVariable(string corResponse)

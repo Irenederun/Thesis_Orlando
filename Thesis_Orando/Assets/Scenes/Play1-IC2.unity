@@ -480,10 +480,8 @@ MonoBehaviour:
     y: -340
     width: 1114
     height: 859
-  selectedBlocks:
-  - {fileID: 24616065}
-  selectedCommands:
-  - {fileID: 24616066}
+  selectedBlocks: []
+  selectedCommands: []
   variables:
   - {fileID: 24616024}
   - {fileID: 24616018}

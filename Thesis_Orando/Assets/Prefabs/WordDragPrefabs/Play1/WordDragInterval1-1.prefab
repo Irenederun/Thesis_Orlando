@@ -1444,7 +1444,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &497476094543836799
 Transform:
   m_ObjectHideFlags: 0
@@ -1484,13 +1484,6 @@ MonoBehaviour:
   sentence:
   - I feel
   - ' '
-  destinations:
-  - {fileID: 497476093420947514}
-  words:
-  - {fileID: 497476095343236908}
-  - {fileID: 497476095266932658}
-  - {fileID: 497476093967481203}
-  - {fileID: 497476094515122161}
   reload: {fileID: 497476094359539304}
   submit: {fileID: 497476094219214398}
   wordList:
@@ -1502,6 +1495,9 @@ MonoBehaviour:
   responseDeterminant: 
   doNotLoadFromGM: 1
   interstitialAddedText: 
+  isInterstitial: 1
+  listOfSentence: []
+  sentenceNo: 0
 --- !u!1 &497476095264056113
 GameObject:
   m_ObjectHideFlags: 0

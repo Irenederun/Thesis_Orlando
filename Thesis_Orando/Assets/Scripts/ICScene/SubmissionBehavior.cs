@@ -10,5 +10,6 @@ public class SubmissionBehavior : BasicBehavior
         gameObject.SetActive(false);
         WordDragManager.instance.reload.SetActive(false);
         WordDragManager.instance.Submission();
+        GameManager.instance.IncrementCurrentSentence();
     }
 }
