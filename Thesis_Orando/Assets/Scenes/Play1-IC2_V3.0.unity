@@ -732,7 +732,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 161.02135
     y: 43.442757
-    width: 72.06897
+    width: 112.60164
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -769,11 +769,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 253.25055, y: 214.62413}
+  scrollPos: {x: 71.38144, y: 94.87189}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 341.66666
-  zoom: 0.58
+  zoom: 0.8199998
   scrollViewRect:
     serializedVersion: 2
     x: -343
@@ -784,6 +784,12 @@ MonoBehaviour:
   - {fileID: 468921977}
   selectedCommands:
   - {fileID: 468921975}
+  - {fileID: 468921974}
+  - {fileID: 468921978}
+  - {fileID: 468921973}
+  - {fileID: 468921969}
+  - {fileID: 468921972}
+  - {fileID: 468921968}
   variables:
   - {fileID: 468921930}
   - {fileID: 468921936}
@@ -908,7 +914,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 303.08304
     y: 115.392426
-    width: 78.965515
+    width: 119.91871
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1242,9 +1248,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 62
   indentLevel: 0
-  storyText: 'To be back with me again.
-
-'
+  storyText: To be back with me again.
   description: 
   character: {fileID: 2005082777}
   portrait: {fileID: 0}
@@ -1273,7 +1277,7 @@ MonoBehaviour:
   indentLevel: 0
   storyText: '{$secondWord}? '
   description: 
-  character: {fileID: 1585182549}
+  character: {fileID: 1585182548}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -1347,8 +1351,8 @@ MonoBehaviour:
   nodeRect:
     serializedVersion: 2
     x: 161.43042
-    y: 104.11153
-    width: 69.77011
+    y: 102.89201
+    width: 111.78863
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1388,7 +1392,7 @@ MonoBehaviour:
   indentLevel: 0
   storyText: '{$secondWord} about what?'
   description: 
-  character: {fileID: 1585182549}
+  character: {fileID: 1585182548}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -1577,7 +1581,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 304.81158
     y: 47.760178
-    width: 78.965515
+    width: 119.91871
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2298,7 +2302,7 @@ MonoBehaviour:
   indentLevel: 0
   storyText: So am I.
   description: 
-  character: {fileID: 1585182549}
+  character: {fileID: 1585182548}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -2409,7 +2413,7 @@ MonoBehaviour:
   indentLevel: 0
   storyText: I am {$secondWord}.
   description: 
-  character: {fileID: 1585182549}
+  character: {fileID: 1585182548}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -2483,8 +2487,8 @@ MonoBehaviour:
   nodeRect:
     serializedVersion: 2
     x: 166.9795
-    y: 156.12532
-    width: 70.91954
+    y: 157.34483
+    width: 113.41464
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2935,7 +2939,7 @@ MonoBehaviour:
   indentLevel: 0
   storyText: We are {$secondWord}.
   description: 
-  character: {fileID: 1585182549}
+  character: {fileID: 1585182548}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -3009,8 +3013,8 @@ MonoBehaviour:
   nodeRect:
     serializedVersion: 2
     x: 161.97949
-    y: 218.62532
-    width: 72.06897
+    y: 217.4058
+    width: 114.22765
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -5011,17 +5015,6 @@ PrefabInstance:
 --- !u!114 &1585182548 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 9036191116934109579, guid: 94e9b21fda908904290cd45b3705db19, type: 3}
-  m_PrefabInstance: {fileID: 1585182547}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 25fb867d2049d41f597aefdd6b19f598, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1585182549 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 9036191116381175820, guid: 94e9b21fda908904290cd45b3705db19, type: 3}
   m_PrefabInstance: {fileID: 1585182547}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
