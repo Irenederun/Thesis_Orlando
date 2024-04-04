@@ -763,6 +763,8 @@ GameObject:
   - component: {fileID: 468921959}
   - component: {fileID: 468921961}
   - component: {fileID: 468921960}
+  - component: {fileID: 468921962}
+  - component: {fileID: 468921963}
   m_Layer: 0
   m_Name: IC-0 Flowchart
   m_TagString: Untagged
@@ -786,7 +788,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 169.64203
     y: 175.28468
-    width: 70.36296
+    width: 70.171936
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -829,8 +831,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 468921918}
-  selectedCommands: []
+  - {fileID: 468921896}
+  selectedCommands:
+  - {fileID: 468921963}
   variables:
   - {fileID: 468921930}
   - {fileID: 468921936}
@@ -918,7 +921,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 167.13635
     y: 120
-    width: 76.47566
+    width: 75.902596
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -928,7 +931,9 @@ MonoBehaviour:
   eventHandler: {fileID: 468921914}
   commandList:
   - {fileID: 468921897}
+  - {fileID: 468921963}
   - {fileID: 468921899}
+  - {fileID: 468921962}
   - {fileID: 468921900}
   suppressAllAutoSelections: 0
 --- !u!114 &468921897
@@ -1041,7 +1046,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 167.73618
     y: 6.0267005
-    width: 77.239746
+    width: 77.04872
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1141,7 +1146,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 163.03061
     y: 63.863632
-    width: 78.00384
+    width: 78.194855
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1374,7 +1379,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 170.32309
     y: 230.16449
-    width: 78.00384
+    width: 78.194855
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1568,7 +1573,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 174.70236
     y: 285.70493
-    width: 77.239746
+    width: 77.04872
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1955,6 +1960,58 @@ MonoBehaviour:
     stringRef: {fileID: 0}
     stringVal: Opening
   messageOLD: 
+--- !u!114 &468921962
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 468921884}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5316d953c7abe498799575550c973535, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 61
+  indentLevel: 0
+  animator:
+    animatorRef: {fileID: 0}
+    animatorVal: {fileID: 1585182550}
+  stateName:
+    stringRef: {fileID: 0}
+    stringVal: Estragon_Idle
+  layer:
+    integerRef: {fileID: 0}
+    integerVal: -1
+  time:
+    floatRef: {fileID: 0}
+    floatVal: 0
+--- !u!114 &468921963
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 468921884}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5316d953c7abe498799575550c973535, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 62
+  indentLevel: 0
+  animator:
+    animatorRef: {fileID: 0}
+    animatorVal: {fileID: 1585182550}
+  stateName:
+    stringRef: {fileID: 0}
+    stringVal: Estragon_Walking_Anim
+  layer:
+    integerRef: {fileID: 0}
+    integerVal: -1
+  time:
+    floatRef: {fileID: 0}
+    floatVal: 0
 --- !u!1 &477653529
 GameObject:
   m_ObjectHideFlags: 0
@@ -4730,6 +4787,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25fb867d2049d41f597aefdd6b19f598, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!95 &1585182550 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 85166566, guid: 94e9b21fda908904290cd45b3705db19, type: 3}
+  m_PrefabInstance: {fileID: 1585182547}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1752129167
 GameObject:
   m_ObjectHideFlags: 0
