@@ -782,7 +782,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 169.64203
     y: 175.28468
-    width: 110.171936
+    width: 110.36296
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -915,7 +915,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 167.13635
     y: 120
-    width: 115.902596
+    width: 116.47566
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1038,7 +1038,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 167.73618
     y: 6.0267005
-    width: 117.04872
+    width: 117.239746
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1136,9 +1136,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 161.88448
+    x: 163.03061
     y: 63.863632
-    width: 118.194855
+    width: 118.00384
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1371,7 +1371,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 170.32309
     y: 230.16449
-    width: 118.194855
+    width: 118.00384
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1565,7 +1565,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 174.70236
     y: 285.70493
-    width: 117.04872
+    width: 117.239746
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1851,18 +1851,23 @@ MonoBehaviour:
   m_GameObject: {fileID: 468921884}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dbd8c931f22994b9d90e2037fffaa770, type: 3}
+  m_Script: {fileID: 11500000, guid: 5316d953c7abe498799575550c973535, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 58
+  itemId: 57
   indentLevel: 0
-  _targetGameObject:
-    gameObjectRef: {fileID: 0}
-    gameObjectVal: {fileID: 870912297}
-  activeState:
-    booleanRef: {fileID: 0}
-    booleanVal: 1
-  targetGameObjectOLD: {fileID: 0}
+  animator:
+    animatorRef: {fileID: 0}
+    animatorVal: {fileID: 870912298}
+  stateName:
+    stringRef: {fileID: 0}
+    stringVal: Curtain
+  layer:
+    integerRef: {fileID: 0}
+    integerVal: -1
+  time:
+    floatRef: {fileID: 0}
+    floatVal: 0
 --- !u!1 &477653529
 GameObject:
   m_ObjectHideFlags: 0
@@ -2635,7 +2640,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!95 &870912298
 Animator:
   serializedVersion: 5

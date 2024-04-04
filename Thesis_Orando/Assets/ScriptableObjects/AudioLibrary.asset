@@ -17,7 +17,7 @@ MonoBehaviour:
     audio: {fileID: 8300000, guid: 5bec38c5d243ef74c8f8abf772212a96, type: 3}
     volume: 3
   - name: Applause01
-    audio: {fileID: 8300000, guid: 925420affc21ab14696a795f3e75cb97, type: 3}
+    audio: {fileID: 8300000, guid: f053acdd0bee05b47a77625cd6b359b3, type: 3}
     volume: 0.5
   - name: Applause02
     audio: {fileID: 8300000, guid: e7318f422c07d0d40bbb3569834faddd, type: 3}
