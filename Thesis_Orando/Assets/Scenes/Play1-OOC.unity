@@ -2050,10 +2050,10 @@ MonoBehaviour:
   - level: Play1
     otherWords:
     - otherWordPos: 0-1
-      otherWordText: Cruelty
+      otherWordText: You
       otherWordLimb: G2
     - otherWordPos: 0-2
-      otherWordText: You
+      otherWordText: Cruelty
       otherWordLimb: G1
     - otherWordPos: 0-3
       otherWordText: Love
@@ -3653,7 +3653,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 0
   m_Sprite: {fileID: -1816049081, guid: 939869661ea0d4869964cb6545d1b7b5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -3852,7 +3852,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 1
   m_Sprite: {fileID: -1031499788, guid: 939869661ea0d4869964cb6545d1b7b5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -6587,8 +6587,8 @@ MonoBehaviour:
   - {fileID: 1809023466}
   - {fileID: 965798060}
   m_Bounds:
-    m_Center: {x: 4.6639447, y: 0.7454457, z: 0}
-    m_Extent: {x: 9.02332, y: 4.8095083, z: 0}
+    m_Center: {x: 4.663944, y: 0.7454448, z: 0}
+    m_Extent: {x: 9.023319, y: 4.8095074, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
   m_AutoRebind: 0
@@ -19121,7 +19121,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 4
+  m_SortingOrder: 2
   m_Sprite: {fileID: -2019300100, guid: 939869661ea0d4869964cb6545d1b7b5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -20826,7 +20826,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1710429591}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.09916193, y: -1.9189578, z: -0.02497227}
+  m_LocalPosition: {x: -0.09916193, y: -1.843, z: -0.02497227}
   m_LocalScale: {x: 0.9908032, y: 0.9908032, z: 0.9908034}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -22310,7 +22310,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 3
   m_Sprite: {fileID: -1335577725, guid: 939869661ea0d4869964cb6545d1b7b5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
