@@ -87,7 +87,6 @@ public class DialogueManager : ManagerBehavior
 
     public string SetToLower(string word)
     {
-        print(word.ToLower());
         return word.ToLower();
     }
 }
