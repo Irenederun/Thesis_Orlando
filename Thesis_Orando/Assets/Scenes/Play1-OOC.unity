@@ -2050,10 +2050,10 @@ MonoBehaviour:
   - level: Play1
     otherWords:
     - otherWordPos: 0-1
-      otherWordText: Cruelty
+      otherWordText: You
       otherWordLimb: G2
     - otherWordPos: 0-2
-      otherWordText: You
+      otherWordText: Cruelty
       otherWordLimb: G1
     - otherWordPos: 0-3
       otherWordText: Love
@@ -6587,8 +6587,8 @@ MonoBehaviour:
   - {fileID: 1809023466}
   - {fileID: 965798060}
   m_Bounds:
-    m_Center: {x: 4.6639447, y: 0.7454457, z: 0}
-    m_Extent: {x: 9.02332, y: 4.8095083, z: 0}
+    m_Center: {x: 4.663944, y: 0.7454448, z: 0}
+    m_Extent: {x: 9.023319, y: 4.8095074, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
   m_AutoRebind: 0

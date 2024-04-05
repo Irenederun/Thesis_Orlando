@@ -84,4 +84,10 @@ public class DialogueManager : ManagerBehavior
     //     //print(corResponse);
     //     myFlowchart.SetStringVariable("response", corResponse);
     // }
+
+    public string SetToLower(string word)
+    {
+        print(word.ToLower());
+        return word.ToLower();
+    }
 }
