@@ -27,7 +27,7 @@ public class WordDragDetailsPlay1 : WordDragDetails
             text.text = word1B;
             RecordWords(wordPosition, word1B);
             
-            WordDragManager.instance.DetermineResponse(wordd, word1B, "1C");
+            //WordDragManager.instance.DetermineResponse(wordd, word1B, "1C");
         }
     }
 

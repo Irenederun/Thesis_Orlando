@@ -29,7 +29,8 @@ public class WordDragDetailsPlay1Interstitial : WordDragDetails
             text.text = word1D;
             RecordWords(wordPosition, word1D);
             
-            WordDragManager.instance.DetermineResponse(wordd, word1D, "1E");
+            //WordDragManager.instance.DetermineResponse(wordd, word1D, "1E");
+            WordDragManager.instance.DetermineResponse(/*wordd, word1D,*/ WordDragManager.instance.FindConjugation(wordd, "1E"));
         }
         else if (desNamee.Contains("INeed") || desNamee.Contains("IHear") || desNamee.Contains("WaitIm"))
         {

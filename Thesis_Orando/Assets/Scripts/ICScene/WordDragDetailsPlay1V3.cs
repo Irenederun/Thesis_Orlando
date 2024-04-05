@@ -14,8 +14,9 @@ public class WordDragDetailsPlay1V3 : WordDragDetails
             
         text.text = word1B;
         RecordWords(wordPosition, word1B);
-            
-        WordDragManager.instance.DetermineResponse(wordd, word1B, "1C");
+
+        
+        WordDragManager.instance.DetermineResponse(WordDragManager.instance.FindConjugation(wordd,"1A"));
     }
 
     public void RecordWords(int pos, string text)

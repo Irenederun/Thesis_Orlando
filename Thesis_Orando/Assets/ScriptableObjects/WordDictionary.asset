@@ -13,12 +13,12 @@ MonoBehaviour:
   m_Name: WordDictionary
   m_EditorClassIdentifier: 
   words:
-  - word: Myself
+  - word: (My)Self
     rules:
     - position: 1A
-      conjugation: I have
+      conjugation: Yours
     - position: 1B
-      conjugation: me
+      conjugation: mine
     - position: 1C
       conjugation: CAT1
     - position: 1D
@@ -28,9 +28,9 @@ MonoBehaviour:
   - word: Stage
     rules:
     - position: 1A
-      conjugation: Stage has
+      conjugation: Stage fright
     - position: 1B
-      conjugation: stage
+      conjugation: stage fright
     - position: 1C
       conjugation: CAT4
     - position: 1D
@@ -40,9 +40,9 @@ MonoBehaviour:
   - word: Rule
     rules:
     - position: 1A
-      conjugation: Rule has
+      conjugation: Rulely
     - position: 1B
-      conjugation: rule
+      conjugation: rulely
     - position: 1C
       conjugation: CAT4
     - position: 1D
@@ -52,9 +52,9 @@ MonoBehaviour:
   - word: Portray
     rules:
     - position: 1A
-      conjugation: Portrayal has
+      conjugation: A portrait
     - position: 1B
-      conjugation: portrayal
+      conjugation: a portrait
     - position: 1C
       conjugation: CAT4
     - position: 1D
@@ -64,9 +64,9 @@ MonoBehaviour:
   - word: You
     rules:
     - position: 1A
-      conjugation: You have
+      conjugation: Mine
     - position: 1B
-      conjugation: you
+      conjugation: yours
     - position: 1C
       conjugation: CAT2
     - position: 1D
@@ -76,9 +76,9 @@ MonoBehaviour:
   - word: Cruelty
     rules:
     - position: 1A
-      conjugation: Cruelty has
+      conjugation: Cruel
     - position: 1B
-      conjugation: cruelty
+      conjugation: cruel
     - position: 1C
       conjugation: CAT3
     - position: 1D
@@ -88,9 +88,9 @@ MonoBehaviour:
   - word: Love
     rules:
     - position: 1A
-      conjugation: Love has
+      conjugation: Lovable
     - position: 1B
-      conjugation: love
+      conjugation: lovable
     - position: 1C
       conjugation: CAT2
     - position: 1D
@@ -100,9 +100,9 @@ MonoBehaviour:
   - word: Eternal
     rules:
     - position: 1A
-      conjugation: Eternality has
+      conjugation: Eternal
     - position: 1B
-      conjugation: eternality
+      conjugation: eternal
     - position: 1C
       conjugation: CAT5
     - position: 1D
@@ -112,9 +112,9 @@ MonoBehaviour:
   - word: Worry
     rules:
     - position: 1A
-      conjugation: Worry has
+      conjugation: Worried
     - position: 1B
-      conjugation: worry
+      conjugation: worried
     - position: 1C
       conjugation: CAT3
     - position: 1D
@@ -124,9 +124,9 @@ MonoBehaviour:
   - word: Crazy
     rules:
     - position: 1A
-      conjugation: Craziness has
+      conjugation: Crazy
     - position: 1B
-      conjugation: craziness
+      conjugation: crazy
     - position: 1C
       conjugation: CAT3
     - position: 1D
@@ -136,9 +136,9 @@ MonoBehaviour:
   - word: Death
     rules:
     - position: 1A
-      conjugation: Death has
+      conjugation: Dead
     - position: 1B
-      conjugation: death
+      conjugation: dead
     - position: 1C
       conjugation: CAT5
     - position: 1D
@@ -148,9 +148,9 @@ MonoBehaviour:
   - word: He
     rules:
     - position: 1A
-      conjugation: He has
+      conjugation: His
     - position: 1B
-      conjugation: him
+      conjugation: his
     - position: 1C
       conjugation: CAT6
     - position: 1D
