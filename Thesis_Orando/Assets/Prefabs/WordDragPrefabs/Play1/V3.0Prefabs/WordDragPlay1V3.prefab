@@ -656,10 +656,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textMeshPro: {fileID: 2512951379166962495}
-  glowFrequency: 4
+  glowFrequency: 3
   glowAmplitude: 1
-  outlineSoftness: 0.4
-  outlineWidth: 0.1
+  outlineSoftness: 0.5
+  outlineWidth: 0.17
 --- !u!1 &2512951379207135677
 GameObject:
   m_ObjectHideFlags: 0
@@ -1198,10 +1198,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textMeshPro: {fileID: 0}
-  glowFrequency: 3.5
+  glowFrequency: 3
   glowAmplitude: 1
-  outlineSoftness: 0.4
-  outlineWidth: 0.1
+  outlineSoftness: 0.5
+  outlineWidth: 0.17
 --- !u!1 &2512951379978915810
 GameObject:
   m_ObjectHideFlags: 0
@@ -1550,10 +1550,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textMeshPro: {fileID: 2512951380023475072}
-  glowFrequency: 3.5
+  glowFrequency: 2.5
   glowAmplitude: 1
-  outlineSoftness: 0.4
-  outlineWidth: 0.1
+  outlineSoftness: 0.5
+  outlineWidth: 0.17
 --- !u!1 &2512951380037361532
 GameObject:
   m_ObjectHideFlags: 0
@@ -2118,10 +2118,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textMeshPro: {fileID: 0}
-  glowFrequency: 4
+  glowFrequency: 2.5
   glowAmplitude: 1
-  outlineSoftness: 0.4
-  outlineWidth: 0.1
+  outlineSoftness: 0.5
+  outlineWidth: 0.17
 --- !u!1 &3619135431716187596
 GameObject:
   m_ObjectHideFlags: 0
