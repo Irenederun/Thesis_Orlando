@@ -16779,19 +16779,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 312.78033, y: 149.22888}
+  scrollPos: {x: 161.02995, y: -92.960144}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 403.66666
-  zoom: 0.46000016
+  zoom: 0.5800001
   scrollViewRect:
     serializedVersion: 2
     x: -343
     y: -340
     width: 1114
     height: 859
-  selectedBlocks: []
-  selectedCommands: []
+  selectedBlocks:
+  - {fileID: 1357418044}
+  selectedCommands:
+  - {fileID: 1357418045}
   variables:
   - {fileID: 1357418027}
   - {fileID: 1357418025}
@@ -16851,7 +16853,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 474.38522
     y: 246.57217
-    width: 98.913025
+    width: 98.275856
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -16876,7 +16878,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 1
   indentLevel: 0
-  storyText: Choose the word you would like to {i}acquire{/i}.
+  storyText: From the character ghosts, choose the word you would like to {i}acquire{/i}.
   description: 
   character: {fileID: 6990208787463258289}
   portrait: {fileID: 0}
@@ -16918,7 +16920,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 3
   indentLevel: 0
-  storyText: Now choose the word you would like to {i}be rid of{/i}.
+  storyText: From yourself, choose the word you would like to {i}be rid of{/i}.
   description: 
   character: {fileID: 1708286987}
   portrait: {fileID: 0}
@@ -16947,7 +16949,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 475.38522
     y: 296.57217
-    width: 98.913025
+    width: 99.42528
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -16988,7 +16990,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 6
   indentLevel: 0
-  storyText: Now choose the limb you deem worthy as a {i}sacrifce{/i}.
+  storyText: From yourself, choose the limb you deem worthy as a {i}sacrifce{/i}.
   description: 
   character: {fileID: 1708286987}
   portrait: {fileID: 0}
@@ -17017,7 +17019,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 479.38522
     y: 342.57217
-    width: 99.999985
+    width: 100.57471
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -17059,7 +17061,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 476.55188
     y: 397.97696
-    width: 99.999985
+    width: 100.57471
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -17128,7 +17130,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 478.05188
     y: 443.90552
-    width: 98.913025
+    width: 99.42528
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -17184,7 +17186,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 485.6051
     y: 497.06204
-    width: 172.82605
+    width: 175.28734
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -17351,7 +17353,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 477.64148
     y: 180.82928
-    width: 97.826065
+    width: 100.57471
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -17419,7 +17421,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 907.4217
     y: 292.92654
-    width: 121.739105
+    width: 124.71263
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
