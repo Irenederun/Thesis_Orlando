@@ -45,7 +45,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   wordBank:
-  - Myself
+  - (My)Self
   - Stage
   - Rule
   - Portray

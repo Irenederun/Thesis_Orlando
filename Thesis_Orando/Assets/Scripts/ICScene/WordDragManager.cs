@@ -82,7 +82,7 @@ public class WordDragManager : ManagerBehavior
         }
     }
 
-    public void DetermineResponse(/*string word,*/ string wordConjugated/*, string position*/)
+    public void DetermineResponse(/*string word,*/ string wordConjugated/*, string position*/, string responseCAT)
     {
         // responseDeterminant = FindConjugation(word, position);
         // if (word.Contains("Myself") )
@@ -96,6 +96,7 @@ public class WordDragManager : ManagerBehavior
         //else
         //{
             DialogueManager.instance.SetResponseVariable(wordConjugated);
+            responseDeterminant = responseCAT;
         //}
     }
 

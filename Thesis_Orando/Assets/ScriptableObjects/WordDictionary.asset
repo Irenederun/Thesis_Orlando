@@ -20,7 +20,7 @@ MonoBehaviour:
     - position: 1B
       conjugation: mine
     - position: 1C
-      conjugation: CAT1
+      conjugation: Old
     - position: 1D
       conjugation: myself
     - position: 1E
@@ -32,7 +32,7 @@ MonoBehaviour:
     - position: 1B
       conjugation: stage fright
     - position: 1C
-      conjugation: CAT4
+      conjugation: Old
     - position: 1D
       conjugation: stage
     - position: 1E
@@ -44,7 +44,7 @@ MonoBehaviour:
     - position: 1B
       conjugation: rulely
     - position: 1C
-      conjugation: CAT4
+      conjugation: Old
     - position: 1D
       conjugation: rule
     - position: 1E
@@ -56,7 +56,7 @@ MonoBehaviour:
     - position: 1B
       conjugation: a portrait
     - position: 1C
-      conjugation: CAT4
+      conjugation: Old
     - position: 1D
       conjugation: portrayal
     - position: 1E
@@ -68,7 +68,7 @@ MonoBehaviour:
     - position: 1B
       conjugation: yours
     - position: 1C
-      conjugation: CAT2
+      conjugation: New
     - position: 1D
       conjugation: you
     - position: 1E
@@ -80,7 +80,7 @@ MonoBehaviour:
     - position: 1B
       conjugation: cruel
     - position: 1C
-      conjugation: CAT3
+      conjugation: New
     - position: 1D
       conjugation: cruel
     - position: 1E
@@ -92,7 +92,7 @@ MonoBehaviour:
     - position: 1B
       conjugation: lovable
     - position: 1C
-      conjugation: CAT2
+      conjugation: New
     - position: 1D
       conjugation: love
     - position: 1E
@@ -104,7 +104,7 @@ MonoBehaviour:
     - position: 1B
       conjugation: eternal
     - position: 1C
-      conjugation: CAT5
+      conjugation: New
     - position: 1D
       conjugation: eternal
     - position: 1E
@@ -116,7 +116,7 @@ MonoBehaviour:
     - position: 1B
       conjugation: worried
     - position: 1C
-      conjugation: CAT3
+      conjugation: New
     - position: 1D
       conjugation: worried
     - position: 1E
@@ -128,7 +128,7 @@ MonoBehaviour:
     - position: 1B
       conjugation: crazy
     - position: 1C
-      conjugation: CAT3
+      conjugation: New
     - position: 1D
       conjugation: crazy
     - position: 1E
@@ -140,7 +140,7 @@ MonoBehaviour:
     - position: 1B
       conjugation: dead
     - position: 1C
-      conjugation: CAT5
+      conjugation: New
     - position: 1D
       conjugation: dead
     - position: 1E
@@ -152,7 +152,7 @@ MonoBehaviour:
     - position: 1B
       conjugation: his
     - position: 1C
-      conjugation: CAT6
+      conjugation: New
     - position: 1D
       conjugation: him
     - position: 1E
