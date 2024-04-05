@@ -465,6 +465,7 @@ GameObject:
   - component: {fileID: 2512951379166962624}
   - component: {fileID: 2512951379166962495}
   - component: {fileID: 5843636373207109673}
+  - component: {fileID: 1166641269832605148}
   m_Layer: 0
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -642,6 +643,23 @@ MonoBehaviour:
   textComponent: {fileID: 2512951379166962495}
   floatRange: 0.1
   floatSpeed: 0.9
+--- !u!114 &1166641269832605148
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2512951379166962493}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bff8ab22ebb8a4bd4a72e4ee66e35f14, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textMeshPro: {fileID: 2512951379166962495}
+  glowFrequency: 4
+  glowAmplitude: 1
+  outlineSoftness: 0.4
+  outlineWidth: 0.1
 --- !u!1 &2512951379207135677
 GameObject:
   m_ObjectHideFlags: 0
@@ -989,6 +1007,7 @@ GameObject:
   - component: {fileID: 2512951379860731699}
   - component: {fileID: 2512951379860731698}
   - component: {fileID: 5112035702035975097}
+  - component: {fileID: 8333800987604893235}
   m_Layer: 0
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -1166,6 +1185,23 @@ MonoBehaviour:
   textComponent: {fileID: 2512951379860731698}
   floatRange: 0.1
   floatSpeed: 1.1
+--- !u!114 &8333800987604893235
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2512951379860731696}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bff8ab22ebb8a4bd4a72e4ee66e35f14, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textMeshPro: {fileID: 0}
+  glowFrequency: 3.5
+  glowAmplitude: 1
+  outlineSoftness: 0.4
+  outlineWidth: 0.1
 --- !u!1 &2512951379978915810
 GameObject:
   m_ObjectHideFlags: 0
@@ -1323,6 +1359,7 @@ GameObject:
   - component: {fileID: 2512951380023475073}
   - component: {fileID: 2512951380023475072}
   - component: {fileID: 6792857471721223203}
+  - component: {fileID: 6626126673122768610}
   m_Layer: 0
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -1422,7 +1459,7 @@ MonoBehaviour:
   m_fontColor32:
     serializedVersion: 2
     rgba: 4279746549
-  m_fontColor: {r: 0.9607844, g: 0.7490196, b: 0.09019608, a: 1}
+  m_fontColor: {r: 0.9607843, g: 0.7490196, b: 0.09019608, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1500,6 +1537,23 @@ MonoBehaviour:
   textComponent: {fileID: 2512951380023475072}
   floatRange: 0.1
   floatSpeed: 1
+--- !u!114 &6626126673122768610
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2512951380023475199}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bff8ab22ebb8a4bd4a72e4ee66e35f14, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textMeshPro: {fileID: 2512951380023475072}
+  glowFrequency: 3.5
+  glowAmplitude: 1
+  outlineSoftness: 0.4
+  outlineWidth: 0.1
 --- !u!1 &2512951380037361532
 GameObject:
   m_ObjectHideFlags: 0
@@ -1873,6 +1927,7 @@ GameObject:
   - component: {fileID: 2512951380928258653}
   - component: {fileID: 2512951380928258652}
   - component: {fileID: 4925744722269087687}
+  - component: {fileID: 3131142141454012309}
   m_Layer: 0
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -2050,6 +2105,23 @@ MonoBehaviour:
   textComponent: {fileID: 2512951380928258652}
   floatRange: 0.1
   floatSpeed: 1.3
+--- !u!114 &3131142141454012309
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2512951380928258650}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bff8ab22ebb8a4bd4a72e4ee66e35f14, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textMeshPro: {fileID: 0}
+  glowFrequency: 4
+  glowAmplitude: 1
+  outlineSoftness: 0.4
+  outlineWidth: 0.1
 --- !u!1 &3619135431716187596
 GameObject:
   m_ObjectHideFlags: 0
