@@ -44,8 +44,9 @@ public class WordDragManager : ManagerBehavior
         {
             foreach (GameObject s in listOfSentence)
             {
-                s.SetActive(false);
+                if (s != null) s.SetActive(false);
             }
+            listOfSentence[sentenceNo].SetActive(true);
             listOfSentence[sentenceNo].SetActive(true);
         }
     }
@@ -66,7 +67,8 @@ public class WordDragManager : ManagerBehavior
 
     public void AddToSentence(string word, int position)
     {
-        sentence[position] = word;
+        sentence[position] = word; 
+        print("pos rn is " + position);
         
         // if (!reload.activeSelf)
         // {
@@ -82,8 +84,8 @@ public class WordDragManager : ManagerBehavior
         }
     }
 
-    public void DetermineResponse(/*string word,*/ string wordConjugated/*, string position*/, string responseCAT)
-    {
+    //public void DetermineResponse(/*string word,*/ string wordConjugated/*, string position*/, string responseCAT)
+    //{
         // responseDeterminant = FindConjugation(word, position);
         // if (word.Contains("Myself") )
         // {
@@ -95,10 +97,10 @@ public class WordDragManager : ManagerBehavior
         // }
         //else
         //{
-            DialogueManager.instance.SetResponseVariable(wordConjugated);
-            responseDeterminant = responseCAT;
         //}
-    }
+        //DialogueManager.instance.SetResponseVariable("secondWord",wordConjugated);
+        //responseDeterminant = responseCAT;
+    //}
 
     public void Submission()
     {

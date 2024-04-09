@@ -16,8 +16,12 @@ public class WordDragDetailsPlay1V3 : WordDragDetails
         RecordWords(wordPosition, word1B);
 
         
-        WordDragManager.instance.DetermineResponse(WordDragManager.instance.FindConjugation(wordd,"1A"),
-            WordDragManager.instance.FindConjugation(wordd,"1C"));
+        // WordDragManager.instance.DetermineResponse(WordDragManager.instance.FindConjugation(wordd,"1A"),
+        //     WordDragManager.instance.FindConjugation(wordd,"1C"));
+
+        DialogueManager.instance.SetResponseVariable
+            ("secondWord", WordDragManager.instance.FindConjugation(wordd, "1A"));
+        WordDragManager.instance.responseDeterminant = WordDragManager.instance.FindConjugation(wordd, "1C");
     }
 
     public void RecordWords(int pos, string text)

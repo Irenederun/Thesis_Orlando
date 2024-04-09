@@ -25,6 +25,14 @@ MonoBehaviour:
       conjugation: myself
     - position: 1E
       conjugation: CAT1
+    - position: 3A
+      conjugation: I
+    - position: 3B
+      conjugation: no
+    - position: 3C
+      conjugation: no
+    - position: 3D
+      conjugation: me
   - word: Stage
     rules:
     - position: 1A
@@ -37,6 +45,14 @@ MonoBehaviour:
       conjugation: stage
     - position: 1E
       conjugation: CAT2
+    - position: 3A
+      conjugation: Stage
+    - position: 3B
+      conjugation: no
+    - position: 3C
+      conjugation: no
+    - position: 3D
+      conjugation: stage
   - word: Rule
     rules:
     - position: 1A
@@ -49,6 +65,16 @@ MonoBehaviour:
       conjugation: rule
     - position: 1E
       conjugation: CAT3
+    - position: 3A
+      conjugation: Rule
+    - position: 3B
+      conjugation: no
+    - position: 3C
+      conjugation: rule
+    - position: 3D
+      conjugation: no
+    - position: 3C_R
+      conjugation: yielding to
   - word: Portray
     rules:
     - position: 1A
@@ -61,6 +87,16 @@ MonoBehaviour:
       conjugation: portrayal
     - position: 1E
       conjugation: CAT2
+    - position: 3A
+      conjugation: Portrayal
+    - position: 3B
+      conjugation: no
+    - position: 3C
+      conjugation: portray
+    - position: 3D
+      conjugation: no
+    - position: 3C_R
+      conjugation: erasing
   - word: You
     rules:
     - position: 1A
@@ -73,6 +109,14 @@ MonoBehaviour:
       conjugation: you
     - position: 1E
       conjugation: CAT2
+    - position: 3A
+      conjugation: You
+    - position: 3B
+      conjugation: no
+    - position: 3C
+      conjugation: no
+    - position: 3D
+      conjugation: you
   - word: Cruelty
     rules:
     - position: 1A
@@ -85,6 +129,16 @@ MonoBehaviour:
       conjugation: cruel
     - position: 1E
       conjugation: CAT3
+    - position: 3A
+      conjugation: Cruelty
+    - position: 3B
+      conjugation: cruel
+    - position: 3C
+      conjugation: be cruel to
+    - position: 3D
+      conjugation: no
+    - position: 3C_R
+      conjugation: any tenderness for
   - word: Love
     rules:
     - position: 1A
@@ -97,6 +151,16 @@ MonoBehaviour:
       conjugation: love
     - position: 1E
       conjugation: CAT3
+    - position: 3A
+      conjugation: Love
+    - position: 3B
+      conjugation: lovely
+    - position: 3C
+      conjugation: love
+    - position: 3D
+      conjugation: love
+    - position: 3C_R
+      conjugation: hating
   - word: Eternal
     rules:
     - position: 1A
@@ -109,6 +173,14 @@ MonoBehaviour:
       conjugation: eternal
     - position: 1E
       conjugation: CAT3
+    - position: 3A
+      conjugation: Eternallity
+    - position: 3B
+      conjugation: eternal
+    - position: 3C
+      conjugation: no
+    - position: 3D
+      conjugation: eternallity
   - word: Worry
     rules:
     - position: 1A
@@ -121,6 +193,16 @@ MonoBehaviour:
       conjugation: worried
     - position: 1E
       conjugation: CAT1
+    - position: 3A
+      conjugation: Worry
+    - position: 3B
+      conjugation: worrying
+    - position: 3C
+      conjugation: worry
+    - position: 3D
+      conjugation: no
+    - position: 3C_R
+      conjugation: worrying about
   - word: Crazy
     rules:
     - position: 1A
@@ -133,6 +215,16 @@ MonoBehaviour:
       conjugation: crazy
     - position: 1E
       conjugation: CAT3
+    - position: 3A
+      conjugation: Craziness
+    - position: 3B
+      conjugation: crazy
+    - position: 3C
+      conjugation: be crazy for
+    - position: 3D
+      conjugation: no
+    - position: 3C_R
+      conjugation: sanity for
   - word: Death
     rules:
     - position: 1A
@@ -145,6 +237,16 @@ MonoBehaviour:
       conjugation: dead
     - position: 1E
       conjugation: CAT1
+    - position: 3A
+      conjugation: Death
+    - position: 3B
+      conjugation: dead
+    - position: 3C
+      conjugation: die for
+    - position: 3D
+      conjugation: death
+    - position: 3C_R
+      conjugation: dying for
   - word: He
     rules:
     - position: 1A
@@ -157,6 +259,14 @@ MonoBehaviour:
       conjugation: him
     - position: 1E
       conjugation: CAT2
+    - position: 3A
+      conjugation: He
+    - position: 3B
+      conjugation: no
+    - position: 3C
+      conjugation: no
+    - position: 3D
+      conjugation: him
   - word: Broken
     rules:
     - position: 1A
@@ -171,6 +281,16 @@ MonoBehaviour:
       conjugation: broken
     - position: 1E
       conjugation: CAT1
+    - position: 3A
+      conjugation: no
+    - position: 3B
+      conjugation: broken
+    - position: 3C
+      conjugation: break
+    - position: 3D
+      conjugation: no
+    - position: 3C_R
+      conjugation: breaking
   - word: God
     rules:
     - position: 1A
@@ -185,6 +305,14 @@ MonoBehaviour:
       conjugation: god
     - position: 1E
       conjugation: CAT3
+    - position: 3A
+      conjugation: God
+    - position: 3B
+      conjugation: no
+    - position: 3C
+      conjugation: no
+    - position: 3D
+      conjugation: god
   - word: Cold
     rules:
     - position: 1A
@@ -199,6 +327,16 @@ MonoBehaviour:
       conjugation: cold
     - position: 1E
       conjugation: CAT1
+    - position: 3A
+      conjugation: Coldness
+    - position: 3B
+      conjugation: cold
+    - position: 3C
+      conjugation: be cold to
+    - position: 3D
+      conjugation: no
+    - position: 3C_R
+      conjugation: any warmth for
   - word: Courage
     rules:
     - position: 1A
@@ -213,3 +351,11 @@ MonoBehaviour:
       conjugation: courageous
     - position: 1E
       conjugation: CAT2
+    - position: 3A
+      conjugation: Courage
+    - position: 3B
+      conjugation: courageous
+    - position: 3C
+      conjugation: no
+    - position: 3D
+      conjugation: no

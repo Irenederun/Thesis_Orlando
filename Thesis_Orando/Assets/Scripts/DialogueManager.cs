@@ -40,14 +40,14 @@ public class DialogueManager : ManagerBehavior
 
     private void Update()
     {
-        if (myFlowchart.GetBooleanVariable("isTalking") && !isTalking)
-        {
-            isTalking = true;
-        }
-        else if (!myFlowchart.GetBooleanVariable("isTalking") && isTalking)
-        {
-            isTalking = false;
-        }
+        // if (myFlowchart.GetBooleanVariable("isTalking") && !isTalking)
+        // {
+        //     isTalking = true;
+        // }
+        // else if (!myFlowchart.GetBooleanVariable("isTalking") && isTalking)
+        // {
+        //     isTalking = false;
+        // }
     }
 
     IEnumerator OnSceneStart()
@@ -69,9 +69,9 @@ public class DialogueManager : ManagerBehavior
         myFlowchart.SetStringVariable("saidSentence", saidSentence);
     }
 
-    public void SetResponseVariable(string secondWord)
+    public void SetResponseVariable(string variableName, string variableContent)
     {
-        myFlowchart.SetStringVariable("secondWord", secondWord);
+        myFlowchart.SetStringVariable(variableName, variableContent);
     }
 
     public void SetCurrentSentenceVariable()
