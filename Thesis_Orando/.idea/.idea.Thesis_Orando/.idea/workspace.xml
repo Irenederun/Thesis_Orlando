@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9711d522-8fc0-494c-84b2-d15386118320" name="Changes" comment="" />
+    <list default="true" id="9711d522-8fc0-494c-84b2-d15386118320" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Thesis_Orando/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Thesis_Orando/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Character&amp;Dialogue/ESTRAGON.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Character&amp;Dialogue/ESTRAGON.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Character&amp;Dialogue/VLADIMIRA.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Character&amp;Dialogue/VLADIMIRA.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Character&amp;Dialogue/VladimiraFungus.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Character&amp;Dialogue/VladimiraFungus.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Play1-IC1_V3.0.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Play1-IC1_V3.0.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -53,7 +61,7 @@
 }</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Standalone Player" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="$PROJECT_DIR$/../../../BUuild\Thesis_Orando.exe" />
+      <option name="EXE_PATH" value="$PROJECT_DIR$/../../Thesis\Thesis_Orando.exe" />
       <option name="PROGRAM_PARAMETERS" value="" />
       <option name="WORKING_DIRECTORY" value="C:\Users\Irene\Desktop\MFA\BUuild" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -151,6 +159,7 @@
       <workItem from="1712179073905" duration="14846000" />
       <workItem from="1712248105579" duration="1352000" />
       <workItem from="1712351385144" duration="7144000" />
+      <workItem from="1712687675931" duration="1129000" />
     </task>
     <servers />
   </component>

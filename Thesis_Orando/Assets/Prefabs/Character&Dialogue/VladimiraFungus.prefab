@@ -44,7 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25fb867d2049d41f597aefdd6b19f598, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nameText: 
+  nameText: VLADIMIR
   nameColor: {r: 1, g: 1, b: 1, a: 1}
   soundEffect: {fileID: 0}
   portraits: []
@@ -86,7 +86,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: 35.4}
+  m_AnchoredPosition: {x: 0, y: -35}
   m_SizeDelta: {x: 943.30994, y: 71}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1932757924806577101
@@ -120,7 +120,7 @@ MonoBehaviour:
   m_FontData:
     m_Font: {fileID: 12800000, guid: 001167147f1f3ab48b63c5d97153ab18, type: 3}
     m_FontSize: 45
-    m_FontStyle: 0
+    m_FontStyle: 2
     m_BestFit: 0
     m_MinSize: 4
     m_MaxSize: 50
@@ -167,8 +167,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 181.5}
-  m_SizeDelta: {x: 776.22, y: 243.3}
+  m_AnchoredPosition: {x: 0, y: 43.23}
+  m_SizeDelta: {x: 776.22, y: 107.55}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1932757925147197451
 CanvasRenderer:
@@ -205,7 +205,7 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 3
     m_MaxSize: 50
-    m_Alignment: 7
+    m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
