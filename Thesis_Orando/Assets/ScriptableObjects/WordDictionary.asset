@@ -330,7 +330,7 @@ MonoBehaviour:
     - position: 2IA
       conjugation: his
     - position: 2IB
-      conjugation: no
+      conjugation: POS
   - word: Broken
     rules:
     - position: 1A
