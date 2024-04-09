@@ -34,7 +34,9 @@ public class WordDragPlay3 : WordDragDetails
             }
             text.text = word3B;
             RecordWords(wordPosition, word3B);
-            
+            DialogueManager.instance.SetResponseVariable
+                ("adjective", word3B);
+            WordDragManager.instance.responseDeterminant = WordDragManager.instance.FindConjugation(wordd, "3E");
         }
         else if (desNamee.Contains("Pronoun2"))
         {
@@ -55,14 +57,14 @@ public class WordDragPlay3 : WordDragDetails
         else if (desNamee.Contains("Verb"))
         {
             wordPosition = 6;
-            string word3D = WordDragManager.instance.FindConjugation(wordd, "3C");
+            string word3D = WordDragManager.instance.FindConjugation(wordd, "3C") + " ";
             if (word3D.Contains("no"))
             {
                 GetComponent<WordDragDetails>().ReloadWord();
                 GetComponent<DragBehavior>().Reload();
                 return;
             }
-            text.text = word3D + " ";
+            text.text = word3D;
             RecordWords(wordPosition, word3D);
             
             string verbReverse = WordDragManager.instance.FindConjugation(wordd, "3C_R");
