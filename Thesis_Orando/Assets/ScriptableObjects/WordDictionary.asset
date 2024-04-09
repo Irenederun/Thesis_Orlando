@@ -33,6 +33,12 @@ MonoBehaviour:
       conjugation: no
     - position: 3D
       conjugation: me
+    - position: 2IA
+      conjugation: my
+    - position: 2IB
+      conjugation: my
+    - position: 2IC
+      conjugation: NEG
   - word: Stage
     rules:
     - position: 1A
