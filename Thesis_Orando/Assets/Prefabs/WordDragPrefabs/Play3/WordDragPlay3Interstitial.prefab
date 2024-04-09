@@ -2153,7 +2153,6 @@ MonoBehaviour:
   availableDesPosHolders:
   - {fileID: 7898808368946029177}
   - {fileID: 6230699108037439016}
-  - {fileID: 0}
 --- !u!114 &1167087801
 MonoBehaviour:
   m_ObjectHideFlags: 0
