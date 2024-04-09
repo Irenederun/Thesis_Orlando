@@ -36,9 +36,7 @@ MonoBehaviour:
     - position: 2IA
       conjugation: my
     - position: 2IB
-      conjugation: my
-    - position: 2IC
-      conjugation: NEG
+      conjugation: no
   - word: Stage
     rules:
     - position: 1A
@@ -59,6 +57,12 @@ MonoBehaviour:
       conjugation: no
     - position: 3D
       conjugation: stage
+    - position: 2IA
+      conjugation: no
+    - position: 2IB
+      conjugation: stage
+    - position: 2IC
+      conjugation: POS
   - word: Rule
     rules:
     - position: 1A
@@ -81,6 +85,12 @@ MonoBehaviour:
       conjugation: no
     - position: 3C_R
       conjugation: yielding to
+    - position: 2IA
+      conjugation: no
+    - position: 2IB
+      conjugation: rule
+    - position: 2IC
+      conjugation: NEG
   - word: Portray
     rules:
     - position: 1A
@@ -103,6 +113,12 @@ MonoBehaviour:
       conjugation: no
     - position: 3C_R
       conjugation: erasing
+    - position: 2IA
+      conjugation: no
+    - position: 2IB
+      conjugation: portrayal
+    - position: 2IC
+      conjugation: POS
   - word: You
     rules:
     - position: 1A
@@ -123,6 +139,10 @@ MonoBehaviour:
       conjugation: no
     - position: 3D
       conjugation: you
+    - position: 2IA
+      conjugation: your
+    - position: 2IB
+      conjugation: no
   - word: Cruelty
     rules:
     - position: 1A
@@ -145,6 +165,12 @@ MonoBehaviour:
       conjugation: no
     - position: 3C_R
       conjugation: any tenderness for
+    - position: 2IA
+      conjugation: no
+    - position: 2IB
+      conjugation: rules
+    - position: 2IC
+      conjugation: NEG
   - word: Love
     rules:
     - position: 1A
@@ -167,6 +193,12 @@ MonoBehaviour:
       conjugation: love
     - position: 3C_R
       conjugation: hating
+    - position: 2IA
+      conjugation: no
+    - position: 2IB
+      conjugation: love
+    - position: 2IC
+      conjugation: POS
   - word: Eternal
     rules:
     - position: 1A
@@ -187,6 +219,12 @@ MonoBehaviour:
       conjugation: no
     - position: 3D
       conjugation: eternallity
+    - position: 2IA
+      conjugation: no
+    - position: 2IB
+      conjugation: eternallity
+    - position: 2IC
+      conjugation: POS
   - word: Worry
     rules:
     - position: 1A
@@ -209,6 +247,12 @@ MonoBehaviour:
       conjugation: no
     - position: 3C_R
       conjugation: worrying about
+    - position: 2IA
+      conjugation: no
+    - position: 2IB
+      conjugation: worries
+    - position: 2IC
+      conjugation: NEG
   - word: Crazy
     rules:
     - position: 1A
@@ -229,8 +273,12 @@ MonoBehaviour:
       conjugation: be crazy for
     - position: 3D
       conjugation: no
-    - position: 3C_R
-      conjugation: sanity for
+    - position: 2IA
+      conjugation: no
+    - position: 2IB
+      conjugation: craziness
+    - position: 2IC
+      conjugation: NEG
   - word: Death
     rules:
     - position: 1A
@@ -253,6 +301,12 @@ MonoBehaviour:
       conjugation: death
     - position: 3C_R
       conjugation: dying for
+    - position: 2IA
+      conjugation: no
+    - position: 2IB
+      conjugation: death
+    - position: 2IC
+      conjugation: NEG
   - word: He
     rules:
     - position: 1A
@@ -273,6 +327,10 @@ MonoBehaviour:
       conjugation: no
     - position: 3D
       conjugation: him
+    - position: 2IA
+      conjugation: his
+    - position: 2IB
+      conjugation: no
   - word: Broken
     rules:
     - position: 1A
@@ -297,6 +355,12 @@ MonoBehaviour:
       conjugation: no
     - position: 3C_R
       conjugation: breaking
+    - position: 2IA
+      conjugation: no
+    - position: 2IB
+      conjugation: brokenness
+    - position: 2IC
+      conjugation: NEG
   - word: God
     rules:
     - position: 1A
@@ -319,6 +383,10 @@ MonoBehaviour:
       conjugation: no
     - position: 3D
       conjugation: god
+    - position: 2IA
+      conjugation: 'god''s '
+    - position: 2IB
+      conjugation: no
   - word: Cold
     rules:
     - position: 1A
@@ -343,6 +411,12 @@ MonoBehaviour:
       conjugation: no
     - position: 3C_R
       conjugation: any warmth for
+    - position: 2IA
+      conjugation: no
+    - position: 2IB
+      conjugation: rules
+    - position: 2IC
+      conjugation: NEG
   - word: Courage
     rules:
     - position: 1A
@@ -365,3 +439,9 @@ MonoBehaviour:
       conjugation: no
     - position: 3D
       conjugation: no
+    - position: 2IA
+      conjugation: no
+    - position: 2IB
+      conjugation: courage
+    - position: 2IC
+      conjugation: POS

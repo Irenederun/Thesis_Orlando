@@ -14,6 +14,13 @@ public override void DragComplete(string wordd, string desNamee)
         wordPosition = 1;
 
         string word2IA = WordDragManager.instance.FindConjugation(wordd, "2IA");
+
+        if (word2IA.Contains("no"))
+            {
+                GetComponent<WordDragDetails>().ReloadWord();
+                GetComponent<DragBehavior>().Reload();
+                return;
+            }
             
         text.text = word2IA;
         RecordWords(wordPosition, word2IA);
@@ -25,7 +32,16 @@ public override void DragComplete(string wordd, string desNamee)
             wordPosition = 2;
 
         string word2IB = WordDragManager.instance.FindConjugation(wordd, "2IB");
-            
+
+        
+        if (word2IB.Contains("no"))
+            {
+                GetComponent<WordDragDetails>().ReloadWord();
+                GetComponent<DragBehavior>().Reload();
+                return;
+            }            
+
+
         text.text = word2IB;
         RecordWords(wordPosition, word2IB);
 
