@@ -141,8 +141,9 @@ public class WordDragManager : ManagerBehavior
         }
         DialogueManager.instance.TriggerDialogue(responseDeterminant);
 
-        DestroySelfOnClose();
+        
     }
+    
 
     public void OnReload()
     {

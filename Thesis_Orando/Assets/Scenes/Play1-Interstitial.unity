@@ -834,6 +834,7 @@ GameObject:
   - component: {fileID: 950951674}
   - component: {fileID: 950951675}
   - component: {fileID: 950951678}
+  - component: {fileID: 950951679}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -872,7 +873,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 172.27538
     y: 33.553207
-    width: 86.51596
+    width: 60
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -882,6 +883,7 @@ MonoBehaviour:
   eventHandler: {fileID: 950951605}
   commandList:
   - {fileID: 950951609}
+  - {fileID: 950951679}
   - {fileID: 950951672}
   - {fileID: 950951674}
   - {fileID: 950951669}
@@ -912,8 +914,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 950951623}
-  selectedCommands: []
+  - {fileID: 950951606}
+  selectedCommands:
+  - {fileID: 950951679}
   variables:
   - {fileID: 950951620}
   - {fileID: 950951649}
@@ -1094,7 +1097,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 173.29672
     y: 118.13123
-    width: 79.07752
+    width: 60
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1206,7 +1209,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 283.0328
     y: 119.35799
-    width: 112.888596
+    width: 74.91726
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1253,7 +1256,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 285.56412
     y: 175.97993
-    width: 113.56482
+    width: 75.818886
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1300,7 +1303,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 286.15305
     y: 233.0574
-    width: 114.91726
+    width: 76.72051
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1725,7 +1728,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 446.647
     y: 170.09003
-    width: 140.61368
+    width: 103.76937
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -3273,6 +3276,33 @@ MonoBehaviour:
     floatRef: {fileID: 0}
     floatVal: 2
   durationOLD: 0
+--- !u!114 &950951679
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 950951604}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 61
+  indentLevel: 0
+  storyText: '*whrring sound of a running car*'
+  description: 
+  character: {fileID: 1995198935}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
 --- !u!1001 &1014724346
 PrefabInstance:
   m_ObjectHideFlags: 0

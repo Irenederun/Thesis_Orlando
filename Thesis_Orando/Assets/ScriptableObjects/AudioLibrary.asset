@@ -37,3 +37,9 @@ MonoBehaviour:
   - name: Heartbeat
     audio: {fileID: 8300000, guid: f54e7ab2cd287134e820f3268ad2c116, type: 3}
     volume: 1
+  - name: Bar
+    audio: {fileID: 8300000, guid: 49e0c057db90b89419a9195f588488e0, type: 3}
+    volume: 0.6
+  - name: Bar
+    audio: {fileID: 8300000, guid: ecc748683be0f614c90cb11850d00884, type: 3}
+    volume: 0.6
