@@ -176,8 +176,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6230699108037439016}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.13, y: -0.88, z: 0}
-  m_LocalScale: {x: 1.4030365, y: 0.671187, z: 1}
+  m_LocalPosition: {x: 1.11, y: -0.852, z: 0}
+  m_LocalScale: {x: 1.8185459, y: 0.4902769, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2476817735517006851}
@@ -552,7 +552,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &7898808368946029062
 Transform:
   m_ObjectHideFlags: 0
@@ -561,8 +561,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7898808368946029177}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.37, y: -0.93, z: 0}
-  m_LocalScale: {x: 1.4030365, y: 0.671187, z: 1}
+  m_LocalPosition: {x: -0.3481, y: -0.8364, z: 0}
+  m_LocalScale: {x: 1.2719483, y: 0.4839929, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2476817735517006851}
@@ -978,7 +978,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7898808369267052346}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.811, y: 2.177, z: 0.12687574}
+  m_LocalPosition: {x: -4.12, y: 4.02, z: 0.12687574}
   m_LocalScale: {x: 1.2375, y: 0.59004, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1080,7 +1080,6 @@ MonoBehaviour:
   availableDesPosHolders:
   - {fileID: 7898808368946029177}
   - {fileID: 6230699108037439016}
-  - {fileID: 0}
 --- !u!114 &1167087800
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1196,7 +1195,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: <b>With all</b> _________ __________
+  m_text: <b>Sure. With all</b> my _____________ .
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2d547a05887e1402a9f6be68683d8f36, type: 2}
   m_sharedMaterial: {fileID: 4775169337844555031, guid: 2d547a05887e1402a9f6be68683d8f36, type: 2}
@@ -1335,8 +1334,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sentence:
-  - With all
-  - 
+  - 'With all '
+  - my
   - 
   reload: {fileID: 7898808368981796983}
   submit: {fileID: 7898808368981796983}
@@ -1349,11 +1348,9 @@ MonoBehaviour:
   responseDeterminant: 
   doNotLoadFromGM: 0
   interstitialAddedText: 
-  isInterstitial: 0
+  isInterstitial: 1
   listOfSentence:
   - {fileID: 2786222746920934572}
-  - {fileID: 0}
-  - {fileID: 0}
   sentenceNo: 0
 --- !u!1 &7898808369819367864
 GameObject:
@@ -1374,7 +1371,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &7898808369819367751
 Transform:
   m_ObjectHideFlags: 0
@@ -1383,7 +1380,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7898808369819367864}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.86, y: 1.51, z: 0.12687574}
+  m_LocalPosition: {x: 0.83, y: 5.63, z: 0.12687574}
   m_LocalScale: {x: 1.5969002, y: 0.6572646, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1717,7 +1714,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7898808370038776165}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.86, y: 1.51, z: 0.12687574}
+  m_LocalPosition: {x: -9.55, y: 5.35, z: 0.12687574}
   m_LocalScale: {x: 1.19, y: 0.59004, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2051,7 +2048,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7898808370097287675}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.89, y: 2.18, z: 0.12687574}
+  m_LocalPosition: {x: -6.61, y: 8.05, z: 0.12687574}
   m_LocalScale: {x: 1.19, y: 0.65336, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:

@@ -826,10 +826,8 @@ MonoBehaviour:
     y: -340
     width: 1114
     height: 859
-  selectedBlocks:
-  - {fileID: 468921913}
-  selectedCommands:
-  - {fileID: 468921951}
+  selectedBlocks: []
+  selectedCommands: []
   variables:
   - {fileID: 468921930}
   - {fileID: 468921936}
@@ -1024,7 +1022,7 @@ MonoBehaviour:
   indentLevel: 0
   _duration:
     floatRef: {fileID: 0}
-    floatVal: 18
+    floatVal: 1
   durationOLD: 0
 --- !u!114 &468921913
 MonoBehaviour:
@@ -1040,8 +1038,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 169.002
-    y: 4.760878
+    x: 175.33112
+    y: 6.0267005
     width: 117.51054
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -1751,7 +1749,7 @@ MonoBehaviour:
   indentLevel: 0
   _duration:
     floatRef: {fileID: 0}
-    floatVal: 10
+    floatVal: 1
   durationOLD: 0
 --- !u!114 &468921952
 MonoBehaviour:
@@ -4722,6 +4720,10 @@ PrefabInstance:
     - target: {fileID: 2107791553600592265, guid: 94e9b21fda908904290cd45b3705db19, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9036191117151051538, guid: 94e9b21fda908904290cd45b3705db19, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -4.5700073
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 94e9b21fda908904290cd45b3705db19, type: 3}
@@ -10567,6 +10569,10 @@ PrefabInstance:
     - target: {fileID: 7817812271064518206, guid: 6750c7bc414fc72458996440a4b8555f, type: 3}
       propertyPath: currentSentenceNo
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7817812271064518206, guid: 6750c7bc414fc72458996440a4b8555f, type: 3}
+      propertyPath: wordBank.Array.size
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7817812271064518207, guid: 6750c7bc414fc72458996440a4b8555f, type: 3}
       propertyPath: m_Name

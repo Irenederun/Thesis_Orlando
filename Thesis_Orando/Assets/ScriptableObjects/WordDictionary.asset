@@ -174,9 +174,9 @@ MonoBehaviour:
   - word: Love
     rules:
     - position: 1A
-      conjugation: Lovable
+      conjugation: Loved
     - position: 1B
-      conjugation: lovable
+      conjugation: loved
     - position: 1C
       conjugation: New
     - position: 1D
@@ -186,7 +186,7 @@ MonoBehaviour:
     - position: 3A
       conjugation: Love
     - position: 3B
-      conjugation: lovely
+      conjugation: no
     - position: 3C
       conjugation: love
     - position: 3D
@@ -199,32 +199,32 @@ MonoBehaviour:
       conjugation: love
     - position: 2IC
       conjugation: POS
-  - word: Eternal
+  - word: Terrify
     rules:
     - position: 1A
-      conjugation: Eternal
+      conjugation: Terrified
     - position: 1B
-      conjugation: eternal
+      conjugation: terrified
     - position: 1C
-      conjugation: Old
+      conjugation: New
     - position: 1D
-      conjugation: eternal
+      conjugation: terrified
     - position: 1E
-      conjugation: CAT3
+      conjugation: CAT1
     - position: 3A
-      conjugation: Eternallity
+      conjugation: Terror
     - position: 3B
-      conjugation: eternal
+      conjugation: terrified
     - position: 3C
-      conjugation: no
+      conjugation: terrify
     - position: 3D
-      conjugation: eternallity
+      conjugation: Terror
     - position: 2IA
       conjugation: no
     - position: 2IB
-      conjugation: eternallity
+      conjugation: terror
     - position: 2IC
-      conjugation: POS
+      conjugation: NEG
   - word: Worry
     rules:
     - position: 1A
@@ -314,7 +314,7 @@ MonoBehaviour:
     - position: 1B
       conjugation: his
     - position: 1C
-      conjugation: Improv
+      conjugation: Old
     - position: 1D
       conjugation: him
     - position: 1E
@@ -330,15 +330,15 @@ MonoBehaviour:
     - position: 2IA
       conjugation: his
     - position: 2IB
-      conjugation: POS
+      conjugation: no
   - word: Broken
     rules:
     - position: 1A
-      conjugation: shoudnothave
+      conjugation: Broken
     - position: 1B
-      conjugation: shoudnothave
+      conjugation: broken
     - position: 1C
-      conjugation: shoudnothave
+      conjugation: New
     - position: 1D_0
       conjugation: broken
     - position: 1D
@@ -364,11 +364,11 @@ MonoBehaviour:
   - word: God
     rules:
     - position: 1A
-      conjugation: shoudnothave
+      conjugation: Godly
     - position: 1B
-      conjugation: shoudnothave
+      conjugation: godly
     - position: 1C
-      conjugation: shoudnothave
+      conjugation: New
     - position: 1D_0
       conjugation: godly
     - position: 1D
@@ -390,11 +390,11 @@ MonoBehaviour:
   - word: Cold
     rules:
     - position: 1A
-      conjugation: shoudnothave
+      conjugation: Cold
     - position: 1B
-      conjugation: shoudnothave
+      conjugation: cold
     - position: 1C
-      conjugation: shoudnothave
+      conjugation: New
     - position: 1D_0
       conjugation: cold
     - position: 1D
@@ -414,17 +414,17 @@ MonoBehaviour:
     - position: 2IA
       conjugation: no
     - position: 2IB
-      conjugation: rules
+      conjugation: coldness
     - position: 2IC
       conjugation: NEG
   - word: Courage
     rules:
     - position: 1A
-      conjugation: shoudnothave
+      conjugation: Courageous
     - position: 1B
-      conjugation: shoudnothave
+      conjugation: courageous
     - position: 1C
-      conjugation: shoudnothave
+      conjugation: New
     - position: 1D_0
       conjugation: courageous
     - position: 1D
@@ -445,3 +445,153 @@ MonoBehaviour:
       conjugation: courage
     - position: 2IC
       conjugation: POS
+  - word: Immortality
+    rules:
+    - position: 1A
+      conjugation: Immortal
+    - position: 1B
+      conjugation: immortal
+    - position: 1C
+      conjugation: New
+    - position: 1D_0
+      conjugation: immortal
+    - position: 1D
+      conjugation: immortality
+    - position: 1E
+      conjugation: CAT2
+    - position: 3A
+      conjugation: Immortality
+    - position: 3B
+      conjugation: immortal
+    - position: 3C
+      conjugation: immortalize
+    - position: 3D
+      conjugation: immortality
+    - position: 3C_R
+      conjugation: mortalising
+    - position: 2IA
+      conjugation: no
+    - position: 2IB
+      conjugation: immortality
+    - position: 2IC
+      conjugation: POS
+  - word: Disgust
+    rules:
+    - position: 1A
+      conjugation: Disgusted
+    - position: 1B
+      conjugation: disgusted
+    - position: 1C
+      conjugation: New
+    - position: 1D_0
+      conjugation: disgusted
+    - position: 1D
+      conjugation: disgusted
+    - position: 1E
+      conjugation: CAT3
+    - position: 3A
+      conjugation: Disgust
+    - position: 3B
+      conjugation: disgusted
+    - position: 3C
+      conjugation: disgust
+    - position: 3D
+      conjugation: disgust
+    - position: 3C_R
+      conjugation: loving
+    - position: 2IA
+      conjugation: no
+    - position: 2IB
+      conjugation: disgust
+    - position: 2IC
+      conjugation: NEG
+  - word: Kiss
+    rules:
+    - position: 1A
+      conjugation: no
+    - position: 1B
+      conjugation: no
+    - position: 1C
+      conjugation: no
+    - position: 1D_0
+      conjugation: a kiss
+    - position: 1D
+      conjugation: a kiss
+    - position: 1E
+      conjugation: CAT3
+    - position: 3A
+      conjugation: Kiss
+    - position: 3B
+      conjugation: no
+    - position: 3C
+      conjugation: kiss
+    - position: 3D
+      conjugation: kissing
+    - position: 3C_R
+      conjugation: spitting
+    - position: 2IA
+      conjugation: no
+    - position: 2IB
+      conjugation: kisses
+    - position: 2IC
+      conjugation: POS
+  - word: Curse
+    rules:
+    - position: 1A
+      conjugation: Cursed
+    - position: 1B
+      conjugation: cursed
+    - position: 1C
+      conjugation: New
+    - position: 1D_0
+      conjugation: cursed
+    - position: 1D
+      conjugation: curse
+    - position: 1E
+      conjugation: CAT2
+    - position: 3A
+      conjugation: Curse
+    - position: 3B
+      conjugation: cursed
+    - position: 3C
+      conjugation: curse
+    - position: 3D
+      conjugation: cursing
+    - position: 3C_R
+      conjugation: blessing
+    - position: 2IA
+      conjugation: no
+    - position: 2IB
+      conjugation: curses
+    - position: 2IC
+      conjugation: NEG
+  - word: Kill
+    rules:
+    - position: 1A
+      conjugation: Killed
+    - position: 1B
+      conjugation: killed
+    - position: 1C
+      conjugation: New
+    - position: 1D_0
+      conjugation: killed
+    - position: 1D
+      conjugation: to kill
+    - position: 1E
+      conjugation: CAT3
+    - position: 3A
+      conjugation: Kill
+    - position: 3B
+      conjugation: killed
+    - position: 3C
+      conjugation: kill
+    - position: 3D
+      conjugation: kissing
+    - position: 3C_R
+      conjugation: caressing
+    - position: 2IA
+      conjugation: no
+    - position: 2IB
+      conjugation: killing
+    - position: 2IC
+      conjugation: NEG

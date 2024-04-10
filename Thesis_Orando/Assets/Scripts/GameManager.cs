@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Timeline;
 
 public class GameManager : MonoBehaviour
 {
@@ -11,6 +12,7 @@ public class GameManager : MonoBehaviour
     public bool isTutorial = true;
     public Action tutorialEnded;
     public int currentSentenceNo;
+    public int playRating;
 
     public void Awake()
     {
@@ -76,5 +78,15 @@ public class GameManager : MonoBehaviour
         if (isTutorial) return;
 
         currentSentenceNo++;
+    }
+
+    public void IncrementPlayRating()
+    {
+        playRating++;
+    }
+
+    public void ResetRating()
+    {
+        playRating = 0;
     }
 }

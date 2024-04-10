@@ -75,11 +75,19 @@ public class WordDragManager : ManagerBehavior
         //     reload.SetActive(true);
         // }
 
-        if (!sentence.Contains(" "))
+        if (!sentence.Contains(" ") || !sentence.Contains(""))
         {
             if (!submit.activeSelf)
             {
                 submit.SetActive(true);
+            }
+        }
+        
+        if (sentence.Contains(" ") || sentence.Contains(""))
+        {
+            if (submit.activeSelf)
+            {
+                submit.SetActive(false);
             }
         }
     }
@@ -152,11 +160,19 @@ public class WordDragManager : ManagerBehavior
         if (word == sentence[slotNo]) sentence[slotNo] = initSentence[slotNo]; 
         //this also needs to happen if word has changed dest drag box
         
-        if (sentence.Contains(" "))
+        if (sentence.Contains(" ") || sentence.Contains(""))
         {
             if (submit.activeSelf)
             {
                 submit.SetActive(false);
+            }
+        }
+        
+        if (!sentence.Contains(" ") || !sentence.Contains(""))
+        {
+            if (!submit.activeSelf)
+            {
+                submit.SetActive(true);
             }
         }
     }

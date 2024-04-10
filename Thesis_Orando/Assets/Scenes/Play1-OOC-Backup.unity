@@ -770,7 +770,7 @@ SpriteRenderer:
   m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 0.85490197}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.7294118}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -2050,16 +2050,16 @@ MonoBehaviour:
   - level: Play1
     otherWords:
     - otherWordPos: 0-1
-      otherWordText: Crazy
+      otherWordText: You
       otherWordLimb: G2
     - otherWordPos: 0-2
-      otherWordText: Death
+      otherWordText: Cruelty
       otherWordLimb: G1
     - otherWordPos: 0-3
       otherWordText: Love
       otherWordLimb: G4
     - otherWordPos: 0-4
-      otherWordText: Immortality
+      otherWordText: Eternal
       otherWordLimb: G3
     - otherWordPos: 1-1
       otherWordText: Worry
@@ -2189,7 +2189,7 @@ RectTransform:
   m_GameObject: {fileID: 229991165}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
+  m_LocalScale: {x: 1.3, y: 1.3, z: 1.3}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 1784850147}
@@ -2198,7 +2198,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 106.64, y: -44.25}
+  m_AnchoredPosition: {x: 0, y: -44.25}
   m_SizeDelta: {x: 66, y: 52}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &229991167
@@ -2906,8 +2906,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 134, y: -97.45}
-  m_SizeDelta: {x: 230.9, y: 369.77}
+  m_AnchoredPosition: {x: -0.00012207031, y: -108}
+  m_SizeDelta: {x: 230.9, y: 791.22}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &288940494
 MonoBehaviour:
@@ -4217,7 +4217,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 429366774}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 8.14, y: -0.53, z: 0.021226432}
+  m_LocalPosition: {x: 6.26, y: -0.53, z: 0.021226432}
   m_LocalScale: {x: -0.85, y: 0.85, z: 0.85}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -6188,7 +6188,7 @@ GameObject:
   - component: {fileID: 701943894}
   - component: {fileID: 701943893}
   m_Layer: 0
-  m_Name: NPCName
+  m_Name: NPCLeft
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6214,7 +6214,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Spirit of ESTRAGON
+  m_text: Ghosts of Estragon
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2d547a05887e1402a9f6be68683d8f36, type: 2}
   m_sharedMaterial: {fileID: 4775169337844555031, guid: 2d547a05887e1402a9f6be68683d8f36, type: 2}
@@ -16962,8 +16962,10 @@ MonoBehaviour:
     y: -340
     width: 1114
     height: 859
-  selectedBlocks: []
-  selectedCommands: []
+  selectedBlocks:
+  - {fileID: 1357418044}
+  selectedCommands:
+  - {fileID: 1357418045}
   variables:
   - {fileID: 1357418027}
   - {fileID: 1357418025}
@@ -17048,7 +17050,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 1
   indentLevel: 0
-  storyText: From the character spirit, choose the word you would like to {i}acquire{/i}.
+  storyText: From the character ghosts, choose the word you would like to {i}acquire{/i}.
   description: 
   character: {fileID: 6990208787463258289}
   portrait: {fileID: 0}
@@ -18224,7 +18226,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1394753842}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -5.1588, y: -1.26, z: 0.021224976}
+  m_LocalPosition: {x: -5.1588, y: -1.26, z: 0.021226432}
   m_LocalScale: {x: 2.110403, y: 4.72089, z: 0.65}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -20703,7 +20705,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1664292662
 Transform:
   m_ObjectHideFlags: 0
@@ -21156,7 +21158,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1723812449
 RectTransform:
   m_ObjectHideFlags: 0
@@ -21991,7 +21993,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1844982718}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 17.16, y: -0.07999998, z: 0}
+  m_LocalPosition: {x: 15.28, y: -0.07999998, z: 0}
   m_LocalScale: {x: 31.933771, y: 14.873817, z: 27.56}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -23319,10 +23321,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7817812271064518206, guid: 6750c7bc414fc72458996440a4b8555f, type: 3}
-      propertyPath: wordBank.Array.size
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 7817812271064518207, guid: 6750c7bc414fc72458996440a4b8555f, type: 3}
       propertyPath: m_Name
       value: GMHolder
@@ -23425,7 +23423,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 125.7298, y: 10}
+  m_AnchoredPosition: {x: 125, y: 10}
   m_SizeDelta: {x: 100, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &2034983099

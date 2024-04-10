@@ -36,6 +36,7 @@ public class DialogueManager : ManagerBehavior
         IEnumerator coroutine = OnSceneStart();
         StartCoroutine(coroutine);
         SetCurrentSentenceVariable();
+        ReadLastPlayRating();
     }
 
     private void Update()
@@ -75,7 +76,7 @@ public class DialogueManager : ManagerBehavior
     }
 
     public void SetCurrentSentenceVariable()
-    {
+    {   
         myFlowchart.SetIntegerVariable("currentSentence", GameManager.instance.currentSentenceNo);
     }
 
@@ -88,5 +89,20 @@ public class DialogueManager : ManagerBehavior
     public string SetToLower(string word)
     {
         return word.ToLower();
+    }
+
+    public void ReadLastPlayRating()
+    {
+        myFlowchart.SetIntegerVariable("playRating", GameManager.instance.playRating);
+    }
+
+    public void IncrementRating()
+    {
+        GameManager.instance.IncrementPlayRating();
+    }
+
+    public void ResetRating()
+    {
+        GameManager.instance.ResetRating();
     }
 }

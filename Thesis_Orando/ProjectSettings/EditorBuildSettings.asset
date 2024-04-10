@@ -15,6 +15,15 @@ EditorBuildSettings:
     path: Assets/Scenes/Play1-IC2_V3.0.unity
     guid: 4d892514dc6fb5f41b2db4a7f1b5cca4
   - enabled: 1
+    path: Assets/Scenes/Play2-Interstitial.unity
+    guid: 2ee55673d29980140ab004af3cbba0fa
+  - enabled: 1
     path: Assets/Scenes/Play1-Interstitial.unity
     guid: 694ba91b353465845a6b7604c43ed3be
+  - enabled: 1
+    path: Assets/Scenes/Play3-IC.unity
+    guid: 97406b92cf48619499346dd23454f604
+  - enabled: 1
+    path: Assets/Scenes/Play3-OOC.unity
+    guid: 8062559f9c0df684e9839187fdabc7c7
   m_configObjects: {}

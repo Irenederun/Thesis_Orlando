@@ -41,7 +41,13 @@ public class WordDragPlay3 : WordDragDetails
         else if (desNamee.Contains("Pronoun2"))
         {
             wordPosition = 4;
-            string word3C = WordDragManager.instance.FindConjugation(wordd, "3A").ToLower();
+            string word3C = WordDragManager.instance.FindConjugation(wordd, "3A");
+            
+            if (!word3C.Contains("I"))
+            {
+                word3C = word3C.ToLower();
+            }
+            
             if (word3C.Contains("no"))
             {
                 GetComponent<WordDragDetails>().ReloadWord();

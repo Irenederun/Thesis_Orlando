@@ -186,8 +186,6 @@ public class ExchangeGame : ManagerBehavior
                     currentOtherWordText = text;
                     script.CallButtonEvent();
                 }
-
-
                 break;
             case "myWord":
                 if (currentMyWord != null)//if selected a word before
@@ -212,24 +210,27 @@ public class ExchangeGame : ManagerBehavior
                 }
                 else //if first time selecting, or if selecting a new word 
                 {
-                    if (currentOtherWord != null) // only when a target word has been selected
+                    if (GameManager.instance.isTutorial && currentMyWord == null)
                     {
-                        //if tutorial
-                        if (GameManager.instance.isTutorial && currentMyWord == null)
+                        if (currentOtherWord != null) // only when a target word has been selected
                         {
                             SwitchMask(otherMask, selfMaskWords, selfMaskLimbs);
                             DialogueManager.instance.TriggerDialogue("MyWordChosen");
+                            
+                            currentMyWord = script;
+                            currentMyWordText = text;
+                            script.CallButtonEvent();
                         }
-                        //
-                        
+                    }
+                    else if (!GameManager.instance.isTutorial && currentMyWord == null)
+                    {
                         currentMyWord = script;
                         currentMyWordText = text;
                         script.CallButtonEvent();
                     }
                 }
-                
-
                 break;
+            
             case "myLimb":
                 if (currentMyLimb != null) currentMyLimb.CallResetEvent();
                 if (currentMyLimb == script)

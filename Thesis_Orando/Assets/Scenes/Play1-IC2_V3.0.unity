@@ -743,6 +743,10 @@ GameObject:
   - component: {fileID: 468922076}
   - component: {fileID: 468922077}
   - component: {fileID: 468922078}
+  - component: {fileID: 468922079}
+  - component: {fileID: 468922080}
+  - component: {fileID: 468922081}
+  - component: {fileID: 468922082}
   m_Layer: 0
   m_Name: IC-0 Flowchart
   m_TagString: Untagged
@@ -765,7 +769,7 @@ MonoBehaviour:
   nodeRect:
     serializedVersion: 2
     x: 163.638
-    y: 38.784832
+    y: 39.865036
     width: 111.211624
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -803,7 +807,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: -44.438004, y: 168.06456}
+  scrollPos: {x: -88.40081, y: 33.028698}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 341.66666
@@ -814,10 +818,8 @@ MonoBehaviour:
     y: -340
     width: 1114
     height: 859
-  selectedBlocks:
-  - {fileID: 468921977}
-  selectedCommands:
-  - {fileID: 468921975}
+  selectedBlocks: []
+  selectedCommands: []
   variables:
   - {fileID: 468921930}
   - {fileID: 468921936}
@@ -942,7 +944,7 @@ MonoBehaviour:
   nodeRect:
     serializedVersion: 2
     x: 303.06668
-    y: 117.52009
+    y: 116.43988
     width: 118.41299
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -1380,7 +1382,7 @@ MonoBehaviour:
   nodeRect:
     serializedVersion: 2
     x: 159.19514
-    y: 100.65674
+    y: 99.57653
     width: 111.211624
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -1396,6 +1398,7 @@ MonoBehaviour:
   - {fileID: 468922057}
   - {fileID: 468922059}
   - {fileID: 468922058}
+  - {fileID: 468922079}
   - {fileID: 468922076}
   - {fileID: 468922056}
   - {fileID: 468921971}
@@ -1596,7 +1599,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 304.81158
+    x: 303.73138
     y: 47.760178
     width: 118.41299
     height: 40
@@ -2503,6 +2506,7 @@ MonoBehaviour:
   - {fileID: 468922064}
   - {fileID: 468922062}
   - {fileID: 468922066}
+  - {fileID: 468922080}
   - {fileID: 468922077}
   - {fileID: 468922067}
   - {fileID: 468922008}
@@ -3020,8 +3024,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 162.04393
-    y: 217.4058
+    x: 160.96373
+    y: 219.56621
     width: 113.372025
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -3037,6 +3041,7 @@ MonoBehaviour:
   - {fileID: 468922072}
   - {fileID: 468922071}
   - {fileID: 468922070}
+  - {fileID: 468922081}
   - {fileID: 468922078}
   - {fileID: 468922068}
   - {fileID: 468922027}
@@ -3173,7 +3178,7 @@ MonoBehaviour:
   indentLevel: 0
   _sceneName:
     stringRef: {fileID: 0}
-    stringVal: Play1-Interstitial
+    stringVal: Play2-Interstitial
   loadingImage: {fileID: 0}
   sceneNameOLD: 
 --- !u!114 &468922038
@@ -3227,9 +3232,10 @@ MonoBehaviour:
   description: 
   eventHandler: {fileID: 468922042}
   commandList:
-  - {fileID: 468922047}
   - {fileID: 468922046}
   - {fileID: 468922045}
+  - {fileID: 468922082}
+  - {fileID: 468922047}
   - {fileID: 468922044}
   - {fileID: 468922041}
   suppressAllAutoSelections: 0
@@ -3304,7 +3310,7 @@ MonoBehaviour:
   indentLevel: 0
   _duration:
     floatRef: {fileID: 0}
-    floatVal: 2
+    floatVal: 1.5
   durationOLD: 0
 --- !u!114 &468922045
 MonoBehaviour:
@@ -4771,6 +4777,108 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 170
   indentLevel: 1
+  _duration:
+    floatRef: {fileID: 0}
+    floatVal: 0.5
+  durationOLD: 0
+--- !u!114 &468922079
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 468921884}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 171
+  indentLevel: 1
+  description: 
+  targetObject: {fileID: 468921884}
+  targetComponentAssemblyName: DialogueManager, Assembly-CSharp, Version=0.0.0.0,
+    Culture=neutral, PublicKeyToken=null
+  targetComponentFullname: UnityEngine.Component[]
+  targetComponentText: DialogueManager
+  targetMethod: IncrementRating
+  targetMethodText: 'IncrementRating (): Void'
+  methodParameters: []
+  saveReturnValue: 0
+  returnValueVariableKey: 
+  returnValueType: System.Void
+  showInherited: 0
+  callMode: 0
+--- !u!114 &468922080
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 468921884}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 172
+  indentLevel: 1
+  description: 
+  targetObject: {fileID: 468921884}
+  targetComponentAssemblyName: DialogueManager, Assembly-CSharp, Version=0.0.0.0,
+    Culture=neutral, PublicKeyToken=null
+  targetComponentFullname: UnityEngine.Component[]
+  targetComponentText: DialogueManager
+  targetMethod: IncrementRating
+  targetMethodText: 'IncrementRating (): Void'
+  methodParameters: []
+  saveReturnValue: 0
+  returnValueVariableKey: 
+  returnValueType: System.Void
+  showInherited: 0
+  callMode: 0
+--- !u!114 &468922081
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 468921884}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 173
+  indentLevel: 1
+  description: 
+  targetObject: {fileID: 468921884}
+  targetComponentAssemblyName: DialogueManager, Assembly-CSharp, Version=0.0.0.0,
+    Culture=neutral, PublicKeyToken=null
+  targetComponentFullname: UnityEngine.Component[]
+  targetComponentText: DialogueManager
+  targetMethod: IncrementRating
+  targetMethodText: 'IncrementRating (): Void'
+  methodParameters: []
+  saveReturnValue: 0
+  returnValueVariableKey: 
+  returnValueType: System.Void
+  showInherited: 0
+  callMode: 0
+--- !u!114 &468922082
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 468921884}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3315ad2ebb85443909a1203d56d9344e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 174
+  indentLevel: 0
   _duration:
     floatRef: {fileID: 0}
     floatVal: 0.5
@@ -12552,6 +12660,10 @@ PrefabInstance:
     - target: {fileID: 7817812271064518206, guid: 6750c7bc414fc72458996440a4b8555f, type: 3}
       propertyPath: isTutorial
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7817812271064518206, guid: 6750c7bc414fc72458996440a4b8555f, type: 3}
+      propertyPath: wordBank.Array.size
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7817812271064518207, guid: 6750c7bc414fc72458996440a4b8555f, type: 3}
       propertyPath: m_Name
