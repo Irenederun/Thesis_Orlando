@@ -773,7 +773,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 161.06526
     y: 39.865036
-    width: 112.60164
+    width: 109.94852
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -810,11 +810,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: -93.08958, y: 62.339005}
+  scrollPos: {x: -81.27794, y: 73.04178}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 341.66666
-  zoom: 0.81999975
+  zoom: 0.7339631
   scrollViewRect:
     serializedVersion: 2
     x: -343
@@ -955,7 +955,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 303.06668
     y: 116.43988
-    width: 119.91872
+    width: 116.76085
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1393,7 +1393,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 159.19514
     y: 99.57653
-    width: 111.788635
+    width: 110.62975
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1611,7 +1611,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 303.73138
     y: 47.760178
-    width: 119.91872
+    width: 116.76085
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2500,7 +2500,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 163.17683
     y: 159.65498
-    width: 113.41465
+    width: 111.31099
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -3036,7 +3036,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 160.96373
     y: 219.56621
-    width: 114.22766
+    width: 112.673454
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -3233,7 +3233,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 470.0821
     y: 50.25009
-    width: 79.2683
+    width: 77.24933
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -3507,7 +3507,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 472.20557
     y: 160.09479
-    width: 155.69109
+    width: 151.50375
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -5076,7 +5076,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 473.8421
     y: 213.02483
-    width: 162.19516
+    width: 158.99731
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
