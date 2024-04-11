@@ -943,11 +943,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9036191115389782113, guid: e03f5370b8b3af249aafe8877b74f82e, type: 3}
       propertyPath: nameText
-      value: ESTRAGON
+      value: ' '
       objectReference: {fileID: 0}
     - target: {fileID: 9036191115909026278, guid: e03f5370b8b3af249aafe8877b74f82e, type: 3}
       propertyPath: nameText
-      value: Actor of ESTRAGON
+      value: ' '
       objectReference: {fileID: 0}
     - target: {fileID: 9036191115909026278, guid: e03f5370b8b3af249aafe8877b74f82e, type: 3}
       propertyPath: description

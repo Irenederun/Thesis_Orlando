@@ -827,8 +827,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 468921913}
-  selectedCommands: []
+  - {fileID: 468921918}
+  selectedCommands:
+  - {fileID: 468921920}
   variables:
   - {fileID: 468921930}
   - {fileID: 468921936}
@@ -1023,7 +1024,7 @@ MonoBehaviour:
   indentLevel: 0
   _duration:
     floatRef: {fileID: 0}
-    floatVal: 1
+    floatVal: 18
   durationOLD: 0
 --- !u!114 &468921913
 MonoBehaviour:
@@ -1040,7 +1041,7 @@ MonoBehaviour:
   nodeRect:
     serializedVersion: 2
     x: 175.33112
-    y: 6.0267005
+    y: 4.760878
     width: 117.51054
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -1750,7 +1751,7 @@ MonoBehaviour:
   indentLevel: 0
   _duration:
     floatRef: {fileID: 0}
-    floatVal: 1
+    floatVal: 10
   durationOLD: 0
 --- !u!114 &468921952
 MonoBehaviour:
@@ -10569,7 +10570,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7817812271064518206, guid: 6750c7bc414fc72458996440a4b8555f, type: 3}
       propertyPath: wordBank.Array.size
-      value: 2
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7817812271064518206, guid: 6750c7bc414fc72458996440a4b8555f, type: 3}
+      propertyPath: wordBank.Array.data[2]
+      value: Rule
+      objectReference: {fileID: 0}
+    - target: {fileID: 7817812271064518206, guid: 6750c7bc414fc72458996440a4b8555f, type: 3}
+      propertyPath: wordBank.Array.data[3]
+      value: Portray
       objectReference: {fileID: 0}
     - target: {fileID: 7817812271064518207, guid: 6750c7bc414fc72458996440a4b8555f, type: 3}
       propertyPath: m_Name
