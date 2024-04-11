@@ -127,9 +127,32 @@ public class WordDragPlay3 : WordDragDetails
         {
             wordPosition = 5;
             string adjM = WordDragManager.instance.FindConjugation(wordd, "adj");
-            
+            string adjMNoun;
+            if (wordd.Contains("Self") || wordd.Contains("Rule")||wordd.Contains("You"))
+            {
+                adjMNoun = WordDragManager.instance.FindConjugation(wordd, "adjMNoun");
+            }
+            else
+            {
+                adjMNoun = WordDragManager.instance.FindConjugation(wordd, "adj");
+            }
             text.text = adjM;
             RecordWords(wordPosition, adjM);
+            DialogueManager.instance.SetResponseVariable("secondWord", adjMNoun);
+        }
+        else if (desNamee.Contains("nounN"))
+        {
+            wordPosition = 1;
+            string nounN = WordDragManager.instance.FindConjugation(wordd, "noun");
+            text.text = nounN;
+            RecordWords(wordPosition, nounN);
+        }
+        else if (desNamee.Contains("nounO"))
+        {
+            wordPosition = 3;
+            string nounO = WordDragManager.instance.FindConjugation(wordd, "noun");
+            text.text = nounO;
+            RecordWords(wordPosition, nounO);
         }
     }
 

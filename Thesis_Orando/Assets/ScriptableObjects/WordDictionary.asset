@@ -41,6 +41,14 @@ MonoBehaviour:
       conjugation: meness
     - position: 2IC
       conjugation: POS
+    - position: verb
+      conjugation: be myself
+    - position: noun
+      conjugation: myself
+    - position: adj
+      conjugation: myself
+    - position: adjMNoun
+      conjugation: selfhood
   - word: Stage
     rules:
     - position: 1A
@@ -69,6 +77,12 @@ MonoBehaviour:
       conjugation: stage
     - position: 2IC
       conjugation: POS
+    - position: verb
+      conjugation: be on stage
+    - position: noun
+      conjugation: stage
+    - position: adj
+      conjugation: stage
   - word: Rule
     rules:
     - position: 1A
@@ -97,6 +111,14 @@ MonoBehaviour:
       conjugation: rules
     - position: 2IC
       conjugation: POS
+    - position: verb
+      conjugation: rule
+    - position: noun
+      conjugation: the rule
+    - position: adj
+      conjugation: my rule
+    - position: adjMNoun
+      conjugation: rule
   - word: Portray
     rules:
     - position: 1A
@@ -127,6 +149,12 @@ MonoBehaviour:
       conjugation: portrayal
     - position: 2IC
       conjugation: POS
+    - position: verb
+      conjugation: portray
+    - position: noun
+      conjugation: portrayal
+    - position: adj
+      conjugation: portrayed
   - word: You
     rules:
     - position: 1A
@@ -155,6 +183,14 @@ MonoBehaviour:
       conjugation: youness
     - position: 2IC
       conjugation: POS
+    - position: verb
+      conjugation: be you
+    - position: noun
+      conjugation: you
+    - position: adj
+      conjugation: yours
+    - position: adjMNoun
+      conjugation: otherhood
   - word: Cruelty
     rules:
     - position: 1A
@@ -183,6 +219,12 @@ MonoBehaviour:
       conjugation: rules
     - position: 2IC
       conjugation: NEG
+    - position: verb
+      conjugation: be cruel
+    - position: noun
+      conjugation: cruelty
+    - position: adj
+      conjugation: cruel
   - word: Love
     rules:
     - position: 1A
@@ -211,6 +253,12 @@ MonoBehaviour:
       conjugation: love
     - position: 2IC
       conjugation: POS
+    - position: verb
+      conjugation: love
+    - position: noun
+      conjugation: love
+    - position: adj
+      conjugation: loved
   - word: Terrify
     rules:
     - position: 1A
@@ -239,6 +287,12 @@ MonoBehaviour:
       conjugation: terror
     - position: 2IC
       conjugation: NEG
+    - position: verb
+      conjugation: terrify
+    - position: noun
+      conjugation: terror
+    - position: adj
+      conjugation: terrified
   - word: Worry
     rules:
     - position: 1A
@@ -267,6 +321,12 @@ MonoBehaviour:
       conjugation: worries
     - position: 2IC
       conjugation: NEG
+    - position: verb
+      conjugation: worry
+    - position: noun
+      conjugation: worry
+    - position: adj
+      conjugation: worried
   - word: Crazy
     rules:
     - position: 1A
@@ -295,6 +355,12 @@ MonoBehaviour:
       conjugation: craziness
     - position: 2IC
       conjugation: NEG
+    - position: verb
+      conjugation: go crazy
+    - position: noun
+      conjugation: craziness
+    - position: adj
+      conjugation: crazy
   - word: Death
     rules:
     - position: 1A
@@ -323,6 +389,12 @@ MonoBehaviour:
       conjugation: death
     - position: 2IC
       conjugation: NEG
+    - position: verb
+      conjugation: die
+    - position: noun
+      conjugation: death
+    - position: adj
+      conjugation: dead
   - word: He
     rules:
     - position: 1A
