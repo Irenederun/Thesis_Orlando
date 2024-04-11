@@ -28,15 +28,19 @@ MonoBehaviour:
     - position: 3A
       conjugation: I
     - position: 3B
-      conjugation: no
+      conjugation: mine
     - position: 3C
-      conjugation: no
+      conjugation: me
     - position: 3D
       conjugation: me
+    - position: 3C_R
+      conjugation: your
     - position: 2IA
       conjugation: my
     - position: 2IB
-      conjugation: no
+      conjugation: meness
+    - position: 2IC
+      conjugation: POS
   - word: Stage
     rules:
     - position: 1A
@@ -52,13 +56,15 @@ MonoBehaviour:
     - position: 3A
       conjugation: Stage
     - position: 3B
-      conjugation: no
+      conjugation: stage fright
     - position: 3C
-      conjugation: no
+      conjugation: stage
     - position: 3D
       conjugation: stage
+    - position: 3C_R
+      conjugation: staging
     - position: 2IA
-      conjugation: no
+      conjugation: staging
     - position: 2IB
       conjugation: stage
     - position: 2IC
@@ -78,19 +84,19 @@ MonoBehaviour:
     - position: 3A
       conjugation: Rule
     - position: 3B
-      conjugation: no
+      conjugation: ruled
     - position: 3C
       conjugation: rule
     - position: 3D
-      conjugation: no
+      conjugation: rules
     - position: 3C_R
       conjugation: yielding to
     - position: 2IA
-      conjugation: no
+      conjugation: ruling
     - position: 2IB
-      conjugation: rule
+      conjugation: rules
     - position: 2IC
-      conjugation: NEG
+      conjugation: POS
   - word: Portray
     rules:
     - position: 1A
@@ -106,15 +112,17 @@ MonoBehaviour:
     - position: 3A
       conjugation: Portrayal
     - position: 3B
-      conjugation: no
+      conjugation: portrayed
     - position: 3C
       conjugation: portray
     - position: 3D
-      conjugation: no
+      conjugation: portrayal
+    - position: 3C_R
+      conjugation: POS
     - position: 3C_R
       conjugation: erasing
     - position: 2IA
-      conjugation: no
+      conjugation: portraying
     - position: 2IB
       conjugation: portrayal
     - position: 2IC
@@ -134,15 +142,19 @@ MonoBehaviour:
     - position: 3A
       conjugation: You
     - position: 3B
-      conjugation: no
+      conjugation: yours
     - position: 3C
-      conjugation: no
+      conjugation: you
     - position: 3D
       conjugation: you
+    - position: 3C_R
+      conjugation: my
     - position: 2IA
       conjugation: your
     - position: 2IB
-      conjugation: no
+      conjugation: youness
+    - position: 2IC
+      conjugation: POS
   - word: Cruelty
     rules:
     - position: 1A
@@ -162,11 +174,11 @@ MonoBehaviour:
     - position: 3C
       conjugation: be cruel to
     - position: 3D
-      conjugation: no
+      conjugation: cruelty
     - position: 3C_R
       conjugation: any tenderness for
     - position: 2IA
-      conjugation: no
+      conjugation: the cruel
     - position: 2IB
       conjugation: rules
     - position: 2IC
@@ -186,7 +198,7 @@ MonoBehaviour:
     - position: 3A
       conjugation: Love
     - position: 3B
-      conjugation: no
+      conjugation: loving
     - position: 3C
       conjugation: love
     - position: 3D
@@ -194,7 +206,7 @@ MonoBehaviour:
     - position: 3C_R
       conjugation: hating
     - position: 2IA
-      conjugation: no
+      conjugation: loving
     - position: 2IB
       conjugation: love
     - position: 2IC
@@ -219,8 +231,10 @@ MonoBehaviour:
       conjugation: terrify
     - position: 3D
       conjugation: Terror
+    - position: 3C_R
+      conjugation: soothing
     - position: 2IA
-      conjugation: no
+      conjugation: terrifying
     - position: 2IB
       conjugation: terror
     - position: 2IC
@@ -244,11 +258,11 @@ MonoBehaviour:
     - position: 3C
       conjugation: worry
     - position: 3D
-      conjugation: no
+      conjugation: worries
     - position: 3C_R
       conjugation: worrying about
     - position: 2IA
-      conjugation: no
+      conjugation: worrying
     - position: 2IB
       conjugation: worries
     - position: 2IC
@@ -272,9 +286,11 @@ MonoBehaviour:
     - position: 3C
       conjugation: be crazy for
     - position: 3D
-      conjugation: no
+      conjugation: craziness
+    - position: 3C_R
+      conjugation: any sanity for
     - position: 2IA
-      conjugation: no
+      conjugation: crazy
     - position: 2IB
       conjugation: craziness
     - position: 2IC
@@ -300,9 +316,9 @@ MonoBehaviour:
     - position: 3D
       conjugation: death
     - position: 3C_R
-      conjugation: dying for
+      conjugation: living for
     - position: 2IA
-      conjugation: no
+      conjugation: dead
     - position: 2IB
       conjugation: death
     - position: 2IC
@@ -322,15 +338,19 @@ MonoBehaviour:
     - position: 3A
       conjugation: He
     - position: 3B
-      conjugation: no
+      conjugation: his
     - position: 3C
-      conjugation: no
+      conjugation: he
     - position: 3D
       conjugation: him
+    - position: 3C_R
+      conjugation: his
     - position: 2IA
       conjugation: his
     - position: 2IB
-      conjugation: no
+      conjugation: otherness
+    - position: 2IC
+      conjugation: NEG
   - word: Broken
     rules:
     - position: 1A
@@ -346,17 +366,17 @@ MonoBehaviour:
     - position: 1E
       conjugation: CAT1
     - position: 3A
-      conjugation: no
+      conjugation: Break
     - position: 3B
       conjugation: broken
     - position: 3C
       conjugation: break
     - position: 3D
-      conjugation: no
+      conjugation: brokenness
     - position: 3C_R
       conjugation: breaking
     - position: 2IA
-      conjugation: no
+      conjugation: breaking
     - position: 2IB
       conjugation: brokenness
     - position: 2IC
@@ -378,15 +398,19 @@ MonoBehaviour:
     - position: 3A
       conjugation: God
     - position: 3B
-      conjugation: no
+      conjugation: godly
     - position: 3C
-      conjugation: no
+      conjugation: god
     - position: 3D
       conjugation: god
+    - position: 3C_R
+      conjugation: god's
     - position: 2IA
       conjugation: 'god''s '
     - position: 2IB
-      conjugation: no
+      conjugation: godliness
+    - position: 2IC
+      conjugation: POS
   - word: Cold
     rules:
     - position: 1A
@@ -408,11 +432,11 @@ MonoBehaviour:
     - position: 3C
       conjugation: be cold to
     - position: 3D
-      conjugation: no
+      conjugation: coldnesss
     - position: 3C_R
       conjugation: any warmth for
     - position: 2IA
-      conjugation: no
+      conjugation: cold
     - position: 2IB
       conjugation: coldness
     - position: 2IC
@@ -436,11 +460,13 @@ MonoBehaviour:
     - position: 3B
       conjugation: courageous
     - position: 3C
-      conjugation: no
+      conjugation: encourage
     - position: 3D
-      conjugation: no
+      conjugation: courage
+    - position: 3C_R
+      conjugation: POS
     - position: 2IA
-      conjugation: no
+      conjugation: courageous
     - position: 2IB
       conjugation: courage
     - position: 2IC
@@ -470,7 +496,7 @@ MonoBehaviour:
     - position: 3C_R
       conjugation: mortalising
     - position: 2IA
-      conjugation: no
+      conjugation: immortal
     - position: 2IB
       conjugation: immortality
     - position: 2IC
@@ -498,9 +524,9 @@ MonoBehaviour:
     - position: 3D
       conjugation: disgust
     - position: 3C_R
-      conjugation: loving
+      conjugation: appealing to
     - position: 2IA
-      conjugation: no
+      conjugation: disgusting
     - position: 2IB
       conjugation: disgust
     - position: 2IC
@@ -522,7 +548,7 @@ MonoBehaviour:
     - position: 3A
       conjugation: Kiss
     - position: 3B
-      conjugation: no
+      conjugation: kissing
     - position: 3C
       conjugation: kiss
     - position: 3D
@@ -530,7 +556,7 @@ MonoBehaviour:
     - position: 3C_R
       conjugation: spitting
     - position: 2IA
-      conjugation: no
+      conjugation: kissing
     - position: 2IB
       conjugation: kisses
     - position: 2IC
@@ -560,7 +586,7 @@ MonoBehaviour:
     - position: 3C_R
       conjugation: blessing
     - position: 2IA
-      conjugation: no
+      conjugation: cursing
     - position: 2IB
       conjugation: curses
     - position: 2IC
@@ -586,11 +612,11 @@ MonoBehaviour:
     - position: 3C
       conjugation: kill
     - position: 3D
-      conjugation: kissing
+      conjugation: kill
     - position: 3C_R
       conjugation: caressing
     - position: 2IA
-      conjugation: no
+      conjugation: killing
     - position: 2IB
       conjugation: killing
     - position: 2IC

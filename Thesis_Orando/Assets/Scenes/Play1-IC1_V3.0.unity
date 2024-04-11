@@ -761,6 +761,8 @@ GameObject:
   - component: {fileID: 468921957}
   - component: {fileID: 468921962}
   - component: {fileID: 468921963}
+  - component: {fileID: 468921964}
+  - component: {fileID: 468921965}
   m_Layer: 0
   m_Name: IC-0 Flowchart
   m_TagString: Untagged
@@ -784,7 +786,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 169.64203
     y: 175.28468
-    width: 110.75948
+    width: 110.696526
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -815,11 +817,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 76.79649, y: 128.07933}
+  scrollPos: {x: 295.6902, y: 37.688835}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 341.66666
-  zoom: 0.79000014
+  zoom: 0.6699999
   scrollViewRect:
     serializedVersion: 2
     x: -343
@@ -827,13 +829,14 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 468921918}
+  - {fileID: 468921933}
   selectedCommands:
-  - {fileID: 468921920}
+  - {fileID: 468921965}
   variables:
   - {fileID: 468921930}
   - {fileID: 468921936}
   - {fileID: 468921956}
+  - {fileID: 468921964}
   description: 
   stepPause: 0
   colorCommands: 1
@@ -917,7 +920,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 170.13635
     y: 119
-    width: 116.66666
+    width: 116.66667
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1024,7 +1027,7 @@ MonoBehaviour:
   indentLevel: 0
   _duration:
     floatRef: {fileID: 0}
-    floatVal: 18
+    floatVal: 1
   durationOLD: 0
 --- !u!114 &468921913
 MonoBehaviour:
@@ -1042,7 +1045,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 175.33112
     y: 4.760878
-    width: 117.51054
+    width: 117.6617
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1140,9 +1143,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 163.03061
-    y: 62.59781
-    width: 118.35442
+    x: 161.76479
+    y: 60.066162
+    width: 118.65672
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1375,7 +1378,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 169.32309
     y: 230.16449
-    width: 118.35442
+    width: 118.65672
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1386,6 +1389,7 @@ MonoBehaviour:
   commandList:
   - {fileID: 468921934}
   - {fileID: 468921947}
+  - {fileID: 468921965}
   - {fileID: 468921937}
   - {fileID: 468921940}
   - {fileID: 468921953}
@@ -1569,7 +1573,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 174.70236
     y: 285.70493
-    width: 117.51054
+    width: 117.6617
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1751,7 +1755,7 @@ MonoBehaviour:
   indentLevel: 0
   _duration:
     floatRef: {fileID: 0}
-    floatVal: 10
+    floatVal: 1
   durationOLD: 0
 --- !u!114 &468921952
 MonoBehaviour:
@@ -1924,6 +1928,48 @@ MonoBehaviour:
   time:
     floatRef: {fileID: 0}
     floatVal: 0
+--- !u!114 &468921964
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 468921884}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4580f28dd8581476b810b38eea2f1316, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scope: 0
+  key: secondWord
+  value: default
+--- !u!114 &468921965
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 468921884}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 63
+  indentLevel: 0
+  storyText: '{i}{$secondWord}?{/i}'
+  description: 
+  character: {fileID: 1585182549}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
 --- !u!1 &477653529
 GameObject:
   m_ObjectHideFlags: 0

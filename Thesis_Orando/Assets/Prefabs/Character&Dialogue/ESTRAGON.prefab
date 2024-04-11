@@ -991,7 +991,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9036191116377504185, guid: e03f5370b8b3af249aafe8877b74f82e, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -10.13
+      value: -25.4
       objectReference: {fileID: 0}
     - target: {fileID: 9036191116377504185, guid: e03f5370b8b3af249aafe8877b74f82e, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -999,7 +999,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9036191116377504191, guid: e03f5370b8b3af249aafe8877b74f82e, type: 3}
       propertyPath: m_Text
-      value: Sure. we are stage fright.
+      value: ...
       objectReference: {fileID: 0}
     - target: {fileID: 9036191116377504191, guid: e03f5370b8b3af249aafe8877b74f82e, type: 3}
       propertyPath: m_Color.b
