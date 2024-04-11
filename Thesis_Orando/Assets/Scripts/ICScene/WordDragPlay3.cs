@@ -112,7 +112,7 @@ public class WordDragPlay3 : WordDragDetails
         else if (desNamee.Contains("adjK"))
         {
             wordPosition = 1;
-            string adjK = WordDragManager.instance.FindConjugation(wordd, "adj");
+            string adjK = WordDragManager.instance.FindConjugation(wordd, "noun");
             text.text = adjK;
             RecordWords(wordPosition, adjK);
         }
