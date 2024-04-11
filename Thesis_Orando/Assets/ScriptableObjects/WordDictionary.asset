@@ -28,7 +28,7 @@ MonoBehaviour:
     - position: 3A
       conjugation: I
     - position: 3B
-      conjugation: mine
+      conjugation: like myself
     - position: 3C
       conjugation: me
     - position: 3D
@@ -142,7 +142,7 @@ MonoBehaviour:
     - position: 3A
       conjugation: You
     - position: 3B
-      conjugation: yours
+      conjugation: like you
     - position: 3C
       conjugation: you
     - position: 3D
@@ -338,7 +338,7 @@ MonoBehaviour:
     - position: 3A
       conjugation: He
     - position: 3B
-      conjugation: his
+      conjugation: like him
     - position: 3C
       conjugation: he
     - position: 3D
