@@ -1119,7 +1119,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 165.9718
     y: 37.434006
-    width: 113.54167
+    width: 73.54167
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1197,8 +1197,7 @@ MonoBehaviour:
     y: -340
     width: 1114
     height: 859
-  selectedBlocks:
-  - {fileID: 468921886}
+  selectedBlocks: []
   selectedCommands: []
   variables:
   - {fileID: 468921990}
@@ -1313,7 +1312,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 291.5283
     y: -34.647514
-    width: 120.833336
+    width: 80.833336
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1560,7 +1559,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 159.19514
     y: 93.123245
-    width: 115.62501
+    width: 75.62501
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2014,7 +2013,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 160.35185
     y: 157.81505
-    width: 115.62501
+    width: 75.62501
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2080,7 +2079,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 425.85153
     y: -28.596054
-    width: 79.16667
+    width: 60
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -3508,7 +3507,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -17.628983
     y: 36.996754
-    width: 76.04167
+    width: 60
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -3702,7 +3701,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -20.559853
     y: 98.535225
-    width: 76.04167
+    width: 60
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -4614,7 +4613,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 166.4845
     y: 221.49118
-    width: 114.583336
+    width: 74.583336
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -5900,7 +5899,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 168.67633
     y: 279.02542
-    width: 114.583336
+    width: 74.583336
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -5990,7 +5989,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 299
   indentLevel: 0
-  storyText: '{$saidSentence}.'
+  storyText: '{$saidSentence}'
   description: 
   character: {fileID: 1932757925544751689}
   portrait: {fileID: 0}
@@ -6040,7 +6039,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 158.53935
     y: 339.29938
-    width: 114.583336
+    width: 74.583336
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -10408,8 +10407,13 @@ MonoBehaviour:
   - {fileID: 5211142889240818670}
   - {fileID: 1688817737002363426}
   m_Bounds:
+<<<<<<< Updated upstream
     m_Center: {x: -0.30625647, y: 0.051749647, z: 0}
     m_Extent: {x: 0.3048337, y: 0.5416139, z: 0}
+=======
+    m_Center: {x: -0.30625623, y: 0.051749766, z: 0}
+    m_Extent: {x: 0.30483395, y: 0.54161376, z: 0}
+>>>>>>> Stashed changes
   m_UseBatching: 1
   m_AlwaysUpdate: 1
   m_AutoRebind: 0
@@ -10581,8 +10585,13 @@ MonoBehaviour:
   - {fileID: 108686626303071901}
   - {fileID: 4198876648264992153}
   m_Bounds:
+<<<<<<< Updated upstream
     m_Center: {x: 0.47086406, y: 0.092324466, z: 0}
     m_Extent: {x: 0.1747914, y: 0.1441401, z: 0}
+=======
+    m_Center: {x: 0.470865, y: 0.092324466, z: 0}
+    m_Extent: {x: 0.17479135, y: 0.1441401, z: 0}
+>>>>>>> Stashed changes
   m_UseBatching: 1
   m_AlwaysUpdate: 1
   m_AutoRebind: 0
@@ -10651,7 +10660,7 @@ MonoBehaviour:
   - {fileID: 7640469386347879793}
   m_Bounds:
     m_Center: {x: 0.40299246, y: 0.29864803, z: 0}
-    m_Extent: {x: 0.28439975, y: 0.30969733, z: 0}
+    m_Extent: {x: 0.2843998, y: 0.30969736, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
   m_AutoRebind: 0
@@ -12409,8 +12418,13 @@ MonoBehaviour:
   - {fileID: 1963920106718744830}
   - {fileID: 5211142889240818670}
   m_Bounds:
+<<<<<<< Updated upstream
     m_Center: {x: -0.38119, y: 0.07146925, z: 0}
     m_Extent: {x: 0.20909381, y: 0.088010564, z: 0}
+=======
+    m_Center: {x: -0.38118905, y: 0.07146925, z: 0}
+    m_Extent: {x: 0.20909381, y: 0.08801058, z: 0}
+>>>>>>> Stashed changes
   m_UseBatching: 1
   m_AlwaysUpdate: 1
   m_AutoRebind: 0
@@ -12679,8 +12693,13 @@ MonoBehaviour:
   - {fileID: 5211142889240818670}
   - {fileID: 413574030335065180}
   m_Bounds:
+<<<<<<< Updated upstream
     m_Center: {x: -0.09995937, y: 0.030070722, z: 0}
     m_Extent: {x: 0.2347269, y: 0.5591091, z: 0}
+=======
+    m_Center: {x: -0.09995839, y: 0.030070662, z: 0}
+    m_Extent: {x: 0.23472694, y: 0.5591091, z: 0}
+>>>>>>> Stashed changes
   m_UseBatching: 1
   m_AlwaysUpdate: 1
   m_AutoRebind: 0
@@ -12854,8 +12873,13 @@ MonoBehaviour:
   - {fileID: 3521739692963526168}
   - {fileID: 413574030335065180}
   m_Bounds:
+<<<<<<< Updated upstream
     m_Center: {x: 0.004330218, y: 0.03235185, z: 0}
     m_Extent: {x: 0.22694471, y: 0.56444097, z: 0}
+=======
+    m_Center: {x: 0.0043307394, y: 0.03235185, z: 0}
+    m_Extent: {x: 0.22694516, y: 0.564441, z: 0}
+>>>>>>> Stashed changes
   m_UseBatching: 1
   m_AlwaysUpdate: 1
   m_AutoRebind: 0
@@ -12962,8 +12986,8 @@ MonoBehaviour:
   - {fileID: 7640469386347879793}
   - {fileID: 5452260461058814152}
   m_Bounds:
-    m_Center: {x: -0.19536912, y: 0.29866824, z: 0}
-    m_Extent: {x: 0.2566396, y: 0.5484067, z: 0}
+    m_Center: {x: -0.19536915, y: 0.29866815, z: 0}
+    m_Extent: {x: 0.25663957, y: 0.5484067, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
   m_AutoRebind: 0
@@ -13114,8 +13138,8 @@ MonoBehaviour:
   - {fileID: 1664822610530215085}
   - {fileID: 5544746183737832133}
   m_Bounds:
-    m_Center: {x: 1.671681, y: -0.54551715, z: 0}
-    m_Extent: {x: 0.13029289, y: 0.26158047, z: 0}
+    m_Center: {x: 1.671681, y: -0.5455172, z: 0}
+    m_Extent: {x: 0.13029289, y: 0.26158053, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
   m_AutoRebind: 0
@@ -15571,8 +15595,8 @@ MonoBehaviour:
   - {fileID: 5544746183737832133}
   - {fileID: 1664822610530215085}
   m_Bounds:
-    m_Center: {x: 1.3753667, y: -0.38976467, z: 0}
-    m_Extent: {x: 0.24808067, y: 0.70595443, z: 0}
+    m_Center: {x: 1.3753668, y: -0.38976467, z: 0}
+    m_Extent: {x: 0.24808073, y: 0.70595443, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
   m_AutoRebind: 0
@@ -15697,7 +15721,7 @@ MonoBehaviour:
   - {fileID: 2815375634056097949}
   - {fileID: 8805018864741082624}
   m_Bounds:
-    m_Center: {x: -0.055084735, y: -0.0068148673, z: 0}
+    m_Center: {x: -0.05508378, y: -0.0068148673, z: 0}
     m_Extent: {x: 0.3989396, y: 0.40226215, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
@@ -15719,7 +15743,7 @@ MonoBehaviour:
   - {fileID: 7640469386347879793}
   - {fileID: 5452260461058814152}
   m_Bounds:
-    m_Center: {x: -0.75699043, y: 0.06961337, z: 0}
+    m_Center: {x: -0.7569903, y: 0.06961337, z: 0}
     m_Extent: {x: 0.8256396, y: 0.5224412, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1

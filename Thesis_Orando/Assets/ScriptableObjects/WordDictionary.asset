@@ -423,6 +423,14 @@ MonoBehaviour:
       conjugation: otherness
     - position: 2IC
       conjugation: NEG
+    - position: verb
+      conjugation: be him
+    - position: noun
+      conjugation: him
+    - position: adj
+      conjugation: his
+    - position: adjMNoun
+      conjugation: otherhood
   - word: Broken
     rules:
     - position: 1A
@@ -453,6 +461,14 @@ MonoBehaviour:
       conjugation: brokenness
     - position: 2IC
       conjugation: NEG
+    - position: verb
+      conjugation: break away
+    - position: noun
+      conjugation: broken
+    - position: adj
+      conjugation: broken
+    - position: adjMNoun
+      conjugation: brokenness
   - word: God
     rules:
     - position: 1A
@@ -483,6 +499,12 @@ MonoBehaviour:
       conjugation: godliness
     - position: 2IC
       conjugation: POS
+    - position: verb
+      conjugation: be god
+    - position: noun
+      conjugation: god
+    - position: adj
+      conjugation: godless
   - word: Cold
     rules:
     - position: 1A
@@ -513,6 +535,12 @@ MonoBehaviour:
       conjugation: coldness
     - position: 2IC
       conjugation: NEG
+    - position: verb
+      conjugation: be cold
+    - position: noun
+      conjugation: coldness
+    - position: adj
+      conjugation: cold
   - word: Courage
     rules:
     - position: 1A
@@ -543,6 +571,12 @@ MonoBehaviour:
       conjugation: courage
     - position: 2IC
       conjugation: POS
+    - position: verb
+      conjugation: be couragerous
+    - position: noun
+      conjugation: courage
+    - position: adj
+      conjugation: courageous
   - word: Immortality
     rules:
     - position: 1A
@@ -573,6 +607,12 @@ MonoBehaviour:
       conjugation: immortality
     - position: 2IC
       conjugation: POS
+    - position: verb
+      conjugation: be immortal
+    - position: noun
+      conjugation: immortality
+    - position: adj
+      conjugation: immortal
   - word: Disgust
     rules:
     - position: 1A
@@ -603,6 +643,12 @@ MonoBehaviour:
       conjugation: disgust
     - position: 2IC
       conjugation: NEG
+    - position: verb
+      conjugation: disgust
+    - position: noun
+      conjugation: disgust
+    - position: adj
+      conjugation: disgusted
   - word: Kiss
     rules:
     - position: 1A
@@ -633,6 +679,12 @@ MonoBehaviour:
       conjugation: kisses
     - position: 2IC
       conjugation: POS
+    - position: verb
+      conjugation: kiss
+    - position: noun
+      conjugation: kisses
+    - position: adj
+      conjugation: kissed
   - word: Curse
     rules:
     - position: 1A
@@ -663,6 +715,12 @@ MonoBehaviour:
       conjugation: curses
     - position: 2IC
       conjugation: NEG
+    - position: verb
+      conjugation: curse
+    - position: noun
+      conjugation: curse
+    - position: adj
+      conjugation: cursed
   - word: Kill
     rules:
     - position: 1A
@@ -693,3 +751,9 @@ MonoBehaviour:
       conjugation: killing
     - position: 2IC
       conjugation: NEG
+    - position: verb
+      conjugation: kill
+    - position: noun
+      conjugation: kill
+    - position: adj
+      conjugation: killed
