@@ -94,6 +94,43 @@ public class WordDragPlay3 : WordDragDetails
             DialogueManager.instance.SetResponseVariable
                 ("pronounC", word3E);
         }
+        else if (desNamee.Contains("verbO"))
+        {
+            wordPosition = 1;
+            string verbO = WordDragManager.instance.FindConjugation(wordd, "verb");
+            text.text = verbO;
+            RecordWords(wordPosition, verbO);
+        }
+        else if (desNamee.Contains("nounF"))
+        {
+            wordPosition = 3;
+            string nounF = WordDragManager.instance.FindConjugation(wordd, "noun");
+            text.text = nounF;
+            RecordWords(wordPosition, nounF);
+            DialogueManager.instance.SetResponseVariable("secondWord", nounF);
+        }        
+        else if (desNamee.Contains("adjK"))
+        {
+            wordPosition = 1;
+            string adjK = WordDragManager.instance.FindConjugation(wordd, "adj");
+            text.text = adjK;
+            RecordWords(wordPosition, adjK);
+        }
+        else if (desNamee.Contains("nounG"))
+        {
+            wordPosition = 3;
+            string nounG = WordDragManager.instance.FindConjugation(wordd, "noun");
+            text.text = nounG;
+            RecordWords(wordPosition, nounG);
+        }
+        else if (desNamee.Contains("adjM"))
+        {
+            wordPosition = 5;
+            string adjM = WordDragManager.instance.FindConjugation(wordd, "adj");
+            
+            text.text = adjM;
+            RecordWords(wordPosition, adjM);
+        }
     }
 
     public void RecordWords(int pos, string text)
