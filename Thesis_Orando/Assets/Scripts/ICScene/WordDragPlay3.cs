@@ -134,7 +134,7 @@ public class WordDragPlay3 : WordDragDetails
             }
             else
             {
-                adjMNoun = WordDragManager.instance.FindConjugation(wordd, "adj");
+                adjMNoun = WordDragManager.instance.FindConjugation(wordd, "noun");
             }
             text.text = adjM;
             RecordWords(wordPosition, adjM);
