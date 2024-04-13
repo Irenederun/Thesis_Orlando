@@ -31,6 +31,10 @@ public class OtherWord : UIBehavior
         originalLineColor = lr.colorGradient;
         //wordText.text = GetComponent<UIWordBehavior>()._exchangeGame.otherWords[posInWordList];
         outputList = OtherWordLibrary.instance.Find(level, posInWordList);
+        if (outputList[0] == " ")
+        {
+            GetComponent<Collider2D>().enabled = false;
+        }
         wordText.text = outputList[0];
         limbName = outputList[3];
         limb.gameObject.GetComponent<SpriteRenderer>().sprite = GameManager.instance.GetLimb(limbName);
@@ -79,6 +83,6 @@ public class OtherWord : UIBehavior
     {
         int i = int.Parse(outputList[1]);
         int j = int.Parse(outputList[2]);
-        OtherWordLibrary.instance.Modify(i,j,wordText.text, limbName);
+        OtherWordLibrary.instance.Modify(i,j," ", limbName);
     }
 }

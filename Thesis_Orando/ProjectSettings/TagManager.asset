@@ -25,8 +25,8 @@ TagManager:
   - Actress
   - UIInteract
   - Dragged
-  - 
-  - 
+  - UIDrag
+  - UIDragDest
   - 
   - 
   - 
@@ -49,4 +49,7 @@ TagManager:
     locked: 0
   - name: UIOverlay
     uniqueID: 216514963
+    locked: 0
+  - name: OverlayOverlay
+    uniqueID: 923971163
     locked: 0

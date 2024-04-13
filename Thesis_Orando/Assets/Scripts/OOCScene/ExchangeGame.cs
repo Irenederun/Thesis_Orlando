@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -34,6 +35,9 @@ public class ExchangeGame : ManagerBehavior
 
     public int positionInList;
     [SerializeField]public Button closeButton;
+
+    public Action EndEvent;
+    public SelfBodyPart selfBodyPart;
 
     // Start is called before the first frame update
     void Start()
@@ -115,6 +119,8 @@ public class ExchangeGame : ManagerBehavior
         selfMaskWords.SetActive(false);
         selfMaskLimbs.SetActive(false);
         otherMask.SetActive(false);
+        
+        EndEvent?.Invoke();
     }
 
     private void Update()
@@ -295,6 +301,42 @@ public class ExchangeGame : ManagerBehavior
         StartCoroutine(exchangeWordsAndLimbs());
         
         
+    }
+    
+    public void Exchange(string oldWord, string newWord, UIWordBehavior otherWord)
+    {
+        if (GameManager.instance.isTutorial)
+        {
+            GameManager.instance.TutorialOver();
+            DialogueManager.instance.TriggerDialogue("ExchangeClicked");
+            selfMaskWords.SetActive(false);
+            selfMaskLimbs.SetActive(false);
+            otherMask.SetActive(false);
+        }
+        
+        curState = state.exchanging;
+        confirmPrompt.SetActive(false);
+        
+        // tell GameManager about word exchange
+        GameManager.instance.SwitchWord(oldWord, newWord);
+        /*
+        // tell GameManager about limb exchange
+        string curLimbSprite = currentMyLimb.GetComponent<SpriteRenderer>().sprite.name;
+        string newLimbSprite =
+            currentOtherWord.GetComponent<OtherWord>().limb.GetComponent<SpriteRenderer>().sprite.name;
+        GameManager.instance.SwitchLimb(curLimbSprite, newLimbSprite);
+        
+        //**TODO: play the exchange animation
+        StartCoroutine(exchangeWordsAndLimbs());
+        */
+        
+        otherWord.ChangeWordText();
+        //choose body part
+        NPCBodyPart.SpColInd spcolInd = otherWord.myBodyPartManager.LoseRandomPiece();
+        //receive body part
+        selfBodyPart.ReceiveRandomPiece(spcolInd.sp, spcolInd.col);
+        //lose body part
+        otherWord.myBodyPartManager.GrayOutPiece(spcolInd.ind);
     }
 
     IEnumerator exchangeWordsAndLimbs()

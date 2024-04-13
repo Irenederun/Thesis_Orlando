@@ -13,6 +13,16 @@ public class GameManager : MonoBehaviour
     public Action tutorialEnded;
     public int currentSentenceNo;
     public int playRating;
+    
+    [System.Serializable]
+    public class BodyPart
+    {
+        public Sprite sprite;
+        public Color col;
+        public bool used;
+    }
+
+    public List<BodyPart> SavedBodyParts = new List<BodyPart>();
 
     public void Awake()
     {
@@ -88,5 +98,12 @@ public class GameManager : MonoBehaviour
     public void ResetRating()
     {
         playRating = 0;
+    }
+
+    public void SaveBodyPart(int index, Sprite sp, Color col)
+    {
+        SavedBodyParts[index].sprite = sp;
+        SavedBodyParts[index].col = col;
+        SavedBodyParts[index].used = true;
     }
 }

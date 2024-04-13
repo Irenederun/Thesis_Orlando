@@ -333,7 +333,7 @@ GameObject:
   - component: {fileID: 5949705895341551108}
   - component: {fileID: 642972843694074523}
   - component: {fileID: 8732427309139044098}
-  m_Layer: 12
+  m_Layer: 15
   m_Name: wordPrefab
   m_TagString: Draggable
   m_Icon: {fileID: 0}

@@ -11,7 +11,8 @@ public class UIWordBehavior : BasicBehavior
     public UnityEvent resetEvent;
 
     public ExchangeGame _exchangeGame;
-    
+    public NPCBodyPart myBodyPartManager;
+
     public override void ClickedByMouse()
     {
         base.ClickedByMouse();

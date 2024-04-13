@@ -577,7 +577,7 @@ MonoBehaviour:
       conjugation: courage
     - position: adj
       conjugation: courageous
-  - word: Immortality
+  - word: Immortal
     rules:
     - position: 1A
       conjugation: Immortal

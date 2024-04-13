@@ -7,6 +7,7 @@ public class UIMouse : MonoBehaviour
 {
     public Vector2 mousePos;
     private GameObject clickingObj;
+    private GameObject dragObj;
 
     // Update is called once per frame
     void Update()
@@ -19,6 +20,8 @@ public class UIMouse : MonoBehaviour
         mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         RaycastHit2D hitClick = Physics2D.Raycast
             (mousePos, Vector3.back, Mathf.Infinity, LayerMask.GetMask("UIInteract"));
+        RaycastHit2D hitUIDrag = Physics2D.Raycast
+            (mousePos, Vector3.back, Mathf.Infinity, LayerMask.GetMask("UIDrag"));
 
         if (Input.GetMouseButtonDown(0))
         {
@@ -26,6 +29,21 @@ public class UIMouse : MonoBehaviour
             {
                 clickingObj = hitClick.collider.gameObject;
                 clickingObj.GetComponent<BasicBehavior>().ClickedByMouse();
+            }
+
+            if (hitUIDrag.collider != null)
+            {
+                dragObj = hitUIDrag.collider.gameObject;
+                dragObj.GetComponent<UIDragBehavior>().OnDragStarting();
+            }
+        }
+
+        if (Input.GetMouseButtonUp(0))
+        {
+            if (dragObj != null)
+            {
+                dragObj.GetComponent<UIDragBehavior>().OnDragExit();
+                dragObj = null;
             }
         }
     }

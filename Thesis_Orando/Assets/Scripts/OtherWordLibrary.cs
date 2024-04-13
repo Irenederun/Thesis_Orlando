@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public class OtherWordLibrary : MonoBehaviour
 {
@@ -34,8 +35,18 @@ public class OtherWordLibrary : MonoBehaviour
         public List<OtherWord> otherWords;
     }
     public List<OtherDictionary> otherDictionary;
-
     
+    
+    [System.Serializable]
+    public class OtherBodyPieces
+    {
+        public string id;
+        [FormerlySerializedAs("states")] public List<bool> usedStates;
+    }
+
+    public List<OtherBodyPieces> NPCBodyPieces;
+
+
     public List<string> Find(string inputLevel, string inputPos)
     {
         for (int i = 0; i < otherDictionary.Count; i++)
@@ -65,5 +76,29 @@ public class OtherWordLibrary : MonoBehaviour
        //text.Replace(otherDictionary[inputLevel].otherWords[inputPos].otherWordText, text);
        otherDictionary[inputLevel].otherWords[inputPos].otherWordText = text;
        otherDictionary[inputLevel].otherWords[inputPos].otherWordLimb = limbName;
+    }
+
+    public List<bool> FindPieceStates(string id)
+    {
+        for (int i = 0; i < NPCBodyPieces.Count; i++)
+        {
+            if (NPCBodyPieces[i].id == id)
+            {
+                return NPCBodyPieces[i].usedStates;
+            }
+        }
+
+        return null;
+    }
+
+    public void ModifyPieceState(string id, int index, bool state)
+    {
+        for (int i = 0; i < NPCBodyPieces.Count; i++)
+        {
+            if (NPCBodyPieces[i].id == id)
+            {
+                NPCBodyPieces[i].usedStates[index] = state;
+            }
+        } 
     }
 }
