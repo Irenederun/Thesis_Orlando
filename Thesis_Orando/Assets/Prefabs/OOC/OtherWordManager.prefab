@@ -1,0 +1,99 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &148068336617303854
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 148068336617303855}
+  - component: {fileID: 148068336617303848}
+  m_Layer: 0
+  m_Name: OtherWordManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &148068336617303855
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 148068336617303854}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 3.3964136, y: 0.32495916, z: 92.165474}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &148068336617303848
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 148068336617303854}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37ca72a74081d4d44811ec5476a78575, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  output:
+  - 
+  - 
+  - 
+  - 
+  otherDictionary:
+  - level: Play1
+    otherWords:
+    - otherWordPos: 0-1
+      otherWordText: Crazy
+      otherWordLimb: G2
+    - otherWordPos: 0-2
+      otherWordText: Death
+      otherWordLimb: G1
+    - otherWordPos: 0-3
+      otherWordText: Love
+      otherWordLimb: G4
+    - otherWordPos: 0-4
+      otherWordText: Immortal
+      otherWordLimb: G3
+  - level: Play3
+    otherWords:
+    - otherWordPos: 3-1
+      otherWordText: Fear
+      otherWordLimb: G2
+    - otherWordPos: 3-2
+      otherWordText: Disgust
+      otherWordLimb: G1
+    - otherWordPos: 3-3
+      otherWordText: He
+      otherWordLimb: G4
+    - otherWordPos: 3-4
+      otherWordText: Kiss
+      otherWordLimb: G3
+    - otherWordPos: 3-5
+      otherWordText: Worry
+      otherWordLimb: B2
+    - otherWordPos: 3-6
+      otherWordText: Curse
+      otherWordLimb: B1
+    - otherWordPos: 3-7
+      otherWordText: Kill
+      otherWordLimb: B4
+    - otherWordPos: 3-8
+      otherWordText: You
+      otherWordLimb: B3
+  NPCBodyPieces:
+  - id: 0-1
+    usedStates: 00000000
+  - id: 3-1
+    usedStates: 00000000
+  - id: 3-2
+    usedStates: 00000000

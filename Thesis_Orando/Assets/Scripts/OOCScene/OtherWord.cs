@@ -20,7 +20,7 @@ public class OtherWord : UIBehavior
     private List<string> outputList;
     public string limbName;
     
-    private void Awake()
+    private void Start()
     {
         Init();
     }

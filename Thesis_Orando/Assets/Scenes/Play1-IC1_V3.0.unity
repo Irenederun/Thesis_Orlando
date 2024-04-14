@@ -817,7 +817,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 295.6902, y: 37.688835}
+  scrollPos: {x: 497.1828, y: 95.897804}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 341.66666
@@ -829,8 +829,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 468921944}
-  selectedCommands: []
+  - {fileID: 468921913}
+  selectedCommands:
+  - {fileID: 468921951}
   variables:
   - {fileID: 468921930}
   - {fileID: 468921936}
@@ -1026,7 +1027,7 @@ MonoBehaviour:
   indentLevel: 0
   _duration:
     floatRef: {fileID: 0}
-    floatVal: 1
+    floatVal: 18
   durationOLD: 0
 --- !u!114 &468921913
 MonoBehaviour:
@@ -1689,7 +1690,7 @@ MonoBehaviour:
   indentLevel: 0
   _duration:
     floatRef: {fileID: 0}
-    floatVal: 1.5
+    floatVal: 2
   durationOLD: 0
 --- !u!114 &468921949
 MonoBehaviour:
@@ -1754,7 +1755,7 @@ MonoBehaviour:
   indentLevel: 0
   _duration:
     floatRef: {fileID: 0}
-    floatVal: 1
+    floatVal: 10
   durationOLD: 0
 --- !u!114 &468921952
 MonoBehaviour:
@@ -2326,6 +2327,7 @@ GameObject:
   - component: {fileID: 747627584}
   - component: {fileID: 747627583}
   - component: {fileID: 747627585}
+  - component: {fileID: 747627586}
   m_Layer: 0
   m_Name: Eye
   m_TagString: Untagged
@@ -2371,8 +2373,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 923971163
-  m_SortingLayer: 2
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 013f3bbf95710d843a3c106b8486603b, type: 3}
   m_Color: {r: 0, g: 0, b: 0, a: 0.39607844}
@@ -2421,6 +2423,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
+--- !u!114 &747627586
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 747627582}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1411cb7d277b06418180f844ad081f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  eyeball: {fileID: 0}
 --- !u!1 &791267880
 GameObject:
   m_ObjectHideFlags: 0
@@ -2802,7 +2817,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -10
+  m_SortingOrder: -4
   m_Sprite: {fileID: 21300000, guid: 6ba102d7f21fa49c2bcf84c582f6eaba, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -10624,6 +10639,10 @@ PrefabInstance:
     - target: {fileID: 7817812271064518206, guid: 6750c7bc414fc72458996440a4b8555f, type: 3}
       propertyPath: wordBank.Array.data[3]
       value: Portray
+      objectReference: {fileID: 0}
+    - target: {fileID: 7817812271064518206, guid: 6750c7bc414fc72458996440a4b8555f, type: 3}
+      propertyPath: SavedBodyParts.Array.size
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 7817812271064518207, guid: 6750c7bc414fc72458996440a4b8555f, type: 3}
       propertyPath: m_Name

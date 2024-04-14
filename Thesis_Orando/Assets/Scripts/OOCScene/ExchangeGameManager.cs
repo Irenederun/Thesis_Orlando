@@ -45,7 +45,8 @@ public class ExchangeGameManager : MonoBehaviour
             {
                 if (exchangeGames[i] == null)
                 {
-                    exchangeGames[i] = GameObject.Find("ExchangeGame" + i).GetComponent<ExchangeGame>();
+                    GameObject exchangeGame = GameObject.Find("ExchangeGame" + i);
+                    if (exchangeGame != null) exchangeGames[i] = exchangeGame.GetComponent<ExchangeGame>();
                 }
             }
             /*
