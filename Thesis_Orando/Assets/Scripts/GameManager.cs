@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.Timeline;
 
 public class GameManager : MonoBehaviour
@@ -13,6 +14,17 @@ public class GameManager : MonoBehaviour
     public Action tutorialEnded;
     public int currentSentenceNo;
     public int playRating;
+    
+    
+    private void OnEnable()
+    {
+        SceneManager.sceneLoaded += TempAddToWordList;
+    }
+
+    private void OnDisable()
+    {
+        SceneManager.sceneLoaded -= TempAddToWordList;
+    }
     
     [System.Serializable]
     public class BodyPart
@@ -105,5 +117,10 @@ public class GameManager : MonoBehaviour
         SavedBodyParts[index].sprite = sp;
         SavedBodyParts[index].col = col;
         SavedBodyParts[index].used = true;
+    }
+
+    public void TempAddToWordList(Scene scene, LoadSceneMode mode)
+    {
+        if (scene.name.Contains("Play3-IC") && wordBank.Count < 5) wordBank.Add("Broken");
     }
 }
