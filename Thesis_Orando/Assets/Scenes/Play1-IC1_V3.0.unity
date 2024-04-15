@@ -2261,10 +2261,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 5801954485670231029, guid: 273ffa45d2200b64f9fc59b68d70d7f0, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 6111478551602157642, guid: d61c059478dc543558d518c4d03e4bdc, type: 3}
     - target: {fileID: 7154389427481790231, guid: 273ffa45d2200b64f9fc59b68d70d7f0, type: 3}
       propertyPath: m_Name
       value: VLADIMIRA
@@ -3282,7 +3278,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &1188723956
 SpriteRenderer:
   m_ObjectHideFlags: 0

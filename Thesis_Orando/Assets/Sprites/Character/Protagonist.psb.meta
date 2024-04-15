@@ -93,7 +93,7 @@ ScriptedImporter:
     spritePosition: {x: 0, y: 0}
   mosaicSpriteImportData: []
   rigSpriteImportData:
-  - name: Layer 34
+  - name: 1
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -115,7 +115,7 @@ ScriptedImporter:
     parentGroupIndex: -1
     uvTransform: {x: -820, y: -561}
     spritePosition: {x: 0, y: 0}
-  - name: Layer 34
+  - name: 2
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -137,7 +137,7 @@ ScriptedImporter:
     parentGroupIndex: -1
     uvTransform: {x: -651, y: -742}
     spritePosition: {x: 0, y: 0}
-  - name: Layer 34
+  - name: 3
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -159,7 +159,7 @@ ScriptedImporter:
     parentGroupIndex: -1
     uvTransform: {x: -825, y: -305}
     spritePosition: {x: 0, y: 0}
-  - name: Layer 34
+  - name: 4
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -181,7 +181,7 @@ ScriptedImporter:
     parentGroupIndex: -1
     uvTransform: {x: -869, y: -631}
     spritePosition: {x: 0, y: 0}
-  - name: Layer 34
+  - name: 5
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -203,7 +203,7 @@ ScriptedImporter:
     parentGroupIndex: -1
     uvTransform: {x: -852, y: -456}
     spritePosition: {x: 0, y: 0}
-  - name: Layer 34
+  - name: 6
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -247,7 +247,7 @@ ScriptedImporter:
     parentGroupIndex: -1
     uvTransform: {x: -674, y: -338}
     spritePosition: {x: 0, y: 0}
-  - name: Layer 34
+  - name: 8
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -269,7 +269,7 @@ ScriptedImporter:
     parentGroupIndex: -1
     uvTransform: {x: -973, y: -129}
     spritePosition: {x: 0, y: 0}
-  - name: Layer 34
+  - name: 9
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -291,7 +291,7 @@ ScriptedImporter:
     parentGroupIndex: -1
     uvTransform: {x: -684, y: -43}
     spritePosition: {x: 0, y: 0}
-  - name: Layer 34
+  - name: 10
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -343,8 +343,8 @@ ScriptedImporter:
   resliceFromLayer: 0
   mosaicPSDLayers: []
   rigPSDLayers:
-  - name: Layer 34
-    spriteName: Layer 34
+  - name: 1
+    spriteName: 1
     isGroup: 0
     parentIndex: -1
     spriteID: 97163d5c5b7bb445e8a9c6851460fff3
@@ -353,8 +353,8 @@ ScriptedImporter:
     flatten: 0
     isImported: 1
     isVisible: 1
-  - name: Layer 34
-    spriteName: Layer 34
+  - name: 2
+    spriteName: 2
     isGroup: 0
     parentIndex: -1
     spriteID: 9e01b0b74da614cbbad16a6a242bd21e
@@ -363,8 +363,8 @@ ScriptedImporter:
     flatten: 0
     isImported: 1
     isVisible: 1
-  - name: Layer 34
-    spriteName: Layer 34
+  - name: 3
+    spriteName: 3
     isGroup: 0
     parentIndex: -1
     spriteID: b53e8d17efbc64489bdf3d1fb9c17739
@@ -373,8 +373,8 @@ ScriptedImporter:
     flatten: 0
     isImported: 1
     isVisible: 1
-  - name: Layer 34
-    spriteName: Layer 34
+  - name: 4
+    spriteName: 4
     isGroup: 0
     parentIndex: -1
     spriteID: 8fb419462efd7463290f39d0f607f765
@@ -383,8 +383,8 @@ ScriptedImporter:
     flatten: 0
     isImported: 1
     isVisible: 1
-  - name: Layer 34
-    spriteName: Layer 34
+  - name: 5
+    spriteName: 5
     isGroup: 0
     parentIndex: -1
     spriteID: 80eb6ad1bf8e54be29f070bfb2ff1362
@@ -393,8 +393,8 @@ ScriptedImporter:
     flatten: 0
     isImported: 1
     isVisible: 1
-  - name: Layer 34
-    spriteName: Layer 34
+  - name: 6
+    spriteName: 6
     isGroup: 0
     parentIndex: -1
     spriteID: 26cc9592469f0467fa906d5bcfc2ca59
@@ -403,7 +403,7 @@ ScriptedImporter:
     flatten: 0
     isImported: 1
     isVisible: 1
-  - name: Layer 34
+  - name: 7_L
     spriteName: Layer 34
     isGroup: 0
     parentIndex: -1
@@ -413,8 +413,8 @@ ScriptedImporter:
     flatten: 0
     isImported: 1
     isVisible: 1
-  - name: Layer 34
-    spriteName: Layer 34
+  - name: 8
+    spriteName: 8
     isGroup: 0
     parentIndex: -1
     spriteID: 61729f99303c74fabbe9956f42c5fac9
@@ -423,8 +423,8 @@ ScriptedImporter:
     flatten: 0
     isImported: 1
     isVisible: 1
-  - name: Layer 34
-    spriteName: Layer 34
+  - name: 9
+    spriteName: 9
     isGroup: 0
     parentIndex: -1
     spriteID: b8015a1f367d343019aeeee57b22c2df
@@ -433,8 +433,8 @@ ScriptedImporter:
     flatten: 0
     isImported: 1
     isVisible: 1
-  - name: Layer 34
-    spriteName: Layer 34
+  - name: 10
+    spriteName: 10
     isGroup: 0
     parentIndex: -1
     spriteID: f063e7cda33da4c2e9a443dfe3a480ed
