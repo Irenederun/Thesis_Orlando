@@ -64,6 +64,9 @@ public class ExchangeGameManager : MonoBehaviour
         exchangeGames[number].gameObject.SetActive(true);
         exchangeGames[number].Init();
         startGameEvent?.Invoke(number);
+
+        GameObject cam = Camera.main.gameObject;
+        cam.GetComponent<CameraFollowMouse>().enabled = false;
     }
 
     public void EndExchangeGame()
@@ -83,5 +86,8 @@ public class ExchangeGameManager : MonoBehaviour
             }
         }
         DialogueManager.instance.TriggerDialogue("ExitExchange");
+        
+        GameObject cam = Camera.main.gameObject;
+        cam.GetComponent<CameraFollowMouse>().enabled = true;
     }
 }
