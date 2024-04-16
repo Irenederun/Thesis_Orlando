@@ -1100,6 +1100,7 @@ GameObject:
   - component: {fileID: 468922229}
   - component: {fileID: 468922230}
   - component: {fileID: 468922231}
+  - component: {fileID: 468922232}
   m_Layer: 0
   m_Name: IC-0 Flowchart
   m_TagString: Untagged
@@ -1122,8 +1123,8 @@ MonoBehaviour:
   nodeRect:
     serializedVersion: 2
     x: 167.23763
-    y: 37.434006
-    width: 72.601654
+    y: 36.370174
+    width: 110.992935
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1157,6 +1158,7 @@ MonoBehaviour:
   - {fileID: 468922217}
   - {fileID: 468922223}
   - {fileID: 468922222}
+  - {fileID: 468922232}
   - {fileID: 468922097}
   - {fileID: 468922215}
   - {fileID: 468922135}
@@ -1201,11 +1203,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 307.67136, y: 34.62265}
+  scrollPos: {x: 229.59402, y: 13.248735}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 417.66666
-  zoom: 0.8199997
+  zoom: 0.9399996
   scrollViewRect:
     serializedVersion: 2
     x: -343
@@ -1330,7 +1332,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 291.5283
     y: -34.647514
-    width: 79.918724
+    width: 118.08514
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1550,7 +1552,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 164.90944
     y: 91.69467
-    width: 74.22767
+    width: 112.41138
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2004,7 +2006,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 160.35185
     y: 157.81505
-    width: 74.22767
+    width: 112.41138
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2050,7 +2052,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemId: 115
-  indentLevel: 1
+  indentLevel: 0
 --- !u!114 &468922040
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -2067,7 +2069,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 427.41403
     y: -30.158554
-    width: 60
+    width: 78.368805
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2503,7 +2505,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemId: 180
-  indentLevel: 2
+  indentLevel: 1
   description: LoadPrefab
   targetObject: {fileID: 1355750308}
   targetComponentAssemblyName: WordDragLoader, Assembly-CSharp, Version=0.0.0.0,
@@ -2531,7 +2533,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemId: 179
-  indentLevel: 2
+  indentLevel: 1
   storyText: "Are you all right?\r"
   description: 
   character: {fileID: 9036191115889225432}
@@ -2558,7 +2560,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemId: 178
-  indentLevel: 2
+  indentLevel: 1
   _duration:
     floatRef: {fileID: 0}
     floatVal: 1
@@ -2576,7 +2578,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemId: 177
-  indentLevel: 1
+  indentLevel: 0
   anyOrAllConditions: 1
   conditions:
   - compareOperator: 0
@@ -3387,7 +3389,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -17.628983
     y: 36.996754
-    width: 60
+    width: 75.53193
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -3581,7 +3583,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -20.559853
     y: 98.535225
-    width: 60
+    width: 74.82271
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -3995,7 +3997,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemId: 222
-  indentLevel: 2
+  indentLevel: 1
   _targetGameObject:
     gameObjectRef: {fileID: 0}
     gameObjectVal: {fileID: 1481486022}
@@ -4016,7 +4018,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemId: 221
-  indentLevel: 2
+  indentLevel: 1
   _duration:
     floatRef: {fileID: 0}
     floatVal: 1
@@ -4034,7 +4036,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemId: 220
-  indentLevel: 2
+  indentLevel: 1
   animator:
     animatorRef: {fileID: 0}
     animatorVal: {fileID: 1138033224}
@@ -4358,7 +4360,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 166.4845
     y: 219.85184
-    width: 73.41466
+    width: 111.702156
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -4594,7 +4596,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemId: 261
-  indentLevel: 1
+  indentLevel: 0
   anyOrAllConditions: 1
   conditions:
   - compareOperator: 0
@@ -4837,7 +4839,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemId: 267
-  indentLevel: 2
+  indentLevel: 1
   description: LoadPrefab
   targetObject: {fileID: 1355750308}
   targetComponentAssemblyName: WordDragLoader, Assembly-CSharp, Version=0.0.0.0,
@@ -4865,7 +4867,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemId: 265
-  indentLevel: 2
+  indentLevel: 1
   _duration:
     floatRef: {fileID: 0}
     floatVal: 1
@@ -4883,7 +4885,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemId: 264
-  indentLevel: 2
+  indentLevel: 1
   _targetGameObject:
     gameObjectRef: {fileID: 0}
     gameObjectVal: {fileID: 1481486022}
@@ -4904,7 +4906,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemId: 263
-  indentLevel: 2
+  indentLevel: 1
   _duration:
     floatRef: {fileID: 0}
     floatVal: 1
@@ -4922,7 +4924,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemId: 262
-  indentLevel: 2
+  indentLevel: 1
   animator:
     animatorRef: {fileID: 0}
     animatorVal: {fileID: 1138033224}
@@ -4948,7 +4950,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemId: 274
-  indentLevel: 2
+  indentLevel: 1
   description: LoadPrefab
   targetObject: {fileID: 1355750308}
   targetComponentAssemblyName: WordDragLoader, Assembly-CSharp, Version=0.0.0.0,
@@ -4976,7 +4978,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemId: 273
-  indentLevel: 2
+  indentLevel: 1
   _duration:
     floatRef: {fileID: 0}
     floatVal: 1
@@ -4994,7 +4996,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemId: 272
-  indentLevel: 2
+  indentLevel: 1
   _targetGameObject:
     gameObjectRef: {fileID: 0}
     gameObjectVal: {fileID: 1481486022}
@@ -5015,7 +5017,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemId: 271
-  indentLevel: 2
+  indentLevel: 1
   _duration:
     floatRef: {fileID: 0}
     floatVal: 1
@@ -5033,7 +5035,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemId: 270
-  indentLevel: 2
+  indentLevel: 1
   animator:
     animatorRef: {fileID: 0}
     animatorVal: {fileID: 1138033224}
@@ -5059,7 +5061,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemId: 269
-  indentLevel: 1
+  indentLevel: 0
   anyOrAllConditions: 1
   conditions:
   - compareOperator: 0
@@ -5302,7 +5304,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemId: 268
-  indentLevel: 2
+  indentLevel: 1
   storyText: "I have changed now.\r\nNow I am a real actor.\r"
   description: 
   character: {fileID: 1932757925544751689}
@@ -5329,7 +5331,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemId: 280
-  indentLevel: 2
+  indentLevel: 1
   description: LoadPrefab
   targetObject: {fileID: 1355750308}
   targetComponentAssemblyName: WordDragLoader, Assembly-CSharp, Version=0.0.0.0,
@@ -5357,7 +5359,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemId: 279
-  indentLevel: 2
+  indentLevel: 1
   _duration:
     floatRef: {fileID: 0}
     floatVal: 1
@@ -5375,7 +5377,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemId: 278
-  indentLevel: 2
+  indentLevel: 1
   _targetGameObject:
     gameObjectRef: {fileID: 0}
     gameObjectVal: {fileID: 1481486022}
@@ -5396,7 +5398,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemId: 277
-  indentLevel: 2
+  indentLevel: 1
   _duration:
     floatRef: {fileID: 0}
     floatVal: 1
@@ -5414,7 +5416,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemId: 276
-  indentLevel: 2
+  indentLevel: 1
   animator:
     animatorRef: {fileID: 0}
     animatorVal: {fileID: 1138033224}
@@ -5440,7 +5442,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemId: 275
-  indentLevel: 1
+  indentLevel: 0
 --- !u!114 &468922190
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -5614,7 +5616,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 168.67633
     y: 277.59686
-    width: 73.41466
+    width: 111.702156
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -5754,7 +5756,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 158.53935
     y: 339.29938
-    width: 73.41466
+    width: 111.702156
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -5839,7 +5841,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemId: 313
-  indentLevel: 2
+  indentLevel: 1
   _targetGameObject:
     gameObjectRef: {fileID: 0}
     gameObjectVal: {fileID: 1138033223}
@@ -5860,7 +5862,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemId: 312
-  indentLevel: 2
+  indentLevel: 1
   _targetGameObject:
     gameObjectRef: {fileID: 0}
     gameObjectVal: {fileID: 1138033223}
@@ -5881,7 +5883,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemId: 311
-  indentLevel: 2
+  indentLevel: 1
   _targetGameObject:
     gameObjectRef: {fileID: 0}
     gameObjectVal: {fileID: 1138033223}
@@ -6586,6 +6588,20 @@ MonoBehaviour:
   scope: 0
   key: isTalking
   value: 0
+--- !u!114 &468922232
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 468921884}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93cb9773f2ca04e2bbf7a68ccfc23267, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 330
+  indentLevel: 1
 --- !u!1 &477653529
 GameObject:
   m_ObjectHideFlags: 0
