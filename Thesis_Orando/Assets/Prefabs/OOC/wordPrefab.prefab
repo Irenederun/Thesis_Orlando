@@ -16,7 +16,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &4887842296470986864
 Transform:
   m_ObjectHideFlags: 0
@@ -348,7 +348,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5949705895341551107}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.625, y: 1.58, z: 0.12687574}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1.19, y: 0.59004, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -481,6 +481,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   _exchangeGame: {fileID: 0}
+  myBodyPartManager: {fileID: 0}
 --- !u!114 &8732427309139044098
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -496,3 +497,6 @@ MonoBehaviour:
   selectionColor: {r: 1, g: 0, b: 0.99607843, a: 1}
   wordText: {fileID: 5949705895255054945}
   lr: {fileID: 5244524687067587128}
+  targetColor: {r: 1, g: 0, b: 0, a: 1}
+  maxDistance: 1.2
+  minDistance: 0.05

@@ -26,11 +26,13 @@ public class UIDragBehavior : MonoBehaviour
     {
         dragging = true;
         GetComponent<OtherWord>().UpdatePos();
+        UIMouse.instance.wordBeingDragged = gameObject;
     }
 
     public void OnDragExit()
     {
         dragging = false;
+        UIMouse.instance.wordBeingDragged = null;
         
         Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         RaycastHit2D hit = Physics2D.Raycast(mousePos, Vector2.zero, 
@@ -49,6 +51,11 @@ public class UIDragBehavior : MonoBehaviour
             
             //if success subscribe
             GetComponent<UIWordBehavior>()._exchangeGame.EndEvent += DeactivateObj;
+            
+            if (GetComponent<MyWord>() == null)
+            {
+                gameObject.AddComponent<MyWord>();
+            }
         }
         
         else
