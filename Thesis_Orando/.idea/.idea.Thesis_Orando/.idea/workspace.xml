@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9711d522-8fc0-494c-84b2-d15386118320" name="Changes" comment="" />
+    <list default="true" id="9711d522-8fc0-494c-84b2-d15386118320" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Thesis_Orando/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Thesis_Orando/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Character&amp;Dialogue/newpieces.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Character&amp;Dialogue/newpieces.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/GMHolder.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/GMHolder.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/WordDragPrefabs/Play3/WordDragPlay3.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/WordDragPrefabs/Play3/WordDragPlay3.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Character/Protagonist.psb" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Character/Protagonist.psb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Character/Protagonist.psb.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Character/Protagonist.psb.meta" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -164,6 +172,7 @@
       <workItem from="1713037869454" duration="13223000" />
       <workItem from="1713131973981" duration="4145000" />
       <workItem from="1713212450756" duration="2171000" />
+      <workItem from="1713280867701" duration="1253000" />
     </task>
     <servers />
   </component>

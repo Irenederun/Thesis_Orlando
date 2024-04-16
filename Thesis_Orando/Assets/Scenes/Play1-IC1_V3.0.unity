@@ -4735,10 +4735,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 569652437664649989, guid: 94e9b21fda908904290cd45b3705db19, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 2107791553600592264, guid: 94e9b21fda908904290cd45b3705db19, type: 3}
       propertyPath: m_Name
       value: ESTRAGON
@@ -4786,22 +4782,6 @@ PrefabInstance:
     - target: {fileID: 2107791553600592265, guid: 94e9b21fda908904290cd45b3705db19, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4198876649782997706, guid: 94e9b21fda908904290cd45b3705db19, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.9724418
-      objectReference: {fileID: 0}
-    - target: {fileID: 4198876649782997706, guid: 94e9b21fda908904290cd45b3705db19, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0.23314573
-      objectReference: {fileID: 0}
-    - target: {fileID: 5452260462499104667, guid: 94e9b21fda908904290cd45b3705db19, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.8712251
-      objectReference: {fileID: 0}
-    - target: {fileID: 5452260462499104667, guid: 94e9b21fda908904290cd45b3705db19, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0.49088374
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 94e9b21fda908904290cd45b3705db19, type: 3}
