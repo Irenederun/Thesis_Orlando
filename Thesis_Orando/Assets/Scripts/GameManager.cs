@@ -121,6 +121,10 @@ public class GameManager : MonoBehaviour
 
     public void TempAddToWordList(Scene scene, LoadSceneMode mode)
     {
-        if (scene.name.Contains("Play3-IC") && wordBank.Count < 5) wordBank.Add("Broken");
+        if (scene.name.Contains("Play3-IC") && wordBank.Count < 5) 
+        {
+            wordBank.Add("Broken");
+            //wordBank.Add("Broken")
+        }
     }
 }
