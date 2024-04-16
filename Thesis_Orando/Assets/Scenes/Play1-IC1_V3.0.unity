@@ -829,9 +829,8 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 468921913}
-  selectedCommands:
-  - {fileID: 468921951}
+  - {fileID: 468921944}
+  selectedCommands: []
   variables:
   - {fileID: 468921930}
   - {fileID: 468921936}
@@ -1945,7 +1944,7 @@ MonoBehaviour:
   value: default
 --- !u!114 &468921965
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
