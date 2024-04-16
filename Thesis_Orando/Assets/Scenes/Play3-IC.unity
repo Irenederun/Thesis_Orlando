@@ -870,7 +870,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 363108103}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.04399984, y: -2.24, z: 0}
+  m_LocalPosition: {x: -0.07, y: -2.24, z: 0}
   m_LocalScale: {x: 0.87, y: 0.87, z: 0.87}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -1124,7 +1124,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 167.23763
     y: 36.370174
-    width: 110.992935
+    width: 112.271095
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1203,11 +1203,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 229.59402, y: 13.248735}
+  scrollPos: {x: 236.59721, y: -60.428345}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 417.66666
-  zoom: 0.9399996
+  zoom: 0.90999955
   scrollViewRect:
     serializedVersion: 2
     x: -343
@@ -1215,8 +1215,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 468921886}
-  selectedCommands: []
+  - {fileID: 468922011}
+  selectedCommands:
+  - {fileID: 468922009}
   variables:
   - {fileID: 468921990}
   - {fileID: 468921930}
@@ -1332,7 +1333,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 291.5283
     y: -34.647514
-    width: 118.08514
+    width: 119.59711
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1551,8 +1552,8 @@ MonoBehaviour:
   nodeRect:
     serializedVersion: 2
     x: 164.90944
-    y: 91.69467
-    width: 112.41138
+    y: 89.49687
+    width: 114.468895
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2006,7 +2007,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 160.35185
     y: 157.81505
-    width: 112.41138
+    width: 114.468895
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2069,7 +2070,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 427.41403
     y: -30.158554
-    width: 78.368805
+    width: 79.30405
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2867,7 +2868,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 190
   indentLevel: 1
-  storyText: "Why do you say that you have kiss the ground I walked on?\r"
+  storyText: "Why do you say that you have kiss \nthe ground I walked on?\r"
   description: 
   character: {fileID: 1932757925544751689}
   portrait: {fileID: 0}
@@ -3389,7 +3390,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -17.628983
     y: 36.996754
-    width: 75.53193
+    width: 74.90844
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -3583,7 +3584,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -20.559853
     y: 98.535225
-    width: 74.82271
+    width: 74.90844
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -3608,7 +3609,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 204
   indentLevel: 1
-  storyText: Why do you say that you have spit the ground I walked on?
+  storyText: "Why do you say that you have spit \nthe ground I walked on?"
   description: 
   character: {fileID: 1932757925544751689}
   portrait: {fileID: 0}
@@ -4360,7 +4361,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 166.4845
     y: 219.85184
-    width: 111.702156
+    width: 113.7363
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -5616,7 +5617,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 168.67633
     y: 277.59686
-    width: 111.702156
+    width: 113.7363
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -5756,7 +5757,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 158.53935
     y: 339.29938
-    width: 111.702156
+    width: 113.7363
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -8117,7 +8118,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1140499872}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4.23, y: 1.293, z: 0}
+  m_LocalPosition: {x: 4.116, y: 1.293, z: 0}
   m_LocalScale: {x: 0.76636267, y: 0.76636267, z: 0.76636267}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -9485,7 +9486,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9162017171365429138, guid: d5a3f3828f19745dd9c3953a371f87bc, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.536
+      value: -0.656
       objectReference: {fileID: 0}
     - target: {fileID: 9162017171365429138, guid: d5a3f3828f19745dd9c3953a371f87bc, type: 3}
       propertyPath: m_LocalPosition.y
@@ -12432,7 +12433,7 @@ MonoBehaviour:
   m_FontData:
     m_Font: {fileID: 12800000, guid: ebb2e1caf3d864adf949d1f8c616edc7, type: 3}
     m_FontSize: 42
-    m_FontStyle: 0
+    m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 3
     m_MaxSize: 50
@@ -16493,7 +16494,7 @@ MonoBehaviour:
   m_FontData:
     m_Font: {fileID: 12800000, guid: ebb2e1caf3d864adf949d1f8c616edc7, type: 3}
     m_FontSize: 42
-    m_FontStyle: 0
+    m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 0
     m_MaxSize: 50
@@ -17465,7 +17466,7 @@ MonoBehaviour:
   m_FontData:
     m_Font: {fileID: 12800000, guid: ebb2e1caf3d864adf949d1f8c616edc7, type: 3}
     m_FontSize: 42
-    m_FontStyle: 0
+    m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 3
     m_MaxSize: 50

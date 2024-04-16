@@ -862,6 +862,10 @@ PrefabInstance:
       value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 9036191115072016126, guid: e03f5370b8b3af249aafe8877b74f82e, type: 3}
+      propertyPath: m_FontData.m_FontStyle
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9036191115072016126, guid: e03f5370b8b3af249aafe8877b74f82e, type: 3}
       propertyPath: m_FontData.m_LineSpacing
       value: 1.15
       objectReference: {fileID: 0}
@@ -1031,7 +1035,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9036191116377504191, guid: e03f5370b8b3af249aafe8877b74f82e, type: 3}
       propertyPath: m_FontData.m_FontStyle
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9036191116377504191, guid: e03f5370b8b3af249aafe8877b74f82e, type: 3}
       propertyPath: m_FontData.m_LineSpacing

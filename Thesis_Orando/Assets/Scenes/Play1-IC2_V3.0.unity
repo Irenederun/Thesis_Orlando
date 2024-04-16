@@ -771,8 +771,8 @@ MonoBehaviour:
   nodeRect:
     serializedVersion: 2
     x: 161.06526
-    y: 39.865036
-    width: 71.76514
+    y: 38.50257
+    width: 111.76514
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -809,7 +809,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 241.62674, y: 96.20375}
+  scrollPos: {x: 54.96885, y: 124.81552}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 341.66666
@@ -821,7 +821,7 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 468921987}
+  - {fileID: 468922085}
   selectedCommands: []
   variables:
   - {fileID: 468921930}
@@ -948,7 +948,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 303.06668
     y: 116.43988
-    width: 79.031624
+    width: 119.031624
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1171,7 +1171,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 66
   indentLevel: 0
-  storyText: "Just say you are, even if it\u2019s not true.\r"
+  storyText: "Just say you are, \neven if it\u2019s not true.\r"
   description: 
   character: {fileID: 2005082777}
   portrait: {fileID: 0}
@@ -1384,9 +1384,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 159.19514
+    x: 160.55762
     y: 99.57653
-    width: 73.58176
+    width: 113.58176
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1604,7 +1604,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 303.73138
     y: 47.760178
-    width: 79.031624
+    width: 119.031624
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2493,7 +2493,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 163.17683
     y: 159.65498
-    width: 74.490074
+    width: 114.490074
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -3029,7 +3029,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 160.96373
     y: 219.56621
-    width: 75.398384
+    width: 115.398384
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -3072,7 +3072,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 125
   indentLevel: 0
-  storyText: What do we do now, now that we are {$secondWord}?
+  storyText: "What do we do now, \nnow that we are {$secondWord}?"
   description: 
   character: {fileID: 1585182548}
   portrait: {fileID: 0}
@@ -3226,7 +3226,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 470.0821
     y: 50.25009
-    width: 60
+    width: 79.06595
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -3478,7 +3478,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 472.20557
     y: 160.09479
-    width: 115.36406
+    width: 155.36406
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -5047,7 +5047,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 473.8421
     y: 213.02483
-    width: 122.63055
+    width: 162.63055
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -12223,6 +12223,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1932757925147197450, guid: 20d2aa1150937b94e8620414b8d314a6, type: 3}
+      propertyPath: m_Text
+      value: For you are back with me again.
+      objectReference: {fileID: 0}
     - target: {fileID: 1932757925171001299, guid: 20d2aa1150937b94e8620414b8d314a6, type: 3}
       propertyPath: m_Name
       value: VladimiraFungus
