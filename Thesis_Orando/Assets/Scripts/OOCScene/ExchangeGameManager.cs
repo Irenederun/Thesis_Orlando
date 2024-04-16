@@ -12,6 +12,7 @@ public class ExchangeGameManager : MonoBehaviour
     public delegate void namenotimportanto(int gameID);
     public event namenotimportanto endGameEvent;
     public event namenotimportanto startGameEvent;
+    public Color destColor;
     
     private void OnEnable()
     {

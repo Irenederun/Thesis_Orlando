@@ -54,42 +54,42 @@ MonoBehaviour:
     otherWords:
     - otherWordPos: 0-1
       otherWordText: Crazy
-      otherWordLimb: G2
+      otherWordLimb: G1
     - otherWordPos: 0-2
       otherWordText: Death
-      otherWordLimb: G1
+      otherWordLimb: G2
     - otherWordPos: 0-3
       otherWordText: Love
-      otherWordLimb: G4
+      otherWordLimb: G3
     - otherWordPos: 0-4
       otherWordText: Immortal
-      otherWordLimb: G3
+      otherWordLimb: G4
   - level: Play3
     otherWords:
     - otherWordPos: 3-1
       otherWordText: Fear
-      otherWordLimb: G2
+      otherWordLimb: G1
     - otherWordPos: 3-2
       otherWordText: Disgust
-      otherWordLimb: G1
+      otherWordLimb: G2
     - otherWordPos: 3-3
       otherWordText: He
-      otherWordLimb: G4
+      otherWordLimb: G3
     - otherWordPos: 3-4
       otherWordText: Kiss
-      otherWordLimb: G3
+      otherWordLimb: G4
     - otherWordPos: 3-5
       otherWordText: Worry
-      otherWordLimb: B2
+      otherWordLimb: B1
     - otherWordPos: 3-6
       otherWordText: Curse
-      otherWordLimb: B1
+      otherWordLimb: B2
     - otherWordPos: 3-7
       otherWordText: Kill
-      otherWordLimb: B4
+      otherWordLimb: B3
     - otherWordPos: 3-8
       otherWordText: You
-      otherWordLimb: B3
+      otherWordLimb: B4
   NPCBodyPieces:
   - id: 0-1
     usedStates: 00000000

@@ -44,6 +44,7 @@ public class UIDragBehavior : MonoBehaviour
 
             string newWord = transform.GetChild(0).GetComponent<TMP_Text>().text;
             string destWord = hit.collider.gameObject.transform.GetChild(0).GetComponent<TMP_Text>().text;
+            transform.GetChild(0).GetComponent<TMP_Text>().color = ExchangeGameManager.instance.destColor;
             GetComponent<UIWordBehavior>()._exchangeGame.Exchange(destWord, newWord,GetComponent<UIWordBehavior>());
             
             //if success subscribe
