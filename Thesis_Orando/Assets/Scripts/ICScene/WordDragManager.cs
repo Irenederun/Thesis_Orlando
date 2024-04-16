@@ -166,14 +166,16 @@ public class WordDragManager : ManagerBehavior
             if (submit.activeSelf)
             {
                 submit.SetActive(false);
+                print("aaaaaa");
             }
         }
         
-        if (!sentence.Contains(" ") || !sentence.Contains(""))
+        if (!sentence.Contains(" ") && !sentence.Contains(""))
         {
             if (!submit.activeSelf)
             {
                 submit.SetActive(true);
+                print("bbbb");
             }
         }
     }
