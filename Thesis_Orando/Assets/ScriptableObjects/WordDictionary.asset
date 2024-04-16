@@ -757,3 +757,39 @@ MonoBehaviour:
       conjugation: kill
     - position: adj
       conjugation: killed
+  - word: Fear
+    rules:
+    - position: 1A
+      conjugation: Feared
+    - position: 1B
+      conjugation: fearful
+    - position: 1C
+      conjugation: New
+    - position: 1D_0
+      conjugation: fearful
+    - position: 1D
+      conjugation: fear
+    - position: 1E
+      conjugation: CAT1
+    - position: 3A
+      conjugation: Fear
+    - position: 3B
+      conjugation: fearful
+    - position: 3C
+      conjugation: fear
+    - position: 3D
+      conjugation: fear
+    - position: 3C_R
+      conjugation: comforting
+    - position: 2IA
+      conjugation: fear
+    - position: 2IB
+      conjugation: fear
+    - position: 2IC
+      conjugation: NEG
+    - position: verb
+      conjugation: fear
+    - position: noun
+      conjugation: fear
+    - position: adj
+      conjugation: fearful

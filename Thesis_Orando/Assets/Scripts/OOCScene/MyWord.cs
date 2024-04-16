@@ -15,8 +15,8 @@ public class MyWord : UIBehavior
     private Transform connectedLimb;
 
     public Color targetColor = Color.red;
-    public float maxDistance = 1.2f;
-    public float minDistance = 0.05f;
+    public float maxDistance = 2f;
+    public float minDistance = 0.1f;
 
     public enum state
     {
@@ -94,29 +94,36 @@ public class MyWord : UIBehavior
     {
         if (UIMouse.instance.wordBeingDragged != null)
         {
-            float distance = Vector3.Distance(transform.position, UIMouse.instance.wordBeingDragged.transform.position);
+            GameObject objB = UIMouse.instance.wordBeingDragged;
+            float distance = Vector3.Distance(transform.position, objB.transform.position);
+            float yDistance = Mathf.Abs(transform.position.y - objB.transform.position.y);
 
-            if (distance >= minDistance && distance <= maxDistance)
+            if (yDistance <= 0.65f)
             {
-                // Calculate the lerp factor based on the distance
-                float lerpFactor = (distance - minDistance) / (maxDistance - minDistance);
-                print(lerpFactor);
-                lerpFactor = 1 - lerpFactor;
+                if (distance >= minDistance && distance <= maxDistance )
+                {
+                    // Calculate the lerp factor based on the distance
+                    float lerpFactor = (distance - minDistance) / (maxDistance - minDistance);
+                    lerpFactor = 1 - lerpFactor;
 
-                // Interpolate the color from originalColor to targetColor
-                Color newColor = Color.Lerp(originalColor, targetColor, lerpFactor);
-                Debug.Log("turn red");
+                    // Interpolate the color from originalColor to targetColor
+                    Color newColor = Color.Lerp(originalColor, targetColor, lerpFactor);
 
-                // Set the color of the TMP component
-                wordText.color = newColor;
+                    // Set the color of the TMP component
+                    wordText.color = newColor;
+                }
+                else if (distance < minDistance)
+                {
+                    wordText.color = targetColor; // Set to bright red
+                }
+                else if (distance > maxDistance)
+                {
+                    // Reset the color to the original color if the distance is greater than the detection distance
+                    wordText.color = originalColor;
+                }
             }
-            else if (distance < minDistance)
+            else
             {
-                wordText.color = targetColor; // Set to bright red
-            }
-            else if (distance > maxDistance)
-            {
-                // Reset the color to the original color if the distance is greater than the detection distance
                 wordText.color = originalColor;
             }
         }

@@ -498,5 +498,5 @@ MonoBehaviour:
   wordText: {fileID: 5949705895255054945}
   lr: {fileID: 5244524687067587128}
   targetColor: {r: 1, g: 0, b: 0, a: 1}
-  maxDistance: 1.2
-  minDistance: 0.05
+  maxDistance: 2
+  minDistance: 0.1
