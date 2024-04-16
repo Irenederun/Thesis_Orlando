@@ -8,6 +8,19 @@ public class UIMouse : MonoBehaviour
     public Vector2 mousePos;
     private GameObject clickingObj;
     private GameObject dragObj;
+    public static UIMouse instance;
+    public GameObject wordBeingDragged;
+
+    private void OnEnable()
+    {
+        instance = this;
+    }
+
+    private void OnDisable()
+    {
+        instance = null;
+    }
+
 
     // Update is called once per frame
     void Update()

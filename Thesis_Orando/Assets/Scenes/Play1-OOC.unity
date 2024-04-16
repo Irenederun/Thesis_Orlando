@@ -1301,6 +1301,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mousePos: {x: 0, y: 0}
+  wordBeingDragged: {fileID: 0}
 --- !u!1 &102566058
 GameObject:
   m_ObjectHideFlags: 0
@@ -19461,6 +19462,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mousePos: {x: 0, y: 0}
+  wordBeingDragged: {fileID: 0}
 --- !u!114 &1429434900
 MonoBehaviour:
   m_ObjectHideFlags: 0
