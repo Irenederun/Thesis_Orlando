@@ -787,7 +787,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 169.64203
     y: 175.28468
-    width: 110.481094
+    width: 111.85567
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -829,7 +829,8 @@ MonoBehaviour:
     y: -340
     width: 1114
     height: 859
-  selectedBlocks: []
+  selectedBlocks:
+  - {fileID: 468921933}
   selectedCommands: []
   variables:
   - {fileID: 468921930}
@@ -919,7 +920,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 170.13635
     y: 119
-    width: 116.666664
+    width: 118.04124
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -974,7 +975,7 @@ MonoBehaviour:
     stringVal: 
   _duration:
     floatRef: {fileID: 0}
-    floatVal: 2.5
+    floatVal: 2
   easeType: 21
   loopType: 0
   stopPreviousTweens: 0
@@ -1044,7 +1045,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 175.33112
     y: 4.760878
-    width: 117.35395
+    width: 119.07217
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1144,7 +1145,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 161.76479
     y: 58.573624
-    width: 118.72852
+    width: 120.10309
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1377,7 +1378,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 169.32309
     y: 230.16449
-    width: 118.72852
+    width: 120.10309
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1572,7 +1573,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 174.70236
     y: 285.70493
-    width: 117.35395
+    width: 119.07217
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -4900,6 +4901,10 @@ PrefabInstance:
     - target: {fileID: 2107791553600592265, guid: 94e9b21fda908904290cd45b3705db19, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9036191115904297043, guid: 94e9b21fda908904290cd45b3705db19, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -1.2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 94e9b21fda908904290cd45b3705db19, type: 3}
