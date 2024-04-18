@@ -787,7 +787,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 169.64203
     y: 175.28468
-    width: 111.85567
+    width: 111.17646
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -818,11 +818,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 61.65518, y: -26.000874}
+  scrollPos: {x: 79.159134, y: 209.07481}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 341.66666
-  zoom: 0.97
+  zoom: 0.85000014
   scrollViewRect:
     serializedVersion: 2
     x: -343
@@ -830,8 +830,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 468921933}
-  selectedCommands: []
+  - {fileID: 468921913}
+  selectedCommands:
+  - {fileID: 468921951}
   variables:
   - {fileID: 468921930}
   - {fileID: 468921936}
@@ -920,7 +921,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 170.13635
     y: 119
-    width: 118.04124
+    width: 117.450966
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1027,7 +1028,7 @@ MonoBehaviour:
   indentLevel: 0
   _duration:
     floatRef: {fileID: 0}
-    floatVal: 1
+    floatVal: 18
   durationOLD: 0
 --- !u!114 &468921913
 MonoBehaviour:
@@ -1045,7 +1046,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 175.33112
     y: 4.760878
-    width: 119.07217
+    width: 118.23528
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1143,9 +1144,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 161.76479
-    y: 58.573624
-    width: 120.10309
+    x: 164.85757
+    y: 61.666412
+    width: 119.0196
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1378,7 +1379,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 169.32309
     y: 230.16449
-    width: 120.10309
+    width: 119.0196
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1573,7 +1574,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 174.70236
     y: 285.70493
-    width: 119.07217
+    width: 118.23528
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1755,7 +1756,7 @@ MonoBehaviour:
   indentLevel: 0
   _duration:
     floatRef: {fileID: 0}
-    floatVal: 1
+    floatVal: 10
   durationOLD: 0
 --- !u!114 &468921952
 MonoBehaviour:

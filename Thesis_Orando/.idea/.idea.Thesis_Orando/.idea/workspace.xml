@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9711d522-8fc0-494c-84b2-d15386118320" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Play1-OOC.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Play1-OOC.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/WordDictionary.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptableObjects/WordDictionary.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/OOCScene/ExchangeGame.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/OOCScene/ExchangeGame.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UIMouse.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UIMouse.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/OOC/wordPrefab.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/OOC/wordPrefab.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Play1-IC1_V3.0.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Play1-IC1_V3.0.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/OOCScene/MyWord.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/OOCScene/MyWord.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -171,7 +170,7 @@
       <workItem from="1713131973981" duration="4145000" />
       <workItem from="1713212450756" duration="2171000" />
       <workItem from="1713280867701" duration="10109000" />
-      <workItem from="1713461861079" duration="328000" />
+      <workItem from="1713461861079" duration="1005000" />
     </task>
     <servers />
   </component>

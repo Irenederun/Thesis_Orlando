@@ -14,7 +14,7 @@ public class MyWord : UIBehavior
     private Color originalColor;
     private Transform connectedLimb;
 
-    public Color targetColor = Color.red;
+    public Color targetColor = new Vector4(0,0,0,0);
     public float maxDistance = 2f;
     public float minDistance = 0.1f;
 
