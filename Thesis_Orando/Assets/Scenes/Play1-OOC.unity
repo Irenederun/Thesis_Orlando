@@ -5406,8 +5406,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 554746285}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -4.8, y: 1.36, z: 0}
-  m_LocalScale: {x: 8.375249, y: 3.1157258, z: 6.8591}
+  m_LocalPosition: {x: -7.0549, y: -0.6391, z: 0}
+  m_LocalScale: {x: 3.8651774, y: 7.1138253, z: 6.8591}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 100329748}
@@ -6218,8 +6218,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 657160982}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.22, y: -1.18, z: 0}
-  m_LocalScale: {x: 6.8591003, y: 6.196511, z: 6.8590984}
+  m_LocalPosition: {x: 2.1174, y: -1.18, z: 0}
+  m_LocalScale: {x: 3.1501844, y: 6.196511, z: 6.8590984}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 100329748}
@@ -17325,13 +17325,15 @@ GameObject:
   - component: {fileID: 1357418061}
   - component: {fileID: 1357418062}
   - component: {fileID: 1357418063}
-  - component: {fileID: 1357418064}
   - component: {fileID: 1357418065}
   - component: {fileID: 1357418066}
   - component: {fileID: 1357418068}
   - component: {fileID: 1357418067}
   - component: {fileID: 1357418069}
   - component: {fileID: 1357418070}
+  - component: {fileID: 1357418073}
+  - component: {fileID: 1357418072}
+  - component: {fileID: 1357418071}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -17396,7 +17398,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: -232.4763, y: -13.451958}
+  scrollPos: {x: -332.47632, y: -184.33809}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 601.3333
@@ -17408,7 +17410,7 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 1357418056}
+  - {fileID: 1357418048}
   selectedCommands: []
   variables:
   - {fileID: 1357418027}
@@ -17467,9 +17469,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 474.38522
+    x: 473.11942
     y: 246.57217
-    width: 60
+    width: 98.945145
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -17480,7 +17482,6 @@ MonoBehaviour:
   commandList:
   - {fileID: 1357418069}
   - {fileID: 1357418032}
-  - {fileID: 1357418064}
   suppressAllAutoSelections: 0
 --- !u!114 &1357418032
 MonoBehaviour:
@@ -17567,7 +17568,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 475.38522
     y: 296.57217
-    width: 60
+    width: 99.78903
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -17637,7 +17638,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 479.38522
     y: 342.57217
-    width: 60.632915
+    width: 100.63292
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -17679,7 +17680,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 474.82773
     y: 396.2528
-    width: 60.632915
+    width: 100.63292
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -17748,7 +17749,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 478.05188
     y: 443.90552
-    width: 60
+    width: 99.78903
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -17787,7 +17788,7 @@ MonoBehaviour:
   showAlways: 1
   showCount: 1
   extendPrevious: 0
-  fadeWhenDone: 1
+  fadeWhenDone: 0
   waitForClick: 1
   stopVoiceover: 1
   waitForVO: 0
@@ -17808,7 +17809,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 485.6051
     y: 497.06204
-    width: 134.89453
+    width: 174.89453
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -17975,7 +17976,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 478.9073
     y: 179.56346
-    width: 60
+    width: 99.78903
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -18043,7 +18044,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 907.4217
     y: 290.52438
-    width: 83.417725
+    width: 123.417725
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -18141,33 +18142,6 @@ MonoBehaviour:
     booleanRef: {fileID: 0}
     booleanVal: 0
   targetGameObjectOLD: {fileID: 0}
---- !u!114 &1357418064
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1357418024}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 30
-  indentLevel: 0
-  storyText: Be cautious, as words you leave behind will be gone forever.
-  description: 
-  character: {fileID: 2143834108}
-  portrait: {fileID: 0}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 0
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 0}
 --- !u!114 &1357418065
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -18568,6 +18542,75 @@ MonoBehaviour:
     booleanRef: {fileID: 0}
     booleanVal: 1
   targetGameObjectOLD: {fileID: 0}
+--- !u!114 &1357418071
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1357418024}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d7d417659cd54a6787f70f763950c34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parentBlock: {fileID: 1357418073}
+  suppressBlockAutoSelect: 0
+  message: DragStarted
+--- !u!114 &1357418072
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1357418024}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 38
+  indentLevel: 0
+  storyText: Be cautious, as words you leave behind will be gone forever.
+  description: 
+  character: {fileID: 2143834108}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 0
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &1357418073
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1357418024}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeRect:
+    serializedVersion: 2
+    x: 638.8053
+    y: 232.43933
+    width: 110.75949
+    height: 40
+  tint: {r: 1, g: 1, b: 1, a: 1}
+  useCustomTint: 0
+  itemId: 37
+  blockName: New Block
+  description: 
+  eventHandler: {fileID: 1357418071}
+  commandList:
+  - {fileID: 1357418072}
+  suppressAllAutoSelections: 0
 --- !u!1 &1362584648
 GameObject:
   m_ObjectHideFlags: 0

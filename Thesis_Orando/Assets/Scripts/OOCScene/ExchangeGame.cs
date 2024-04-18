@@ -80,7 +80,6 @@ public class ExchangeGame : ManagerBehavior
         {
             SwitchMask( selfMaskWords, selfMaskLimbs, otherMask);
             DialogueManager.instance.TriggerDialogue("ExchangeStarted");
-            print("started");
         }
         else
         {

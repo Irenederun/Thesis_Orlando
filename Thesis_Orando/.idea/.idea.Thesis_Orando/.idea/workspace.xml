@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9711d522-8fc0-494c-84b2-d15386118320" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Thesis_Orando/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Thesis_Orando/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Play1-OOC.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Play1-OOC.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/WordDictionary.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptableObjects/WordDictionary.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/OOCScene/ExchangeGame.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/OOCScene/ExchangeGame.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UIMouse.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UIMouse.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +27,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ICScene/WordDragManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ICScene/WordDragPlay3.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/LimbSync.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/Irene/Desktop/MFA/Thesis/Thesis_Orlando/Thesis_Orando/Assets/Scripts/OOCScene/ExchangeGame.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/OOCScene/NPCBodyPart.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/OOCScene/NPCPiece.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/OOCScene/SelfBodyPart.cs" root0="FORCE_HIGHLIGHTING" />
@@ -167,6 +171,7 @@
       <workItem from="1713131973981" duration="4145000" />
       <workItem from="1713212450756" duration="2171000" />
       <workItem from="1713280867701" duration="10109000" />
+      <workItem from="1713461861079" duration="328000" />
     </task>
     <servers />
   </component>

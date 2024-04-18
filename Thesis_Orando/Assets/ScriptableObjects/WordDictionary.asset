@@ -52,9 +52,9 @@ MonoBehaviour:
   - word: Stage
     rules:
     - position: 1A
-      conjugation: Stage fright
+      conjugation: Staged
     - position: 1B
-      conjugation: stage fright
+      conjugation: staged
     - position: 1C
       conjugation: Old
     - position: 1D
@@ -64,7 +64,7 @@ MonoBehaviour:
     - position: 3A
       conjugation: Stage
     - position: 3B
-      conjugation: stage fright
+      conjugation: staged
     - position: 3C
       conjugation: stage
     - position: 3D

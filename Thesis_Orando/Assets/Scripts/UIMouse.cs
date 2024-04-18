@@ -48,6 +48,11 @@ public class UIMouse : MonoBehaviour
             {
                 dragObj = hitUIDrag.collider.gameObject;
                 dragObj.GetComponent<UIDragBehavior>().OnDragStarting();
+
+                if (GameManager.instance.isTutorial)
+                {
+                    DialogueManager.instance.TriggerDialogue("DragStarted");
+                }
             }
         }
 
@@ -57,6 +62,11 @@ public class UIMouse : MonoBehaviour
             {
                 dragObj.GetComponent<UIDragBehavior>().OnDragExit();
                 dragObj = null;
+                
+                if (GameManager.instance.isTutorial)
+                {
+                    DialogueManager.instance.TriggerDialogue("ExchangeStarted");
+                }
             }
         }
     }

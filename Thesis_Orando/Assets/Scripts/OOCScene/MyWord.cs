@@ -98,7 +98,7 @@ public class MyWord : UIBehavior
             float distance = Vector3.Distance(transform.position, objB.transform.position);
             float yDistance = Mathf.Abs(transform.position.y - objB.transform.position.y);
 
-            if (yDistance <= 0.65f)
+            if (yDistance <= 0.55f)
             {
                 if (distance >= minDistance && distance <= maxDistance )
                 {
