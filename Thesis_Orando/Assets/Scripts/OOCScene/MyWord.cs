@@ -10,9 +10,9 @@ public class MyWord : UIBehavior
     private Color originalColor;
     private Transform connectedLimb;
 
-    public Color targetColor = new Vector4(0,0,0,0);
-    public float maxDistance = 2f;
-    public float minDistance = 0.1f;
+    public Color targetColor = new Vector4(0,0,0,150/255f);
+    public float maxDistance = 1.5f;
+    public float minDistance = 0.05f;
 
     public enum state
     {
