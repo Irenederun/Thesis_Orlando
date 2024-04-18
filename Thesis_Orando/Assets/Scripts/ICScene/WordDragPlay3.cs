@@ -1,8 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using System.Linq;
-using UnityEngine;
-
 public class WordDragPlay3 : WordDragDetails
 {
     public override void DragComplete(string wordd, string desNamee)

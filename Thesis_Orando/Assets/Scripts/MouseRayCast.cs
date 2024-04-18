@@ -1,4 +1,3 @@
-using System.Collections;
 using UnityEngine;
 
 public class MouseRayCast : MonoBehaviour
@@ -74,7 +73,7 @@ public class MouseRayCast : MonoBehaviour
             
             if (hitDrag.collider != null)
             {
-                print("dragging" + hitDrag.collider.gameObject.name);
+                //print("dragging" + hitDrag.collider.gameObject.name);
                 dragObj = hitDrag.collider.gameObject;
                 dragObj.GetComponent<DragBehavior>().OnDragStarting();
             }

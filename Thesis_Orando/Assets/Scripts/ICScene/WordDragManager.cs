@@ -68,7 +68,7 @@ public class WordDragManager : ManagerBehavior
     public void AddToSentence(string word, int position)
     {
         sentence[position] = word; 
-        print("pos rn is " + position);
+        //print("pos rn is " + position);
         
         // if (!reload.activeSelf)
         // {

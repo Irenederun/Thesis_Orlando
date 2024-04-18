@@ -1,7 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
 public class WordDragDetailsPlay1Interstitial : WordDragDetails
 {
     public override void DragComplete(string wordd, string desNamee)
