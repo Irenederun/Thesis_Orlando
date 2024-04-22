@@ -26,6 +26,10 @@ public class WordDragManager : ManagerBehavior
     public List<GameObject> listOfSentence;
     public int sentenceNo;
 
+    public List<TextMeshPro> exceptionTexts;
+    public string usedVerbC;
+    public string usedNounB;
+
     private void Awake()
     {
         instance = this;
@@ -190,5 +194,10 @@ public class WordDragManager : ManagerBehavior
     {
         base.DestroySelfOnClose();
         Destroy(gameObject);
+    }
+
+    public void SetDeterminedText(int num, string text)
+    {
+        exceptionTexts[num].text = text;//this is not happening
     }
 }

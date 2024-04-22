@@ -3,8 +3,19 @@
   <component name="ChangeListManager">
     <list default="true" id="9711d522-8fc0-494c-84b2-d15386118320" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Thesis_Orando/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Thesis_Orando/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Play1-IC1_V3.0.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Play1-IC1_V3.0.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Fonts/Typewriter/American Typewriter Regular SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Fonts/Typewriter/American Typewriter Regular SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/WordDragPrefabs/Play3/WordDragPlay3.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/WordDragPrefabs/Play3/WordDragPlay3.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/NotUsedNow/Play1-Interstitial.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/NotUsedNow/Play1-Interstitial.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Play1-IC2_V3.0.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Play1-IC2_V3.0.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Play2-Interstitial.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Play2-Interstitial.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Play2-Interstitial.unity.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Play2-Interstitial.unity.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Play3-IC.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Play3-IC.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Play3-OOC.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Play3-OOC.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/WordDictionary.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptableObjects/WordDictionary.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ICScene/WordDragLoader.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ICScene/WordDragLoader.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ICScene/WordDragManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ICScene/WordDragManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,9 +35,9 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ICScene/WordDragDetailsPlay1V3.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ICScene/WordDragLoader.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ICScene/WordDragManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/ICScene/WordDragPlay2.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ICScene/WordDragPlay3.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/LimbSync.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/Irene/Desktop/MFA/Thesis/Thesis_Orlando/Thesis_Orando/Assets/Scripts/OOCScene/ExchangeGame.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/OOCScene/NPCBodyPart.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/OOCScene/NPCPiece.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/OOCScene/SelfBodyPart.cs" root0="FORCE_HIGHLIGHTING" />
@@ -171,6 +182,8 @@
       <workItem from="1713212450756" duration="2171000" />
       <workItem from="1713280867701" duration="10109000" />
       <workItem from="1713461861079" duration="6461000" />
+      <workItem from="1713664859285" duration="1246000" />
+      <workItem from="1713823586794" duration="3573000" />
     </task>
     <servers />
   </component>
