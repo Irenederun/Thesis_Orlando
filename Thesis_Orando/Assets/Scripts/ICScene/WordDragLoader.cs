@@ -1,10 +1,13 @@
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Rendering.Universal;
 
 public class WordDragLoader : MonoBehaviour
 {
     public GameObject wordDragPrefab;
     public Transform holderTransform;
+    public string usedVerbC;
+    public string usedNounB;
 
     [System.Serializable]
     public struct Sentences
@@ -12,20 +15,31 @@ public class WordDragLoader : MonoBehaviour
         public List<string> sentence;
     }
     public List<Sentences> listOfSentence;
+
+    public void UsedVerbC(string text)
+    {
+        usedVerbC = text;
+        listOfSentence[6].sentence[3] = usedVerbC;
+    }
+
+    public void UsedNounB(string text)
+    {
+        usedNounB = text;
+        listOfSentence[7].sentence[1] = WordDragManager.instance.usedNounB;
+    }
     
     public void LoadWordDragPrefab()
     {
         int prefabNo = GameManager.instance.currentSentenceNo;
         GameObject thisPrefab = Instantiate(wordDragPrefab);
+        thisPrefab.GetComponent<WordDragManager>().loader = this;
         if (prefabNo == 6)
         {
-            listOfSentence[6].sentence[1] = WordDragManager.instance.usedVerbC;
-            thisPrefab.GetComponent<WordDragManager>().SetDeterminedText(0, WordDragManager.instance.usedVerbC);
+            thisPrefab.GetComponent<WordDragManager>().SetDeterminedText(0, usedVerbC);
         }
         else if (prefabNo == 7)
         {
-            listOfSentence[6].sentence[1] = WordDragManager.instance.usedNounB;
-            thisPrefab.GetComponent<WordDragManager>().SetDeterminedText(1, WordDragManager.instance.usedNounB);
+            thisPrefab.GetComponent<WordDragManager>().SetDeterminedText(1, usedNounB);
         }
         thisPrefab.GetComponent<WordDragManager>().sentenceNo = prefabNo;
         thisPrefab.transform.parent = holderTransform;

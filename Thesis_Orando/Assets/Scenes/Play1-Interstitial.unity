@@ -664,7 +664,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 245.55147
     y: 99.38406
-    width: 88.827835
+    width: 60
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -732,10 +732,8 @@ MonoBehaviour:
     y: -340
     width: 1114
     height: 859
-  selectedBlocks:
-  - {fileID: 950951606}
-  selectedCommands:
-  - {fileID: 950951746}
+  selectedBlocks: []
+  selectedCommands: []
   variables:
   - {fileID: 950951620}
   - {fileID: 950951649}
@@ -1057,7 +1055,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 377.19165
     y: 106.4244
-    width: 74.908424
+    width: 60
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1116,7 +1114,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 377.09274
     y: 178.42441
-    width: 74.908424
+    width: 60
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1322,7 +1320,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 493.24805
     y: 101.29236
-    width: 112.27106
+    width: 72.27106
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -4081,7 +4079,7 @@ MonoBehaviour:
   loop: 1
 --- !u!114 &950951744
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -4095,7 +4093,7 @@ MonoBehaviour:
   indentLevel: 0
 --- !u!114 &950951745
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -4109,7 +4107,7 @@ MonoBehaviour:
   indentLevel: 0
 --- !u!114 &950951746
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}

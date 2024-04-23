@@ -29,6 +29,7 @@ public class WordDragManager : ManagerBehavior
     public List<TextMeshPro> exceptionTexts;
     public string usedVerbC;
     public string usedNounB;
+    public WordDragLoader loader;
 
     private void Awake()
     {
@@ -144,8 +145,6 @@ public class WordDragManager : ManagerBehavior
             DialogueManager.instance.TriggerDialogue("printSentence" + GameManager.instance.currentSentenceNo);
         }
         DialogueManager.instance.TriggerDialogue(responseDeterminant);
-
-        
     }
     
 
@@ -170,7 +169,6 @@ public class WordDragManager : ManagerBehavior
             if (submit.activeSelf)
             {
                 submit.SetActive(false);
-                print("aaaaaa");
             }
         }
         
@@ -179,7 +177,6 @@ public class WordDragManager : ManagerBehavior
             if (!submit.activeSelf)
             {
                 submit.SetActive(true);
-                print("bbbb");
             }
         }
     }
@@ -198,6 +195,20 @@ public class WordDragManager : ManagerBehavior
 
     public void SetDeterminedText(int num, string text)
     {
+        print("change determination text");
         exceptionTexts[num].text = text;//this is not happening
+    }
+
+    public void SetDeterminedWords(string name, string text)
+    {
+        switch (name)
+        {
+            case "usedVerbC":
+                loader.UsedVerbC(text);
+                break;
+            case"usedNounB":
+                loader.UsedNounB(text);
+                break;
+        }
     }
 }

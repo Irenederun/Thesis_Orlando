@@ -7,20 +7,16 @@ public class WordDragPlay2 : WordDragDetails
         if (desNamee.Contains("nounA"))
         {
             wordPosition = 1;
-            string word2A = WordDragManager.instance.FindConjugation(wordd, "noun");
-            if (word2A.Contains("no"))
-            {
-                GetComponent<WordDragDetails>().ReloadWord();
-                GetComponent<DragBehavior>().Reload();
-                return;
-            }
+            string word2A = WordDragManager.instance.FindConjugation(wordd, "2A");
+            string word2APerson = WordDragManager.instance.FindConjugation(wordd, "2APerson");
             text.text = word2A;
             RecordWords(wordPosition, word2A);
+            DialogueManager.instance.SetResponseVariable("nounAPersonForm", word2APerson);
         }
         else if (desNamee.Contains("verbB"))
         {
             wordPosition = 1;
-            string word2B = WordDragManager.instance.FindConjugation(wordd, "verb");
+            string word2B = WordDragManager.instance.FindConjugation(wordd, "2B");
             if (word2B.Contains("no"))
             {
                 GetComponent<WordDragDetails>().ReloadWord();
@@ -29,11 +25,12 @@ public class WordDragPlay2 : WordDragDetails
             }
             text.text = word2B;
             RecordWords(wordPosition, word2B);
+            DialogueManager.instance.SetResponseVariable("usedVerbB", word2B);
         }
         else if (desNamee.Contains("adjectiveA"))
         {
             wordPosition = 3;
-            string word2C = WordDragManager.instance.FindConjugation(wordd, "adj");
+            string word2C = WordDragManager.instance.FindConjugation(wordd, "2C");
             if (word2C.Contains("no"))
             {
                 GetComponent<WordDragDetails>().ReloadWord();
@@ -42,11 +39,12 @@ public class WordDragPlay2 : WordDragDetails
             }
             text.text = word2C;
             RecordWords(wordPosition, word2C);
+            DialogueManager.instance.SetResponseVariable("usedAdjectiveA", word2C);
         }
         else if (desNamee.Contains("nounB"))
         {
             wordPosition = 1;
-            string word2D = WordDragManager.instance.FindConjugation(wordd, "noun");
+            string word2D = WordDragManager.instance.FindConjugation(wordd, "2D");
             if (word2D.Contains("no"))
             {
                 GetComponent<WordDragDetails>().ReloadWord();
@@ -55,9 +53,9 @@ public class WordDragPlay2 : WordDragDetails
             }
             text.text = word2D;
             RecordWords(wordPosition, word2D);
+            DialogueManager.instance.SetResponseVariable("usedNounB", word2D);
             
-            WordDragManager.instance.usedNounB = wordd;
-            print("usedNounB" +  WordDragManager.instance.usedNounB );
+            WordDragManager.instance.SetDeterminedWords("usedNounB", wordd.ToLower());
         }
         else if (desNamee.Contains("verbCFancy"))
         {
@@ -72,12 +70,13 @@ public class WordDragPlay2 : WordDragDetails
             text.text = word2E;
             RecordWords(wordPosition, word2E);
             
-            WordDragManager.instance.usedVerbC = wordd;
+            WordDragManager.instance.SetDeterminedWords("usedVerbC",wordd.ToLower());
+            DialogueManager.instance.SetResponseVariable("usedVerbC", wordd.ToLower());
         }
         else if (desNamee.Contains("verbE"))
         {
-            wordPosition = 3;
-            string word2F = WordDragManager.instance.FindConjugation(wordd, "verb");
+            wordPosition = 1;
+            string word2F = WordDragManager.instance.FindConjugation(wordd, "2B");
             if (word2F.Contains("no"))
             {
                 GetComponent<WordDragDetails>().ReloadWord();
@@ -86,11 +85,13 @@ public class WordDragPlay2 : WordDragDetails
             }
             text.text = word2F;
             RecordWords(wordPosition, word2F);
+            DialogueManager.instance.SetResponseVariable("usedVerbE", word2F);
         }
         else if (desNamee.Contains("verbF"))
         {
             wordPosition = 3;
-            string word2G = WordDragManager.instance.FindConjugation(wordd, "verb");
+            string word2G = WordDragManager.instance.FindConjugation(wordd, "2B");
+            string nounOfVerbF = WordDragManager.instance.FindConjugation(wordd, "2A");
             if (word2G.Contains("no"))
             {
                 GetComponent<WordDragDetails>().ReloadWord();
@@ -99,6 +100,7 @@ public class WordDragPlay2 : WordDragDetails
             }
             text.text = word2G;
             RecordWords(wordPosition, word2G);
+            DialogueManager.instance.SetResponseVariable("nounOfVerbF", nounOfVerbF);
         }
     }
 

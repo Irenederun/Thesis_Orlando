@@ -49,6 +49,18 @@ MonoBehaviour:
       conjugation: myself
     - position: adjMNoun
       conjugation: selfhood
+    - position: fancyVerb
+      conjugation: art me to
+    - position: 2A
+      conjugation: selfhood
+    - position: 2APerson
+      conjugation: yourself
+    - position: 2B
+      conjugation: am
+    - position: 2C
+      conjugation: me
+    - position: 2D
+      conjugation: self
   - word: Stage
     rules:
     - position: 1A
@@ -85,6 +97,16 @@ MonoBehaviour:
       conjugation: stage
     - position: fancyVerb
       conjugation: stagest
+    - position: 2A
+      conjugation: stage
+    - position: 2APerson
+      conjugation: stagehand
+    - position: 2B
+      conjugation: stage
+    - position: 2C
+      conjugation: staged
+    - position: 2D
+      conjugation: stage
   - word: Rule
     rules:
     - position: 1A
@@ -123,6 +145,16 @@ MonoBehaviour:
       conjugation: rule
     - position: fancyVerb
       conjugation: rulest
+    - position: 2A
+      conjugation: rule
+    - position: 2APerson
+      conjugation: ruler
+    - position: 2B
+      conjugation: rule
+    - position: 2C
+      conjugation: ruled
+    - position: 2D
+      conjugation: rule
   - word: Portray
     rules:
     - position: 1A
@@ -161,6 +193,16 @@ MonoBehaviour:
       conjugation: portrayed
     - position: fancyVerb
       conjugation: p'rtrayst
+    - position: 2A
+      conjugation: portrayal
+    - position: 2APerson
+      conjugation: portrayer
+    - position: 2B
+      conjugation: portray
+    - position: 2C
+      conjugation: portrayed
+    - position: 2D
+      conjugation: portrait
   - word: You
     rules:
     - position: 1A
@@ -199,6 +241,16 @@ MonoBehaviour:
       conjugation: otherhood
     - position: fancyVerb
       conjugation: art thee to
+    - position: 2A
+      conjugation: youness
+    - position: 2APerson
+      conjugation: myself
+    - position: 2B
+      conjugation: are
+    - position: 2C
+      conjugation: you
+    - position: 2D
+      conjugation: other
   - word: Cruelty
     rules:
     - position: 1A
@@ -235,6 +287,16 @@ MonoBehaviour:
       conjugation: cruel
     - position: fancyVerb
       conjugation: art cruel to
+    - position: 2A
+      conjugation: cruelty
+    - position: 2APerson
+      conjugation: cruel one
+    - position: 2B
+      conjugation: am cruel to
+    - position: 2C
+      conjugation: cruel
+    - position: 2D
+      conjugation: cruelty
   - word: Love
     rules:
     - position: 1A
@@ -271,6 +333,16 @@ MonoBehaviour:
       conjugation: loved
     - position: fancyVerb
       conjugation: lovest
+    - position: 2A
+      conjugation: love
+    - position: 2APerson
+      conjugation: lover
+    - position: 2B
+      conjugation: love
+    - position: 2C
+      conjugation: lovely
+    - position: 2D
+      conjugation: love
   - word: Terrify
     rules:
     - position: 1A
@@ -307,6 +379,16 @@ MonoBehaviour:
       conjugation: terrified
     - position: fancyVerb
       conjugation: t'rrify
+    - position: 2A
+      conjugation: terror
+    - position: 2APerson
+      conjugation: terrorist
+    - position: 2B
+      conjugation: terrify
+    - position: 2C
+      conjugation: terrifying
+    - position: 2D
+      conjugation: terror
   - word: Worry
     rules:
     - position: 1A
@@ -343,6 +425,16 @@ MonoBehaviour:
       conjugation: worried
     - position: fancyVerb
       conjugation: w'rry
+    - position: 2A
+      conjugation: worry
+    - position: 2APerson
+      conjugation: one to worry
+    - position: 2B
+      conjugation: worry about
+    - position: 2C
+      conjugation: worrying
+    - position: 2D
+      conjugation: worry
   - word: Crazy
     rules:
     - position: 1A
@@ -379,6 +471,16 @@ MonoBehaviour:
       conjugation: crazy
     - position: fancyVerb
       conjugation: art crazy to
+    - position: 2A
+      conjugation: craziness
+    - position: 2APerson
+      conjugation: crazy one
+    - position: 2B
+      conjugation: am crazy for
+    - position: 2C
+      conjugation: crazy
+    - position: 2D
+      conjugation: craziness
   - word: Death
     rules:
     - position: 1A
@@ -415,6 +517,16 @@ MonoBehaviour:
       conjugation: dead
     - position: fancyVerb
       conjugation: art dead to
+    - position: 2A
+      conjugation: death
+    - position: 2APerson
+      conjugation: deceased
+    - position: 2B
+      conjugation: die for
+    - position: 2C
+      conjugation: dead
+    - position: 2D
+      conjugation: death
   - word: He
     rules:
     - position: 1A
@@ -453,6 +565,16 @@ MonoBehaviour:
       conjugation: otherhood
     - position: fancyVerb
       conjugation: art him to
+    - position: 2A
+      conjugation: otherness
+    - position: 2APerson
+      conjugation: other
+    - position: 2B
+      conjugation: is
+    - position: 2C
+      conjugation: him
+    - position: 2D
+      conjugation: death
   - word: Broken
     rules:
     - position: 1A
@@ -490,9 +612,19 @@ MonoBehaviour:
     - position: adj
       conjugation: broken
     - position: adjMNoun
-      conjugation: brokenness
+      conjugation: breakage
     - position: fancyVerb
       conjugation: breaketh
+    - position: 2A
+      conjugation: breakage
+    - position: 2APerson
+      conjugation: breaker
+    - position: 2B
+      conjugation: break
+    - position: 2C
+      conjugation: broken
+    - position: 2D
+      conjugation: breakage
   - word: God
     rules:
     - position: 1A
@@ -531,6 +663,16 @@ MonoBehaviour:
       conjugation: godless
     - position: fancyVerb
       conjugation: art God to
+    - position: 2A
+      conjugation: God
+    - position: 2APerson
+      conjugation: God
+    - position: 2B
+      conjugation: no
+    - position: 2C
+      conjugation: no
+    - position: 2D
+      conjugation: god
   - word: Cold
     rules:
     - position: 1A
@@ -569,6 +711,16 @@ MonoBehaviour:
       conjugation: cold
     - position: fancyVerb
       conjugation: art cold to
+    - position: 2A
+      conjugation: coldness
+    - position: 2APerson
+      conjugation: cold one
+    - position: 2B
+      conjugation: am cold to
+    - position: 2C
+      conjugation: cold
+    - position: 2D
+      conjugation: coldness
   - word: Courage
     rules:
     - position: 1A
@@ -607,6 +759,16 @@ MonoBehaviour:
       conjugation: courageous
     - position: fancyVerb
       conjugation: art courageous
+    - position: 2A
+      conjugation: courage
+    - position: 2APerson
+      conjugation: courageous one
+    - position: 2B
+      conjugation: encourage
+    - position: 2C
+      conjugation: courageous
+    - position: 2D
+      conjugation: courage
   - word: Immortal
     rules:
     - position: 1A
@@ -645,6 +807,16 @@ MonoBehaviour:
       conjugation: immortal
     - position: fancyVerb
       conjugation: art immortal to
+    - position: 2A
+      conjugation: immortality
+    - position: 2APerson
+      conjugation: immortal one
+    - position: 2B
+      conjugation: immortalize
+    - position: 2C
+      conjugation: immortal
+    - position: 2D
+      conjugation: immortality
   - word: Disgust
     rules:
     - position: 1A
@@ -682,6 +854,16 @@ MonoBehaviour:
     - position: adj
       conjugation: disgusted
     - position: fancyVerb
+      conjugation: disgust
+    - position: 2A
+      conjugation: disgust
+    - position: 2APerson
+      conjugation: one who disgusts
+    - position: 2B
+      conjugation: disgust
+    - position: 2C
+      conjugation: disgusting
+    - position: 2D
       conjugation: disgust
   - word: Kiss
     rules:
@@ -721,6 +903,16 @@ MonoBehaviour:
       conjugation: kissed
     - position: fancyVerb
       conjugation: 'kisseth '
+    - position: 2A
+      conjugation: kiss
+    - position: 2APerson
+      conjugation: kisser
+    - position: 2B
+      conjugation: kiss
+    - position: 2C
+      conjugation: kissworthy
+    - position: 2D
+      conjugation: kiss
   - word: Curse
     rules:
     - position: 1A
@@ -759,6 +951,16 @@ MonoBehaviour:
       conjugation: cursed
     - position: fancyVerb
       conjugation: beshrew
+    - position: 2A
+      conjugation: curse
+    - position: 2APerson
+      conjugation: one who curses
+    - position: 2B
+      conjugation: curse
+    - position: 2C
+      conjugation: cursed
+    - position: 2D
+      conjugation: curse
   - word: Kill
     rules:
     - position: 1A
@@ -797,6 +999,16 @@ MonoBehaviour:
       conjugation: killed
     - position: fancyVerb
       conjugation: 'killeth '
+    - position: 2A
+      conjugation: kill
+    - position: 2APerson
+      conjugation: killer
+    - position: 2B
+      conjugation: kill
+    - position: 2C
+      conjugation: no
+    - position: 2D
+      conjugation: kill
   - word: Fear
     rules:
     - position: 1A
@@ -835,3 +1047,13 @@ MonoBehaviour:
       conjugation: fearful
     - position: fancyVerb
       conjugation: feareth
+    - position: 2A
+      conjugation: fear
+    - position: 2APerson
+      conjugation: one to fear
+    - position: 2B
+      conjugation: fear
+    - position: 2C
+      conjugation: fearful
+    - position: 2D
+      conjugation: fear

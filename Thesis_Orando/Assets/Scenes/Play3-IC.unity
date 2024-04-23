@@ -1122,9 +1122,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 167.23763
-    y: 36.370174
-    width: 114
+    x: 168.60748
+    y: 35.000313
+    width: 72.10048
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1203,18 +1203,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 1455.9308, y: 737.93384}
+  scrollPos: {x: 42.118694, y: 54.110146}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 417.66666
-  zoom: 0.25
+  zoom: 0.7299998
   scrollViewRect:
     serializedVersion: 2
     x: -343
     y: -340
     width: 1114
     height: 859
-  selectedBlocks: []
+  selectedBlocks:
+  - {fileID: 468921886}
   selectedCommands: []
   variables:
   - {fileID: 468921990}
@@ -1331,7 +1332,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 291.5283
     y: -34.647514
-    width: 122
+    width: 79.40641
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1468,7 +1469,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   parentBlock: {fileID: 468921977}
   suppressBlockAutoSelect: 0
-  message: printSentence3
+  message: printSentence8
 --- !u!114 &468921971
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -1501,7 +1502,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 60
   indentLevel: 0
-  storyText: '{$saidSentence}?'
+  storyText: '{$saidSentence}.'
   description: 
   character: {fileID: 1932757925544751689}
   portrait: {fileID: 0}
@@ -1509,7 +1510,7 @@ MonoBehaviour:
   showAlways: 1
   showCount: 1
   extendPrevious: 0
-  fadeWhenDone: 0
+  fadeWhenDone: 1
   waitForClick: 1
   stopVoiceover: 1
   waitForVO: 0
@@ -1551,7 +1552,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 164.90944
     y: 89.49687
-    width: 116.666664
+    width: 75.75344
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1922,7 +1923,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   parentBlock: {fileID: 468922011}
   suppressBlockAutoSelect: 0
-  message: printSentence4
+  message: printSentence9
 --- !u!114 &468922000
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -1955,7 +1956,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 98
   indentLevel: 0
-  storyText: '{$saidSentence}?'
+  storyText: '{$saidSentence}.'
   description: 
   character: {fileID: 1932757925544751689}
   portrait: {fileID: 0}
@@ -2005,7 +2006,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 160.35185
     y: 157.81505
-    width: 116.666664
+    width: 75.75344
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2068,7 +2069,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 427.41403
     y: -30.158554
-    width: 82
+    width: 60
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -3388,7 +3389,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -17.628983
     y: 36.996754
-    width: 74
+    width: 60
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -3582,7 +3583,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -20.559853
     y: 98.535225
-    width: 74
+    width: 60
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -4288,7 +4289,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   parentBlock: {fileID: 468922159}
   suppressBlockAutoSelect: 0
-  message: printSentence5
+  message: printSentence10
 --- !u!114 &468922155
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -4359,7 +4360,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 166.4845
     y: 219.85184
-    width: 116.666664
+    width: 74.8402
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -5483,7 +5484,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   parentBlock: {fileID: 468922197}
   suppressBlockAutoSelect: 0
-  message: printSentence6
+  message: printSentence11
 --- !u!114 &468922192
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -5615,7 +5616,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 168.67633
     y: 277.59686
-    width: 116.666664
+    width: 74.8402
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -5645,7 +5646,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   parentBlock: {fileID: 468922205}
   suppressBlockAutoSelect: 0
-  message: printSentence7
+  message: printSentence12
 --- !u!114 &468922201
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -5755,7 +5756,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 158.53935
     y: 339.29938
-    width: 116.666664
+    width: 74.8402
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -8845,6 +8846,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wordDragPrefab: {fileID: 3240811616538247237, guid: afd61accf45e0ca47be0f80cc1d95291, type: 3}
   holderTransform: {fileID: 1407972682}
+  usedVerbC: 
+  usedNounB: 
   listOfSentence:
   - sentence: []
   - sentence: []
