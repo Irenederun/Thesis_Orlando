@@ -123,7 +123,8 @@ public class WordDragPlay3 : WordDragDetails
             wordPosition = 5;
             string adjM = WordDragManager.instance.FindConjugation(wordd, "adj");
             string adjMNoun;
-            if (wordd.Contains("Self") || wordd.Contains("Rule")||wordd.Contains("You") || wordd.Contains("He") || wordd.Contains("Broken"))
+            if (wordd.Contains("Self") || wordd.Contains("Rule")||wordd.Contains("You") 
+                || wordd.Contains("He") || wordd.Contains("Broken")|| wordd.Contains("Strange")|| wordd.Contains("Friend"))
             {
                 adjMNoun = WordDragManager.instance.FindConjugation(wordd, "adjMNoun");
             }

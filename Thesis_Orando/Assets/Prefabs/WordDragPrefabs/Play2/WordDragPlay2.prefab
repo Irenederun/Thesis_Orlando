@@ -2404,7 +2404,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 1
+  m_fontStyle: 3
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -2762,7 +2762,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "<b>I</b> _________ <b>I            thee.\r</b>"
+  m_text: "<b>I</b> _________ <b>I              thee.\r</b>"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2d547a05887e1402a9f6be68683d8f36, type: 2}
   m_sharedMaterial: {fileID: 4775169337844555031, guid: 2d547a05887e1402a9f6be68683d8f36, type: 2}
@@ -3105,7 +3105,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6464214553976814350}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.1492, y: -0.818, z: 0}
+  m_LocalPosition: {x: 0.224, y: -0.613, z: 0}
   m_LocalScale: {x: 1.802988, y: 0.5406705, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3620,8 +3620,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7634149629179778228}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.2074, y: -0.824, z: 0}
-  m_LocalScale: {x: 1.3386493, y: 0.5406705, z: 1}
+  m_LocalPosition: {x: -1.3128, y: -0.824, z: 0}
+  m_LocalScale: {x: 1.3562224, y: 0.5406705, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6792355979164621879}
@@ -3839,7 +3839,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 1
+  m_fontStyle: 3
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -3995,7 +3995,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: <b>By my</b> ____________ , <b>Beatrice, thou</b> ___________ <b>me.</b>
+  m_text: "<b>By my</b> ____________ , \n<b>Beatrice, thou</b> ___________ <b>me.</b>"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2d547a05887e1402a9f6be68683d8f36, type: 2}
   m_sharedMaterial: {fileID: 4775169337844555031, guid: 2d547a05887e1402a9f6be68683d8f36, type: 2}
@@ -4109,7 +4109,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9049669033300533988}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.2035, y: -0.818, z: 0}
+  m_LocalPosition: {x: 0.637, y: -1.048, z: 0}
   m_LocalScale: {x: 1.6537788, y: 0.5406705, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

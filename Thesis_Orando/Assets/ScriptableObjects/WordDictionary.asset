@@ -1057,3 +1057,295 @@ MonoBehaviour:
       conjugation: fearful
     - position: 2D
       conjugation: fear
+  - word: Strange
+    rules:
+    - position: 1A
+      conjugation: no
+    - position: 1B
+      conjugation: no
+    - position: 1C
+      conjugation: New
+    - position: 1D_0
+      conjugation: strange
+    - position: 1D
+      conjugation: strange
+    - position: 1E
+      conjugation: CAT2
+    - position: 3A
+      conjugation: Stranger
+    - position: 3B
+      conjugation: strange
+    - position: 3C
+      conjugation: estrange
+    - position: 3D
+      conjugation: stranger
+    - position: 3C_R
+      conjugation: reconciling with
+    - position: 2IA
+      conjugation: stranger
+    - position: 2IB
+      conjugation: strangeness
+    - position: 2IC
+      conjugation: POS
+    - position: verb
+      conjugation: estrange
+    - position: noun
+      conjugation: stranger
+    - position: adj
+      conjugation: strange
+    - position: adjMNoun
+      conjugation: strangeness
+    - position: fancyVerb
+      conjugation: art strange to
+    - position: 2A
+      conjugation: strangeness
+    - position: 2APerson
+      conjugation: stranger
+    - position: 2B
+      conjugation: am strange to
+    - position: 2C
+      conjugation: strange
+    - position: 2D
+      conjugation: strangeness
+  - word: Friend
+    rules:
+    - position: 1A
+      conjugation: no
+    - position: 1B
+      conjugation: no
+    - position: 1C
+      conjugation: New
+    - position: 1D_0
+      conjugation: friendliness
+    - position: 1D
+      conjugation: friendly
+    - position: 1E
+      conjugation: CAT2
+    - position: 3A
+      conjugation: Friends
+    - position: 3B
+      conjugation: friendly
+    - position: 3C
+      conjugation: befriend
+    - position: 3D
+      conjugation: friends
+    - position: 3C_R
+      conjugation: alienating
+    - position: 2IA
+      conjugation: friend
+    - position: 2IB
+      conjugation: friendliness
+    - position: 2IC
+      conjugation: POS
+    - position: verb
+      conjugation: befriend
+    - position: noun
+      conjugation: friendship
+    - position: adj
+      conjugation: friendly
+    - position: adjMNoun
+      conjugation: friendliness
+    - position: fancyVerb
+      conjugation: befriend
+    - position: 2A
+      conjugation: friendship
+    - position: 2APerson
+      conjugation: friend
+    - position: 2B
+      conjugation: befriend
+    - position: 2C
+      conjugation: friendly
+    - position: 2D
+      conjugation: friendship
+  - word: Sword
+    rules:
+    - position: 1A
+      conjugation: no
+    - position: 1B
+      conjugation: no
+    - position: 1C
+      conjugation: New
+    - position: 1D_0
+      conjugation: a sword
+    - position: 1D
+      conjugation: a sword
+    - position: 1E
+      conjugation: CAT2
+    - position: 3A
+      conjugation: Swords
+    - position: 3B
+      conjugation: sworded
+    - position: 3C
+      conjugation: wield swords to
+    - position: 3D
+      conjugation: swords
+    - position: 3C_R
+      conjugation: fighting with
+    - position: 2IA
+      conjugation: sword
+    - position: 2IB
+      conjugation: swords
+    - position: 2IC
+      conjugation: NEG
+    - position: verb
+      conjugation: wield swords
+    - position: noun
+      conjugation: sword
+    - position: adj
+      conjugation: swordlike
+    - position: fancyVerb
+      conjugation: wieldest swords to
+    - position: 2A
+      conjugation: sword
+    - position: 2APerson
+      conjugation: swordsman
+    - position: 2B
+      conjugation: sword
+    - position: 2C
+      conjugation: swordlike
+    - position: 2D
+      conjugation: sword
+  - word: Swear
+    rules:
+    - position: 1A
+      conjugation: no
+    - position: 1B
+      conjugation: no
+    - position: 1C
+      conjugation: New
+    - position: 1D_0
+      conjugation: sworn
+    - position: 1D
+      conjugation: sworn
+    - position: 1E
+      conjugation: CAT2
+    - position: 3A
+      conjugation: Swears
+    - position: 3B
+      conjugation: sworn
+    - position: 3C
+      conjugation: swear
+    - position: 3D
+      conjugation: swears
+    - position: 3C_R
+      conjugation: swearing
+    - position: 2IA
+      conjugation: swear
+    - position: 2IB
+      conjugation: swears
+    - position: 2IC
+      conjugation: NEG
+    - position: verb
+      conjugation: swear
+    - position: noun
+      conjugation: swears
+    - position: adj
+      conjugation: sworn
+    - position: fancyVerb
+      conjugation: swear'st
+    - position: 2A
+      conjugation: swear
+    - position: 2APerson
+      conjugation: swearer
+    - position: 2B
+      conjugation: swear
+    - position: 2C
+      conjugation: sworn
+    - position: 2D
+      conjugation: oath
+  - word: Hate
+    rules:
+    - position: 1A
+      conjugation: no
+    - position: 1B
+      conjugation: no
+    - position: 1C
+      conjugation: New
+    - position: 1D_0
+      conjugation: hatred
+    - position: 1D
+      conjugation: hated
+    - position: 1E
+      conjugation: CAT1
+    - position: 3A
+      conjugation: Hate
+    - position: 3B
+      conjugation: hated
+    - position: 3C
+      conjugation: hate
+    - position: 3D
+      conjugation: hatred
+    - position: 3C_R
+      conjugation: loving
+    - position: 2IA
+      conjugation: hate
+    - position: 2IB
+      conjugation: hatred
+    - position: 2IC
+      conjugation: NEG
+    - position: verb
+      conjugation: hate
+    - position: noun
+      conjugation: hatred
+    - position: adj
+      conjugation: hated
+    - position: fancyVerb
+      conjugation: hatest
+    - position: 2A
+      conjugation: hatred
+    - position: 2APerson
+      conjugation: hater
+    - position: 2B
+      conjugation: hate
+    - position: 2C
+      conjugation: hated
+    - position: 2D
+      conjugation: hatred
+  - word: Heart
+    rules:
+    - position: 1A
+      conjugation: no
+    - position: 1B
+      conjugation: no
+    - position: 1C
+      conjugation: New
+    - position: 1D_0
+      conjugation: my heart
+    - position: 1D
+      conjugation: heartbroken
+    - position: 1E
+      conjugation: CAT1
+    - position: 3A
+      conjugation: Heart
+    - position: 3B
+      conjugation: hearted
+    - position: 3C
+      conjugation: hearten
+    - position: 3D
+      conjugation: hearts
+    - position: 3C_R
+      conjugation: disheartening
+    - position: 2IA
+      conjugation: heart
+    - position: 2IB
+      conjugation: heart
+    - position: 2IC
+      conjugation: POS
+    - position: verb
+      conjugation: hearten
+    - position: noun
+      conjugation: heart
+    - position: adj
+      conjugation: hearted
+    - position: fancyVerb
+      conjugation: hearten'st
+    - position: 2A
+      conjugation: friendship
+    - position: 2APerson
+      conjugation: heart
+    - position: 2B
+      conjugation: heartener
+    - position: 2C
+      conjugation: hearten
+    - position: 2D
+      conjugation: heart

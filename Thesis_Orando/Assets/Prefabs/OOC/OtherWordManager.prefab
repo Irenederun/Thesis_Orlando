@@ -64,6 +64,26 @@ MonoBehaviour:
     - otherWordPos: 0-4
       otherWordText: Immortal
       otherWordLimb: G4
+  - level: Play2
+    otherWords:
+    - otherWordPos: 2-1
+      otherWordText: Strange
+      otherWordLimb: G1
+    - otherWordPos: 2-2
+      otherWordText: Friend
+      otherWordLimb: G2
+    - otherWordPos: 2-3
+      otherWordText: Sword
+      otherWordLimb: G3
+    - otherWordPos: 2-4
+      otherWordText: Swear
+      otherWordLimb: G4
+    - otherWordPos: 2-5
+      otherWordText: Heart
+      otherWordLimb: B1
+    - otherWordPos: 2-6
+      otherWordText: Hate
+      otherWordLimb: B2
   - level: Play3
     otherWords:
     - otherWordPos: 3-1
@@ -96,4 +116,8 @@ MonoBehaviour:
   - id: 3-1
     usedStates: 00000000
   - id: 3-2
+    usedStates: 00000000
+  - id: 2-1
+    usedStates: 00000000
+  - id: 2-2
     usedStates: 00000000
