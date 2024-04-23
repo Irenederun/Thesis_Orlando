@@ -2,11 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9711d522-8fc0-494c-84b2-d15386118320" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Thesis_Orando/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Thesis_Orando/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Fonts/helvetica-255/Helvetica SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Fonts/helvetica-255/Helvetica SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Fonts/helvetica-255/Helvetica-Oblique SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Fonts/helvetica-255/Helvetica-Oblique SDF.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/WordDragPrefabs/Play2/WordDragPlay2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/WordDragPrefabs/Play2/WordDragPlay2.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Play1-IC1_V3.0.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Play1-IC1_V3.0.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Play1-IC2_V3.0.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Play1-IC2_V3.0.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Play2-IC.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Play2-IC.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/WordDictionary.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptableObjects/WordDictionary.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ICScene/WordDragPlay3.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ICScene/WordDragPlay3.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Play2-Interstitial.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Play2-Interstitial.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Play3-IC.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Play3-IC.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -176,7 +179,7 @@
       <workItem from="1713461861079" duration="6461000" />
       <workItem from="1713664859285" duration="1246000" />
       <workItem from="1713823586794" duration="3573000" />
-      <workItem from="1713890828618" duration="7690000" />
+      <workItem from="1713890828618" duration="8539000" />
     </task>
     <servers />
   </component>

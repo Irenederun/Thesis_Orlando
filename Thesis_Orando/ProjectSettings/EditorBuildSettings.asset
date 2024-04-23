@@ -35,4 +35,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Play3-OOC.unity
     guid: 8062559f9c0df684e9839187fdabc7c7
+  - enabled: 1
+    path: Assets/Scenes/Ending.unity
+    guid: 42ea3047e0af90c479763b9a67b35ad2
   m_configObjects: {}

@@ -773,7 +773,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 161.06526
     y: 37.140106
-    width: 73.33333
+    width: 110.606064
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -813,11 +813,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: -270.8851, y: 109.24991}
+  scrollPos: {x: -16.339691, y: 26.795319}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 341.66666
-  zoom: 1
+  zoom: 0.88000005
   scrollViewRect:
     serializedVersion: 2
     x: -343
@@ -825,13 +825,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 468922040}
+  - {fileID: 468922030}
   selectedCommands:
-  - {fileID: 468922046}
-  - {fileID: 468922041}
-  - {fileID: 468922045}
-  - {fileID: 468922082}
-  - {fileID: 468922044}
+  - {fileID: 468922031}
   variables:
   - {fileID: 468921930}
   - {fileID: 468921936}
@@ -957,7 +953,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 302.84058
     y: 116.43988
-    width: 80.666664
+    width: 117.42424
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1318,7 +1314,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 61
   indentLevel: 0
-  storyText: '{$secondWord}? '
+  storyText: '{i}{$secondWord}{/i}? '
   description: 
   character: {fileID: 1585182548}
   portrait: {fileID: 0}
@@ -1395,7 +1391,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 160.55762
     y: 99.57653
-    width: 72.66667
+    width: 110.606064
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1440,7 +1436,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 80
   indentLevel: 0
-  storyText: '{$secondWord}, for what? '
+  storyText: '{i}{$secondWord}{/i}, for what? '
   description: 
   character: {fileID: 1585182548}
   portrait: {fileID: 0}
@@ -1574,7 +1570,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 301.00647
     y: 45.035248
-    width: 80.666664
+    width: 117.42424
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2384,7 +2380,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 99
   indentLevel: 1
-  storyText: I am {$secondWord}.
+  storyText: I am {i}{$secondWord}{/i}.
   description: 
   character: {fileID: 1585182548}
   portrait: {fileID: 0}
@@ -2461,7 +2457,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 163.17683
     y: 159.65498
-    width: 74
+    width: 111.36363
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2920,7 +2916,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 122
   indentLevel: 0
-  storyText: We are {$secondWord}.
+  storyText: We are {i}{$secondWord}{/i}.
   description: 
   character: {fileID: 1585182548}
   portrait: {fileID: 0}
@@ -2997,7 +2993,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 159.86482
     y: 218.4673
-    width: 74.666664
+    width: 112.878784
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -3040,7 +3036,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 125
   indentLevel: 0
-  storyText: "What do we do now, \nnow that we are {$secondWord}?"
+  storyText: "What do we do now, \nnow that we are {i}{$secondWord}{i}?"
   description: 
   character: {fileID: 1585182548}
   portrait: {fileID: 0}
@@ -3194,7 +3190,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 471.21844
     y: 50.25009
-    width: 60
+    width: 77.27273
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -3446,7 +3442,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 472.43167
     y: 157.82207
-    width: 116.666664
+    width: 152.27272
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -4257,7 +4253,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 158
   indentLevel: 1
-  storyText: Sure. I am {$secondWord}.
+  storyText: Sure. I am {i}{$secondWord}{/i}.
   description: 
   character: {fileID: 1585182548}
   portrait: {fileID: 0}
@@ -5015,7 +5011,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 473.8421
     y: 213.02483
-    width: 123.333336
+    width: 159.09091
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0

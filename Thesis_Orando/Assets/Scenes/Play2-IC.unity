@@ -981,7 +981,6 @@ GameObject:
   - component: {fileID: 468922044}
   - component: {fileID: 468922046}
   - component: {fileID: 468922045}
-  - component: {fileID: 468922047}
   - component: {fileID: 468922081}
   - component: {fileID: 468922084}
   - component: {fileID: 468922085}
@@ -1199,7 +1198,8 @@ MonoBehaviour:
     y: -340
     width: 1114
     height: 859
-  selectedBlocks: []
+  selectedBlocks:
+  - {fileID: 468922205}
   selectedCommands: []
   variables:
   - {fileID: 468921990}
@@ -2035,7 +2035,6 @@ MonoBehaviour:
   description: 
   eventHandler: {fileID: 468922042}
   commandList:
-  - {fileID: 468922047}
   - {fileID: 468922046}
   - {fileID: 468922045}
   - {fileID: 468922044}
@@ -2139,27 +2138,6 @@ MonoBehaviour:
     floatRef: {fileID: 0}
     floatVal: 1
   durationOLD: 0
---- !u!114 &468922047
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 468921884}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dbd8c931f22994b9d90e2037fffaa770, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 141
-  indentLevel: 0
-  _targetGameObject:
-    gameObjectRef: {fileID: 0}
-    gameObjectVal: {fileID: 1138033223}
-  activeState:
-    booleanRef: {fileID: 0}
-    booleanVal: 0
-  targetGameObjectOLD: {fileID: 0}
 --- !u!114 &468922081
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -9619,9 +9597,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 216514963
-  m_SortingLayer: 1
-  m_SortingOrder: 1
+  m_SortingLayerID: 923971163
+  m_SortingLayer: 2
+  m_SortingOrder: 5
   m_Sprite: {fileID: 21300000, guid: d4215f2ef4f3b485faca9284c76e2d7c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
