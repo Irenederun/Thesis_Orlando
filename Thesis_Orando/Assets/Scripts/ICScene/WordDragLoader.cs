@@ -25,7 +25,7 @@ public class WordDragLoader : MonoBehaviour
     public void UsedNounB(string text)
     {
         usedNounB = text;
-        listOfSentence[7].sentence[1] = WordDragManager.instance.usedNounB;
+        listOfSentence[7].sentence[1] = usedNounB;
     }
     
     public void LoadWordDragPrefab()
