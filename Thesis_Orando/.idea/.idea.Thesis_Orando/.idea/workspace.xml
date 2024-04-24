@@ -2,24 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9711d522-8fc0-494c-84b2-d15386118320" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Thesis_Orando/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Thesis_Orando/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Anim/End.controller" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Anim/End.controller.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Anim/EndingAnim.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Anim/EndingAnim.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Fonts/Typewriter/American Typewriter Regular SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Fonts/Typewriter/American Typewriter Regular SDF.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Fonts/helvetica-255/helvetica-rounded-bold-5871d05ead8de SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Fonts/helvetica-255/helvetica-rounded-bold-5871d05ead8de SDF.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Fonts/indestructibletype-Bodoni72/1574087879850-Bodoni-72-Bold-Italic SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Fonts/indestructibletype-Bodoni72/1574087879850-Bodoni-72-Bold-Italic SDF.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Fonts/indestructibletype-Bodoni72/1574087879852-Bodoni-72-Bold SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Fonts/indestructibletype-Bodoni72/1574087879852-Bodoni-72-Bold SDF.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/GMHolder.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/GMHolder.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Ending.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Ending.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Play3-IC.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Play3-IC.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ICScene/DragBehavior.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ICScene/DragBehavior.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ICScene/WordDragDetails.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ICScene/WordDragDetails.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UIDragBehavior.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UIDragBehavior.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Interval/Text_frame.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Interval/Text_frame.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -192,7 +175,7 @@
       <workItem from="1713664859285" duration="1246000" />
       <workItem from="1713823586794" duration="3573000" />
       <workItem from="1713890828618" duration="9407000" />
-      <workItem from="1713982595590" duration="12523000" />
+      <workItem from="1713982595590" duration="12823000" />
     </task>
     <servers />
   </component>

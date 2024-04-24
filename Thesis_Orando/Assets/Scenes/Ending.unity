@@ -3796,6 +3796,10 @@ PrefabInstance:
       propertyPath: allMyWords.Array.data[4]
       value: Love
       objectReference: {fileID: 0}
+    - target: {fileID: 7817812271064518206, guid: 6750c7bc414fc72458996440a4b8555f, type: 3}
+      propertyPath: SavedBodyParts.Array.data[6].used
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7817812271064518207, guid: 6750c7bc414fc72458996440a4b8555f, type: 3}
       propertyPath: m_Name
       value: GMHolder
@@ -12637,7 +12641,7 @@ GameObject:
   - component: {fileID: 1600970728}
   - component: {fileID: 1600970727}
   m_Layer: 0
-  m_Name: Text (TMP)
+  m_Name: EndingLine
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
