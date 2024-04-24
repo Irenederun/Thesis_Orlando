@@ -1,5 +1,6 @@
 using UnityEngine;
 using TMPro;
+using Unity.VisualScripting;
 
 public class UIDragBehavior : MonoBehaviour
 {
@@ -41,6 +42,7 @@ public class UIDragBehavior : MonoBehaviour
             hit.collider.gameObject.SetActive(false);
             gameObject.layer = LayerMask.NameToLayer("UIDragDest");
             gameObject.transform.position = hit.collider.gameObject.transform.position;
+            GameManager.instance.allMyWords.Add(GetComponent<OtherWord>().wordText.text);
 
             string newWord = transform.GetChild(0).GetComponent<TMP_Text>().text;
             string destWord = hit.collider.gameObject.transform.GetChild(0).GetComponent<TMP_Text>().text;

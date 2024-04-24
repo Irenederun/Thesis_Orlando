@@ -27,6 +27,11 @@ public class DragBehavior : MonoBehaviour
     public void OnDragStarting()
     {
         dragging = true;
+
+        if (EndingWordFloating.objectsToSelectFrom != null)
+        {
+            EndingWordFloating.objectsToSelectFrom.Remove(gameObject);
+        }
     }
 
     public void OnDragExit()
@@ -52,12 +57,23 @@ public class DragBehavior : MonoBehaviour
                      GetComponent<DragBehavior>().Reload();
                 }
 
+
                 gameObject.layer = LayerMask.NameToLayer("Dragged");
                 ChangeColliderSize(hit.collider.gameObject.GetComponent<BoxCollider2D>());
                 gameObject.transform.position = hit.collider.gameObject.transform.position;
                 gameObject.GetComponent<WordDragDetails>().DragComplete(gameObject.name, hit.collider.gameObject.name);
                 //gameObject.GetComponent<Collider2D>().enabled = false;
                 //hit.collider.gameObject.layer = LayerMask.NameToLayer("Default");
+                
+                if (hit.collider.gameObject.tag == "Ending")
+                {
+                    gameObject.layer = LayerMask.NameToLayer("Default");
+                    
+                    hit.collider.gameObject.layer = LayerMask.NameToLayer("Default");
+                    hit.collider.gameObject.GetComponent<EndingWordFloating>().isFilled = true;
+                    transform.parent.gameObject.GetComponent<EndingWordLoader>().playerScript.TurnOffPiece();
+                    transform.SetParent(hit.collider.gameObject.transform);
+                }
             }
             else
             {
@@ -81,6 +97,10 @@ public class DragBehavior : MonoBehaviour
     private void DragFailed()
     {
         Reload();
+        if (EndingWordFloating.objectsToSelectFrom != null)
+        {
+            EndingWordFloating.objectsToSelectFrom.Add(gameObject);
+        }
     }
 
     public void Reload()
@@ -91,22 +111,6 @@ public class DragBehavior : MonoBehaviour
         gameObject.GetComponent<WordDragDetails>().ReloadWord();
         gameObject.GetComponent<WordDragDetails>().ResetWords();
     }
-    
-    // private IEnumerator MoveTowards()
-    // {
-        // Vector3 startPos = transform.localPosition;
-        // float t = 0;
-        // float duration = 0.6f;
-        // while (gameObject.transform.localPosition != originalPos)
-        // {
-        //     t += 0.02f / duration;
-        //     float curvedT = cubicHermiteSpline(t);
-        //     transform.localPosition = Vector3.Lerp(startPos, originalPos, curvedT);
-        //     //transform.localPosition = 
-        //         //Vector3.MoveTowards(transform.localPosition,originalPos, 10 * Time.deltaTime);
-        //     yield return new WaitForSeconds(0.02f);
-        // }
-    //}
 
     public void ResetToDraggable()
     {

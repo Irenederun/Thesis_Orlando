@@ -13,7 +13,8 @@ public class GameManager : MonoBehaviour
     public Action tutorialEnded;
     public int currentSentenceNo;
     public int playRating;
-    
+    public List<string> allMyWords = new List<string>();
+
     [System.Serializable]
     public class BodyPart
     {

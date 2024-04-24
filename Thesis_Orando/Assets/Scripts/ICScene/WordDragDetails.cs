@@ -8,7 +8,7 @@ public class WordDragDetails : MonoBehaviour
 
     public virtual void DragComplete(string wordd, string desNamee)
     {
-        //print(wordd + desNamee);
+        
     }
 
     public virtual void ResetWords()
@@ -18,6 +18,6 @@ public class WordDragDetails : MonoBehaviour
 
     public virtual void ReloadWord()
     {
-        WordDragManager.instance.OnSlotReload(text.text, wordPosition);
+        if (WordDragManager.instance != null) WordDragManager.instance.OnSlotReload(text.text, wordPosition);
     }
 }
