@@ -14,6 +14,12 @@ public class ClosingFade : MonoBehaviour
 
     private void Start()
     {
+        StartCoroutine(Wait());
+    }
+
+    IEnumerator Wait()
+    {
+        yield return new WaitForSeconds(2);
         FadeOutCaller();
     }
 
