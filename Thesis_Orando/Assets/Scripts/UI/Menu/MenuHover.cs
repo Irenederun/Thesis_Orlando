@@ -9,7 +9,7 @@ public class MenuHover : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
 
     private Image buttonImage;
     private Sprite defaultSprite;
-    private TextMeshProUGUI buttonText; // 使用TextMeshProUGUI类型
+    private TextMeshProUGUI buttonText;
 
     void Start()
     {
@@ -29,5 +29,6 @@ public class MenuHover : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
     {
         buttonImage.sprite = defaultSprite; // 恢复到默认状态的图片
         buttonText.gameObject.SetActive(false); // 关闭按钮文本
+        //child.SetActive(false);
     }
 }
