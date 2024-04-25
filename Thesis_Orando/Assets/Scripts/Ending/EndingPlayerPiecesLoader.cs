@@ -15,12 +15,21 @@ public class EndingPlayerPiecesLoader : MonoBehaviour
     }
     public List<TwoSprites> spritesList;
     public GameObject endingLine;
+    public SpriteRenderer scarf;
+    public SpriteRenderer light;
+    public SpriteRenderer spot;
 
     // Start is called before the first frame update
     void Start()
     {
-        Init();
+        StartCoroutine(Wait());
         endingLine.SetActive(false);
+    }
+
+    IEnumerator Wait()
+    {
+        yield return new WaitForSeconds(0);
+        Init();
     }
 
     void Init()
@@ -28,6 +37,10 @@ public class EndingPlayerPiecesLoader : MonoBehaviour
         for (int i = 0; i < GameManager.instance.SavedBodyParts.Count; i++)
         {
             spritesList[i].collaged = GameManager.instance.SavedBodyParts[i].used;
+            FadeInObjectsOverTime(spritesList[i].topPiece, spritesList[i].bottomPiece, 2f);
+            StartCoroutine(FadeIn(scarf, 2f));
+            StartCoroutine(FadeInSpotlight(light, 2f));
+            StartCoroutine(FadeInSpotlight(spot, 2f));
         }
     }
 
@@ -100,6 +113,9 @@ public class EndingPlayerPiecesLoader : MonoBehaviour
                 FadeOutObjectsOverTime(a, b, 4);
             }
         }
+
+        StartCoroutine(FadeOut(light, 4));
+        StartCoroutine(FadeOut(spot, 4));
     }
 
     private void FadeOutObjectsOverTime(GameObject a, GameObject b, float fadeDuration)
@@ -135,9 +151,6 @@ public class EndingPlayerPiecesLoader : MonoBehaviour
             elapsedTime += Time.deltaTime;
         }
         spriteRenderer.color = targetColor;
-        
-        yield return new WaitForSeconds(1);
-        TextFadeIn();
     }
     
     
@@ -162,5 +175,46 @@ public class EndingPlayerPiecesLoader : MonoBehaviour
 
             yield return null;
         }
+    }
+    
+    
+    private void FadeInObjectsOverTime(GameObject a, GameObject b, float fadeDuration)
+    {
+        SpriteRenderer spriteRendererA = a.GetComponent<SpriteRenderer>();
+        SpriteRenderer spriteRendererB = b.GetComponent<SpriteRenderer>();
+        StartCoroutine(FadeIn(spriteRendererA, fadeDuration));
+        StartCoroutine(FadeIn(spriteRendererB, fadeDuration));
+    }
+
+    private IEnumerator FadeIn(SpriteRenderer spriteRenderer, float fadeDuration)
+    {
+        float elapsedTime = 0f;
+        Color startColor = spriteRenderer.color;
+        Color targetColor = new Color(startColor.r, startColor.g, startColor.b, 1f);
+
+        while (elapsedTime < fadeDuration)
+        {
+            float t = elapsedTime / fadeDuration;
+            spriteRenderer.color = Color.Lerp(startColor, targetColor, t);
+            yield return null;
+            elapsedTime += Time.deltaTime;
+        }
+        spriteRenderer.color = targetColor;
+    }
+    
+    private IEnumerator FadeInSpotlight(SpriteRenderer spriteRenderer, float fadeDuration)
+    {
+        float elapsedTime = 0f;
+        Color startColor = spriteRenderer.color;
+        Color targetColor = new Color(startColor.r, startColor.g, startColor.b, 81/255f);
+
+        while (elapsedTime < fadeDuration)
+        {
+            float t = elapsedTime / fadeDuration;
+            spriteRenderer.color = Color.Lerp(startColor, targetColor, t);
+            yield return null;
+            elapsedTime += Time.deltaTime;
+        }
+        spriteRenderer.color = targetColor;
     }
 }
