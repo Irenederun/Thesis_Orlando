@@ -26,7 +26,7 @@ public class EndingWordFloating : MonoBehaviour
         {
             if (!isFilled)
             {
-                SelectWord();
+                //SelectWord();
             }
         }
     }

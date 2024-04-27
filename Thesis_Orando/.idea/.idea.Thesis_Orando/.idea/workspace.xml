@@ -2,8 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9711d522-8fc0-494c-84b2-d15386118320" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Thesis_Orando/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Thesis_Orando/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/WordDragPrefabs/Play2/WordDragPlay2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/WordDragPrefabs/Play2/WordDragPlay2.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/WordDragPrefabs/Play3/WordDragPlay3.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/WordDragPrefabs/Play3/WordDragPlay3.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/WordDragPrefabs/Play3/WordDragPlay3Interstitial.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/WordDragPrefabs/Play3/WordDragPlay3Interstitial.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Ending.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Ending.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Play3-IC.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Play3-IC.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Ending/EndingParagraphLoader.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Ending/EndingParagraphLoader.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Ending/EndingPlayerPiecesLoader.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Ending/EndingPlayerPiecesLoader.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Ending/EndingWordFloating.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Ending/EndingWordFloating.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/ICScene/ClosingFade.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ICScene/ClosingFade.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ICScene/DragBehavior.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ICScene/DragBehavior.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ICScene/WordDragPlay3.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ICScene/WordDragPlay3.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,6 +26,7 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4746c126b0b54f3b834845974d1a9190159000/99/dcfb33b7/GameObject.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/3ea01e77be99618395f448b16bd7cc2bd4248bd9e5d8474964b2d97f39c5d74/System.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/AudioManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Ending/DestinationWait.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Ending/EndingParagraphLoader.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Ending/EndingWordFloating.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Ending/EndingWordLerping.cs" root0="FORCE_HIGHLIGHTING" />
@@ -178,7 +189,8 @@
       <workItem from="1713823586794" duration="3573000" />
       <workItem from="1713890828618" duration="9407000" />
       <workItem from="1713982595590" duration="12978000" />
-      <workItem from="1714070079891" duration="7859000" />
+      <workItem from="1714070079891" duration="8474000" />
+      <workItem from="1714174288747" duration="2675000" />
     </task>
     <servers />
   </component>

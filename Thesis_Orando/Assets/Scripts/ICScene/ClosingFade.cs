@@ -35,7 +35,7 @@ public class ClosingFade : MonoBehaviour
         StartCoroutine(FadeOutGroups(group2));
         yield return new WaitForSeconds(2);
         StartCoroutine(FadeOutGroups(group3));
-        yield return new WaitForSeconds(1 + fadeDuration);
+        yield return new WaitForSeconds(2 + fadeDuration);
         //StartCoroutine(FadeIn(group4));
         DialogueManager.instance.TriggerDialogue("End");
     }

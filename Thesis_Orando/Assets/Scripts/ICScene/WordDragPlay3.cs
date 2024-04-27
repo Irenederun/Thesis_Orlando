@@ -93,8 +93,10 @@ public class WordDragPlay3 : WordDragDetails
         {
             wordPosition = 1;
             string verbO = WordDragManager.instance.FindConjugation(wordd, "verb");
+            string nounOfVerbO = WordDragManager.instance.FindConjugation(wordd, "noun");
             text.text = verbO;
             RecordWords(wordPosition, verbO);
+            //DialogueManager.instance.SetResponseVariable("nounOfVerbO", nounOfVerbO);
         }
         else if (desNamee.Contains("nounF"))
         {

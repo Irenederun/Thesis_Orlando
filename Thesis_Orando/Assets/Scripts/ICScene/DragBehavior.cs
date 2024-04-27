@@ -68,7 +68,7 @@ public class DragBehavior : MonoBehaviour
                 if (hit.collider.gameObject.tag == "Ending")
                 {
                     gameObject.layer = LayerMask.NameToLayer("Default");
-                    
+                    hit.collider.gameObject.GetComponent<DestinationWait>().AllowMove();
                     hit.collider.gameObject.layer = LayerMask.NameToLayer("Default");
                     hit.collider.gameObject.GetComponent<EndingWordFloating>().isFilled = true;
                     transform.parent.gameObject.GetComponent<EndingWordLoader>().playerScript.TurnOffPiece();

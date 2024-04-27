@@ -9,6 +9,7 @@ public class EndingParagraphLoader : MonoBehaviour
     public List<GameObject> listOfSpaces = new List<GameObject>();
     public EndingPlayerPiecesLoader playerScript;
     private bool ended = false;
+    public float speed = 1.0f;
     
     private enum MyState
     {
@@ -62,9 +63,6 @@ public class EndingParagraphLoader : MonoBehaviour
         }
     }
     
-    
-    public float speed = 1.0f;
-
     void Update()
     {
         if (myState == MyState.Wait) return;
@@ -87,6 +85,14 @@ public class EndingParagraphLoader : MonoBehaviour
         yield return new WaitForSeconds(5);
         playerScript.TextFadeIn();
     }
-    
-    
+
+    public void ForceStop()
+    {
+        myState = MyState.Wait;
+    }
+
+    public void AllowMove()
+    {
+        myState = MyState.Move;
+    }
 }
