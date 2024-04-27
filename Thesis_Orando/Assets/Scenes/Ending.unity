@@ -6649,7 +6649,7 @@ MonoBehaviour:
   m_text: "All men and beasts, lions, eagles, \nand quails, horned stags, geese,
     spiders,\n silent fish that inhabit the waves, \nstarfish from the sea, and creatures
     invisible to the eye -- all, all life, \ncompleting the             round set
-    before it,\n has           out at last.\r"
+    before it,\n has            out at last.\r"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2d547a05887e1402a9f6be68683d8f36, type: 2}
   m_sharedMaterial: {fileID: 4775169337844555031, guid: 2d547a05887e1402a9f6be68683d8f36, type: 2}
@@ -12568,7 +12568,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1508661866}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 8.33, y: -11.46, z: 0}
+  m_LocalPosition: {x: 8.33, y: -13, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -12605,7 +12605,7 @@ MonoBehaviour:
   - {fileID: 612374502}
   playerScript: {fileID: 1648769235}
   wordScript: {fileID: 917871701}
-  speed: 0.73
+  speed: 0.8
 --- !u!1 &1536534890
 GameObject:
   m_ObjectHideFlags: 0
@@ -16473,7 +16473,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: _______
+  m_text: ________
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2d547a05887e1402a9f6be68683d8f36, type: 2}
   m_sharedMaterial: {fileID: 4775169337844555031, guid: 2d547a05887e1402a9f6be68683d8f36, type: 2}
