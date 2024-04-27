@@ -54,8 +54,7 @@ public class WordDragPlay2 : WordDragDetails
             text.text = word2D;
             RecordWords(wordPosition, word2D);
             DialogueManager.instance.SetResponseVariable("usedNounB", word2D);
-            
-            WordDragManager.instance.SetDeterminedWords("usedNounB", wordd.ToLower());
+            WordDragManager.instance.SetDeterminedWords("usedNounB", word2D);
         }
         else if (desNamee.Contains("verbCFancy"))
         {

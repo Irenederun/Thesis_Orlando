@@ -190,7 +190,7 @@ public class EndingPlayerPiecesLoader : MonoBehaviour
     {
         float elapsedTime = 0f;
         Color startColor = spriteRenderer.color;
-        Color targetColor = new Color(startColor.r, startColor.g, startColor.b, 0.85f);
+        Color targetColor = new Color(startColor.r, startColor.g, startColor.b, 1f);
 
         while (elapsedTime < fadeDuration)
         {

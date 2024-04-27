@@ -8,6 +8,7 @@ public class EndingParagraphLoader : MonoBehaviour
 {
     public List<GameObject> listOfSpaces = new List<GameObject>();
     public EndingPlayerPiecesLoader playerScript;
+    public EndingWordLoader wordScript;
     private bool ended = false;
     public float speed = 1.0f;
     
@@ -75,6 +76,8 @@ public class EndingParagraphLoader : MonoBehaviour
             {
                 ended = true;
                 playerScript.PiecesFadeOut();
+                //wordscript: fade words out
+                wordScript.FadeWordOut();
                 StartCoroutine(TextFadeWait());
             }
         }

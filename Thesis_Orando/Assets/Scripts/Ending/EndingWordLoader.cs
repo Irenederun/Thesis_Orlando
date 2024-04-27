@@ -63,4 +63,31 @@ public class EndingWordLoader : MonoBehaviour
             yield return null;
         }
     }
+
+    public void FadeWordOut()
+    {
+        foreach (GameObject word in words)
+        {
+            if (word.activeSelf)
+            {
+                StartCoroutine(FadeWordsOut(word, 3.5f));
+            }
+        }
+    }
+
+    IEnumerator FadeWordsOut(GameObject word, float duration)
+    {
+        float alpha = 1f;
+        while (alpha > 0f)
+        {
+            alpha -= Time.deltaTime / duration;
+
+            alpha = Mathf.Clamp01(alpha);
+
+            Color color = word.GetComponentInChildren<TextMeshPro>().color;
+            color.a = alpha;
+            word.GetComponentInChildren<TextMeshPro>().color = color;
+            yield return null;
+        }
+    }
 }

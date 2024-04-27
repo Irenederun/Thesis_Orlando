@@ -195,8 +195,7 @@ public class WordDragManager : ManagerBehavior
 
     public void SetDeterminedText(int num, string text)
     {
-        print("change determination text");
-        exceptionTexts[num].text = text;//this is not happening
+        exceptionTexts[num].text = text;
     }
 
     public void SetDeterminedWords(string name, string text)

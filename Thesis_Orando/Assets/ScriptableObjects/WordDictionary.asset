@@ -972,9 +972,9 @@ MonoBehaviour:
     - position: 1D_0
       conjugation: killed
     - position: 1D
-      conjugation: to kill
+      conjugation: killed
     - position: 1E
-      conjugation: CAT3
+      conjugation: CAT1
     - position: 3A
       conjugation: Kill
     - position: 3B
