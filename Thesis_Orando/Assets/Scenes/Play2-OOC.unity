@@ -11210,7 +11210,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!199 &1012929634
 ParticleSystemRenderer:
   serializedVersion: 6
@@ -18957,6 +18957,8 @@ MonoBehaviour:
     objs:
     - {fileID: 285117175}
     - {fileID: 1112702888}
+    - {fileID: 1112702888}
+    - {fileID: 1916641611}
   - offsetPercentage: 0
     objs:
     - {fileID: 1210151126}
@@ -18972,7 +18974,6 @@ MonoBehaviour:
     - {fileID: 1375520622}
     - {fileID: 1664292662}
     - {fileID: 1418841047}
-    - {fileID: 1916641611}
   - offsetPercentage: 0.9
     objs:
     - {fileID: 1125125802}
