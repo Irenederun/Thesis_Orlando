@@ -6007,7 +6007,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 509670738}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.28, y: -0.22636078, z: 0}
+  m_LocalPosition: {x: -0.5, y: -0.22636078, z: 0}
   m_LocalScale: {x: 0.9132508, y: 0.9132508, z: 0.9132508}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -25510,7 +25510,7 @@ GameObject:
   - component: {fileID: 2143264461}
   - component: {fileID: 2143264462}
   m_Layer: 0
-  m_Name: TrepliffNew
+  m_Name: BeatriceNew
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

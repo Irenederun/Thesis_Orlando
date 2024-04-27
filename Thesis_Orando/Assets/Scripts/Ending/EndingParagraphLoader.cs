@@ -70,7 +70,7 @@ public class EndingParagraphLoader : MonoBehaviour
         
         transform.Translate(Vector2.up * speed * Time.deltaTime);
 
-        if (transform.position.y >= 39)
+        if (transform.position.y >= 57)
         {
             if (!ended)
             {

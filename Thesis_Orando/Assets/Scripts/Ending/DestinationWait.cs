@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class DestinationWait : MonoBehaviour
@@ -33,6 +34,7 @@ public class DestinationWait : MonoBehaviour
 
     public void AllowMove()
     {
+        transform.parent.gameObject.GetComponent<TextMeshPro>().text = "";
         GetComponent<EndingWordFloating>().isFilled = true;
         paragraphScript.AllowMove();
     }
