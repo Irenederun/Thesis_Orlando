@@ -46,18 +46,18 @@ public class DragBehavior : MonoBehaviour
         
         if (hit.collider != null)
         {
+            print("destination hit");
             if (availableDesPosHolders.Contains(hit.collider.gameObject))
             {
                 if (hitReload.collider != null)
                 {
-                     hitReload.collider.gameObject.GetComponent<WordDragDetails>().ReloadWord();
+                    hitReload.collider.gameObject.GetComponent<WordDragDetails>().ReloadWord();
                      hitReload.collider.gameObject.GetComponent<DragBehavior>().Reload();
                      //print(hitReload.collider.gameObject);
                      GetComponent<WordDragDetails>().ReloadWord();
                      GetComponent<DragBehavior>().Reload();
                 }
-
-
+                print("destination in list");
                 gameObject.layer = LayerMask.NameToLayer("Dragged");
                 ChangeColliderSize(hit.collider.gameObject.GetComponent<BoxCollider2D>());
                 gameObject.transform.position = hit.collider.gameObject.transform.position;

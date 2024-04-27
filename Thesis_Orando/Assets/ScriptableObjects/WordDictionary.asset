@@ -1006,7 +1006,7 @@ MonoBehaviour:
     - position: 2B
       conjugation: kill
     - position: 2C
-      conjugation: no
+      conjugation: kill
     - position: 2D
       conjugation: kill
   - word: Fear

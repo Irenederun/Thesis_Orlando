@@ -8956,7 +8956,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 98fc134d3259ca941ab5ddfb12dab497, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  myID: 3-1
+  myID: 2-1
   grayedColor: {r: 0.26415092, g: 0.26415092, b: 0.26415092, a: 1}
   BodyParts:
   - {fileID: 1834656728}
@@ -21402,7 +21402,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 98fc134d3259ca941ab5ddfb12dab497, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  myID: 3-2
+  myID: 2-2
   grayedColor: {r: 0.26415092, g: 0.26415092, b: 0.26415092, a: 1}
   BodyParts:
   - {fileID: 1262786617}

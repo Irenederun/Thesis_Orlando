@@ -1110,7 +1110,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 165.41945
     y: 36.370174
-    width: 69.01636
+    width: 109.01636
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1187,7 +1187,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 164.61302, y: 12.600327}
+  scrollPos: {x: 664.61273, y: 220.79694}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 342.66666
@@ -1199,7 +1199,7 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 468922205}
+  - {fileID: 468921886}
   selectedCommands: []
   variables:
   - {fileID: 468921990}
@@ -1323,7 +1323,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 291.5283
     y: -34.647514
-    width: 75.57373
+    width: 115.57373
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1543,7 +1543,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 163.81053
     y: 89.49687
-    width: 69.01636
+    width: 109.01636
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1978,7 +1978,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 160.35185
     y: 156.71614
-    width: 69.01636
+    width: 109.01636
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2026,7 +2026,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 341.9596
     y: 260.7505
-    width: 60
+    width: 76.22949
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -3029,7 +3029,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 166.4845
     y: 219.85184
-    width: 67.92346
+    width: 107.92346
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -4240,7 +4240,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 169.08467
     y: 274.55692
-    width: 67.92346
+    width: 107.92346
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -4388,7 +4388,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 156.36543
     y: 339.29938
-    width: 67.92346
+    width: 107.92346
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0

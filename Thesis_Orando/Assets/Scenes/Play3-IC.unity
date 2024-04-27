@@ -1387,6 +1387,7 @@ GameObject:
   - component: {fileID: 468922237}
   - component: {fileID: 468922238}
   - component: {fileID: 468922239}
+  - component: {fileID: 468922240}
   m_Layer: 0
   m_Name: IC-0 Flowchart
   m_TagString: Untagged
@@ -1408,9 +1409,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 168.60748
-    y: 35.000313
-    width: 72.10044
+    x: 165.90479
+    y: 33.57174
+    width: 108.09525
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1489,11 +1490,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 283.8955, y: 179.52933}
+  scrollPos: {x: 548.6561, y: 130.15315}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 417.66666
-  zoom: 0.73000014
+  zoom: 0.6999998
   scrollViewRect:
     serializedVersion: 2
     x: -343
@@ -1502,7 +1503,8 @@ MonoBehaviour:
     height: 859
   selectedBlocks:
   - {fileID: 468921886}
-  selectedCommands: []
+  selectedCommands:
+  - {fileID: 468922224}
   variables:
   - {fileID: 468921990}
   - {fileID: 468921930}
@@ -1514,6 +1516,7 @@ MonoBehaviour:
   - {fileID: 468922164}
   - {fileID: 468922227}
   - {fileID: 468922231}
+  - {fileID: 468922240}
   description: 
   stepPause: 0
   colorCommands: 1
@@ -1618,7 +1621,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 291.5283
     y: -34.647514
-    width: 79.40637
+    width: 114.761925
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1838,7 +1841,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 164.90944
     y: 89.49687
-    width: 75.75341
+    width: 110.000015
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2292,7 +2295,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 160.35185
     y: 157.81505
-    width: 75.75341
+    width: 110.000015
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2355,7 +2358,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 358.66403
     y: 230.77887
-    width: 60
+    width: 76.66667
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -3045,7 +3048,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 190
   indentLevel: 1
-  storyText: "Why do you say that you have kiss \nthe ground I walked on?\r"
+  storyText: "Why do you say that you have kissed \nthe ground I walked on?\r"
   description: 
   character: {fileID: 1932757925544751689}
   portrait: {fileID: 0}
@@ -3565,9 +3568,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: -19.191483
+    x: -20.507273
     y: 36.996754
-    width: 60
+    width: 73.80953
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -3761,7 +3764,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -18.997353
     y: 98.535225
-    width: 60
+    width: 73.80953
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -4538,7 +4541,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 166.4845
     y: 219.85184
-    width: 74.840164
+    width: 109.04764
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -5795,7 +5798,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 168.67633
     y: 277.59686
-    width: 74.840164
+    width: 109.04764
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -5935,7 +5938,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 156.94363
     y: 338.07986
-    width: 74.840164
+    width: 109.04764
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -6264,7 +6267,7 @@ MonoBehaviour:
   itemId: 317
   indentLevel: 2
   anyVar:
-    variable: {fileID: 468922227}
+    variable: {fileID: 468922240}
     data:
       animatorData:
         animatorRef: {fileID: 0}
@@ -6433,7 +6436,7 @@ MonoBehaviour:
   conditions:
   - compareOperator: 0
     anyVar:
-      variable: {fileID: 468922227}
+      variable: {fileID: 468922240}
       data:
         animatorData:
           animatorRef: {fileID: 0}
@@ -6841,6 +6844,21 @@ MonoBehaviour:
     booleanRef: {fileID: 0}
     booleanVal: 1
   targetGameObjectOLD: {fileID: 0}
+--- !u!114 &468922240
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 468921884}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d02d9822eec54c98afe95bb497211b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scope: 2
+  key: hasStarted3
+  value: 0
 --- !u!1 &477653529
 GameObject:
   m_ObjectHideFlags: 0

@@ -664,7 +664,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 245.55147
     y: 99.38406
-    width: 86.842094
+    width: 60
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -735,7 +735,7 @@ MonoBehaviour:
   selectedBlocks:
   - {fileID: 950951699}
   selectedCommands:
-  - {fileID: 950951700}
+  - {fileID: 950951729}
   variables:
   - {fileID: 950951620}
   - {fileID: 950951649}
@@ -1057,7 +1057,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 377.19165
     y: 106.4244
-    width: 74.56139
+    width: 60
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1116,7 +1116,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 377.09274
     y: 178.42441
-    width: 74.56139
+    width: 60
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1322,7 +1322,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 493.24805
     y: 101.29236
-    width: 109.64911
+    width: 69.64911
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -3114,7 +3114,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 109
   indentLevel: 1
-  storyText: "I think I\u2019m really big fan now.\r"
+  storyText: "I think I\u2019m a really big fan now.\r"
   description: 
   character: {fileID: 6990208787991438863}
   portrait: {fileID: 0}

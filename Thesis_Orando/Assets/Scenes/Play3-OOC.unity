@@ -1279,7 +1279,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 94490247}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -19316,7 +19316,7 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 1357418056}
+  - {fileID: 1357418059}
   selectedCommands: []
   variables:
   - {fileID: 1357418027}
@@ -19377,7 +19377,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 479.36563
     y: 179.10515
-    width: 102.1212
+    width: 62.1212
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -19445,7 +19445,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 457.42178
     y: 242.92633
-    width: 126.363625
+    width: 86.363625
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0

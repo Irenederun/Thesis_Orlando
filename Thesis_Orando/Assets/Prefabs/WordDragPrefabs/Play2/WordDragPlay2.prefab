@@ -524,8 +524,8 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7839126577586827164}
-  - {fileID: 6435703848660500132}
   - {fileID: 4056338558450841410}
+  - {fileID: 6435703848660500132}
   m_Father: {fileID: 855757335929839745}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2317,11 +2317,11 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6792355979164621879}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1.219, y: -1.302}
+  m_AnchoredPosition: {x: -1.2190002, y: -1.302}
   m_SizeDelta: {x: 7.2639, y: 1.8192}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!23 &5463814547195414164
@@ -2777,7 +2777,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "<b>I</b> _____________ <b>I                        thee.\r</b>"
+  m_text: "<b>I</b> ______________ <b>I                        thee.\r</b>"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2d547a05887e1402a9f6be68683d8f36, type: 2}
   m_sharedMaterial: {fileID: 4775169337844555031, guid: 2d547a05887e1402a9f6be68683d8f36, type: 2}
@@ -3635,12 +3635,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7634149629179778228}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.7906, y: -0.824, z: 0}
-  m_LocalScale: {x: 1.9539647, y: 0.5406705, z: 1}
+  m_LocalPosition: {x: -1.7934, y: -0.824, z: 0}
+  m_LocalScale: {x: 2.0911062, y: 0.5406705, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6792355979164621879}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1515318945748213229
 SpriteRenderer:

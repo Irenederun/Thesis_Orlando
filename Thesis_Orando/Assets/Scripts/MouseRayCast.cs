@@ -67,6 +67,7 @@ public class MouseRayCast : MonoBehaviour
             // }
             if (hitDragged.collider != null)
             {
+                hitDragged.collider.gameObject.GetComponent<WordDragDetails>().ReloadWord();
                 hitDragged.collider.gameObject.GetComponent<DragBehavior>().ResetToDraggable();
                 hitDrag = hitDragged;
             }
