@@ -1,0 +1,24 @@
+fileFormatVersion: 2
+guid: 47b83da022a0e47d1b0ccadbf29ef669
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Monument Grotesk
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 90da6ba1a9e48489ca8a87bf268ddac0, type: 3}
+  - {fileID: 12800000, guid: 969d608066e4a42b3826f453b11ad1a8, type: 3}
+  - {fileID: 12800000, guid: f39408fc2e5e041d1a81be68b7b57b01, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
