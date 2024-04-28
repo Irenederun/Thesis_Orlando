@@ -116,6 +116,7 @@ public class EndingPlayerPiecesLoader : MonoBehaviour
 
         StartCoroutine(FadeOut(light, 4));
         StartCoroutine(FadeOut(spot, 4));
+        StartCoroutine(FadeOut(scarf, 4));
     }
 
     private void FadeOutObjectsOverTime(GameObject a, GameObject b, float fadeDuration)
