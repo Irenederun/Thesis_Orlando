@@ -1322,9 +1322,8 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 468922205}
-  selectedCommands:
-  - {fileID: 468922204}
+  - {fileID: 468922197}
+  selectedCommands: []
   variables:
   - {fileID: 468921990}
   - {fileID: 468921930}
@@ -1430,7 +1429,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   parentBlock: {fileID: 468921944}
   suppressBlockAutoSelect: 0
-  targetButton: {fileID: 0}
+  targetButton: {fileID: 347387700}
 --- !u!114 &468921944
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -5589,7 +5588,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &468922251
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -5606,7 +5605,7 @@ MonoBehaviour:
   waitUntilFinished: 1
 --- !u!114 &468922252
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
