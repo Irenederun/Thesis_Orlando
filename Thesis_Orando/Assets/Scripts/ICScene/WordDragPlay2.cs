@@ -76,6 +76,7 @@ public class WordDragPlay2 : WordDragDetails
         {
             wordPosition = 1;
             string word2F = WordDragManager.instance.FindConjugation(wordd, "2B");
+            string usedVerbE = WordDragManager.instance.FindConjugation(wordd, "verb");
             if (word2F.Contains("no"))
             {
                 GetComponent<WordDragDetails>().ReloadWord();
@@ -84,7 +85,7 @@ public class WordDragPlay2 : WordDragDetails
             }
             text.text = word2F;
             RecordWords(wordPosition, word2F);
-            DialogueManager.instance.SetResponseVariable("usedVerbE", word2F);
+            DialogueManager.instance.SetResponseVariable("usedVerbE", usedVerbE);
         }
         else if (desNamee.Contains("verbF"))
         {
