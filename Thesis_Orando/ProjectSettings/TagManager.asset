@@ -11,6 +11,7 @@ TagManager:
   - Draggable
   - DragDes
   - Ending
+  - Object2
   layers:
   - Default
   - TransparentFX
