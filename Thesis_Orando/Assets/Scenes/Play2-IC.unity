@@ -1233,7 +1233,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 165.41945
     y: 36.370174
-    width: 110.69649
+    width: 109.01636
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1310,11 +1310,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 92.4798, y: 94.32148}
+  scrollPos: {x: 145.91742, y: 135.13371}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 342.66666
-  zoom: 0.6700003
+  zoom: 0.6100004
   scrollViewRect:
     serializedVersion: 2
     x: -343
@@ -1393,6 +1393,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b4241da354119647860444e55d4871f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  myFlowchart: {fileID: 0}
   isTalking: 0
   submitTimes: 0
 --- !u!114 &468921942
@@ -1445,7 +1446,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 291.5283
     y: -34.647514
-    width: 117.66166
+    width: 115.57373
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1665,7 +1666,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 163.81053
     y: 89.49687
-    width: 112.68654
+    width: 109.01636
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2100,7 +2101,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 160.35185
     y: 156.71614
-    width: 112.68654
+    width: 109.01636
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2148,7 +2149,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 341.9596
     y: 260.7505
-    width: 77.86069
+    width: 76.22949
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -3152,7 +3153,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 166.4845
     y: 219.85184
-    width: 111.69151
+    width: 107.92346
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -4363,7 +4364,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 169.08467
     y: 274.55692
-    width: 111.69151
+    width: 107.92346
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -4511,7 +4512,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 156.36543
     y: 339.29938
-    width: 111.69151
+    width: 107.92346
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -7017,6 +7018,63 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1001 &971483593
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4431657342028714488, guid: 0390418499f87e747a5eece27af59da3, type: 3}
+      propertyPath: m_Name
+      value: RestartManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 4431657342028714489, guid: 0390418499f87e747a5eece27af59da3, type: 3}
+      propertyPath: m_RootOrder
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 4431657342028714489, guid: 0390418499f87e747a5eece27af59da3, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 729.3574
+      objectReference: {fileID: 0}
+    - target: {fileID: 4431657342028714489, guid: 0390418499f87e747a5eece27af59da3, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1697.6262
+      objectReference: {fileID: 0}
+    - target: {fileID: 4431657342028714489, guid: 0390418499f87e747a5eece27af59da3, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -2.6156325
+      objectReference: {fileID: 0}
+    - target: {fileID: 4431657342028714489, guid: 0390418499f87e747a5eece27af59da3, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4431657342028714489, guid: 0390418499f87e747a5eece27af59da3, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4431657342028714489, guid: 0390418499f87e747a5eece27af59da3, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4431657342028714489, guid: 0390418499f87e747a5eece27af59da3, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4431657342028714489, guid: 0390418499f87e747a5eece27af59da3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4431657342028714489, guid: 0390418499f87e747a5eece27af59da3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4431657342028714489, guid: 0390418499f87e747a5eece27af59da3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0390418499f87e747a5eece27af59da3, type: 3}
 --- !u!1 &1009377727
 GameObject:
   m_ObjectHideFlags: 0

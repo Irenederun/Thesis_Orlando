@@ -5,7 +5,7 @@ using UnityEngine;
 public class DialogueManager : ManagerBehavior
 {
     public static DialogueManager instance;
-    private Fungus.Flowchart myFlowchart;
+    public Fungus.Flowchart myFlowchart;
     public bool isTalking;
     public int submitTimes;
 
