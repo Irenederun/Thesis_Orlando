@@ -182,7 +182,7 @@ MonoBehaviour:
     - position: 2IA
       conjugation: portraying
     - position: 2IB
-      conjugation: portrayal
+      conjugation: portraits
     - position: 2IC
       conjugation: POS
     - position: verb
@@ -404,7 +404,7 @@ MonoBehaviour:
     - position: 3A
       conjugation: Worry
     - position: 3B
-      conjugation: worrying
+      conjugation: worried
     - position: 3C
       conjugation: worry
     - position: 3D

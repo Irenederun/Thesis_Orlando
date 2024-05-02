@@ -27,7 +27,7 @@ public class WordDragLoader : MonoBehaviour
 
     IEnumerator Wait()
     {
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(0.1f);
         usedNounB = DialogueManager.instance.myFlowchart.GetStringVariable("usedNounB");
         usedVerbC = DialogueManager.instance.myFlowchart.GetStringVariable("usedVerbC");
     }
@@ -52,10 +52,12 @@ public class WordDragLoader : MonoBehaviour
         if (prefabNo == 6)
         {
             thisPrefab.GetComponent<WordDragManager>().SetDeterminedText(0, usedVerbC);
+            UsedVerbC(usedVerbC);
         }
         else if (prefabNo == 7)
         {
             thisPrefab.GetComponent<WordDragManager>().SetDeterminedText(1, usedNounB);
+            UsedNounB(usedNounB);
         }
         thisPrefab.GetComponent<WordDragManager>().sentenceNo = prefabNo;
         thisPrefab.transform.parent = holderTransform;

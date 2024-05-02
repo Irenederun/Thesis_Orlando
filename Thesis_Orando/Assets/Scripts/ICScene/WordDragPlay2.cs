@@ -60,6 +60,7 @@ public class WordDragPlay2 : WordDragDetails
         {
             wordPosition = 3;
             string word2E = WordDragManager.instance.FindConjugation(wordd, "fancyVerb");
+            string verb = WordDragManager.instance.FindConjugation(wordd, "2B");
             if (word2E.Contains("no"))
             {
                 GetComponent<WordDragDetails>().ReloadWord();
@@ -68,9 +69,13 @@ public class WordDragPlay2 : WordDragDetails
             }
             text.text = word2E;
             RecordWords(wordPosition, word2E);
-            
-            WordDragManager.instance.SetDeterminedWords("usedVerbC",wordd.ToLower());
-            DialogueManager.instance.SetResponseVariable("usedVerbC", wordd.ToLower());
+
+            if (verb.Contains("am"))
+            {
+                verb = verb.Replace("am", "be");
+            }
+            WordDragManager.instance.SetDeterminedWords("usedVerbC",verb);
+            DialogueManager.instance.SetResponseVariable("usedVerbC", verb);
         }
         else if (desNamee.Contains("verbE"))
         {
