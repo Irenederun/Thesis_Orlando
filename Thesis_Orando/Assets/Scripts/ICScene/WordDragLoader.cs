@@ -1,3 +1,4 @@
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Rendering.Universal;
@@ -18,10 +19,19 @@ public class WordDragLoader : MonoBehaviour
 
     void Start()
     {
+        //if ()
+        StartCoroutine(Wait());
+        //usedNounB = DialogueManager.instance.myFlowchart.GetStringVariable("usedNounB");
+        //usedVerbC = DialogueManager.instance.myFlowchart.GetStringVariable("usedVerbC");
+    }
+
+    IEnumerator Wait()
+    {
+        yield return new WaitForSeconds(1);
         usedNounB = DialogueManager.instance.myFlowchart.GetStringVariable("usedNounB");
         usedVerbC = DialogueManager.instance.myFlowchart.GetStringVariable("usedVerbC");
     }
-    
+
     public void UsedVerbC(string text)
     {
         usedVerbC = text;

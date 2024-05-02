@@ -3,8 +3,17 @@
   <component name="ChangeListManager">
     <list default="true" id="9711d522-8fc0-494c-84b2-d15386118320" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Thesis_Orando/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Thesis_Orando/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Ending/EndingPlayerPiecesLoader.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Ending/EndingPlayerPiecesLoader.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/RestartManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/RestartManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Anim/EyeClosing.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Anim/EyeClosing.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Anim/Title/An_Ctrl.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Anim/Title/An_Ctrl.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/WordDragPrefabs/Play1/V3.0Prefabs/WordDragPlay1V3.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/WordDragPrefabs/Play1/V3.0Prefabs/WordDragPlay1V3.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/WordDragPrefabs/Play2/WordDragPlay2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/WordDragPrefabs/Play2/WordDragPlay2.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/WordDragPrefabs/Play3/WordDragPlay3.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/WordDragPrefabs/Play3/WordDragPlay3.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/WordDragPrefabs/Play3/WordDragPlay3Interstitial.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/WordDragPrefabs/Play3/WordDragPlay3Interstitial.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Menu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Menu.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Play1-IC2_V3.0.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Play1-IC2_V3.0.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Play1-OOC.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Play1-OOC.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Play2-OOC.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Play2-OOC.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ICScene/WordDragLoader.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ICScene/WordDragLoader.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -188,6 +197,7 @@
       <workItem from="1714607644469" duration="5137000" />
       <workItem from="1714616731745" duration="2068000" />
       <workItem from="1714619489398" duration="195000" />
+      <workItem from="1714675510178" duration="1824000" />
     </task>
     <servers />
   </component>
