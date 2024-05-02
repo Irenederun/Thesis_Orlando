@@ -176,6 +176,9 @@ public class EndingPlayerPiecesLoader : MonoBehaviour
 
             yield return null;
         }
+
+        yield return new WaitForSeconds(60);
+        RestartManager.instance.RestartGame();
     }
     
     

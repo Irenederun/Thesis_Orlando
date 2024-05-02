@@ -30,7 +30,7 @@ public class RestartManager : MonoBehaviour
         }
     }
 
-    void RestartGame()
+    public void RestartGame()
     {
         //GameObject.Find("FungusManager").transform.GetChild(0).GetComponent<Flowchart>().Reset(false, true);
         FungusManager.Instance.GlobalVariables.variables.Clear();

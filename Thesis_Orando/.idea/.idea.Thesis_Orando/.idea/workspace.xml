@@ -3,15 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="9711d522-8fc0-494c-84b2-d15386118320" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Thesis_Orando/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Thesis_Orando/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Fonts/Typewriter/American Typewriter Regular SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Fonts/Typewriter/American Typewriter Regular SDF.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/WordDragPrefabs/Play2/WordDragPlay2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/WordDragPrefabs/Play2/WordDragPlay2.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Ending.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Ending.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Play1-IC2_V3.0.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Play1-IC2_V3.0.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Play2-OOC.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Play2-OOC.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ICScene/WordDragLoader.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ICScene/WordDragLoader.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ICScene/WordDragManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ICScene/WordDragManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Ending/EndingPlayerPiecesLoader.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Ending/EndingPlayerPiecesLoader.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/RestartManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/RestartManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/HoverScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/HoverScript.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -193,7 +186,8 @@
       <workItem from="1714174288747" duration="7476000" />
       <workItem from="1714241524821" duration="6314000" />
       <workItem from="1714607644469" duration="5137000" />
-      <workItem from="1714616731745" duration="1219000" />
+      <workItem from="1714616731745" duration="2068000" />
+      <workItem from="1714619489398" duration="195000" />
     </task>
     <servers />
   </component>
