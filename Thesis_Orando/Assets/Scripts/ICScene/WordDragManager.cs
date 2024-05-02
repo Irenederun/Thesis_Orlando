@@ -195,7 +195,8 @@ public class WordDragManager : ManagerBehavior
 
     public void SetDeterminedText(int num, string text)
     {
-        exceptionTexts[num].text = text;
+        //exceptionTexts[num].text = text;
+        exceptionTexts[num].text = exceptionTexts[num].text.Replace("*", text);
     }
 
     public void SetDeterminedWords(string name, string text)

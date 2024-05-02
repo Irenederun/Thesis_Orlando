@@ -137,8 +137,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 119644687395986237}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.18, y: -0.818, z: 0}
-  m_LocalScale: {x: 2.3899221, y: 0.5406705, z: 1}
+  m_LocalPosition: {x: 1.06, y: -0.818, z: 0}
+  m_LocalScale: {x: 2.4147627, y: 0.5406705, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6879141538831356751}
@@ -258,7 +258,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1.6905248, y: -1.29751}
+  m_AnchoredPosition: {x: -4.1257, y: -1.29751}
   m_SizeDelta: {x: 7.2639, y: 1.8192}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!23 &4916137766709700883
@@ -323,7 +323,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: <b>By this                  , I</b> ________________ <b>thee.</b>
+  m_text: <b>By this <i>*</i>, I</b> ________________ <b>thee.</b>
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2d547a05887e1402a9f6be68683d8f36, type: 2}
   m_sharedMaterial: {fileID: 4775169337844555031, guid: 2d547a05887e1402a9f6be68683d8f36, type: 2}
@@ -357,7 +357,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 2
+  m_HorizontalAlignment: 4
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -1243,8 +1243,8 @@ MonoBehaviour:
   - {fileID: 6629316420299811982}
   sentenceNo: 0
   exceptionTexts:
-  - {fileID: 3785818736550337377}
-  - {fileID: 4327067221778719806}
+  - {fileID: 9626244326171283}
+  - {fileID: 3839146335706011789}
   usedVerbC: 
   usedNounB: 
   loader: {fileID: 0}
@@ -2303,7 +2303,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &4056338558450841410
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2712,7 +2712,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -2.0467248, y: -1.29751}
+  m_AnchoredPosition: {x: 1.65, y: -1.29751}
   m_SizeDelta: {x: 7.2639, y: 1.8192}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!23 &1146582252016439848
@@ -2777,7 +2777,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "<b>I</b> ______________ <b>I                        thee.\r</b>"
+  m_text: "<b>I</b> ______________ <b>I <i>*</i> thee.\r</b>"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2d547a05887e1402a9f6be68683d8f36, type: 2}
   m_sharedMaterial: {fileID: 4775169337844555031, guid: 2d547a05887e1402a9f6be68683d8f36, type: 2}
@@ -2811,7 +2811,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 2
+  m_HorizontalAlignment: 1
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -3635,8 +3635,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7634149629179778228}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.7934, y: -0.824, z: 0}
-  m_LocalScale: {x: 2.0911062, y: 0.5406705, z: 1}
+  m_LocalPosition: {x: -0.7467, y: -0.824, z: 0}
+  m_LocalScale: {x: 2.081998, y: 0.5406705, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6792355979164621879}
@@ -3738,7 +3738,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &209316937982221748
 RectTransform:
   m_ObjectHideFlags: 0

@@ -16,6 +16,12 @@ public class WordDragLoader : MonoBehaviour
     }
     public List<Sentences> listOfSentence;
 
+    void Start()
+    {
+        usedNounB = DialogueManager.instance.myFlowchart.GetStringVariable("usedNounB");
+        usedVerbC = DialogueManager.instance.myFlowchart.GetStringVariable("usedVerbC");
+    }
+    
     public void UsedVerbC(string text)
     {
         usedVerbC = text;

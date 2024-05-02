@@ -1,6 +1,5 @@
 using UnityEngine;
 using UnityEngine.EventSystems;
-using Unity.UI;
 
 public class HoverScript : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
