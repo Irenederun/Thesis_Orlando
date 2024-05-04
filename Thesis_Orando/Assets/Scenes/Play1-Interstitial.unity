@@ -679,10 +679,7 @@ GameObject:
   - component: {fileID: 950951735}
   - component: {fileID: 950951734}
   - component: {fileID: 950951740}
-  - component: {fileID: 950951742}
-  - component: {fileID: 950951745}
-  - component: {fileID: 950951744}
-  - component: {fileID: 950951746}
+  - component: {fileID: 950951741}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -730,8 +727,6 @@ MonoBehaviour:
   description: 
   eventHandler: {fileID: 950951605}
   commandList:
-  - {fileID: 950951742}
-  - {fileID: 950951746}
   - {fileID: 950951609}
   - {fileID: 950951679}
   - {fileID: 950951680}
@@ -792,7 +787,7 @@ MonoBehaviour:
   selectedBlocks:
   - {fileID: 950951699}
   selectedCommands:
-  - {fileID: 950951729}
+  - {fileID: 950951741}
   variables:
   - {fileID: 950951620}
   - {fileID: 950951649}
@@ -1378,7 +1373,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 493.24805
+    x: 494.56384
     y: 101.29236
     width: 69.64911
     height: 40
@@ -1403,8 +1398,7 @@ MonoBehaviour:
   - {fileID: 950951734}
   - {fileID: 950951733}
   - {fileID: 950951740}
-  - {fileID: 950951745}
-  - {fileID: 950951744}
+  - {fileID: 950951741}
   - {fileID: 950951700}
   suppressAllAutoSelections: 0
 --- !u!114 &950951700
@@ -4120,69 +4114,24 @@ MonoBehaviour:
   returnValueType: System.Void
   showInherited: 0
   callMode: 0
---- !u!114 &950951742
+--- !u!114 &950951741
 MonoBehaviour:
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 950951604}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 831c208af3cccf24b80cc6f3768919bc, type: 3}
+  m_Script: {fileID: 11500000, guid: 3315ad2ebb85443909a1203d56d9344e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   itemId: 121
   indentLevel: 0
-  soundClip: {fileID: 8300000, guid: ecc748683be0f614c90cb11850d00884, type: 3}
-  volume: 0.1
-  loop: 1
---- !u!114 &950951744
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 950951604}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b359b09a7ba2e4af981f07c07f8af85a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 124
-  indentLevel: 0
---- !u!114 &950951745
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 950951604}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4bce3bd679be2c94196f3f6aaeb33f0b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 123
-  indentLevel: 0
---- !u!114 &950951746
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 950951604}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1902400ccc99b45d69ad01cb86b57d0f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 125
-  indentLevel: 0
-  musicClip: {fileID: 8300000, guid: 87e3ccc314d7a5c4d9fe4a8795ab0e28, type: 3}
-  atTime: 1
-  loop: 1
-  fadeDuration: 1
+  _duration:
+    floatRef: {fileID: 0}
+    floatVal: 3
+  durationOLD: 0
 --- !u!1 &1085804264
 GameObject:
   m_ObjectHideFlags: 0
@@ -4797,10 +4746,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: AudioManager
       objectReference: {fileID: 0}
-    - target: {fileID: 416818790572238349, guid: dabb36e04f9f46c4eab0846cd14e9f97, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 416818790572238350, guid: dabb36e04f9f46c4eab0846cd14e9f97, type: 3}
       propertyPath: m_RootOrder
       value: 11
@@ -5147,7 +5092,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.52156866, g: 0.52156866, b: 0.52156866, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1

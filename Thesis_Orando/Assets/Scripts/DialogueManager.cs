@@ -88,6 +88,12 @@ public class DialogueManager : ManagerBehavior
         return word.ToLower();
     }
 
+    // public string ChangeTextColor(string word)
+    // {
+    //     
+    // }
+    //
+
     public void ReadLastPlayRating()
     {
         myFlowchart.SetIntegerVariable("playRating", GameManager.instance.playRating);

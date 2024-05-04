@@ -9,7 +9,7 @@ public class AudioManager : MonoBehaviour
     public static AudioManager instance;
     public List<AudioSource> backupAudioSource;
     private int backupNo;
-    //public PlayAmbienceAudio playAmbScript;
+    public PlayAmbienceAudio playAmbScript;
 
     void Awake()
     {
@@ -17,7 +17,7 @@ public class AudioManager : MonoBehaviour
         {
             instance = this;
             DontDestroyOnLoad(gameObject);
-            //playAmbScript = GetComponent<PlayAmbienceAudio>();
+            playAmbScript = GetComponent<PlayAmbienceAudio>();
         }
         else
         {

@@ -898,7 +898,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 166.03061
     y: 28.495876
-    width: 60
+    width: 87.44292
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -939,9 +939,8 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 950951648}
-  selectedCommands:
-  - {fileID: 950951683}
+  - {fileID: 950951623}
+  selectedCommands: []
   variables:
   - {fileID: 950951620}
   - {fileID: 950951649}
@@ -1101,7 +1100,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 172.29672
     y: 118.13123
-    width: 60
+    width: 79.22374
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1212,8 +1211,8 @@ MonoBehaviour:
   nodeRect:
     serializedVersion: 2
     x: 283.0328
-    y: 119.35799
-    width: 75.75341
+    y: 117.98812
+    width: 115.75341
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1260,7 +1259,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 284.19424
     y: 174.61008
-    width: 76.66665
+    width: 116.66665
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1307,7 +1306,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 286.15305
     y: 233.0574
-    width: 77.579895
+    width: 117.579895
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1732,7 +1731,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 450.75662
     y: 172.82974
-    width: 104.97714
+    width: 144.97714
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -9461,7 +9460,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.52156866, g: 0.52156866, b: 0.52156866, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1

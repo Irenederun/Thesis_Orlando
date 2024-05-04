@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class EndingWordLoader : MonoBehaviour
 {
@@ -50,6 +51,8 @@ public class EndingWordLoader : MonoBehaviour
 
     IEnumerator FadeWordIn(GameObject word, float duration)
     {
+        float waitTime = Random.Range(0.2f, 3f);
+        yield return new WaitForSeconds(waitTime);
         float alpha = 0f;
         while (alpha < 1f)
         {

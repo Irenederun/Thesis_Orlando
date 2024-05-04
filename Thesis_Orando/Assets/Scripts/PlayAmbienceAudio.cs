@@ -10,6 +10,8 @@ public class PlayAmbienceAudio : MonoBehaviour
     public AudioSource theatreSource;
     public AudioSource zenSource;
     public AudioSource endingSource;
+    public AudioSource interAmbSource;
+    public AudioSource interMusicSource;
 
     private void OnEnable()
     {
@@ -37,11 +39,11 @@ public class PlayAmbienceAudio : MonoBehaviour
         }
         else if (scene.name.Contains("Interstitial"))
         {
-            PlayInterstitial(0f);
+            PlayInterstitial(1f);
         }
         else if (scene.name.Contains("Ending"))
         {
-            PlayEnding(0f);
+            PlayEnding(1f);
         }
     }
 
@@ -53,8 +55,8 @@ public class PlayAmbienceAudio : MonoBehaviour
     IEnumerator playOpening(float waitTime)
     {
         yield return new WaitForSeconds(waitTime);
-        PlayTheatreNoise(1);
-        PlayZenNoise(0.4f);
+        PlayTheatreNoise(0.5f);
+        PlayZenNoise(0.2f);
     }
     
     void PlayIC(float waitTime)
@@ -64,11 +66,13 @@ public class PlayAmbienceAudio : MonoBehaviour
 
     IEnumerator playIC(float waitTime)
     {
-        PlayTheatreNoise(0.4f);
-        PlayZenNoise(0.4f);
+        if (interAmbSource.isPlaying)PlayInterstitialAmbience(0f);
+        if (interMusicSource.isPlaying)PlayInterstitialMusic(0f);
+        PlayTheatreNoise(0.2f);
+        PlayZenNoise(0.2f);
         yield return new WaitForSeconds(waitTime);
-        PlayTheatreNoise(1);
-        PlayZenNoise(0.4f);
+        PlayTheatreNoise(0.5f);
+        PlayZenNoise(0.2f);
     }
 
     void PlayOOC(float waitTime)
@@ -78,11 +82,11 @@ public class PlayAmbienceAudio : MonoBehaviour
 
     IEnumerator playOOC(float waitTime)
     {
-        PlayTheatreNoise(0.4f);
-        PlayZenNoise(0.4f);
+        PlayTheatreNoise(0.2f);
+        PlayZenNoise(0.2f);
         yield return new WaitForSeconds(waitTime);
-        PlayTheatreNoise(0.4f);
-        PlayZenNoise(1f);
+        PlayTheatreNoise(0.2f);
+        PlayZenNoise(0.6f);
     }
     
     void PlayInterstitial(float waitTime)
@@ -95,8 +99,11 @@ public class PlayAmbienceAudio : MonoBehaviour
         yield return new WaitForSeconds(waitTime);
         PlayTheatreNoise(0f);
         PlayZenNoise(0f);
+        yield return new WaitForSeconds(waitTime);
+        PlayInterstitialAmbience(1f);
+        PlayInterstitialMusic(0.15f);
     }
-    
+
     void PlayEnding(float waitTime)
     {
         StartCoroutine(playEnding(waitTime));
@@ -115,12 +122,23 @@ public class PlayAmbienceAudio : MonoBehaviour
         if (!theatreSource.isPlaying) theatreSource.Play();
         StartCoroutine(VolumeChange(theatreSource, targetVolume));
     }
-
     
     void PlayZenNoise(float targetVolume)
     {
         if (!zenSource.isPlaying) zenSource.Play();
         StartCoroutine(VolumeChange(zenSource, targetVolume));
+    }
+
+    void PlayInterstitialAmbience(float targetVol)
+    {
+        if (!interAmbSource.isPlaying) interAmbSource.Play();
+        StartCoroutine(VolumeChange(interAmbSource, targetVol));
+    }
+    
+    void PlayInterstitialMusic(float targetVol)
+    {
+        if (!interMusicSource.isPlaying) interMusicSource.Play();
+        StartCoroutine(VolumeChange(interMusicSource, targetVol));
     }
     
     IEnumerator VolumeChange(AudioSource audioSource, float targetVol)

@@ -49,3 +49,15 @@ MonoBehaviour:
   - name: Spotlight
     audio: {fileID: 8300000, guid: 56a9bd60b02d38c41a06b0e31c1d4047, type: 3}
     volume: 0.8
+  - name: TheatreNoise
+    audio: {fileID: 8300000, guid: 8c1a695e864c34e4ba146fe8196aa10f, type: 3}
+    volume: 1
+  - name: ZenNoise
+    audio: {fileID: 8300000, guid: 7ed992b0b8571314096c05351e32e7c2, type: 3}
+    volume: 1
+  - name: EndingApplause
+    audio: {fileID: 8300000, guid: dc96dd723501ace43b36fa492a7b0cef, type: 3}
+    volume: 1
+  - name: EndingTrack
+    audio: {fileID: 0}
+    volume: 1

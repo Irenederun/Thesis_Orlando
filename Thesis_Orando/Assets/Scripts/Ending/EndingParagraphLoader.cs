@@ -29,7 +29,7 @@ public class EndingParagraphLoader : MonoBehaviour
 
     IEnumerator Wait()
     {
-        yield return new WaitForSeconds(5);
+        yield return new WaitForSeconds(6.5f);
         myState = MyState.Move;
     }
 
@@ -85,7 +85,9 @@ public class EndingParagraphLoader : MonoBehaviour
 
     IEnumerator TextFadeWait()
     {
-        yield return new WaitForSeconds(5);
+        yield return new WaitForSeconds(3);
+        playerScript.PlayEndingClapping();
+        yield return new WaitForSeconds(3);
         playerScript.TextFadeIn();
     }
 

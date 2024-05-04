@@ -18,6 +18,7 @@ public class EndingPlayerPiecesLoader : MonoBehaviour
     public SpriteRenderer scarf;
     public SpriteRenderer light;
     public SpriteRenderer spot;
+    public AudioSource endingClapping;
 
     // Start is called before the first frame update
     void Start()
@@ -134,7 +135,7 @@ public class EndingPlayerPiecesLoader : MonoBehaviour
         }
         else
         {
-            Debug.LogError("One or both of the GameObjects do not have a SpriteRenderer component.");
+            //Debug.LogError("One or both of the GameObjects do not have a SpriteRenderer component.");
         }
     }
 
@@ -220,5 +221,26 @@ public class EndingPlayerPiecesLoader : MonoBehaviour
             elapsedTime += Time.deltaTime;
         }
         spriteRenderer.color = targetColor;
+    }
+
+    public void PlayEndingClapping()
+    {
+        if (!endingClapping.isPlaying) endingClapping.Play();
+        StartCoroutine(VolumeChange(endingClapping, 0.5f));
+    }
+    
+    IEnumerator VolumeChange(AudioSource audioSource, float targetVol)
+    {
+        float startVol = audioSource.volume;
+        float t = 0f;
+        float duration = 3f;
+        
+        while (t <= 1f)
+        {
+            t += (1f / duration) * Time.deltaTime;
+            float vol = Mathf.Lerp(startVol, targetVol, t);
+            audioSource.volume = vol;
+            yield return new WaitForEndOfFrame();
+        }
     }
 }
