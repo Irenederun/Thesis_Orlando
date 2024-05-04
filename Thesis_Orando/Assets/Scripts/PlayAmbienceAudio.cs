@@ -39,7 +39,14 @@ public class PlayAmbienceAudio : MonoBehaviour
         }
         else if (scene.name.Contains("Interstitial"))
         {
-            PlayInterstitial(1f);
+            if (scene.name.Contains("1"))
+            {
+                PlayInterstitial(1f,true);
+            }
+            else
+            {
+                PlayInterstitial(1f,false);
+            }
         }
         else if (scene.name.Contains("Ending"))
         {
@@ -89,19 +96,22 @@ public class PlayAmbienceAudio : MonoBehaviour
         PlayZenNoise(0.6f);
     }
     
-    void PlayInterstitial(float waitTime)
+    void PlayInterstitial(float waitTime, bool playAmb)
     {
-        StartCoroutine(playInter(waitTime));
+        StartCoroutine(playInter(waitTime, playAmb));
     }
     
-    IEnumerator playInter(float waitTime)
+    IEnumerator playInter(float waitTime, bool playAmb)
     {
         yield return new WaitForSeconds(waitTime);
         PlayTheatreNoise(0f);
         PlayZenNoise(0f);
-        yield return new WaitForSeconds(waitTime);
-        PlayInterstitialAmbience(1f);
-        PlayInterstitialMusic(0.15f);
+        if (playAmb)
+        {
+            yield return new WaitForSeconds(waitTime);
+            PlayInterstitialAmbience(1f);
+            PlayInterstitialMusic(0.15f);
+        }
     }
 
     void PlayEnding(float waitTime)
