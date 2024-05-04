@@ -43,3 +43,9 @@ MonoBehaviour:
   - name: Bar
     audio: {fileID: 8300000, guid: ecc748683be0f614c90cb11850d00884, type: 3}
     volume: 0.6
+  - name: CurtainOpen
+    audio: {fileID: 8300000, guid: 5e228cc68eb7f7147bb58ad23dcaeb19, type: 3}
+    volume: 1
+  - name: Spotlight
+    audio: {fileID: 8300000, guid: 56a9bd60b02d38c41a06b0e31c1d4047, type: 3}
+    volume: 0.8

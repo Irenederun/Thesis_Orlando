@@ -9,6 +9,7 @@ public class AudioManager : MonoBehaviour
     public static AudioManager instance;
     public List<AudioSource> backupAudioSource;
     private int backupNo;
+    //public PlayAmbienceAudio playAmbScript;
 
     void Awake()
     {
@@ -16,6 +17,7 @@ public class AudioManager : MonoBehaviour
         {
             instance = this;
             DontDestroyOnLoad(gameObject);
+            //playAmbScript = GetComponent<PlayAmbienceAudio>();
         }
         else
         {
@@ -71,7 +73,24 @@ public class AudioManager : MonoBehaviour
     {
         foreach (AudioSource aS in backupAudioSource)
         {
-            if (aS.isPlaying) aS.Stop();
+            if (aS.isPlaying)
+            {
+                //aS.Stop();
+                StartCoroutine(AudioSmoothOut(aS));
+            }
+        }
+    }
+    
+    IEnumerator AudioSmoothOut(AudioSource audioSource)
+    {
+        float startVol = audioSource.volume;
+        float t = 0f;
+        while (t <= 1f)
+        {
+            t += 1f * Time.deltaTime;
+            float vol = Mathf.Lerp(startVol, 0, t);
+            audioSource.volume = vol;
+            yield return new WaitForEndOfFrame();
         }
     }
 }
