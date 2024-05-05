@@ -6,9 +6,21 @@ public class PersonDrag : MonoBehaviour
 {
     private Vector3 initialPosition;
     private bool isDragging = false;
+    private Animator spotlightAnimator;
 
     public Transform fixedPosition;
+    public Animator personAnimator;
     public GameObject trueMenu;
+    public GameObject spotlightObject;
+    public GameObject PersonObject;
+    public GameObject RopeObject;
+    public GameObject PersonXObject;
+
+    private void Start()
+    {
+        spotlightAnimator = spotlightObject.GetComponent<Animator>();
+
+    }
 
     void Update()
     {
@@ -16,6 +28,7 @@ public class PersonDrag : MonoBehaviour
         {
             Vector3 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             transform.position = new Vector3(mousePosition.x, mousePosition.y, transform.position.z);
+            personAnimator.SetBool("isDraggingPerson", true);
         }
     }
 
@@ -28,11 +41,20 @@ public class PersonDrag : MonoBehaviour
     private void OnMouseUp()
     {
         isDragging = false;
+        personAnimator.SetBool("isDraggingPerson", false);
 
         if (CheckCollision())
         {
             transform.position = fixedPosition.position;
             trueMenu.SetActive(true);
+            PersonObject.SetActive(true);
+            RopeObject.SetActive(false);
+            PersonXObject.SetActive(false);
+            if (spotlightAnimator != null)
+            {
+                spotlightAnimator.SetBool("Disappear", true);
+      
+            }
         }
         else
         {
