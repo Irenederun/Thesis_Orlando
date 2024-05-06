@@ -820,7 +820,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 354.72348, y: 127.45665}
+  scrollPos: {x: 211.19405, y: 76.86841}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 341.66666
@@ -831,8 +831,7 @@ MonoBehaviour:
     y: -340
     width: 1114
     height: 859
-  selectedBlocks:
-  - {fileID: 468921933}
+  selectedBlocks: []
   selectedCommands: []
   variables:
   - {fileID: 468921930}
@@ -1916,7 +1915,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 63
   indentLevel: 0
-  storyText: '{i}{$secondWord}?{/i}'
+  storyText: '{color=#F5BF17}{i}{$secondWord}?{/i}{/color}'
   description: 
   character: {fileID: 1585182549}
   portrait: {fileID: 0}

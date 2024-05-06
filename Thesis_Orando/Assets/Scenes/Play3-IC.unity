@@ -1415,7 +1415,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 165.90479
     y: 33.57174
-    width: 70.60609
+    width: 112.27106
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1497,11 +1497,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 344.3182, y: -13.170483}
+  scrollPos: {x: 147.16423, y: -160.16795}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
-  blockViewHeight: 417.66666
-  zoom: 0.87999964
+  blockViewHeight: 267.66666
+  zoom: 0.9100001
   scrollViewRect:
     serializedVersion: 2
     x: -343
@@ -1509,7 +1509,7 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 468922197}
+  - {fileID: 468922040}
   selectedCommands: []
   variables:
   - {fileID: 468921990}
@@ -1628,7 +1628,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 291.5283
     y: -34.647514
-    width: 77.42427
+    width: 119.59706
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1848,7 +1848,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 164.90944
     y: 87.261604
-    width: 72.878815
+    width: 114.46886
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2302,7 +2302,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 160.35185
     y: 157.81505
-    width: 72.878815
+    width: 114.46886
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2364,8 +2364,8 @@ MonoBehaviour:
   nodeRect:
     serializedVersion: 2
     x: 358.66403
-    y: 231.87778
-    width: 60
+    y: 230.77887
+    width: 79.30402
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2489,8 +2489,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 176
   indentLevel: 0
-  storyText: I dream every night that {i}{$pronounB}{/i} look at {i}{$pronounC}{/i}
-    without {i}{$verbReverse} {$pronounC}{/i}.
+  storyText: I dream every night that {color=#F5BF17}{i}{$pronounB}{/i}{/color} look
+    at {color=#F5BF17}{i}{$pronounC}{/i}{/color} without {color=#F5BF17}{i}{$verbReverse}
+    {$pronounC}{/i}{/color}.
   description: 
   character: {fileID: 1932757925544751689}
   portrait: {fileID: 0}
@@ -2640,7 +2641,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 182
   indentLevel: 0
-  storyText: I used to be {i}{$adjective}{/i}.
+  storyText: I used to be {color=#F5BF17}{i}{$adjective}{/i}{/color}.
   description: 
   character: {fileID: 1932757925544751689}
   portrait: {fileID: 0}
@@ -3577,7 +3578,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -20.507273
     y: 36.996754
-    width: 60
+    width: 74.908424
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -3771,7 +3772,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -18.997353
     y: 98.535225
-    width: 60
+    width: 74.908424
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -4548,7 +4549,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 166.4845
     y: 218.75293
-    width: 71.36366
+    width: 113.73626
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -4649,7 +4650,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 255
   indentLevel: 0
-  storyText: I am {i}{$secondWord}{/i}.
+  storyText: I am {color=#F5BF17}{i}{$secondWord}{/i}{/color].
   description: 
   character: {fileID: 1932757925544751689}
   portrait: {fileID: 0}
@@ -5645,8 +5646,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 296
   indentLevel: 0
-  storyText: "I feel the {i}{$secondWord}{/i} of my spirit \ngrowing in me every
-    day.\r"
+  storyText: "I feel the {color=#F5BF17}{i}{$secondWord}{/i}{/color} of my spirit
+    \ngrowing in me every day.\r"
   description: 
   character: {fileID: 1932757925544751689}
   portrait: {fileID: 0}
@@ -5805,7 +5806,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 168.67633
     y: 277.59686
-    width: 71.36366
+    width: 113.73626
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -5868,7 +5869,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 300
   indentLevel: 0
-  storyText: "It is the {i}{$secondWord}{/i} to endure.\r"
+  storyText: "It is the {color=#F5BF17}{i}{$secondWord}{/i}{/color} to endure.\r"
   description: 
   character: {fileID: 1932757925544751689}
   portrait: {fileID: 0}
@@ -5945,7 +5946,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 158.04254
     y: 340.27768
-    width: 71.36366
+    width: 113.73626
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
