@@ -1340,12 +1340,12 @@ MonoBehaviour:
     - position: fancyVerb
       conjugation: hearten'st
     - position: 2A
-      conjugation: friendship
+      conjugation: heart
     - position: 2APerson
       conjugation: heart
     - position: 2B
       conjugation: heartener
     - position: 2C
-      conjugation: hearten
+      conjugation: heartening
     - position: 2D
       conjugation: heart
