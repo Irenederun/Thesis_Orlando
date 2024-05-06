@@ -882,8 +882,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 468922052}
-  selectedCommands: []
+  - {fileID: 468922030}
+  selectedCommands:
+  - {fileID: 468922027}
   variables:
   - {fileID: 468921930}
   - {fileID: 468921936}
@@ -2973,7 +2974,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 122
   indentLevel: 0
-  storyText: We are {color=#F5BF17}{i}{$secondWord}{/i}{/color].
+  storyText: We are {color=#F5BF17}{i}{$secondWord}{/i}{/color}.
   description: 
   character: {fileID: 1585182548}
   portrait: {fileID: 0}
@@ -3093,7 +3094,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 125
   indentLevel: 0
-  storyText: "What do we do now, \nnow that we are {i}{$secondWord}{i}?"
+  storyText: "What do we do now, \nnow that we are {color=#F5BF17}{i}{$secondWord}{i}{/color}?"
   description: 
   character: {fileID: 1585182548}
   portrait: {fileID: 0}
