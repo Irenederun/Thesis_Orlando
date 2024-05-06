@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9711d522-8fc0-494c-84b2-d15386118320" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Character&amp;Dialogue/ESTRAGON.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Character&amp;Dialogue/ESTRAGON.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Character&amp;Dialogue/VladimiraFungus.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Character&amp;Dialogue/VladimiraFungus.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Play2-IC.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Play2-IC.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Play3-IC.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Play3-IC.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayAmbienceAudio.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayAmbienceAudio.cs" afterDir="false" />
-    </list>
+    <list default="true" id="9711d522-8fc0-494c-84b2-d15386118320" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -193,7 +187,7 @@
       <workItem from="1714619489398" duration="195000" />
       <workItem from="1714675510178" duration="6944000" />
       <workItem from="1714779891629" duration="4177000" />
-      <workItem from="1714844275855" duration="7211000" />
+      <workItem from="1714844275855" duration="7356000" />
     </task>
     <servers />
   </component>
