@@ -59,7 +59,7 @@ MonoBehaviour:
     audio: {fileID: 8300000, guid: dc96dd723501ace43b36fa492a7b0cef, type: 3}
     volume: 1
   - name: EndingTrack
-    audio: {fileID: 0}
+    audio: {fileID: 8300000, guid: 09ca0818d03f14cefb0a07912677aa6f, type: 3}
     volume: 1
   - name: PickUp
     audio: {fileID: 8300000, guid: e7ea4effc11544839887c1cd6215bc9f, type: 3}
