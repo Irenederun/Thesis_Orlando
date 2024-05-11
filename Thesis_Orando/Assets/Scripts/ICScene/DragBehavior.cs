@@ -27,6 +27,7 @@ public class DragBehavior : MonoBehaviour
     public void OnDragStarting()
     {
         dragging = true;
+        AudioManager.instance.PlayAudio("PickUp", transform.parent.gameObject.GetComponent<AudioSource>());
 
         if (EndingWordFloating.objectsToSelectFrom != null)
         {

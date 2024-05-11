@@ -61,3 +61,6 @@ MonoBehaviour:
   - name: EndingTrack
     audio: {fileID: 0}
     volume: 1
+  - name: PickUp
+    audio: {fileID: 0}
+    volume: 1
