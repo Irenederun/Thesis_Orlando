@@ -932,7 +932,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 245.55147
     y: 98.068275
-    width: 88.805954
+    width: 60
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -999,8 +999,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 950951606}
-  selectedCommands: []
+  - {fileID: 950951699}
+  selectedCommands:
+  - {fileID: 950951743}
   variables:
   - {fileID: 950951620}
   - {fileID: 950951649}
@@ -1323,7 +1324,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 377.19165
     y: 106.4244
-    width: 74.87561
+    width: 60
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1382,7 +1383,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 377.09274
     y: 178.42441
-    width: 74.87561
+    width: 60
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1588,7 +1589,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 494.56384
     y: 101.29236
-    width: 110.69649
+    width: 70.69649
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -4389,7 +4390,7 @@ MonoBehaviour:
   indentLevel: 0
   _duration:
     floatRef: {fileID: 0}
-    floatVal: 2
+    floatVal: 3
   durationOLD: 0
 --- !u!1 &1085804264
 GameObject:

@@ -831,8 +831,10 @@ MonoBehaviour:
     y: -340
     width: 1114
     height: 859
-  selectedBlocks: []
-  selectedCommands: []
+  selectedBlocks:
+  - {fileID: 468921933}
+  selectedCommands:
+  - {fileID: 468921965}
   variables:
   - {fileID: 468921930}
   - {fileID: 468921936}
@@ -1046,7 +1048,7 @@ MonoBehaviour:
   nodeRect:
     serializedVersion: 2
     x: 179.33112
-    y: 4.760878
+    y: 3.5844069
     width: 118.23533
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -1915,9 +1917,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 63
   indentLevel: 0
-  storyText: '{color=#F5BF17}{i}{$secondWord}?{/i}{/color}'
+  storyText: '{color=#F5BF17}{i}{$secondWord}{/i}{/color} ?'
   description: 
-  character: {fileID: 1585182549}
+  character: {fileID: 1585182548}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
