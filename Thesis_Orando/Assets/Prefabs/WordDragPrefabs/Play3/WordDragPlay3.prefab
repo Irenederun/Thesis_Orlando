@@ -863,7 +863,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "If only I could</b> ____________<b>.\r\nI am </b>____________<b>.</b>\r"
+  m_text: "If only I could</b> ______________<b>.\r\nI am </b>____________<b>.</b>\r"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2d547a05887e1402a9f6be68683d8f36, type: 2}
   m_sharedMaterial: {fileID: 4775169337844555031, guid: 2d547a05887e1402a9f6be68683d8f36, type: 2}
@@ -4639,7 +4639,7 @@ Transform:
   m_GameObject: {fileID: 8281215602096951544}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0.7355, y: -0.608, z: 0}
-  m_LocalScale: {x: 1.7735257, y: 0.5406705, z: 1}
+  m_LocalScale: {x: 2.0103004, y: 0.5406705, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 9206062008249784925}
