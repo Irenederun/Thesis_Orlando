@@ -15,12 +15,14 @@ public class PersonDrag : MonoBehaviour
     public GameObject PersonObject;
     public GameObject RopeObject;
     public GameObject PersonXObject;
+    public GameObject Vignette;
 
     private void Start()
     {
         spotlightAnimator = spotlightObject.GetComponent<Animator>();
+        Vignette.SetActive(true);
 
-    }
+}
 
     void Update()
     {
@@ -47,6 +49,7 @@ public class PersonDrag : MonoBehaviour
         if (CheckCollision())
         {
             transform.position = fixedPosition.position;
+            Vignette.SetActive(false);
             trueMenu.SetActive(true);
             PersonObject.SetActive(true);
             RopeObject.SetActive(false);
