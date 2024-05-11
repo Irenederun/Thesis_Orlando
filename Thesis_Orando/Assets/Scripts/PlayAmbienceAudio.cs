@@ -116,7 +116,8 @@ public class PlayAmbienceAudio : MonoBehaviour
         {
             yield return new WaitForSeconds(waitTime);
             PlayInterstitialAmbience(1f);
-            PlayInterstitialMusic(0.15f);
+            print("inter music");
+            PlayInterstitialMusic(1f);
         }
     }
 
@@ -130,7 +131,6 @@ public class PlayAmbienceAudio : MonoBehaviour
         yield return new WaitForSeconds(waitTime);
         PlayTheatreNoise(0f);
         PlayZenNoise(0f);
-        //endingSource.Play();
         PlayEndMusic(1);
     }
 
@@ -166,7 +166,7 @@ public class PlayAmbienceAudio : MonoBehaviour
     
     void PlayEndMusic(float targetVolume)
     {
-        if (!endingSource.isPlaying) menuMusicSource.Play();
+        if (!endingSource.isPlaying) endingSource.Play();
         StartCoroutine(VolumeChange2(endingSource, targetVolume));
     }
     
@@ -177,11 +177,13 @@ public class PlayAmbienceAudio : MonoBehaviour
     
     IEnumerator StopAmbience(float waitTime)
     {
-        PlayEndMusic(0);
-        PlayMenuMusic(0);
+        if (interMusicSource.isPlaying) PlayInterstitialMusic(0);
+        if (interAmbSource.isPlaying) PlayInterstitialAmbience(0);
+        if (endingSource.isPlaying) PlayEndMusic(0);
+        if (menuMusicSource.isPlaying) PlayMenuMusic(0);
         yield return new WaitForSeconds(waitTime);
-        PlayTheatreNoise(0f);
-        PlayZenNoise(0f);
+        if (theatreSource.isPlaying) PlayTheatreNoise(0f);
+        if (zenSource.isPlaying)PlayZenNoise(0f);
     }
 
     public void MenuMusic()
