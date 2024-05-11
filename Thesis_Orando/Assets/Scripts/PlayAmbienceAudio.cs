@@ -12,6 +12,7 @@ public class PlayAmbienceAudio : MonoBehaviour
     public AudioSource endingSource;
     public AudioSource interAmbSource;
     public AudioSource interMusicSource;
+    public AudioSource menuMusicSource;
 
     private void OnEnable()
     {
@@ -52,6 +53,10 @@ public class PlayAmbienceAudio : MonoBehaviour
         {
             PlayEnding(1f);
         }
+        else if (scene.name.Contains("Menu"))
+        {
+            StopAmb(0f);
+        }
     }
 
     void PlayOpening(float waitTime)
@@ -61,8 +66,9 @@ public class PlayAmbienceAudio : MonoBehaviour
 
     IEnumerator playOpening(float waitTime)
     {
+        PlayMenuMusic(0);
         yield return new WaitForSeconds(waitTime);
-        PlayTheatreNoise(0.5f);
+        PlayTheatreNoise(1.5f);
         PlayZenNoise(0.2f);
     }
     
@@ -75,10 +81,10 @@ public class PlayAmbienceAudio : MonoBehaviour
     {
         if (interAmbSource.isPlaying)PlayInterstitialAmbience(0f);
         if (interMusicSource.isPlaying)PlayInterstitialMusic(0f);
-        PlayTheatreNoise(0.2f);
+        PlayTheatreNoise(0.5f);
         PlayZenNoise(0.2f);
         yield return new WaitForSeconds(waitTime);
-        PlayTheatreNoise(0.5f);
+        PlayTheatreNoise(1.5f);
         PlayZenNoise(0.2f);
     }
 
@@ -89,10 +95,10 @@ public class PlayAmbienceAudio : MonoBehaviour
 
     IEnumerator playOOC(float waitTime)
     {
-        PlayTheatreNoise(0.2f);
+        PlayTheatreNoise(0.5f);
         PlayZenNoise(0.2f);
         yield return new WaitForSeconds(waitTime);
-        PlayTheatreNoise(0.2f);
+        PlayTheatreNoise(1.5f);
         PlayZenNoise(0.6f);
     }
     
@@ -149,6 +155,37 @@ public class PlayAmbienceAudio : MonoBehaviour
     {
         if (!interMusicSource.isPlaying) interMusicSource.Play();
         StartCoroutine(VolumeChange(interMusicSource, targetVol));
+    }
+    
+    void PlayMenuMusic(float targetVolume)
+    {
+        if (!menuMusicSource.isPlaying) menuMusicSource.Play();
+        StartCoroutine(VolumeChange(menuMusicSource, targetVolume));
+    }
+
+    
+    void StopAmb(float waitTime)
+    {
+        StartCoroutine(StopAmbience(waitTime));
+    }
+    
+    IEnumerator StopAmbience(float waitTime)
+    {
+        PlayMenuMusic(0);
+        yield return new WaitForSeconds(waitTime);
+        PlayTheatreNoise(0f);
+        PlayZenNoise(0f);
+    }
+
+    public void MenuMusic()
+    {
+        StartCoroutine(PlayMenuMusic());
+    }
+
+    IEnumerator PlayMenuMusic()
+    {
+        yield return new WaitForSeconds(0);
+        PlayMenuMusic(0.4f);
     }
     
     IEnumerator VolumeChange(AudioSource audioSource, float targetVol)

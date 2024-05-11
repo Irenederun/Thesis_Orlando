@@ -36,4 +36,9 @@ public class PlayAudio : MonoBehaviour
             yield return new WaitForEndOfFrame();
         }
     }
+
+    public void StartMenu()
+    {
+        AudioManager.instance.gameObject.GetComponent<PlayAmbienceAudio>().MenuMusic();
+    }
 }

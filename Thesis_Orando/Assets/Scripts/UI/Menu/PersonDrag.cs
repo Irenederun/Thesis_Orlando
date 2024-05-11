@@ -35,6 +35,7 @@ public class PersonDrag : MonoBehaviour
     private void OnMouseDown()
     {
         isDragging = true;
+        AudioManager.instance.PlayAudio("PickUp", GetComponent<AudioSource>());
         initialPosition = transform.position;
     }
 
@@ -53,7 +54,6 @@ public class PersonDrag : MonoBehaviour
             if (spotlightAnimator != null)
             {
                 spotlightAnimator.SetBool("Disappear", true);
-      
             }
         }
         else
