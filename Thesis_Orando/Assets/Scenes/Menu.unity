@@ -363,10 +363,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hoverSprite: {fileID: 21300000, guid: 8b1b929f3719c463a8ccf3df28cd6e92, type: 3}
-  clickSprite: {fileID: 21300000, guid: dd8fc9f76ce414d088ba06bdc059b5ff, type: 3}
+  clickSprite: {fileID: 21300000, guid: 1a83dac664bd24e988512b622f2d938f, type: 3}
   creditPage: {fileID: 1985743246}
   fadeImage: {fileID: 1555559658}
-  fadeDuration: 1.2
+  fadeDuration: 1
 --- !u!1 &229984232
 GameObject:
   m_ObjectHideFlags: 0
@@ -2271,7 +2271,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1104889949
 MonoBehaviour:
@@ -2285,8 +2285,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1755c856fab704dc7b10616464b53693, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  creditPage: {fileID: 1985743246}
-  fadeImage: {fileID: 1555559658}
+  creditPage: {fileID: 0}
+  fadeImage: {fileID: 0}
   fadeDuration: 1
 --- !u!1 &1179164656
 GameObject:

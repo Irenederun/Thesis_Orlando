@@ -67,6 +67,7 @@ public class PlayAmbienceAudio : MonoBehaviour
     IEnumerator playOpening(float waitTime)
     {
         PlayMenuMusic(0);
+        print("menu stop");
         yield return new WaitForSeconds(waitTime);
         PlayTheatreNoise(1.5f);
         PlayZenNoise(0.2f);
@@ -160,7 +161,7 @@ public class PlayAmbienceAudio : MonoBehaviour
     void PlayMenuMusic(float targetVolume)
     {
         if (!menuMusicSource.isPlaying) menuMusicSource.Play();
-        StartCoroutine(VolumeChange(menuMusicSource, targetVolume));
+        StartCoroutine(VolumeChange2(menuMusicSource, targetVolume));
     }
 
     
@@ -185,7 +186,7 @@ public class PlayAmbienceAudio : MonoBehaviour
     IEnumerator PlayMenuMusic()
     {
         yield return new WaitForSeconds(0);
-        PlayMenuMusic(0.4f);
+        PlayMenuMusic(0.3f);
     }
     
     IEnumerator VolumeChange(AudioSource audioSource, float targetVol)
@@ -195,6 +196,19 @@ public class PlayAmbienceAudio : MonoBehaviour
         while (t <= 1f)
         {
             t += 2f * Time.deltaTime;
+            float vol = Mathf.Lerp(startVol, targetVol, t);
+            audioSource.volume = vol;
+            yield return new WaitForEndOfFrame();
+        }
+    }
+    
+    IEnumerator VolumeChange2(AudioSource audioSource, float targetVol)
+    {
+        float startVol = audioSource.volume;
+        float t = 0f;
+        while (t <= 1f)
+        {
+            t += 1f * Time.deltaTime;
             float vol = Mathf.Lerp(startVol, targetVol, t);
             audioSource.volume = vol;
             yield return new WaitForEndOfFrame();

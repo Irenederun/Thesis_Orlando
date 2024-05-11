@@ -3,13 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="9711d522-8fc0-494c-84b2-d15386118320" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Thesis_Orando/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Thesis_Orando/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/AudioManager.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/AudioManager.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Menu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Menu.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/AudioLibrary.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptableObjects/AudioLibrary.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayAmbienceAudio.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayAmbienceAudio.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayAudio.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayAudio.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/Menu/PersonDrag.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Menu/PersonDrag.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/UI/Menu/NewTitle/Spotlight_Anim_Fade.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/UI/Menu/NewTitle/Spotlight_Anim_Fade.anim" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -198,7 +193,7 @@
       <workItem from="1714779891629" duration="4177000" />
       <workItem from="1714844275855" duration="7356000" />
       <workItem from="1715017523629" duration="281000" />
-      <workItem from="1715456431814" duration="4493000" />
+      <workItem from="1715456431814" duration="5211000" />
     </task>
     <servers />
   </component>
