@@ -14,11 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   audioList:
   - name: ActorWalkingIn
-    audio: {fileID: 8300000, guid: 5bec38c5d243ef74c8f8abf772212a96, type: 3}
-    volume: 3
+    audio: {fileID: 8300000, guid: 2e8674e0683b54e13b0a110631562b9c, type: 3}
+    volume: 0.4
   - name: Applause01
-    audio: {fileID: 8300000, guid: f053acdd0bee05b47a77625cd6b359b3, type: 3}
-    volume: 0.5
+    audio: {fileID: 8300000, guid: dfdaeb49336904694bdb475cdc845459, type: 3}
+    volume: 0.8
   - name: Applause02
     audio: {fileID: 8300000, guid: e7318f422c07d0d40bbb3569834faddd, type: 3}
     volume: 0.5
@@ -50,10 +50,10 @@ MonoBehaviour:
     audio: {fileID: 8300000, guid: 56a9bd60b02d38c41a06b0e31c1d4047, type: 3}
     volume: 0.8
   - name: TheatreNoise
-    audio: {fileID: 8300000, guid: 8c1a695e864c34e4ba146fe8196aa10f, type: 3}
+    audio: {fileID: 8300000, guid: 721c97b7a35ad4ec09c8eabea0e550e6, type: 3}
     volume: 1
   - name: ZenNoise
-    audio: {fileID: 8300000, guid: 7ed992b0b8571314096c05351e32e7c2, type: 3}
+    audio: {fileID: 8300000, guid: 0adf9ba144fe3654f9693cb92218586b, type: 3}
     volume: 1
   - name: EndingApplause
     audio: {fileID: 8300000, guid: dc96dd723501ace43b36fa492a7b0cef, type: 3}
@@ -62,5 +62,11 @@ MonoBehaviour:
     audio: {fileID: 0}
     volume: 1
   - name: PickUp
-    audio: {fileID: 0}
+    audio: {fileID: 8300000, guid: e7ea4effc11544839887c1cd6215bc9f, type: 3}
+    volume: 0.3
+  - name: Flicker
+    audio: {fileID: 8300000, guid: 25b9269de6dc848b1bcef8dfa7525f2a, type: 3}
     volume: 1
+  - name: MenuMusic
+    audio: {fileID: 8300000, guid: d89394a168e5d4ff99b593326147625f, type: 3}
+    volume: 0.4
