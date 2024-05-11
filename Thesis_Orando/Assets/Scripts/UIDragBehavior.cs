@@ -24,6 +24,7 @@ public class UIDragBehavior : MonoBehaviour
     public void OnDragStarting()
     {
         dragging = true;
+        AudioManager.instance.PlayAudio("PickUp", transform.parent.gameObject.GetComponent<AudioSource>());
         GetComponent<OtherWord>().UpdatePos();
         UIMouse.instance.wordBeingDragged = gameObject;
     }

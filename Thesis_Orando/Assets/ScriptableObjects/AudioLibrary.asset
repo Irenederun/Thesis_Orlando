@@ -15,7 +15,7 @@ MonoBehaviour:
   audioList:
   - name: ActorWalkingIn
     audio: {fileID: 8300000, guid: 403d320e2b01b49f99a609cd7e37c028, type: 3}
-    volume: 0.4
+    volume: 1
   - name: Applause01
     audio: {fileID: 8300000, guid: dfdaeb49336904694bdb475cdc845459, type: 3}
     volume: 0.8
