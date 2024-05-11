@@ -881,10 +881,8 @@ MonoBehaviour:
     y: -340
     width: 1114
     height: 859
-  selectedBlocks:
-  - {fileID: 468922030}
-  selectedCommands:
-  - {fileID: 468922027}
+  selectedBlocks: []
+  selectedCommands: []
   variables:
   - {fileID: 468921930}
   - {fileID: 468921936}
@@ -1372,7 +1370,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 61
   indentLevel: 0
-  storyText: '{color=#F5BF17}{i}{$secondWord}{/i}{/color}?'
+  storyText: '{color=#F5BF17}{i}{$secondWord}{/i}{/color} ?'
   description: 
   character: {fileID: 1585182548}
   portrait: {fileID: 0}

@@ -174,7 +174,7 @@ MonoBehaviour:
     - position: 3C
       conjugation: portray
     - position: 3D
-      conjugation: portrayal
+      conjugation: portrait
     - position: 3C_R
       conjugation: POS
     - position: 3C_R
@@ -1344,7 +1344,7 @@ MonoBehaviour:
     - position: 2APerson
       conjugation: heart
     - position: 2B
-      conjugation: heartener
+      conjugation: hearten
     - position: 2C
       conjugation: heartening
     - position: 2D

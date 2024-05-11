@@ -1235,7 +1235,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 166.55582
     y: 32.17437
-    width: 113.062996
+    width: 113.33333
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1314,19 +1314,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 636.81244, y: 157.27545}
+  scrollPos: {x: 57.055756, y: -56.685165}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 342.66666
-  zoom: 0.3700004
+  zoom: 1
   scrollViewRect:
     serializedVersion: 2
     x: -343
     y: -340
     width: 1114
     height: 859
-  selectedBlocks: []
-  selectedCommands: []
+  selectedBlocks:
+  - {fileID: 468922197}
+  selectedCommands:
+  - {fileID: 468922190}
   variables:
   - {fileID: 468921990}
   - {fileID: 468921930}
@@ -1450,7 +1452,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 286.04883
     y: -33.277653
-    width: 120.270195
+    width: 120.666664
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1670,7 +1672,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 163.81053
     y: 89.49687
-    width: 111.2612
+    width: 114.666664
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2105,7 +2107,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 159.21548
     y: 156.71614
-    width: 111.2612
+    width: 114.666664
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2153,7 +2155,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 341.9596
     y: 260.7505
-    width: 78.8288
+    width: 79.333336
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -3160,7 +3162,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 166.4845
     y: 219.85184
-    width: 111.2612
+    width: 114
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -4212,7 +4214,7 @@ MonoBehaviour:
   itemId: 296
   indentLevel: 0
   storyText: "You have stayed me in a happy hour: I was about to {color=#F5BF17}{i}{$usedVerbE}{/i}{/color}
-    I {color=#F5BF17}{i}{$usedVerbC}{/i}{/color} you.\r"
+    that I {color=#F5BF17}{i}{$usedVerbC}{/i}{/color} you.\r"
   description: 
   character: {fileID: 9036191115889225432}
   portrait: {fileID: 0}
@@ -4371,7 +4373,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 167.71481
     y: 274.55692
-    width: 111.2612
+    width: 114
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -4519,7 +4521,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 156.36543
     y: 339.29938
-    width: 111.2612
+    width: 114
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -12325,7 +12327,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 15}
-  m_SizeDelta: {x: 776.22, y: 160.58}
+  m_SizeDelta: {x: 785, y: 160.58}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1932757925373895313
 MonoBehaviour:

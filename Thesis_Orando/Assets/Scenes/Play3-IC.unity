@@ -1415,7 +1415,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 165.90479
     y: 33.57174
-    width: 112.27106
+    width: 69.86391
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1497,11 +1497,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 147.16423, y: -160.16795}
+  scrollPos: {x: 239.62862, y: 268.87402}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 267.66666
-  zoom: 0.9100001
+  zoom: 0.49000034
   scrollViewRect:
     serializedVersion: 2
     x: -343
@@ -1509,8 +1509,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 468922040}
-  selectedCommands: []
+  - {fileID: 468921977}
+  selectedCommands:
+  - {fileID: 468922086}
   variables:
   - {fileID: 468921990}
   - {fileID: 468921930}
@@ -1628,7 +1629,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 291.5283
     y: -34.647514
-    width: 119.59706
+    width: 76.66662
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1848,7 +1849,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 164.90944
     y: 87.261604
-    width: 114.46886
+    width: 71.22445
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2302,7 +2303,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 160.35185
     y: 157.81505
-    width: 114.46886
+    width: 71.22445
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2365,7 +2366,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 358.66403
     y: 230.77887
-    width: 79.30402
+    width: 60
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2489,7 +2490,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 176
   indentLevel: 0
-  storyText: I dream every night that {color=#F5BF17}{i}{$pronounB}{/i}{/color} look
+  storyText: I dream every night that {color=#F5BF17}{i}{$pronounB}{/i}{/color} looks
     at {color=#F5BF17}{i}{$pronounC}{/i}{/color} without {color=#F5BF17}{i}{$verbReverse}
     {$pronounC}{/i}{/color}.
   description: 
@@ -3578,7 +3579,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -20.507273
     y: 36.996754
-    width: 74.908424
+    width: 60
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -3772,7 +3773,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -18.997353
     y: 98.535225
-    width: 74.908424
+    width: 60
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -4549,7 +4550,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 166.4845
     y: 218.75293
-    width: 113.73626
+    width: 69.86391
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -5806,7 +5807,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 168.67633
     y: 277.59686
-    width: 113.73626
+    width: 69.86391
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -5946,7 +5947,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 158.04254
     y: 340.27768
-    width: 113.73626
+    width: 69.86391
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -13581,7 +13582,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 15}
-  m_SizeDelta: {x: 776.22, y: 160.58}
+  m_SizeDelta: {x: 785, y: 160.58}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1932757925373895313
 MonoBehaviour:
@@ -13636,7 +13637,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1.15
-  m_Text: You must be portrayal too, deep down, if you only knew it.
+  m_Text: You cannot imagine the state of mind of one who goes through a play
 --- !u!222 &1932757925373895315
 CanvasRenderer:
   m_ObjectHideFlags: 0

@@ -26,8 +26,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 44949905425475906}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.44, y: -0.61, z: 0}
-  m_LocalScale: {x: 1.9393224, y: 0.5406705, z: 1}
+  m_LocalPosition: {x: -2.4522, y: -0.61, z: 0}
+  m_LocalScale: {x: 2.2336833, y: 0.5406705, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 801987999640781054}
@@ -1878,7 +1878,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: <b>Is there any way to show such</b> _____________ <b>?</b>
+  m_text: <b>Is there any way to show such</b> _____________<b>?</b>
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2d547a05887e1402a9f6be68683d8f36, type: 2}
   m_sharedMaterial: {fileID: 4775169337844555031, guid: 2d547a05887e1402a9f6be68683d8f36, type: 2}
@@ -3520,8 +3520,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "<b>I</b> _____________ <b>nothing in the world so well \nas you: is not
-    that</b> ________________ ?\r"
+  m_text: "<b>I</b> _______________ <b>nothing in the world so well \nas you: is
+    not that</b> ________________<b>?</b>"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2d547a05887e1402a9f6be68683d8f36, type: 2}
   m_sharedMaterial: {fileID: 4775169337844555031, guid: 2d547a05887e1402a9f6be68683d8f36, type: 2}
@@ -4010,7 +4010,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "<b>By my</b> __________________ , \n<b>Beatrice, thou</b> _____________________
+  m_text: "<b>By my</b> __________________, \n<b>Beatrice, thou</b> _____________________
     <b>me.</b>"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2d547a05887e1402a9f6be68683d8f36, type: 2}

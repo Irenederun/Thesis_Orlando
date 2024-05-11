@@ -137,8 +137,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 95926605524757029}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.02, y: -0.609, z: 0}
-  m_LocalScale: {x: 1.500724, y: 0.5406705, z: 1}
+  m_LocalPosition: {x: -0.9817, y: -0.609, z: 0}
+  m_LocalScale: {x: 1.8076285, y: 0.5406705, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6686546965260298627}
@@ -248,8 +248,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 254029755916809832}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.0779, y: -1.05, z: 0}
-  m_LocalScale: {x: 1.7622851, y: 0.5406705, z: 1}
+  m_LocalPosition: {x: 0.073, y: -1.05, z: 0}
+  m_LocalScale: {x: 1.9091978, y: 0.5406705, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6686546965260298627}
@@ -863,7 +863,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "If only I could</b> __________<b>.\r\nI am </b>____________ <b>.</b>\r"
+  m_text: "If only I could</b> ____________<b>.\r\nI am </b>____________<b>.</b>\r"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2d547a05887e1402a9f6be68683d8f36, type: 2}
   m_sharedMaterial: {fileID: 4775169337844555031, guid: 2d547a05887e1402a9f6be68683d8f36, type: 2}
@@ -2447,7 +2447,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "<b>I was</b> ____________ <b>that</b> ______________ \n<b>might</b> _______________
-    _______ ."
+    _______."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2d547a05887e1402a9f6be68683d8f36, type: 2}
   m_sharedMaterial: {fileID: 4775169337844555031, guid: 2d547a05887e1402a9f6be68683d8f36, type: 2}
@@ -2563,7 +2563,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3240811617283155973}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.84, y: 0.344, z: 0.12687574}
+  m_LocalPosition: {x: -0.713, y: 0.344, z: 0.12687574}
   m_LocalScale: {x: 1.3, y: 1.3, z: 1.3}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -3177,7 +3177,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "I act with __________ ,  with ____________ .\r\nI am _____________.\r"
+  m_text: "I act with _____________, with _____________.\r\nI am _____________.\r"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2d547a05887e1402a9f6be68683d8f36, type: 2}
   m_sharedMaterial: {fileID: 4775169337844555031, guid: 2d547a05887e1402a9f6be68683d8f36, type: 2}
@@ -3906,8 +3906,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5637752994353353520}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.7129, y: -0.6159999, z: 0}
-  m_LocalScale: {x: 1.6133124, y: 0.5406705, z: 1}
+  m_LocalPosition: {x: 1.7851, y: -0.6159999, z: 0}
+  m_LocalScale: {x: 1.6277235, y: 0.5406705, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 5279295692471057874}
@@ -4137,8 +4137,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7062473621146461785}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.653, y: -0.602, z: 0}
-  m_LocalScale: {x: 1.7751623, y: 0.5406705, z: 1}
+  m_LocalPosition: {x: 1.7655, y: -0.602, z: 0}
+  m_LocalScale: {x: 1.800718, y: 0.5406705, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6686546965260298627}
@@ -4285,8 +4285,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7819033100468117681}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.5486, y: -0.616, z: 0}
-  m_LocalScale: {x: 1.4942839, y: 0.5406705, z: 1}
+  m_LocalPosition: {x: -0.5539, y: -0.616, z: 0}
+  m_LocalScale: {x: 1.6305162, y: 0.5406705, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 5279295692471057874}
@@ -4541,8 +4541,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8281215602096951544}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.7335, y: -0.608, z: 0}
-  m_LocalScale: {x: 1.500724, y: 0.5406705, z: 1}
+  m_LocalPosition: {x: 0.7355, y: -0.608, z: 0}
+  m_LocalScale: {x: 1.7735257, y: 0.5406705, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 9206062008249784925}
@@ -4838,7 +4838,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "It is not the __________ and ___________ \nthat are important.\r"
+  m_text: "It is not the ____________ and ____________ \nthat are important.\r"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2d547a05887e1402a9f6be68683d8f36, type: 2}
   m_sharedMaterial: {fileID: 4775169337844555031, guid: 2d547a05887e1402a9f6be68683d8f36, type: 2}
