@@ -1415,7 +1415,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 165.90479
     y: 33.57174
-    width: 69.86391
+    width: 109.86391
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1509,9 +1509,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 468921977}
+  - {fileID: 468922205}
   selectedCommands:
-  - {fileID: 468922086}
+  - {fileID: 468922244}
   variables:
   - {fileID: 468921990}
   - {fileID: 468921930}
@@ -1629,7 +1629,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 291.5283
     y: -34.647514
-    width: 76.66662
+    width: 116.66662
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1849,7 +1849,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 164.90944
     y: 87.261604
-    width: 71.22445
+    width: 111.22445
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2303,7 +2303,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 160.35185
     y: 157.81505
-    width: 71.22445
+    width: 111.22445
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2366,7 +2366,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 358.66403
     y: 230.77887
-    width: 60
+    width: 77.21087
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -3579,7 +3579,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -20.507273
     y: 36.996754
-    width: 60
+    width: 75.85033
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -3773,7 +3773,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -18.997353
     y: 98.535225
-    width: 60
+    width: 75.85033
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -4550,7 +4550,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 166.4845
     y: 218.75293
-    width: 69.86391
+    width: 109.86391
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -5807,7 +5807,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 168.67633
     y: 277.59686
-    width: 69.86391
+    width: 109.86391
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -5947,7 +5947,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 158.04254
     y: 340.27768
-    width: 69.86391
+    width: 109.86391
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -6938,7 +6938,7 @@ MonoBehaviour:
   itemId: 350
   indentLevel: 0
   soundClip: {fileID: 8300000, guid: 56a9bd60b02d38c41a06b0e31c1d4047, type: 3}
-  volume: 1
+  volume: 0.8
   waitUntilFinished: 0
 --- !u!1 &477653529
 GameObject:
