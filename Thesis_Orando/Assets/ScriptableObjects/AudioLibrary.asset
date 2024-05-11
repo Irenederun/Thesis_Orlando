@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   audioList:
   - name: ActorWalkingIn
-    audio: {fileID: 8300000, guid: 2e8674e0683b54e13b0a110631562b9c, type: 3}
+    audio: {fileID: 8300000, guid: 403d320e2b01b49f99a609cd7e37c028, type: 3}
     volume: 0.4
   - name: Applause01
     audio: {fileID: 8300000, guid: dfdaeb49336904694bdb475cdc845459, type: 3}
@@ -44,7 +44,7 @@ MonoBehaviour:
     audio: {fileID: 8300000, guid: ecc748683be0f614c90cb11850d00884, type: 3}
     volume: 0.6
   - name: CurtainOpen
-    audio: {fileID: 8300000, guid: 5e228cc68eb7f7147bb58ad23dcaeb19, type: 3}
+    audio: {fileID: 8300000, guid: c410fd92be3d94442aa44a31e2dc1a28, type: 3}
     volume: 1
   - name: Spotlight
     audio: {fileID: 8300000, guid: 56a9bd60b02d38c41a06b0e31c1d4047, type: 3}
@@ -66,6 +66,9 @@ MonoBehaviour:
     volume: 0.3
   - name: Flicker
     audio: {fileID: 8300000, guid: 25b9269de6dc848b1bcef8dfa7525f2a, type: 3}
+    volume: 1
+  - name: CurtainClose
+    audio: {fileID: 8300000, guid: efff95568044b4bb99f9640733ebe1f4, type: 3}
     volume: 1
   - name: MenuMusic
     audio: {fileID: 8300000, guid: d89394a168e5d4ff99b593326147625f, type: 3}

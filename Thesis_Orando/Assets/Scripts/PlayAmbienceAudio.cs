@@ -69,7 +69,7 @@ public class PlayAmbienceAudio : MonoBehaviour
         PlayMenuMusic(0);
         print("menu stop");
         yield return new WaitForSeconds(waitTime);
-        PlayTheatreNoise(1.5f);
+        PlayTheatreNoise(2f);
         PlayZenNoise(0.2f);
     }
     
@@ -85,7 +85,7 @@ public class PlayAmbienceAudio : MonoBehaviour
         PlayTheatreNoise(0.5f);
         PlayZenNoise(0.2f);
         yield return new WaitForSeconds(waitTime);
-        PlayTheatreNoise(1.5f);
+        PlayTheatreNoise(2f);
         PlayZenNoise(0.2f);
     }
 
@@ -99,7 +99,7 @@ public class PlayAmbienceAudio : MonoBehaviour
         PlayTheatreNoise(0.5f);
         PlayZenNoise(0.2f);
         yield return new WaitForSeconds(waitTime);
-        PlayTheatreNoise(1.5f);
+        PlayTheatreNoise(2f);
         PlayZenNoise(0.6f);
     }
     

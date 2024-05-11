@@ -830,7 +830,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 161.06526
     y: 37.140106
-    width: 112.60162
+    width: 72.60162
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1008,8 +1008,8 @@ MonoBehaviour:
   nodeRect:
     serializedVersion: 2
     x: 306.4991
-    y: 116.43988
-    width: 119.91869
+    y: 115.22037
+    width: 79.91869
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1447,7 +1447,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 160.55762
     y: 99.57653
-    width: 111.78861
+    width: 71.78861
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1626,7 +1626,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 301.00647
     y: 45.035248
-    width: 119.91869
+    width: 79.91869
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2513,7 +2513,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 163.17683
     y: 159.65498
-    width: 113.41463
+    width: 73.41463
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -3049,7 +3049,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 161.08434
     y: 218.4673
-    width: 114.22764
+    width: 74.22764
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -3120,7 +3120,7 @@ MonoBehaviour:
   itemId: 127
   indentLevel: 0
   soundClip: {fileID: 8300000, guid: f053acdd0bee05b47a77625cd6b359b3, type: 3}
-  volume: 0.4
+  volume: 0.3
   waitUntilFinished: 1
 --- !u!114 &468922033
 MonoBehaviour:
@@ -3246,7 +3246,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 471.21844
     y: 50.25009
-    width: 79.26829
+    width: 60
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -3498,7 +3498,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 472.43167
     y: 157.82207
-    width: 155.69104
+    width: 115.69105
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -5067,7 +5067,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 473.8421
     y: 213.02483
-    width: 162.1951
+    width: 122.19511
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0

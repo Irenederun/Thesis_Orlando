@@ -2285,8 +2285,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1755c856fab704dc7b10616464b53693, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  creditPage: {fileID: 0}
-  fadeImage: {fileID: 0}
+  creditPage: {fileID: 1985743246}
+  fadeImage: {fileID: 1555559658}
   fadeDuration: 1
 --- !u!1 &1179164656
 GameObject:
