@@ -67,7 +67,6 @@ public class PlayAmbienceAudio : MonoBehaviour
     IEnumerator playOpening(float waitTime)
     {
         PlayMenuMusic(0);
-        print("menu stop");
         yield return new WaitForSeconds(waitTime);
         PlayTheatreNoise(2f);
         PlayZenNoise(0.2f);
@@ -80,8 +79,8 @@ public class PlayAmbienceAudio : MonoBehaviour
 
     IEnumerator playIC(float waitTime)
     {
-        if (interAmbSource.isPlaying)PlayInterstitialAmbience(0f);
-        if (interMusicSource.isPlaying)PlayInterstitialMusic(0f);
+        if (interAmbSource.isPlaying) PlayInterstitialAmbience(0f);
+        if (interMusicSource.isPlaying) PlayInterstitialMusic(0f);
         PlayTheatreNoise(0.5f);
         PlayZenNoise(0.2f);
         yield return new WaitForSeconds(waitTime);
@@ -131,7 +130,8 @@ public class PlayAmbienceAudio : MonoBehaviour
         yield return new WaitForSeconds(waitTime);
         PlayTheatreNoise(0f);
         PlayZenNoise(0f);
-        endingSource.Play();   
+        //endingSource.Play();
+        PlayEndMusic(1);
     }
 
     void PlayTheatreNoise(float targetVolume)
@@ -163,7 +163,12 @@ public class PlayAmbienceAudio : MonoBehaviour
         if (!menuMusicSource.isPlaying) menuMusicSource.Play();
         StartCoroutine(VolumeChange2(menuMusicSource, targetVolume));
     }
-
+    
+    void PlayEndMusic(float targetVolume)
+    {
+        if (!endingSource.isPlaying) menuMusicSource.Play();
+        StartCoroutine(VolumeChange2(endingSource, targetVolume));
+    }
     
     void StopAmb(float waitTime)
     {
@@ -172,6 +177,7 @@ public class PlayAmbienceAudio : MonoBehaviour
     
     IEnumerator StopAmbience(float waitTime)
     {
+        PlayEndMusic(0);
         PlayMenuMusic(0);
         yield return new WaitForSeconds(waitTime);
         PlayTheatreNoise(0f);
@@ -195,7 +201,7 @@ public class PlayAmbienceAudio : MonoBehaviour
         float t = 0f;
         while (t <= 1f)
         {
-            t += 2f * Time.deltaTime;
+            t += 1.5f * Time.deltaTime;
             float vol = Mathf.Lerp(startVol, targetVol, t);
             audioSource.volume = vol;
             yield return new WaitForEndOfFrame();
