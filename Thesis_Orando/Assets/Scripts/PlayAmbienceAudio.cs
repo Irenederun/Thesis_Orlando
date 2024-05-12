@@ -131,7 +131,7 @@ public class PlayAmbienceAudio : MonoBehaviour
         yield return new WaitForSeconds(waitTime);
         PlayTheatreNoise(0f);
         PlayZenNoise(0f);
-        PlayEndMusic(1);
+        PlayEndMusic(0.9f);
     }
 
     void PlayTheatreNoise(float targetVolume)
@@ -181,9 +181,10 @@ public class PlayAmbienceAudio : MonoBehaviour
         if (interAmbSource.isPlaying) PlayInterstitialAmbience(0);
         if (endingSource.isPlaying) PlayEndMusic(0);
         if (menuMusicSource.isPlaying) PlayMenuMusic(0);
-        yield return new WaitForSeconds(waitTime);
         if (theatreSource.isPlaying) PlayTheatreNoise(0f);
         if (zenSource.isPlaying)PlayZenNoise(0f);
+        yield return new WaitForSeconds(waitTime);
+        PlayMenuMusic(0.1f);
     }
 
     public void MenuMusic()
@@ -194,7 +195,7 @@ public class PlayAmbienceAudio : MonoBehaviour
     IEnumerator PlayMenuMusic()
     {
         yield return new WaitForSeconds(0);
-        PlayMenuMusic(0.3f);
+        PlayMenuMusic(0.25f);
     }
     
     IEnumerator VolumeChange(AudioSource audioSource, float targetVol)

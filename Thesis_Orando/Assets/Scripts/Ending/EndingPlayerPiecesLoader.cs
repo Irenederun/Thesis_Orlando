@@ -226,7 +226,7 @@ public class EndingPlayerPiecesLoader : MonoBehaviour
     public void PlayEndingClapping()
     {
         if (!endingClapping.isPlaying) endingClapping.Play();
-        StartCoroutine(VolumeChange(endingClapping, 0.5f));
+        StartCoroutine(VolumeChange(endingClapping, 0.4f));
     }
     
     IEnumerator VolumeChange(AudioSource audioSource, float targetVol)
