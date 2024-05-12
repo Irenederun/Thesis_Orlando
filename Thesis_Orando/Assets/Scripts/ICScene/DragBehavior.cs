@@ -47,7 +47,7 @@ public class DragBehavior : MonoBehaviour
         
         if (hit.collider != null)
         {
-            print("destination hit");
+            //print("destination hit");
             if (availableDesPosHolders.Contains(hit.collider.gameObject))
             {
                 if (hitReload.collider != null)
@@ -58,7 +58,7 @@ public class DragBehavior : MonoBehaviour
                      GetComponent<WordDragDetails>().ReloadWord();
                      GetComponent<DragBehavior>().Reload();
                 }
-                print("destination in list");
+                //print("destination in list");
                 gameObject.layer = LayerMask.NameToLayer("Dragged");
                 ChangeColliderSize(hit.collider.gameObject.GetComponent<BoxCollider2D>());
                 gameObject.transform.position = hit.collider.gameObject.transform.position;
@@ -74,6 +74,7 @@ public class DragBehavior : MonoBehaviour
                     hit.collider.gameObject.GetComponent<EndingWordFloating>().isFilled = true;
                     transform.parent.gameObject.GetComponent<EndingWordLoader>().playerScript.TurnOffPiece();
                     transform.SetParent(hit.collider.gameObject.transform);
+                    ReplaceEndingText(hit.collider.gameObject.name);
                 }
             }
             else
@@ -84,6 +85,18 @@ public class DragBehavior : MonoBehaviour
         else
         {
             DragFailed();
+        }
+    }
+
+    private void ReplaceEndingText(string desName)
+    {
+        GameObject replace = GameObject.Find("Replacement");
+        for (int i = 1; i < 10; i++)
+        {
+            if (desName.Contains(i.ToString()))
+            {
+                replace.GetComponent<EntirePassageReplace>().Replace(i-1, gameObject.name);
+            }
         }
     }
 
