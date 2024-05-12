@@ -36,7 +36,7 @@ public class PlayAmbienceAudio : MonoBehaviour
         }
         else if (scene.name.Contains("OOC"))
         {
-            PlayOOC(2f);
+            PlayOOC(1f);
         }
         else if (scene.name.Contains("Interstitial"))
         {
@@ -81,7 +81,7 @@ public class PlayAmbienceAudio : MonoBehaviour
     {
         if (interAmbSource.isPlaying) PlayInterstitialAmbience(0f);
         if (interMusicSource.isPlaying) PlayInterstitialMusic(0f);
-        PlayTheatreNoise(0.2f);
+        PlayTheatreNoise(0.4f);
         PlayZenNoise(0.01f);
         yield return new WaitForSeconds(waitTime);
         PlayTheatreNoise(0.8f);
@@ -95,10 +95,10 @@ public class PlayAmbienceAudio : MonoBehaviour
 
     IEnumerator playOOC(float waitTime)
     {
-        PlayTheatreNoise(0.2f);
-        PlayZenNoise(0.01f);
+        PlayTheatreNoise(0.4f);
+        PlayZenNoise(0.08f);
         yield return new WaitForSeconds(waitTime);
-        PlayTheatreNoise(0.2f);
+        PlayTheatreNoise(0.4f);
         PlayZenNoise(0.1f);
     }
     

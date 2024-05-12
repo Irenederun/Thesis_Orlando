@@ -50,7 +50,7 @@ MonoBehaviour:
     audio: {fileID: 8300000, guid: 56a9bd60b02d38c41a06b0e31c1d4047, type: 3}
     volume: 0.8
   - name: TheatreNoise
-    audio: {fileID: 8300000, guid: 721c97b7a35ad4ec09c8eabea0e550e6, type: 3}
+    audio: {fileID: 8300000, guid: d943dac809e4a4a209cbcda329a7efa5, type: 3}
     volume: 1
   - name: ZenNoise
     audio: {fileID: 8300000, guid: 08d5a2b8bfefc4a98aab991c6bbf0db2, type: 3}
@@ -77,8 +77,8 @@ MonoBehaviour:
     audio: {fileID: 8300000, guid: 8dc4df053451c43a6af17b44df386c31, type: 3}
     volume: 1
   - name: EyeOpen
-    audio: {fileID: 8300000, guid: d7654e88803874b79b123945d1f735ec, type: 3}
-    volume: 0.5
+    audio: {fileID: 8300000, guid: 9d34caefdcba1443bad5e3427aafbea5, type: 3}
+    volume: 0
   - name: EyeClose
-    audio: {fileID: 8300000, guid: 69466cbbd409048b08aac2fb87bbcc98, type: 3}
-    volume: 0.5
+    audio: {fileID: 8300000, guid: 0efa6b8423d72482caca129214397c7a, type: 3}
+    volume: 0

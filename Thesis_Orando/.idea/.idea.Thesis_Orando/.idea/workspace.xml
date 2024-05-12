@@ -5,20 +5,12 @@
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Thesis_Orando/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Thesis_Orando/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Anim/EyeClosing.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Anim/EyeClosing.anim" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Anim/EyeOOCClose.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Anim/EyeOOCClose.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Anim/FadeInter1_1.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Anim/FadeInter1_1.anim" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/AudioManager.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/AudioManager.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Ending.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Ending.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Play1-IC1_V3.0.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Play1-IC1_V3.0.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Play1-IC2_V3.0.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Play1-IC2_V3.0.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Play1-OOC.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Play1-OOC.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Play2-IC.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Play2-IC.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Play2-OOC.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Play2-OOC.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Play3-IC.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Play3-IC.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Play3-OOC.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Play3-OOC.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Play1-Interstitial.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Play1-Interstitial.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/AudioLibrary.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptableObjects/AudioLibrary.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ICScene/DragBehavior.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ICScene/DragBehavior.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Ending/EntirePassageReplace.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Ending/EntirePassageReplace.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayAmbienceAudio.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayAmbienceAudio.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayAudio.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayAudio.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UIDragBehavior.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UIDragBehavior.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -209,7 +201,7 @@
       <workItem from="1714844275855" duration="7356000" />
       <workItem from="1715017523629" duration="281000" />
       <workItem from="1715456431814" duration="10545000" />
-      <workItem from="1715535771955" duration="7555000" />
+      <workItem from="1715535771955" duration="9538000" />
     </task>
     <servers />
   </component>

@@ -92,7 +92,7 @@ public class DragBehavior : MonoBehaviour
     private void ReplaceEndingText(string desName)
     {
         GameObject replace = GameObject.Find("Replacement");
-        for (int i = 1; i < 10; i++)
+        for (int i = 1; i < 11; i++)
         {
             if (desName.Contains(i.ToString()))
             {
