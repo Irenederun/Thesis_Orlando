@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PersonDrag : MonoBehaviour
 {
@@ -15,20 +16,17 @@ public class PersonDrag : MonoBehaviour
     public GameObject PersonObject;
     public GameObject RopeObject;
     public GameObject PersonXObject;
-    public GameObject Vignette;
 
     private void Start()
     {
         spotlightAnimator = spotlightObject.GetComponent<Animator>();
-        Vignette.SetActive(true);
-
-}
+    }
 
     void Update()
     {
         if (isDragging)
         {
-            Vector3 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            Vector3 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition); 
             transform.position = new Vector3(mousePosition.x, mousePosition.y, transform.position.z);
             personAnimator.SetBool("isDraggingPerson", true);
         }
@@ -38,22 +36,30 @@ public class PersonDrag : MonoBehaviour
     {
         isDragging = true;
         AudioManager.instance.PlayAudio("PickUp", GetComponent<AudioSource>());
-        initialPosition = transform.position;
+        initialPosition = transform.position; // move follow mouse
     }
 
     private void OnMouseUp()
     {
-        isDragging = false;
+        isDragging = false; 
         personAnimator.SetBool("isDraggingPerson", false);
+
 
         if (CheckCollision())
         {
+            Color newColor = GetComponent<SpriteRenderer>().color;
+            newColor.a = 0f; // define alpha of this obj
+
+            GetComponent<SpriteRenderer>().color = newColor;//set the obj to transparent
+
             transform.position = fixedPosition.position;
-            Vignette.SetActive(false);
             trueMenu.SetActive(true);
             PersonObject.SetActive(true);
             RopeObject.SetActive(false);
-            PersonXObject.SetActive(false);
+         
+
+            StartCoroutine(DelayRaycastTarget());
+
             if (spotlightAnimator != null)
             {
                 spotlightAnimator.SetBool("Disappear", true);
@@ -72,7 +78,7 @@ public class PersonDrag : MonoBehaviour
         {
             if (collider.gameObject == gameObject) continue;
 
-            if(collider.gameObject.CompareTag("Object2"))
+            if (collider.gameObject.CompareTag("Object2"))
             {
                 return true;
             }
@@ -80,4 +86,19 @@ public class PersonDrag : MonoBehaviour
 
         return false;
     }
+
+    IEnumerator DelayRaycastTarget()
+    {
+        yield return new WaitForSeconds(2.8f);
+        Image spotlightImage = spotlightObject.GetComponent<Image>();
+        spotlightImage.raycastTarget = false;
+        PersonXObject.SetActive(false);
+
+    }
 }
+
+/* Log: tried to delay Disable Raycast but PersonXObject would be disabled at the same time
+then the script no process,,, so I just put PersonXObject.SetActive(false) in IEnumerator,
+set the alpha = 0 when collide
+who cares it works :p
+ */

@@ -5,16 +5,15 @@ using UnityEngine.EventSystems;
 
 public class CreditBack : MonoBehaviour, IPointerClickHandler
 {
-    public GameObject creditPage; // Credit页面的UI对象
+    public GameObject creditPage; // Credit page
     public GameObject Spotlight;
-    public Image fadeImage; // 渐变遮罩图片
-    public float fadeDuration = 1.0f; // 渐变持续时间
+    public Image fadeImage; 
+    public float fadeDuration = 1.0f; 
 
-    private bool isFading = false; // 是否正在进行渐变
 
     void Start()
     {
-        creditPage.SetActive(true); // 初始状态下开启Credit页面
+        creditPage.SetActive(true); // initially credit page open
     }
 
 
@@ -25,7 +24,6 @@ public class CreditBack : MonoBehaviour, IPointerClickHandler
 
     IEnumerator FadeAndShowMenu()
     {
-        isFading = true;
         float timer = 0f;
         while (timer < fadeDuration)
         {
@@ -46,6 +44,5 @@ public class CreditBack : MonoBehaviour, IPointerClickHandler
             yield return null;
         }
 
-        isFading = false;
     }
 }

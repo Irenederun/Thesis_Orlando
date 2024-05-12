@@ -5,28 +5,28 @@ using UnityEngine.EventSystems;
 
 public class MenuHover : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IPointerClickHandler
 {
-    public Sprite hoverSprite; // 鼠标悬停时的图片
-    public Sprite clickSprite; // 按钮点击时的图片
-    public GameObject creditPage; // Credit页面的UI对象
-    public Image fadeImage; // 渐变遮罩图片
-    public float fadeDuration = 1.0f; // 渐变持续时间
+    public Sprite hoverSprite;
+    public Sprite clickSprite;
+    public GameObject creditPage; 
+    public Image fadeImage; 
+    public float fadeDuration = 1.0f; 
 
     private Image buttonImage;
     private Sprite defaultSprite;
-    private bool isFading = false; // 是否正在进行渐变
+    private bool isFading = false;
 
     void Start()
     {
         buttonImage = GetComponent<Image>();
         defaultSprite = buttonImage.sprite;
-        creditPage.SetActive(false); // 初始状态下关闭Credit页面
+        creditPage.SetActive(false); 
     }
 
     public void OnPointerEnter(PointerEventData eventData)
     {
         if (!isFading)
         {
-            buttonImage.sprite = hoverSprite; // 切换到悬停状态的图片
+            buttonImage.sprite = hoverSprite;
         }
     }
 
@@ -34,7 +34,7 @@ public class MenuHover : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
     {
         if (!isFading)
         {
-            buttonImage.sprite = defaultSprite; // 恢复到默认状态的图片
+            buttonImage.sprite = defaultSprite; 
         }
     }
 
@@ -50,7 +50,6 @@ public class MenuHover : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
     {
         isFading = true;
 
-        // 开始渐变效果（从透明到不透明）
         float timer = 0f;
         while (timer < fadeDuration)
         {
@@ -60,10 +59,8 @@ public class MenuHover : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
             yield return null;
         }
 
-        // 显示Credit页面
         creditPage.SetActive(true);
 
-        // 结束渐变效果（从不透明到透明）
         timer = 0f;
         while (timer < fadeDuration)
         {
