@@ -12106,7 +12106,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "A thousand years have passed since \nthe earth last bore a           
-    creature \non its breast, \nand the unhappy moon now lights her lamp in vain.
+    creature \non its breast, \nand the unhappy moon now \nlights her lamp in vain.
     \nNo longer are the cries of storks heard in the meadows, or the drone of beetles
     in the groves of limes.\r"
   m_isRightToLeft: 0
