@@ -183,7 +183,7 @@ public class PlayAmbienceAudio : MonoBehaviour
         if (theatreSource.isPlaying) PlayTheatreNoise(0f);
         if (zenSource.isPlaying)PlayZenNoise(0f);
         yield return new WaitForSeconds(waitTime);
-        PlayMenuMusic(0.05f);
+        PlayMenuMusic(0.03f);
     }
     
     public void StopAmb(float waitTime)
@@ -210,7 +210,7 @@ public class PlayAmbienceAudio : MonoBehaviour
     IEnumerator PlayMenuMusic()
     {
         yield return new WaitForSeconds(0);
-        PlayMenuMusic(0.2f);
+        PlayMenuMusic(0.15f);
     }
     
     IEnumerator VolumeChange(AudioSource audioSource, float targetVol)

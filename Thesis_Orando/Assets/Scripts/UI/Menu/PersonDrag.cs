@@ -89,7 +89,7 @@ public class PersonDrag : MonoBehaviour
 
     IEnumerator DelayRaycastTarget()
     {
-        yield return new WaitForSeconds(2.8f);
+        yield return new WaitForSeconds(1.8f);
         Image spotlightImage = spotlightObject.GetComponent<Image>();
         spotlightImage.raycastTarget = false;
         PersonXObject.SetActive(false);
