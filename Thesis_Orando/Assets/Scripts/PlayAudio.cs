@@ -41,4 +41,9 @@ public class PlayAudio : MonoBehaviour
     {
         AudioManager.instance.gameObject.GetComponent<PlayAmbienceAudio>().MenuMusic();
     }
+
+    public void StopAmb()
+    {
+        AudioManager.instance.gameObject.GetComponent<PlayAmbienceAudio>().StopAmb(1);
+    }
 }

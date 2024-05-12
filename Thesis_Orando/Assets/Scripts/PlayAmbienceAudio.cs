@@ -55,7 +55,7 @@ public class PlayAmbienceAudio : MonoBehaviour
         }
         else if (scene.name.Contains("Menu"))
         {
-            StopAmb(0f);
+            OnRestart(0f);
         }
     }
 
@@ -68,7 +68,7 @@ public class PlayAmbienceAudio : MonoBehaviour
     {
         PlayMenuMusic(0);
         yield return new WaitForSeconds(waitTime);
-        PlayTheatreNoise(2f);
+        PlayTheatreNoise(1f);
         PlayZenNoise(0.2f);
     }
     
@@ -84,7 +84,7 @@ public class PlayAmbienceAudio : MonoBehaviour
         PlayTheatreNoise(0.5f);
         PlayZenNoise(0.2f);
         yield return new WaitForSeconds(waitTime);
-        PlayTheatreNoise(2f);
+        PlayTheatreNoise(1f);
         PlayZenNoise(0.2f);
     }
 
@@ -98,8 +98,8 @@ public class PlayAmbienceAudio : MonoBehaviour
         PlayTheatreNoise(0.5f);
         PlayZenNoise(0.2f);
         yield return new WaitForSeconds(waitTime);
-        PlayTheatreNoise(2f);
-        PlayZenNoise(0.6f);
+        PlayTheatreNoise(0.5f);
+        PlayZenNoise(1f);
     }
     
     void PlayInterstitial(float waitTime, bool playAmb)
@@ -115,9 +115,8 @@ public class PlayAmbienceAudio : MonoBehaviour
         if (playAmb)
         {
             yield return new WaitForSeconds(waitTime);
-            PlayInterstitialAmbience(1f);
-            print("inter music");
-            PlayInterstitialMusic(1f);
+            PlayInterstitialAmbience(0.8f);
+            PlayInterstitialMusic(0.8f);
         }
     }
 
@@ -131,7 +130,7 @@ public class PlayAmbienceAudio : MonoBehaviour
         yield return new WaitForSeconds(waitTime);
         PlayTheatreNoise(0f);
         PlayZenNoise(0f);
-        PlayEndMusic(0.9f);
+        PlayEndMusic(1f);
     }
 
     void PlayTheatreNoise(float targetVolume)
@@ -170,7 +169,24 @@ public class PlayAmbienceAudio : MonoBehaviour
         StartCoroutine(VolumeChange2(endingSource, targetVolume));
     }
     
-    void StopAmb(float waitTime)
+    void OnRestart(float waitTime)
+    {
+        StartCoroutine(OnGameRestart(waitTime));
+    }
+    
+    IEnumerator OnGameRestart(float waitTime)
+    {
+        if (interMusicSource.isPlaying) PlayInterstitialMusic(0);
+        if (interAmbSource.isPlaying) PlayInterstitialAmbience(0);
+        if (endingSource.isPlaying) PlayEndMusic(0);
+        if (menuMusicSource.isPlaying) PlayMenuMusic(0);
+        if (theatreSource.isPlaying) PlayTheatreNoise(0f);
+        if (zenSource.isPlaying)PlayZenNoise(0f);
+        yield return new WaitForSeconds(waitTime);
+        PlayMenuMusic(0.05f);
+    }
+    
+    public void StopAmb(float waitTime)
     {
         StartCoroutine(StopAmbience(waitTime));
     }
@@ -184,7 +200,6 @@ public class PlayAmbienceAudio : MonoBehaviour
         if (theatreSource.isPlaying) PlayTheatreNoise(0f);
         if (zenSource.isPlaying)PlayZenNoise(0f);
         yield return new WaitForSeconds(waitTime);
-        PlayMenuMusic(0.1f);
     }
 
     public void MenuMusic()
@@ -195,7 +210,7 @@ public class PlayAmbienceAudio : MonoBehaviour
     IEnumerator PlayMenuMusic()
     {
         yield return new WaitForSeconds(0);
-        PlayMenuMusic(0.25f);
+        PlayMenuMusic(0.2f);
     }
     
     IEnumerator VolumeChange(AudioSource audioSource, float targetVol)
@@ -204,7 +219,7 @@ public class PlayAmbienceAudio : MonoBehaviour
         float t = 0f;
         while (t <= 1f)
         {
-            t += 1.5f * Time.deltaTime;
+            t += 1f * Time.deltaTime;
             float vol = Mathf.Lerp(startVol, targetVol, t);
             audioSource.volume = vol;
             yield return new WaitForEndOfFrame();
@@ -217,7 +232,7 @@ public class PlayAmbienceAudio : MonoBehaviour
         float t = 0f;
         while (t <= 1f)
         {
-            t += 1f * Time.deltaTime;
+            t += 0.5f * Time.deltaTime;
             float vol = Mathf.Lerp(startVol, targetVol, t);
             audioSource.volume = vol;
             yield return new WaitForEndOfFrame();

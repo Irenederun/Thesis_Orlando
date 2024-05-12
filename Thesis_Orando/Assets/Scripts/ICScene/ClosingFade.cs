@@ -15,6 +15,7 @@ public class ClosingFade : MonoBehaviour
     private void Start()
     {
         StartCoroutine(Wait());
+        AudioManager.instance.gameObject.GetComponent<PlayAmbienceAudio>().StopAmb(1);
     }
 
     IEnumerator Wait()
