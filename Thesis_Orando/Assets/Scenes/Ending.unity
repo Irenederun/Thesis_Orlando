@@ -338,7 +338,7 @@ MonoBehaviour:
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
-  m_characterSpacing: 5
+  m_characterSpacing: 6
   m_wordSpacing: 0
   m_lineSpacing: 117.62
   m_lineSpacingMax: 0
@@ -701,7 +701,7 @@ MonoBehaviour:
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 6
-  m_wordSpacing: 5
+  m_wordSpacing: 0
   m_lineSpacing: 117.62
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
@@ -2224,7 +2224,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: _______
+  m_text: ________
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2d547a05887e1402a9f6be68683d8f36, type: 2}
   m_sharedMaterial: {fileID: 4775169337844555031, guid: 2d547a05887e1402a9f6be68683d8f36, type: 2}
@@ -5802,8 +5802,8 @@ MonoBehaviour:
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
-  m_characterSpacing: 15.62
-  m_wordSpacing: -2.52
+  m_characterSpacing: 6
+  m_wordSpacing: 0
   m_lineSpacing: 117.62
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
@@ -9476,7 +9476,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: ________
+  m_text: _________
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2d547a05887e1402a9f6be68683d8f36, type: 2}
   m_sharedMaterial: {fileID: 4775169337844555031, guid: 2d547a05887e1402a9f6be68683d8f36, type: 2}
@@ -12109,7 +12109,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "A thousand years have passed since \nthe earth last bore a           
+  m_text: "A thousand years have passed since \nthe earth last bore a            
     creature \non its breast, \nand the unhappy moon now \nlights her lamp in vain.
     \nNo longer are the cries of storks heard in the meadows, or the drone of beetles
     in the groves of limes.\r"
@@ -14906,7 +14906,7 @@ MonoBehaviour:
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
-  m_characterSpacing: 15.62
+  m_characterSpacing: 6
   m_wordSpacing: -2.52
   m_lineSpacing: 117.62
   m_lineSpacingMax: 0
@@ -15988,7 +15988,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "The             of all living creatures \nhave                to dust,
+  m_text: "The              of all living creatures \nhave                to dust,
     \nand eternal matter has transformed them into stones and water and clouds; \nbut
     their spirits have flowed together into one, and that great world-soul am I.\r"
   m_isRightToLeft: 0
@@ -18236,7 +18236,7 @@ MonoBehaviour:
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 6
-  m_wordSpacing: 5
+  m_wordSpacing: 0
   m_lineSpacing: 117.62
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
