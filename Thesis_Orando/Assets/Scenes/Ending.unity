@@ -328,8 +328,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 4.5
-  m_fontSizeBase: 4.5
+  m_fontSize: 4.3
+  m_fontSizeBase: 4.3
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -338,8 +338,8 @@ MonoBehaviour:
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
-  m_characterSpacing: 15.62
-  m_wordSpacing: -2.52
+  m_characterSpacing: 5
+  m_wordSpacing: 0
   m_lineSpacing: 117.62
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
@@ -690,8 +690,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 4.5
-  m_fontSizeBase: 4.5
+  m_fontSize: 4.3
+  m_fontSizeBase: 4.3
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -700,8 +700,8 @@ MonoBehaviour:
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
-  m_characterSpacing: 15.62
-  m_wordSpacing: -2.52
+  m_characterSpacing: 6
+  m_wordSpacing: 5
   m_lineSpacing: 117.62
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
@@ -2069,8 +2069,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 4.5
-  m_fontSizeBase: 4.5
+  m_fontSize: 4.3
+  m_fontSizeBase: 4.3
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -2079,8 +2079,8 @@ MonoBehaviour:
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
-  m_characterSpacing: 15.62
-  m_wordSpacing: -2.52
+  m_characterSpacing: 6
+  m_wordSpacing: 0
   m_lineSpacing: 117.62
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
@@ -3239,7 +3239,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1.231, y: -2.619}
+  m_AnchoredPosition: {x: -1, y: -1.87}
   m_SizeDelta: {x: 3.2525997, y: 0.77119994}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &396223698
@@ -3746,8 +3746,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 4.5
-  m_fontSizeBase: 4.5
+  m_fontSize: 4.3
+  m_fontSizeBase: 4.3
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -3756,8 +3756,8 @@ MonoBehaviour:
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
-  m_characterSpacing: 15.62
-  m_wordSpacing: -2.52
+  m_characterSpacing: 6
+  m_wordSpacing: 0
   m_lineSpacing: 117.62
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
@@ -4483,7 +4483,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1.665, y: 1.574}
+  m_AnchoredPosition: {x: 1.4, y: 1.98}
   m_SizeDelta: {x: 3.2525997, y: 0.77119994}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &545378654
@@ -5241,7 +5241,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.796, y: -0.524}
+  m_AnchoredPosition: {x: 0.14, y: -0.33}
   m_SizeDelta: {x: 3.2525997, y: 0.77119994}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &659183266
@@ -5541,7 +5541,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isFilled: 0
   wordScript: {fileID: 917871701}
-  triggerYValue: 2.719002
+  triggerYValue: 2
   lerpSpeed: 1
   playerSctipt: {fileID: 1648769235}
 --- !u!114 &686737823
@@ -5688,7 +5688,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isFilled: 0
   wordScript: {fileID: 917871701}
-  triggerYValue: -3.14
+  triggerYValue: -2.52
   lerpSpeed: 1
   playerSctipt: {fileID: 1648769235}
 --- !u!114 &687429871
@@ -5788,8 +5788,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 4.5
-  m_fontSizeBase: 4.5
+  m_fontSize: 4.3
+  m_fontSizeBase: 4.3
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -6012,7 +6012,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isFilled: 0
   wordScript: {fileID: 917871701}
-  triggerYValue: -2.093
+  triggerYValue: -1.75
   lerpSpeed: 1
   playerSctipt: {fileID: 1648769235}
 --- !u!114 &787672048
@@ -6112,8 +6112,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 4.5
-  m_fontSizeBase: 4.5
+  m_fontSize: 4.3
+  m_fontSizeBase: 4.3
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -6122,8 +6122,8 @@ MonoBehaviour:
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
-  m_characterSpacing: 15.62
-  m_wordSpacing: -2.52
+  m_characterSpacing: 5
+  m_wordSpacing: 0
   m_lineSpacing: 117.62
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
@@ -6331,7 +6331,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isFilled: 0
   wordScript: {fileID: 917871701}
-  triggerYValue: 2.669998
+  triggerYValue: 2.11
   lerpSpeed: 1
   playerSctipt: {fileID: 1648769235}
 --- !u!114 &809425265
@@ -6478,7 +6478,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isFilled: 0
   wordScript: {fileID: 917871701}
-  triggerYValue: -0.1210003
+  triggerYValue: 0.26
   lerpSpeed: 1
   playerSctipt: {fileID: 1648769235}
 --- !u!114 &817743105
@@ -6701,7 +6701,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.64, y: -2.103}
+  m_AnchoredPosition: {x: -0.55, y: -1.87}
   m_SizeDelta: {x: 3.2525997, y: 0.77119994}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &865419463
@@ -6832,9 +6832,9 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "All men and beasts, lions, eagles, \nand quails, horned stags, geese,
-    spiders,\n silent fish that inhabit the waves, \nstarfish from the sea, and creatures
-    invisible to the eye -- all, all life, \ncompleting the             round set
-    before it,\n has            out at last.\r"
+    spiders,\n silent fish that inhabit the waves, \nstarfish from the sea, \nand
+    creatures invisible to the eye -- \nall, all life, \ncompleting the              
+    round set before it,\n has             out at last.\r"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2d547a05887e1402a9f6be68683d8f36, type: 2}
   m_sharedMaterial: {fileID: 4775169337844555031, guid: 2d547a05887e1402a9f6be68683d8f36, type: 2}
@@ -6861,19 +6861,19 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 4.5
-  m_fontSizeBase: 4.5
+  m_fontSize: 4.3
+  m_fontSizeBase: 4.3
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 2
+  m_HorizontalAlignment: 32
   m_VerticalAlignment: 512
   m_textAlignment: 65535
-  m_characterSpacing: 15.62
-  m_wordSpacing: -2.52
-  m_lineSpacing: 117.62
+  m_characterSpacing: 6
+  m_wordSpacing: 5
+  m_lineSpacing: 64
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
@@ -6897,7 +6897,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: 0, z: 0.0340271, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   _SortingLayer: 0
@@ -6967,8 +6967,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.27810097, y: 0}
-  m_SizeDelta: {x: 13.1, y: 9.1562}
+  m_AnchoredPosition: {x: 1.05, y: 0.31}
+  m_SizeDelta: {x: 10.5, y: 9.1562}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &917871699
 GameObject:
@@ -7291,7 +7291,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isFilled: 0
   wordScript: {fileID: 917871701}
-  triggerYValue: 1.634001
+  triggerYValue: 2.01
   lerpSpeed: 1
   playerSctipt: {fileID: 1648769235}
 --- !u!114 &920686200
@@ -7970,7 +7970,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -4.225, y: 2.619}
+  m_AnchoredPosition: {x: -3.46, y: 1.99}
   m_SizeDelta: {x: 3.2525997, y: 0.77119994}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &981112053
@@ -8241,8 +8241,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 4.5
-  m_fontSizeBase: 4.5
+  m_fontSize: 4.3
+  m_fontSizeBase: 4.3
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -8251,8 +8251,8 @@ MonoBehaviour:
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
-  m_characterSpacing: 15.62
-  m_wordSpacing: -2.52
+  m_characterSpacing: 6
+  m_wordSpacing: 0
   m_lineSpacing: 117.62
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
@@ -8934,7 +8934,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isFilled: 0
   wordScript: {fileID: 917871701}
-  triggerYValue: -0.423996
+  triggerYValue: 0.319
   lerpSpeed: 1
   playerSctipt: {fileID: 1648769235}
 --- !u!114 &1079313651
@@ -10975,7 +10975,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.669, y: -0.001}
+  m_AnchoredPosition: {x: 0.58, y: 0.06}
   m_SizeDelta: {x: 3.2525997, y: 0.77119994}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1369958366
@@ -11181,7 +11181,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "All is cold, cold.\r\nAll is              .\nAll is void, void, void.
+  m_text: "All is cold, cold.\r\nAll is                .\nAll is void, void, void.
     \r"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2d547a05887e1402a9f6be68683d8f36, type: 2}
@@ -11209,19 +11209,19 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 4.5
-  m_fontSizeBase: 4.5
+  m_fontSize: 4.3
+  m_fontSizeBase: 4.3
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 2
+  m_HorizontalAlignment: 32
   m_VerticalAlignment: 512
   m_textAlignment: 65535
-  m_characterSpacing: 15.62
-  m_wordSpacing: -2.52
-  m_lineSpacing: 117.62
+  m_characterSpacing: 6
+  m_wordSpacing: 5
+  m_lineSpacing: 64
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
@@ -11314,8 +11314,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.2781, y: -22.92}
-  m_SizeDelta: {x: 13.1, y: 9.1562}
+  m_AnchoredPosition: {x: 1.05, y: -22.92}
+  m_SizeDelta: {x: 10, y: 9.1562}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1372946975
 GameObject:
@@ -12105,10 +12105,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "A thousand years have passed since the earth last bore a            creature
-    on its breast, \nand the unhappy moon now lights her lamp \nin vain. No longer
-    are the cries of storks heard in the meadows, or the drone of beetles in the
-    groves of limes.\r"
+  m_text: "A thousand years have passed since \nthe earth last bore a           
+    creature \non its breast, \nand the unhappy moon now lights her lamp in vain.
+    \nNo longer are the cries of storks heard in the meadows, or the drone of beetles
+    in the groves of limes.\r"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2d547a05887e1402a9f6be68683d8f36, type: 2}
   m_sharedMaterial: {fileID: 4775169337844555031, guid: 2d547a05887e1402a9f6be68683d8f36, type: 2}
@@ -12135,19 +12135,19 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 4.5
-  m_fontSizeBase: 4.5
+  m_fontSize: 4.3
+  m_fontSizeBase: 4.3
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 2
+  m_HorizontalAlignment: 32
   m_VerticalAlignment: 512
   m_textAlignment: 65535
-  m_characterSpacing: 15.62
-  m_wordSpacing: -2.52
-  m_lineSpacing: 117.62
+  m_characterSpacing: 6
+  m_wordSpacing: 5
+  m_lineSpacing: 64
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
@@ -12240,8 +12240,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.2781, y: -11.15}
-  m_SizeDelta: {x: 13.1, y: 9.1562}
+  m_AnchoredPosition: {x: 1.05, y: -11.15}
+  m_SizeDelta: {x: 10, y: 9.1562}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1413206398
 GameObject:
@@ -12879,7 +12879,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.976, y: -3.15}
+  m_AnchoredPosition: {x: -0.86, y: -2.64}
   m_SizeDelta: {x: 3.2526, y: 0.77120066}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1495919261
@@ -12964,7 +12964,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1508661866}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 8.33, y: -13, z: 0}
+  m_LocalPosition: {x: 8.2, y: -13, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -13134,7 +13134,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isFilled: 0
   wordScript: {fileID: 917871701}
-  triggerYValue: 0.6200027
+  triggerYValue: 0.45
   lerpSpeed: 1
   playerSctipt: {fileID: 1648769235}
 --- !u!114 &1536534895
@@ -13486,8 +13486,8 @@ MonoBehaviour:
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
   m_textAlignment: 65535
-  m_characterSpacing: 15.62
-  m_wordSpacing: -2.52
+  m_characterSpacing: 5
+  m_wordSpacing: 10
   m_lineSpacing: 117.62
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
@@ -13580,7 +13580,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 13, y: -1.9}
+  m_AnchoredPosition: {x: 13.36, y: -2.12}
   m_SizeDelta: {x: 20, y: 5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1615526022 stripped
@@ -13983,9 +13983,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "In            is the spirit of the great heroes, \nand of the tiniest
-    leech that swims.\r\nIn me the                  of man has joined hands with
-    the               of the animal.\r\nI understand all, all, all, \nand each         
+  m_text: "In             is the spirit of the great heroes, \nand of the tiniest
+    leech that swims.\r\nIn me the                   of man has joined hands with
+    the                of the animal.\r\nI understand all, all, all, \nand each          
     lives again in me."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2d547a05887e1402a9f6be68683d8f36, type: 2}
@@ -14013,19 +14013,19 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 4.5
-  m_fontSizeBase: 4.5
+  m_fontSize: 4.3
+  m_fontSizeBase: 4.3
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 2
+  m_HorizontalAlignment: 32
   m_VerticalAlignment: 512
   m_textAlignment: 65535
-  m_characterSpacing: 15.62
-  m_wordSpacing: -2.52
-  m_lineSpacing: 117.62
+  m_characterSpacing: 6
+  m_wordSpacing: 5
+  m_lineSpacing: 64
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
@@ -14121,8 +14121,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.2781, y: -45.3}
-  m_SizeDelta: {x: 13.1, y: 9.1562}
+  m_AnchoredPosition: {x: 1.05, y: -45.3}
+  m_SizeDelta: {x: 10, y: 9.1562}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1653058489
 GameObject:
@@ -14408,7 +14408,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -2.063, y: 0.52}
+  m_AnchoredPosition: {x: -0.95, y: 0.44}
   m_SizeDelta: {x: 3.2525997, y: 0.77119994}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1673868986
@@ -14792,7 +14792,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isFilled: 0
   wordScript: {fileID: 917871701}
-  triggerYValue: -2.518997
+  triggerYValue: -1.86
   lerpSpeed: 1
   playerSctipt: {fileID: 1648769235}
 --- !u!114 &1692854636
@@ -14892,8 +14892,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 4.5
-  m_fontSizeBase: 4.5
+  m_fontSize: 4.3
+  m_fontSizeBase: 4.3
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -15770,7 +15770,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -3.16, y: 1.572}
+  m_AnchoredPosition: {x: -0.32, y: 1.22}
   m_SizeDelta: {x: 3.2525997, y: 0.77119994}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1822320254
@@ -15984,9 +15984,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "The             of all living creatures \nhave               to dust,
-    and eternal matter \nhas transformed them into stones and water and clouds; but
-    their spirits have flowed together into one, \nand that great world-soul am I.\r"
+  m_text: "The             of all living creatures \nhave                to dust,
+    \nand eternal matter has transformed them into stones and water and clouds; \nbut
+    their spirits have flowed together into one, and that great world-soul am I.\r"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2d547a05887e1402a9f6be68683d8f36, type: 2}
   m_sharedMaterial: {fileID: 4775169337844555031, guid: 2d547a05887e1402a9f6be68683d8f36, type: 2}
@@ -16013,19 +16013,19 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 4.5
-  m_fontSizeBase: 4.5
+  m_fontSize: 4.3
+  m_fontSizeBase: 4.3
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 2
+  m_HorizontalAlignment: 32
   m_VerticalAlignment: 512
   m_textAlignment: 65535
-  m_characterSpacing: 15.62
-  m_wordSpacing: -2.52
-  m_lineSpacing: 117.62
+  m_characterSpacing: 6
+  m_wordSpacing: 5
+  m_lineSpacing: 64
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
@@ -16119,8 +16119,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.2781, y: -33.75}
-  m_SizeDelta: {x: 13.1, y: 9.1562}
+  m_AnchoredPosition: {x: 1.05, y: -33.75}
+  m_SizeDelta: {x: 10, y: 9.1562}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1868005505
 GameObject:
@@ -16676,7 +16676,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isFilled: 0
   wordScript: {fileID: 917871701}
-  triggerYValue: 1.621998
+  triggerYValue: 1.34
   lerpSpeed: 1
   playerSctipt: {fileID: 1648769235}
 --- !u!114 &1884303428
@@ -18221,8 +18221,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 4.5
-  m_fontSizeBase: 4.5
+  m_fontSize: 4.3
+  m_fontSizeBase: 4.3
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -18231,8 +18231,8 @@ MonoBehaviour:
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
-  m_characterSpacing: 15.62
-  m_wordSpacing: -2.52
+  m_characterSpacing: 6
+  m_wordSpacing: 5
   m_lineSpacing: 117.62
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
@@ -18592,7 +18592,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -2.52, y: 2.62}
+  m_AnchoredPosition: {x: -2.08, y: 1.99}
   m_SizeDelta: {x: 3.2525997, y: 0.77119994}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &2073844242
@@ -18845,8 +18845,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 4.5
-  m_fontSizeBase: 4.5
+  m_fontSize: 4.3
+  m_fontSizeBase: 4.3
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -18855,8 +18855,8 @@ MonoBehaviour:
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
-  m_characterSpacing: 15.62
-  m_wordSpacing: -2.52
+  m_characterSpacing: 6
+  m_wordSpacing: 0
   m_lineSpacing: 117.62
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
