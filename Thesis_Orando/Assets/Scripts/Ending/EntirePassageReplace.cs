@@ -11,6 +11,6 @@ public class EntirePassageReplace : MonoBehaviour
     public void Replace(int originalPos, string newString)
     {
         
-        text.text = text.text.Replace(originals[originalPos], "<b>"+newString+"</b>");
+        text.text = text.text.Replace(originals[originalPos], "<b>"+newString+"</b> ");
     }
 }

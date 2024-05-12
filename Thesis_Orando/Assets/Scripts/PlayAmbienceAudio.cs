@@ -69,10 +69,10 @@ public class PlayAmbienceAudio : MonoBehaviour
         PlayMenuMusic(0);
         yield return new WaitForSeconds(waitTime);
         PlayTheatreNoise(1f);
-        PlayZenNoise(0.2f);
+        PlayZenNoise(0.01f);
     }
     
-    void PlayIC(float waitTime)
+    public void PlayIC(float waitTime)
     {
         StartCoroutine(playIC(waitTime));
     }
@@ -81,25 +81,25 @@ public class PlayAmbienceAudio : MonoBehaviour
     {
         if (interAmbSource.isPlaying) PlayInterstitialAmbience(0f);
         if (interMusicSource.isPlaying) PlayInterstitialMusic(0f);
-        PlayTheatreNoise(0.5f);
-        PlayZenNoise(0.2f);
+        PlayTheatreNoise(0.2f);
+        PlayZenNoise(0.01f);
         yield return new WaitForSeconds(waitTime);
-        PlayTheatreNoise(1f);
-        PlayZenNoise(0.2f);
+        PlayTheatreNoise(0.8f);
+        PlayZenNoise(0.01f);
     }
 
-    void PlayOOC(float waitTime)
+    public void PlayOOC(float waitTime)
     {
         StartCoroutine(playOOC(waitTime));
     }
 
     IEnumerator playOOC(float waitTime)
     {
-        PlayTheatreNoise(0.5f);
-        PlayZenNoise(0.2f);
+        PlayTheatreNoise(0.2f);
+        PlayZenNoise(0.01f);
         yield return new WaitForSeconds(waitTime);
-        PlayTheatreNoise(0.5f);
-        PlayZenNoise(1f);
+        PlayTheatreNoise(0.2f);
+        PlayZenNoise(0.1f);
     }
     
     void PlayInterstitial(float waitTime, bool playAmb)

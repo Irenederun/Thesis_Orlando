@@ -40,6 +40,7 @@ public class UIDragBehavior : MonoBehaviour
         
         if (hit.collider != null)
         {
+            AudioManager.instance.PlayAudio("Drop", transform.parent.gameObject.GetComponent<AudioSource>());
             hit.collider.gameObject.SetActive(false);
             gameObject.layer = LayerMask.NameToLayer("UIDragDest");
             gameObject.transform.position = hit.collider.gameObject.transform.position;

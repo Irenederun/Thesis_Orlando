@@ -50,6 +50,7 @@ public class DragBehavior : MonoBehaviour
             //print("destination hit");
             if (availableDesPosHolders.Contains(hit.collider.gameObject))
             {
+                AudioManager.instance.PlayAudio("Drop", transform.parent.gameObject.GetComponent<AudioSource>());
                 if (hitReload.collider != null)
                 {
                     hitReload.collider.gameObject.GetComponent<WordDragDetails>().ReloadWord();

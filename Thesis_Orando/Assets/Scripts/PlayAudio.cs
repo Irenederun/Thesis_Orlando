@@ -46,4 +46,13 @@ public class PlayAudio : MonoBehaviour
     {
         AudioManager.instance.gameObject.GetComponent<PlayAmbienceAudio>().StopAmb(1);
     }
+    
+    public void PlayIC()
+    {
+        AudioManager.instance.gameObject.GetComponent<PlayAmbienceAudio>().PlayIC(1);
+    }
+
+    public void PlayOOC()
+    {
+        AudioManager.instance.gameObject.GetComponent<PlayAmbienceAudio>().PlayOOC(1);    }
 }
