@@ -63,7 +63,7 @@ MonoBehaviour:
     volume: 1
   - name: PickUp
     audio: {fileID: 8300000, guid: f4386290f68cc46dd8400c481eea4227, type: 3}
-    volume: 0.3
+    volume: 0.2
   - name: Flicker
     audio: {fileID: 8300000, guid: 25b9269de6dc848b1bcef8dfa7525f2a, type: 3}
     volume: 1

@@ -1235,7 +1235,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 166.55582
     y: 32.17437
-    width: 113.33333
+    width: 110.60605
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1314,19 +1314,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 57.055756, y: -56.685165}
+  scrollPos: {x: 144.72346, y: -65.91079}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 342.66666
-  zoom: 1
+  zoom: 0.8800001
   scrollViewRect:
     serializedVersion: 2
     x: -343
     y: -340
     width: 1114
     height: 859
-  selectedBlocks: []
-  selectedCommands: []
+  selectedBlocks:
+  - {fileID: 468922159}
+  selectedCommands:
+  - {fileID: 468922151}
   variables:
   - {fileID: 468921990}
   - {fileID: 468921930}
@@ -1450,7 +1452,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 286.04883
     y: -33.277653
-    width: 120.666664
+    width: 117.42423
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1670,7 +1672,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 163.81053
     y: 89.49687
-    width: 114.666664
+    width: 112.878784
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2105,7 +2107,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 159.21548
     y: 156.71614
-    width: 114.666664
+    width: 112.878784
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2153,7 +2155,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 341.9596
     y: 260.7505
-    width: 79.333336
+    width: 77.27272
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -3160,7 +3162,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 166.4845
     y: 219.85184
-    width: 114
+    width: 111.36363
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -4371,7 +4373,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 167.71481
     y: 274.55692
-    width: 114
+    width: 111.36363
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -4519,7 +4521,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 156.36543
     y: 338.29938
-    width: 114
+    width: 111.36363
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -8529,7 +8531,7 @@ MonoBehaviour:
   - sentence:
     - 'By my '
     - 
-    - ' , Beatrice, thou '
+    - ', Beatrice, thou '
     - 
     - ' me'
   - sentence:
