@@ -11,7 +11,9 @@ public class EndingParagraphLoader : MonoBehaviour
     public EndingWordLoader wordScript;
     private bool ended = false;
     public float speed = 1.0f;
-    
+
+    private bool uploaded = false;
+
     private enum MyState
     {
         Wait,
@@ -79,6 +81,16 @@ public class EndingParagraphLoader : MonoBehaviour
                 //wordscript: fade words out
                 wordScript.FadeWordOut();
                 StartCoroutine(TextFadeWait());
+            }
+        }
+
+        if (transform.position.y >= 46f)
+        {
+            if (!uploaded)
+            {
+                GameObject replace = GameObject.Find("Replacement");
+                replace.GetComponent<EntirePassageReplace>().UploadSavedInputs();
+                uploaded = true;
             }
         }
     }

@@ -96,7 +96,8 @@ public class DragBehavior : MonoBehaviour
         {
             if (desName.Contains(i.ToString()))
             {
-                replace.GetComponent<EntirePassageReplace>().Replace(i-1, gameObject.name);
+                //replace.GetComponent<EntirePassageReplace>().Replace(i-1, gameObject.name);
+                replace.GetComponent<EntirePassageReplace>().SaveInput(gameObject.name, i - 1);
             }
         }
     }

@@ -7,6 +7,8 @@ public class RestartManager : MonoBehaviour
 {
     public static RestartManager instance;
     public Action restartAction;
+
+    public int station = 1;
     
     public void Awake()
     {
@@ -27,6 +29,19 @@ public class RestartManager : MonoBehaviour
         if (Input.GetKey(KeyCode.LeftControl) && Input.GetKeyDown(KeyCode.R))
         {
             RestartGame();
+        }
+
+        if (Input.GetKey(KeyCode.LeftControl) && Input.GetKeyDown(KeyCode.Alpha1))
+        {
+            station = 1;
+        }
+        if (Input.GetKey(KeyCode.LeftControl) && Input.GetKeyDown(KeyCode.Alpha2))
+        {
+            station = 2;
+        }
+        if (Input.GetKey(KeyCode.LeftControl) && Input.GetKeyDown(KeyCode.Alpha3))
+        {
+            station = 3;
         }
     }
 
