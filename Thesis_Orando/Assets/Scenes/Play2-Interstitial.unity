@@ -939,8 +939,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 950951623}
-  selectedCommands: []
+  - {fileID: 950951606}
+  selectedCommands:
+  - {fileID: 950951679}
   variables:
   - {fileID: 950951620}
   - {fileID: 950951649}
@@ -3256,7 +3257,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 61
   indentLevel: 0
-  storyText: '*whrring sound of a running car*'
+  storyText: '*whirring sound of a running car*'
   description: 
   character: {fileID: 1995198935}
   portrait: {fileID: 0}
