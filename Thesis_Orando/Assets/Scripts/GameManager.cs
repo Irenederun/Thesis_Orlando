@@ -31,12 +31,18 @@ public class GameManager : MonoBehaviour
         {
             instance = this;
             DontDestroyOnLoad(gameObject);
-            RestartManager.instance.restartAction += () => Destroy(gameObject);
+            RestartManager.instance.restartAction += destroySelf;
         }
         else
         {
            Destroy(gameObject);
         }
+    }
+
+    private void destroySelf()
+    {
+        RestartManager.instance.restartAction -= destroySelf;
+        Destroy(gameObject);
     }
 
     public void SwitchWord(string oldWord, string newWord)
