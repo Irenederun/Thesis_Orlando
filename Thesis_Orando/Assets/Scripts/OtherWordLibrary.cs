@@ -11,7 +11,7 @@ public class OtherWordLibrary : MonoBehaviour
         {
             instance = this;
             DontDestroyOnLoad(gameObject);
-            RestartManager.instance.restartAction += () => Destroy(gameObject);
+            RestartManager.instance.restartAction += destroySelf;
         }
         else
         {
@@ -69,6 +69,12 @@ public class OtherWordLibrary : MonoBehaviour
         }
 
         return output;
+    }
+    
+    private void destroySelf()
+    {
+        RestartManager.instance.restartAction -= destroySelf;
+        Destroy(gameObject);
     }
     
     
