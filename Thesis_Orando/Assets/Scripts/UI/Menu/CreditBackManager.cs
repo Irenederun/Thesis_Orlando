@@ -8,9 +8,13 @@ public class CreditBackManager : MonoBehaviour
     public Image fadeImage; // 渐变遮罩图片
     public float fadeDuration = 1.0f; // 渐变持续时间
 
+    private bool isFading;
+
     // 渐变效果的协程
     IEnumerator FadeOut()
     {
+        isFading = true;
+
         float timer = 0f;
         while (timer < fadeDuration)
         {
@@ -33,11 +37,15 @@ public class CreditBackManager : MonoBehaviour
             timer += Time.deltaTime;
             yield return null;
         }
+
+        isFading = false;
     }
 
     // 方法用于开始Credit页面的隐藏并触发渐变效果
     public void HideCreditPage()
     {
+        if (isFading) return;
+
         StartCoroutine(FadeOut());
     }
 }
