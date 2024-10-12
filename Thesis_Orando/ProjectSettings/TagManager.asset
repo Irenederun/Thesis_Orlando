@@ -55,3 +55,6 @@ TagManager:
   - name: OverlayOverlay
     uniqueID: 923971163
     locked: 0
+  - name: Cursor
+    uniqueID: 2748017027
+    locked: 0
